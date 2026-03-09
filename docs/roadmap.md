@@ -1,147 +1,111 @@
-# bsday.js Roadmap
+# bsday.js — Full roadmap
 
-**Project Name:** bsday.js
-**Purpose:** Outline **development phases, milestones, and priorities** for the dual-calendar BS ↔ AD library with dataset and plugin support.
+**Project:** bsday.js
+**Purpose:** A modern, modular toolkit for **Bikram Sambat ↔ Gregorian (AD) dates**, dataset, and plugin support.
 
----
+## ✅ v1.0.0 — Initial Release
 
-## 1. Phase 1: Core Library
+**Objective:** Publish a stable, fully functional BS ↔ AD library with dataset and plugin support.
 
-**Objective:** Build the foundation of BSDay.js with core date functionality.
+**Core Features:**
 
-**Tasks:**
+* AD ↔ BS conversion engine
+* `BSDay` class (constructors, getters, setters)
+* Date arithmetic (`addDays`, `addMonths`, `addYears`)
+* Comparison methods (`isBefore`, `isAfter`, `isSame`)
+* Formatting engine (standard tokens)
+* Parsing engine (string → BSDay)
+* Static helpers & constants (`MONTHS_NEPALI`, `WEEKDAYS_NEPALI`, `isLeapYear`)
 
-* [ ] Implement **AD ↔ BS conversion engine**
-* [ ] Develop **BSDay class** with constructors, getters, and setters
-* [ ] Implement **date arithmetic** (`addDays`, `addMonths`, `addYears`, etc.)
-* [ ] Implement **comparison methods** (`isBefore`, `isAfter`, `isSame`)
-* [ ] Develop **formatting engine** with standard tokens
-* [ ] Implement **parsing engine** for string → BSDay
-* [ ] Add **static helpers and constants** (`MONTHS_NEPALI`, `WEEKDAYS_NEPALI`, `isLeapYear`)
-* [ ] Write **unit tests** (conversion, formatting, parsing, arithmetic, comparison)
-* [ ] Prepare **basic documentation & examples**
+**Dataset features:**
 
-**Deliverable:**
+* BS dataset integrated (1970–2100)
+* Panchang info: tithi, festivals, nakshatra, yoga, karana
+* Static access: `BSDay.dataset()`
+* Optimized size & performance
+* Unit-tested for accuracy
 
-* `@bsday/core` package with fully functional BSDay class
+**Plugin system:**
 
----
+* Plugin interface ready (`BSDay.use()`)
+* PluginManager included
+* Developer guide available (`docs/plugin-development.md`)
+* Example plugins included in guide
 
-## 2. Phase 2: Dataset Integration
+**Monorepo & Packaging:**
 
-**Objective:** Integrate **BS dataset** for tithi, festivals, and Panchang.
+* `@bsday/core` → core library
+* `@bsday/dataset` → optional dataset package
+* pnpm workspace setup
+* TypeScript paths & package dependencies configured
+* Build outputs: ESM + CJS + type definitions
+* ESLint & Prettier enforced
 
-**Tasks:**
+**Developer utilities:**
 
-* [ ] Build **dataset structure** with O(1) lookup
-
-```ts
-interface BSDayData {
-  tithi: string
-  festivals: string[]
-  nakshatra: string
-  yoga: string
-  karana: string
-}
-```
-
-* [ ] Populate **tithi, festivals, Panchang** for supported BS years (1970–2100)
-* [ ] Connect **dataset to BSDay instances** (`.tithi()`, `.festivals()`, `.panchang()`)
-* [ ] Optimize **dataset size & performance**
-* [ ] Add **static access** via `BSDay.dataset()`
-* [ ] Unit tests for dataset accuracy and access
-
-**Deliverable:**
-
-* `@bsday/dataset` package
-* API integrated in `@bsday/core`
+* Unit tests for all core features
+* TypeScript type safety
+* Easy dataset override (`BSDay.setDataset(customDataset)`)
 
 ---
 
-## 3. Phase 3: Plugin System
+## 🌟 Upcoming / Priority features
 
-**Objective:** Enable **extensibility** for developers.
+**High-Priority enhancements:**
 
-**Tasks:**
+1. **BS Date picker component plugin**
 
-* [ ] Define **plugin interface**
+   * Fully interactive UI component to select BS dates
+   * Highlights festivals, tithis, and Panchang info from the dataset
+   * Automatic conversion to AD for form submission or APIs
+   * Framework agnostic: vanilla JS / Web Component
+   * Optional adapters for React, Vue, Angular
+   * Localization-ready (month/day names in Nepali or other locales)
 
-```ts
-interface BSDayPlugin {
-  name: string
-  initialize(bsday: typeof BSDay): void
-}
-```
+2. **Time & Extended Date Support**
 
-* [ ] Implement **PluginManager & registration system** (`BSDay.use()`)
-* [ ] Provide example plugins:
+   * Hour, minute, second support
+   * Timezone awareness (`Asia/Kathmandu`)
+   * Extended date calculations: workdays, fiscal year, lunar calendar
 
-  * Nepali numeral formatting
-  * Holiday / festival utilities
-  * Lunar calendar
-  * Fiscal year / workday calculations
-* [ ] Unit tests and **developer guide for plugin creation**
+3. **Localization & Formatting**
 
-**Deliverable:**
+   * Locale-aware formatting for month/day names
 
-* Plugin-ready BSDay.js core
+4. **Optional Plugins / Packages**
 
----
+   * Festival utilities plugin (`@bsday/festivals`)
+   * Holiday utilities plugin (`@bsday/holidays`)
+   * Lunar calendar plugin
+   * Nepali numeral formatting plugin
 
-## 4. Phase 4: Monorepo & Packages
+5. **Developer & Ecosystem Improvements**
 
-**Objective:** Organize the project for **modularity and future extensions**.
-
-**Packages:**
-
-* `@bsday/core` → main library
-* `@bsday/dataset` → optional BS date dataset (tithi, Panchang, festivals)
-* `@bsday/festivals` → optional plugin for festival utilities
-* `@bsday/holidays` → optional plugin for holidays
-
-**Tasks:**
-
-* [ ] Set up **pnpm workspace**
-* [ ] Configure **TypeScript paths** and package dependencies
-* [ ] Ensure **tree-shaking & minimal bundle size**
-* [ ] Unit tests for cross-package integration
+   * Example plugin library / playground
+   * Improved dataset management and lazy loading
+   * Tree-shaking & minimal bundle size for plugins
+   * Advanced documentation: guides, migration examples
 
 ---
 
-## 5. Phase 5: Finalization & Optional Features
+## 🏆 Milestones
 
-**Objective:** Polish, optimize, and prepare for release.
-
-**Tasks:**
-
-* [ ] ESLint & Prettier enforcement
-* [ ] Build bundling: **ESM + CJS + type definitions**
-* [ ] Optional features:
-
-  * Time support (hours, minutes, seconds)
-  * Timezone awareness (`Asia/Kathmandu`)
-  * Localization (month/day names, formats)
-  * Datepicker integration (React / Vue / Angular)
-* [ ] Documentation: README, usage examples, plugin guide
-* [ ] Publish to NPM
+| Milestone                                 | Status      |
+| ----------------------------------------- | ----------  |
+| Core library completion                   | ✅ Done     |
+| Dataset integration                       | ✅ Done     |
+| Plugin system ready                       | ✅ Done     |
+| BS Date Picker plugin & framework support | ⚡ Upcoming |
+| Time & extended date support              | ⚡ Upcoming |
+| Localization & formatting                 | ⚡ Upcoming |
+| Optional plugins / packages               | ⚡ Upcoming |
+| Developer & ecosystem improvements        | ⚡ Upcoming |
 
 ---
 
-## 6. Milestones
+## Notes
 
-| Milestone               | Target Package   | Status  |
-| ----------------------- | ---------------- | ------- |
-| Core library completion | `@bsday/core`    | Pending |
-| Dataset integration     | `@bsday/dataset` | Pending |
-| Plugin system ready     | `@bsday/core`    | Pending |
-| Monorepo setup          | All packages     | Pending |
-| Optional features       | All packages     | Pending |
-| NPM Release             | All packages     | Pending |
-
----
-
-## 7. Notes
-
-* Dataset **does not include AD dates or weekday** to reduce size
+* Dataset **does not include AD dates or weekdays** to reduce size
 * Festivals, Panchang info, and tithi are **dynamic via dataset**
 * Core API is **lightweight and fast**; optional packages extend features
+* v1.0 focuses on **core stability**, upcoming features focus on **UI and ecosystem expansion**
