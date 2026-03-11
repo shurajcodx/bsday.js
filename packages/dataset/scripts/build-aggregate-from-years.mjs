@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const YEARS_DIR = path.resolve(__dirname, '../src/data/years');
-const AGGREGATE_PATH = path.resolve(__dirname, '../src/data/1970-2100.json');
+const AGGREGATE_PATH = path.resolve(__dirname, '../src/data/dataset.json');
 const METADATA_PATH = path.resolve(__dirname, '../src/data/metadata.json');
 
 function sortDateKeys(a, b) {

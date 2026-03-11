@@ -1,16 +1,16 @@
 {
+  "generatedAt": "2026-03-10T16:01:37.602Z",
   "source": "manual year files",
   "sourceEndpoint": "",
-  "generatedAt": "2026-03-08T03:22:22.774Z",
   "coverage": {
     "startYear": 2000,
-    "endYear": 2089,
-    "keys": 32891
+    "endYear": 2090,
+    "keys": 33072
   },
   "quality": {
-    "unknownTithiCount": 31052,
-    "unknownYogaCount": 31052,
-    "unknownKaranaCount": 31052,
-    "unknownNakshatraCount": 31052
+    "unknownTithiCount": 0,
+    "unknownYogaCount": 0,
+    "unknownKaranaCount": 0,
+    "unknownNakshatraCount": 0
   }
 }

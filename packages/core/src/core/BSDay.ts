@@ -326,7 +326,10 @@ export class BSDay {
 
     return {
       tithi: data.tithi,
+      paksha: data.paksha,
       festivals: [...data.festivals],
+      events: [...data.events],
+      isHoliday: data.isHoliday,
       nakshatra: data.nakshatra,
       yoga: data.yoga,
       karana: data.karana,
@@ -341,13 +344,14 @@ export class BSDay {
     return [...(this.lookupDatasetEntry()?.festivals ?? [])];
   }
 
-  panchang(): Omit<BSDayData, 'tithi' | 'festivals'> | null {
+  panchang(): Omit<BSDayData, 'tithi' | 'festivals' | 'isHoliday' | 'events'> | null {
     const data = this.lookupDatasetEntry();
     if (!data) {
       return null;
     }
 
     return {
+      paksha: data.paksha,
       nakshatra: data.nakshatra,
       yoga: data.yoga,
       karana: data.karana,

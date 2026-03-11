@@ -22,8 +22,13 @@
     "test": "vitest run",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "split:years": "node scripts/split-aggregate-to-years.mjs",
     "build:aggregate": "node scripts/build-aggregate-from-years.mjs",
-    "create:year": "node scripts/create-year-template.mjs"
+    "recompute:all": "node scripts/recompute-all-dataset.mjs",
+    "create:year": "node scripts/create-year-template.mjs",
+    "prepublishOnly": "npm run build:aggregate && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "swisseph-v2": "1.0.4"
   }
 }
