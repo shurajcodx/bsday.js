@@ -5,7 +5,7 @@ A modern **TypeScript toolkit** for working with **Bikram Sambat (BS)** and **Gr
 `bsday.js` provides accurate BS ↔ AD conversion, formatting, parsing, date arithmetic, and Nepali Panchang data.
 It is built as a **modular monorepo** designed to support plugins, datasets, and future ecosystem extensions.
 
-🌐 Documentation: <https://bsdayjs.github.io>
+🌐 Documentation: <[https://bsdayjs.github.io](https://bsdayjs.vercel.app/)>
 
 ---
 
