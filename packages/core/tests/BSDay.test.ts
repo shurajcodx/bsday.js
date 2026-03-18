@@ -51,6 +51,32 @@ describe('BSDay core', () => {
     expect(a.isSame(b)).toBe(false);
   });
 
+  it('supports all exported API reference methods', () => {
+    const date = BSDay.fromBS([2082, 5, 10]);
+
+    // toBS
+    expect(date.toBS()).toEqual({ year: 2082, month: 5, day: 10 });
+
+    // subtractDays
+    expect(date.subtractDays(5).bs).toEqual({ year: 2082, month: 5, day: 5 });
+
+    // addMonths / subtractMonths
+    expect(date.addMonths(2).bs).toEqual({ year: 2082, month: 7, day: 10 });
+    expect(date.subtractMonths(1).bs).toEqual({ year: 2082, month: 4, day: 10 });
+
+    // addYears / subtractYears
+    expect(date.addYears(1).bs).toEqual({ year: 2083, month: 5, day: 10 });
+    expect(date.subtractYears(1).bs).toEqual({ year: 2081, month: 5, day: 10 });
+
+    // setYear, setMonth, setDay
+    expect(date.setYear(2085).bs).toEqual({ year: 2085, month: 5, day: 10 });
+    expect(date.setMonth(8).bs).toEqual({ year: 2082, month: 8, day: 10 });
+    expect(date.setDay(25).bs).toEqual({ year: 2082, month: 5, day: 25 });
+
+    // isLeapYear (BS calendar has its own leap years based on the underlying dataset/math)
+    expect(typeof date.isLeapYear()).toBe('boolean');
+  });
+
   it('formats with built-in tokens', () => {
     const d = BSDay.fromBS([2082, 12, 9]);
     expect(d.format('YYYY-MM-DD')).toBe('2082-12-09');

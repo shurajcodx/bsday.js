@@ -15,9 +15,9 @@ export type BSDayInput = Date | string | BSDayInputBS | undefined;
 export interface BSDayData {
   tithi: string;
   paksha: string;
-  festivals: string[];
-  events: string[];
-  isHoliday: boolean;
+  festivals?: string[];
+  events?: string[];
+  isHoliday?: boolean;
   nakshatra: string;
   yoga: string;
   karana: string;
