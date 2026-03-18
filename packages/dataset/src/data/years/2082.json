@@ -1459,7 +1459,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2082-05-14": {
     "tithi": "Ashtami",
@@ -1767,9 +1767,11 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Ayushman",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2082-06-12": {
     "tithi": "Saptami",
@@ -1778,7 +1780,7 @@
     "yoga": "Saubhagya",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1790,7 +1792,7 @@
     "yoga": "Shobhana",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1801,9 +1803,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Atiganda",
     "karana": "Balava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Older Persons"
     ],
@@ -2104,9 +2104,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Sukarma",
     "karana": "Taitila",
-    "festivals": [
-      "Chhath Puja"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3259,9 +3257,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Vyatipata",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2082-11-04": {
     "tithi": "Chaturdashi",
@@ -3269,9 +3269,7 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Shakuni",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3409,7 +3407,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2082-11-18": {
     "tithi": "Chaturdashi",

@@ -1391,9 +1391,11 @@
     "nakshatra": "Bharani",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2073-05-08": {
     "tithi": "Ashtami",
@@ -1401,9 +1403,7 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1811,9 +1811,7 @@
     "nakshatra": "Chitra",
     "yoga": "Indra",
     "karana": "Bava",
-    "festivals": [
-      "Ghatasthapana"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1865,9 +1863,11 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Saubhagya",
     "karana": "Kaulava",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2073-06-21": {
     "tithi": "Saptami",
@@ -1876,7 +1876,7 @@
     "yoga": "Shobhana",
     "karana": "Garaja",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1888,7 +1888,7 @@
     "yoga": "Atiganda",
     "karana": "Vishti",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [
       "World Post Day"
@@ -1902,7 +1902,7 @@
     "yoga": "Sukarma",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [
       "World Mental Health Day"
@@ -1915,9 +1915,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of the Girl Child"
     ],
@@ -3348,9 +3346,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Variyana",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2073-11-13": {
     "tithi": "Chaturdashi",
@@ -3358,9 +3358,7 @@
     "nakshatra": "Shravana",
     "yoga": "Parigha",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3496,7 +3494,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2073-11-27": {
     "tithi": "Chaturdashi",

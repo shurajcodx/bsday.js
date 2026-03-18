@@ -1369,9 +1369,11 @@
     "nakshatra": "Bharani",
     "yoga": "Dhruva",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2068-05-05": {
     "tithi": "Ashtami",
@@ -1379,9 +1381,7 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1521,7 +1521,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2068-05-19": {
     "tithi": "Ashtami",
@@ -1829,9 +1829,7 @@
     "nakshatra": "Mula",
     "yoga": "Saubhagya",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1842,7 +1840,7 @@
     "yoga": "Shobhana",
     "karana": "Vishti",
     "festivals": [
-      "Maha Ashtami"
+      "Fulpati"
     ],
     "events": [],
     "isHoliday": true
@@ -1854,7 +1852,7 @@
     "yoga": "Atiganda",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Maha Ashtami"
     ],
     "events": [
       "World Teachers Day"
@@ -1868,7 +1866,7 @@
     "yoga": "Sukarma",
     "karana": "Taitila",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1879,9 +1877,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Dhriti",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2068-06-21": {
     "tithi": "Dwadashi",
@@ -3478,7 +3478,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2068-11-24": {
     "tithi": "Chaturdashi",

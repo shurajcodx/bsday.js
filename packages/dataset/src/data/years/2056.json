@@ -1331,7 +1331,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2056-05-02": {
     "tithi": "Ashtami",
@@ -1485,9 +1485,11 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2056-05-17": {
     "tithi": "Ashtami",
@@ -1495,9 +1497,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1627,9 +1627,7 @@
     "nakshatra": "Vishakha",
     "yoga": "Vaidhriti",
     "karana": "Balava",
-    "festivals": [
-      "Rishi Panchami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Democracy"
     ],
@@ -1655,7 +1653,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2056-06-01": {
     "tithi": "Ashtami",
@@ -1663,9 +1661,7 @@
     "nakshatra": "Mula",
     "yoga": "Ayushman",
     "karana": "Bava",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1675,9 +1671,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Saubhagya",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1687,9 +1681,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Shobhana",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "Constitution Day"
     ],
@@ -1984,7 +1976,7 @@
     "yoga": "Sukarma",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1995,11 +1987,13 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Dhriti",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [
       "Kartik Sankranti"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2056-07-02": {
     "tithi": "Navami",
@@ -2007,9 +2001,11 @@
     "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Kaulava",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2056-07-03": {
     "tithi": "Dashami",
@@ -2206,7 +2202,6 @@
     "yoga": "Ayushman",
     "karana": "Shakuni",
     "festivals": [
-      "Kukur Tihar",
       "Laxmi Puja"
     ],
     "events": [],

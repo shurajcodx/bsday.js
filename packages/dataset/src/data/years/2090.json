@@ -1491,7 +1491,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2090-05-16": {
     "tithi": "Ashtami",
@@ -1633,11 +1633,13 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "International Day of Democracy"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2090-05-30": {
     "tithi": "Ashtami",
@@ -1645,9 +1647,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Siddhi",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "World Ozone Day"
     ],
@@ -1797,9 +1797,11 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Ayushman",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2090-06-14": {
     "tithi": "Saptami",
@@ -1808,7 +1810,7 @@
     "yoga": "Saubhagya",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [
       "International Day of Older Persons"
@@ -1822,7 +1824,7 @@
     "yoga": "Shobhana",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1834,7 +1836,7 @@
     "yoga": "Atiganda",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [],
     "isHoliday": true
@@ -1845,9 +1847,7 @@
     "nakshatra": "Shravana",
     "yoga": "Sukarma",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2033,9 +2033,7 @@
     "nakshatra": "Uttara Phalguni",
     "yoga": "Indra",
     "karana": "Vanija",
-    "festivals": [
-      "Kag Tihar"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

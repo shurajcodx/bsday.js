@@ -1417,7 +1417,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2020-05-10": {
     "tithi": "Ashtami",
@@ -1727,9 +1727,11 @@
     "nakshatra": "Anuradha",
     "yoga": "Priti",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2020-06-08": {
     "tithi": "Saptami",
@@ -1738,7 +1740,7 @@
     "yoga": "Ayushman",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1750,7 +1752,7 @@
     "yoga": "Saubhagya",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1762,7 +1764,7 @@
     "yoga": "Shobhana",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [
       "World Tourism Day"
@@ -1775,9 +1777,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Atiganda",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2277,9 +2277,7 @@
     "nakshatra": "Chitra",
     "yoga": "Ayushman",
     "karana": "Vanija",
-    "festivals": [
-      "Kag Tihar"
-    ],
+    "festivals": [],
     "events": [
       "World Diabetes Day"
     ],
@@ -3369,7 +3367,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2020-11-14": {
     "tithi": "Chaturdashi",

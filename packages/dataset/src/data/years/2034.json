@@ -1363,7 +1363,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2034-05-05": {
     "tithi": "Ashtami",
@@ -1515,11 +1515,13 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "International Day of Charity"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2034-05-20": {
     "tithi": "Ashtami",
@@ -1527,9 +1529,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Vajra",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1669,9 +1669,7 @@
     "nakshatra": "Anuradha",
     "yoga": "Priti",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1681,9 +1679,7 @@
     "nakshatra": "Mula",
     "yoga": "Ayushman",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [
       "Constitution Day"
     ],
@@ -1695,9 +1691,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Saubhagya",
     "karana": "Balava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Peace"
     ],
@@ -1709,9 +1703,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2003,9 +1995,11 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Sukarma",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2034-07-03": {
     "tithi": "Navami",
@@ -2013,9 +2007,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Dhriti",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Maha Ashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2034-07-04": {
     "tithi": "Dashami",
@@ -2023,9 +2019,11 @@
     "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2034-07-05": {
     "tithi": "Ekadashi",
@@ -2033,9 +2031,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Ganda",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2034-07-06": {
     "tithi": "Dwadashi",
@@ -2230,7 +2230,8 @@
     "yoga": "Ayushman",
     "karana": "Shakuni",
     "festivals": [
-      "Kukur Tihar"
+      "Kukur Tihar",
+      "Laxmi Puja"
     ],
     "events": [
       "World Science Day for Peace and Development"
@@ -3334,9 +3335,7 @@
     "nakshatra": "Magha",
     "yoga": "Sukarma",
     "karana": "Bava",
-    "festivals": [
-      "Holi / Phagu Purnima"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

@@ -1423,9 +1423,7 @@
     "nakshatra": "Hasta",
     "yoga": "Shubha",
     "karana": "Garaja",
-    "festivals": [
-      "Teej"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1471,7 +1469,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2063-05-15": {
     "tithi": "Ashtami",
@@ -2028,7 +2026,6 @@
     "yoga": "Vaidhriti",
     "karana": "Shakuni",
     "festivals": [
-      "Kukur Tihar",
       "Laxmi Puja"
     ],
     "events": [],

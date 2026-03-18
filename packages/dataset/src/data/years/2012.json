@@ -1713,9 +1713,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Ayushman",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1725,9 +1723,7 @@
     "nakshatra": "Mula",
     "yoga": "Saubhagya",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1737,9 +1733,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Shobhana",
     "karana": "Balava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1749,9 +1743,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Atiganda",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2032,7 +2024,8 @@
     "yoga": "Atiganda",
     "karana": "Taitila",
     "festivals": [
-      "Chhath Puja"
+      "Chhath Puja",
+      "Fulpati"
     ],
     "events": [],
     "isHoliday": true
@@ -2043,9 +2036,11 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Sukarma",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Ashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2012-07-07": {
     "tithi": "Ashtami",
@@ -2053,11 +2048,13 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Dhriti",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [
       "United Nations Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2012-07-08": {
     "tithi": "Navami",
@@ -2065,9 +2062,11 @@
     "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2012-07-09": {
     "tithi": "Dashami",
@@ -2274,9 +2273,7 @@
     "nakshatra": "Vishakha",
     "yoga": "Saubhagya",
     "karana": "Naga",
-    "festivals": [
-      "Laxmi Puja"
-    ],
+    "festivals": [],
     "events": [
       "World Diabetes Day"
     ],
@@ -3343,7 +3340,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2012-11-13": {
     "tithi": "Chaturdashi",
@@ -3497,9 +3494,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2012-11-28": {
     "tithi": "Chaturdashi",
@@ -3507,9 +3506,7 @@
     "nakshatra": "Shatabhisha",
     "yoga": "Siddha",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

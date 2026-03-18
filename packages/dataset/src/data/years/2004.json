@@ -1153,9 +1153,7 @@
     "nakshatra": "Shravana",
     "yoga": "Ayushman",
     "karana": "Bava",
-    "festivals": [
-      "Janai Purnima / Raksha Bandhan"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1531,9 +1529,11 @@
     "nakshatra": "Krittika",
     "yoga": "Harsha",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2004-05-22": {
     "tithi": "Ashtami",
@@ -1541,9 +1541,7 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "International Literacy Day"
     ],
@@ -1685,9 +1683,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Priti",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Peace"
     ],
@@ -1699,9 +1695,7 @@
     "nakshatra": "Mula",
     "yoga": "Ayushman",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1711,9 +1705,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Saubhagya",
     "karana": "Balava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1723,9 +1715,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2017,9 +2007,11 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Sukarma",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2004-07-05": {
     "tithi": "Ashtami",
@@ -2027,9 +2019,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Dhriti",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Maha Ashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2004-07-06": {
     "tithi": "Navami",
@@ -2037,9 +2031,11 @@
     "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2004-07-07": {
     "tithi": "Dashami",
@@ -2047,11 +2043,13 @@
     "nakshatra": "Dhanishta",
     "yoga": "Ganda",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [
       "United Nations Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2004-07-08": {
     "tithi": "Ekadashi",
@@ -3330,7 +3328,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2004-11-12": {
     "tithi": "Purnima",
@@ -3472,11 +3470,13 @@
     "nakshatra": "Shravana",
     "yoga": "Shiva",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [
       "International Women's Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2004-11-26": {
     "tithi": "Chaturdashi",
@@ -3484,9 +3484,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Siddha",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

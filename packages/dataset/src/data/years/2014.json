@@ -1339,9 +1339,11 @@
     "nakshatra": "Bharani",
     "yoga": "Vriddhi",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2014-05-02": {
     "tithi": "Ashtami",
@@ -1349,9 +1351,7 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "World Humanitarian Day"
     ],
@@ -1481,7 +1481,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2014-05-15": {
     "tithi": "Ashtami",
@@ -1647,11 +1647,13 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "World Ozone Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2014-05-31": {
     "tithi": "Ashtami",
@@ -1659,9 +1661,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Siddhi",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3277,9 +3277,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Vyatipata",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2014-11-05": {
     "tithi": "Chaturdashi",
@@ -3287,9 +3289,7 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3449,7 +3449,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2014-11-21": {
     "tithi": "Purnima",

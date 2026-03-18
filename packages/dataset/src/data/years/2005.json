@@ -1421,9 +1421,11 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2005-05-11": {
     "tithi": "Ashtami",
@@ -1431,9 +1433,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3365,9 +3365,11 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2005-11-14": {
     "tithi": "Chaturdashi",
@@ -3375,9 +3377,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Parigha",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3533,7 +3533,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2005-11-30": {
     "tithi": "Purnima",

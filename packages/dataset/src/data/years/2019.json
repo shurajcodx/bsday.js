@@ -1535,7 +1535,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2019-05-21": {
     "tithi": "Ashtami",
@@ -1839,11 +1839,13 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Saubhagya",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [
       "World Teachers Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2019-06-19": {
     "tithi": "Saptami",
@@ -1852,7 +1854,7 @@
     "yoga": "Shobhana",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1864,7 +1866,7 @@
     "yoga": "Atiganda",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1876,7 +1878,7 @@
     "yoga": "Sukarma",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [],
     "isHoliday": true
@@ -1887,9 +1889,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "World Post Day"
     ],
@@ -2086,7 +2086,8 @@
     "yoga": "Vishkumbha",
     "karana": "Shakuni",
     "festivals": [
-      "Kukur Tihar"
+      "Kukur Tihar",
+      "Laxmi Puja"
     ],
     "events": [],
     "isHoliday": true
@@ -2097,9 +2098,7 @@
     "nakshatra": "Chitra",
     "yoga": "Priti",
     "karana": "Naga",
-    "festivals": [
-      "Laxmi Puja"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3472,7 +3471,7 @@
     "events": [
       "International Women's Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2019-11-25": {
     "tithi": "Chaturdashi",

@@ -25,5 +25,27 @@
   },
   "dependencies": {
     "@bsday/dataset": "workspace:*"
-  }
+  },
+  "author": "shurajcodx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shurajcodx/bsday.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shurajcodx/bsday.js/issues"
+  },
+  "homepage": "https://github.com/shurajcodx/bsday.js#readme",
+  "keywords": [
+    "nepali",
+    "calendar",
+    "bs",
+    "ad",
+    "bikram",
+    "sambat",
+    "date",
+    "nepali-date",
+    "panchang",
+    "typescript",
+    "javascript"
+  ]
 }

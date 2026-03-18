@@ -1501,7 +1501,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2049-05-18": {
     "tithi": "Ashtami",
@@ -1809,9 +1809,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Saubhagya",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3302,9 +3300,7 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Shakuni",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [
       "World Day of Social Justice"
     ],
@@ -3452,7 +3448,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2049-11-23": {
     "tithi": "Chaturdashi",

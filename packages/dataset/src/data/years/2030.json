@@ -1511,7 +1511,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2030-05-19": {
     "tithi": "Ashtami",
@@ -1858,7 +1858,7 @@
     "yoga": "Sukarma",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [],
     "isHoliday": true
@@ -1869,9 +1869,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3451,7 +3449,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2030-11-23": {
     "tithi": "Chaturdashi",

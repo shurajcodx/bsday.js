@@ -24,5 +24,28 @@
   },
   "engines": {
     "node": ">=20"
-  }
+  },
+  "description": "A comprehensive dual-calendar BS/AD date library for JavaScript/TypeScript with panchang data",
+  "author": "shurajcodx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shurajcodx/bsday.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shurajcodx/bsday.js/issues"
+  },
+  "homepage": "https://github.com/shurajcodx/bsday.js#readme",
+  "keywords": [
+    "nepali",
+    "calendar",
+    "bs",
+    "ad",
+    "bikram",
+    "sambat",
+    "date",
+    "nepali-date",
+    "panchang",
+    "typescript",
+    "javascript"
+  ]
 }

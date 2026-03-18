@@ -1573,9 +1573,11 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2039-05-25": {
     "tithi": "Ashtami",
@@ -1583,9 +1585,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Siddhi",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2048,7 +2048,8 @@
     "yoga": "Sukarma",
     "karana": "Taitila",
     "festivals": [
-      "Chhath Puja"
+      "Chhath Puja",
+      "Fulpati"
     ],
     "events": [],
     "isHoliday": true
@@ -2059,11 +2060,13 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Sukarma",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Ashtami"
+    ],
     "events": [
       "United Nations Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2039-07-08": {
     "tithi": "Ashtami",
@@ -2071,9 +2074,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Dhriti",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2039-07-09": {
     "tithi": "Navami",
@@ -2081,9 +2086,11 @@
     "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2039-07-10": {
     "tithi": "Dashami",
@@ -3356,7 +3363,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2039-11-14": {
     "tithi": "Chaturdashi",
@@ -3510,9 +3517,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2039-11-29": {
     "tithi": "Chaturdashi",
@@ -3520,9 +3529,7 @@
     "nakshatra": "Shatabhisha",
     "yoga": "Siddha",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

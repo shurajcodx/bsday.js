@@ -1421,9 +1421,11 @@
     "nakshatra": "Bharani",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2024-05-11": {
     "tithi": "Ashtami",
@@ -1431,9 +1433,7 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1577,7 +1577,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2024-05-25": {
     "tithi": "Ashtami",
@@ -1894,7 +1894,7 @@
     "yoga": "Atiganda",
     "karana": "Vishti",
     "festivals": [
-      "Maha Ashtami"
+      "Fulpati"
     ],
     "events": [
       "World Mental Health Day"
@@ -1908,7 +1908,7 @@
     "yoga": "Sukarma",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Maha Ashtami"
     ],
     "events": [
       "International Day of the Girl Child"
@@ -1922,7 +1922,7 @@
     "yoga": "Dhriti",
     "karana": "Taitila",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1933,9 +1933,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shoola",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2024-06-27": {
     "tithi": "Ekadashi",

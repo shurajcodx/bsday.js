@@ -1381,9 +1381,11 @@
     "nakshatra": "Bharani",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2065-05-07": {
     "tithi": "Ashtami",
@@ -1391,9 +1393,7 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1545,7 +1545,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2065-05-22": {
     "tithi": "Ashtami",
@@ -1903,9 +1903,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "World Mental Health Day"
     ],
@@ -2125,9 +2123,7 @@
     "nakshatra": "Vishakha",
     "yoga": "Ayushman",
     "karana": "Bava",
-    "festivals": [
-      "Govardhan Puja / Mha Puja / Gai Puja"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3488,7 +3484,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2065-11-26": {
     "tithi": "Chaturdashi",

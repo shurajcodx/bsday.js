@@ -1403,9 +1403,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1559,7 +1557,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2035-05-24": {
     "tithi": "Ashtami",
@@ -1865,9 +1863,7 @@
     "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1878,7 +1874,7 @@
     "yoga": "Atiganda",
     "karana": "Vishti",
     "festivals": [
-      "Maha Ashtami"
+      "Fulpati"
     ],
     "events": [
       "World Post Day"
@@ -1892,7 +1888,7 @@
     "yoga": "Sukarma",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Maha Ashtami"
     ],
     "events": [
       "World Mental Health Day"
@@ -1906,7 +1902,7 @@
     "yoga": "Dhriti",
     "karana": "Taitila",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [
       "International Day of the Girl Child"
@@ -1919,9 +1915,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shoola",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2035-06-26": {
     "tithi": "Dwadashi",
@@ -3494,7 +3492,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2035-11-28": {
     "tithi": "Chaturdashi",

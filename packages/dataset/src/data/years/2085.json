@@ -1415,7 +1415,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2085-05-10": {
     "tithi": "Ashtami",
@@ -1517,9 +1517,7 @@
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Shoola",
     "karana": "Kaulava",
-    "festivals": [
-      "Gai Jatra"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Charity"
     ],
@@ -1583,9 +1581,11 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2085-05-26": {
     "tithi": "Ashtami",
@@ -1593,9 +1593,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Siddhi",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

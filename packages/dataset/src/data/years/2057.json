@@ -1369,9 +1369,11 @@
     "nakshatra": "Bharani",
     "yoga": "Dhruva",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2057-05-06": {
     "tithi": "Ashtami",
@@ -1379,9 +1381,7 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1523,7 +1523,7 @@
     "events": [
       "International Day of Charity"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2057-05-20": {
     "tithi": "Ashtami",
@@ -1868,7 +1868,7 @@
     "yoga": "Sukarma",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [],
     "isHoliday": true
@@ -1879,9 +1879,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2948,11 +2946,11 @@
     "isHoliday": false
   },
   "2057-10-04": {
-    "tithi": "Navami",
+    "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
     "yoga": "Shoola",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -3655,9 +3653,7 @@
     "nakshatra": "Uttara Bhadrapada",
     "yoga": "Brahma",
     "karana": "Naga",
-    "festivals": [
-      "Ghode Jatra"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

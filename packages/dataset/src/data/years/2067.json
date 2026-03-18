@@ -1099,9 +1099,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Priti",
     "karana": "Bava",
-    "festivals": [
-      "Janai Purnima / Raksha Bandhan"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1477,9 +1475,11 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2067-05-16": {
     "tithi": "Ashtami",
@@ -1487,9 +1487,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1619,7 +1617,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2067-05-29": {
     "tithi": "Ashtami",
@@ -2260,9 +2258,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Ganda",
     "karana": "Taitila",
-    "festivals": [
-      "Chhath Puja"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3273,7 +3269,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2067-11-05": {
     "tithi": "Chaturdashi",
@@ -3419,9 +3415,11 @@
     "nakshatra": "Shravana",
     "yoga": "Parigha",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2067-11-19": {
     "tithi": "Chaturdashi",
@@ -3429,9 +3427,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [
       "World Wildlife Day"
     ],

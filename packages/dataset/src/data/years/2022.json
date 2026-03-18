@@ -1337,11 +1337,13 @@
     "nakshatra": "Bharani",
     "yoga": "Vriddhi",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "World Humanitarian Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2022-05-03": {
     "tithi": "Ashtami",
@@ -1349,9 +1351,7 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1491,7 +1491,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2022-05-17": {
     "tithi": "Ashtami",
@@ -1595,9 +1595,7 @@
     "nakshatra": "Uttara Bhadrapada",
     "yoga": "Ganda",
     "karana": "Kaulava",
-    "festivals": [
-      "Gai Jatra"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1797,9 +1795,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Saubhagya",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Older Persons"
     ],
@@ -1811,9 +1807,7 @@
     "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1823,9 +1817,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Atiganda",
     "karana": "Bava",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1835,9 +1827,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Sukarma",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1847,9 +1837,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "World Teachers Day"
     ],
@@ -3442,7 +3430,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2022-11-22": {
     "tithi": "Chaturdashi",

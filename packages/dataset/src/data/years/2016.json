@@ -1567,7 +1567,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2016-05-24": {
     "tithi": "Ashtami",
@@ -1871,9 +1871,7 @@
     "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1884,7 +1882,7 @@
     "yoga": "Atiganda",
     "karana": "Vishti",
     "festivals": [
-      "Maha Ashtami"
+      "Fulpati"
     ],
     "events": [
       "World Post Day"
@@ -1898,7 +1896,7 @@
     "yoga": "Sukarma",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Maha Ashtami"
     ],
     "events": [
       "World Mental Health Day"
@@ -1912,7 +1910,7 @@
     "yoga": "Dhriti",
     "karana": "Taitila",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [
       "International Day of the Girl Child"
@@ -1925,9 +1923,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shoola",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2016-06-26": {
     "tithi": "Dwadashi",
@@ -3509,7 +3509,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2016-11-29": {
     "tithi": "Chaturdashi",

@@ -1449,7 +1449,7 @@
     "events": [
       "International Day Against Nuclear Tests"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2055-05-13": {
     "tithi": "Ashtami",
@@ -1593,9 +1593,11 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2055-05-27": {
     "tithi": "Ashtami",
@@ -1603,9 +1605,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Siddhi",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1755,11 +1755,13 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Ayushman",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [
       "World Tourism Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2055-06-11": {
     "tithi": "Saptami",
@@ -1768,7 +1770,7 @@
     "yoga": "Saubhagya",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1780,7 +1782,7 @@
     "yoga": "Shobhana",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1792,7 +1794,7 @@
     "yoga": "Atiganda",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [],
     "isHoliday": true
@@ -1803,9 +1805,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Sukarma",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Older Persons"
     ],
@@ -3397,7 +3397,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2055-11-17": {
     "tithi": "Chaturdashi",

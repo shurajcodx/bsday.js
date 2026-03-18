@@ -1475,9 +1475,11 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2048-05-16": {
     "tithi": "Ashtami",
@@ -1485,9 +1487,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1631,7 +1631,7 @@
     "events": [
       "International Day of Democracy"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2048-05-30": {
     "tithi": "Ashtami",
@@ -1661,9 +1661,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1943,9 +1941,11 @@
     "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2048-06-28": {
     "tithi": "Saptami",
@@ -1954,7 +1954,7 @@
     "yoga": "Atiganda",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1966,7 +1966,7 @@
     "yoga": "Sukarma",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [
       "World Food Day"
@@ -1980,7 +1980,7 @@
     "yoga": "Dhriti",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [],
     "isHoliday": true
@@ -2180,7 +2180,8 @@
     "yoga": "Priti",
     "karana": "Shakuni",
     "festivals": [
-      "Kukur Tihar"
+      "Kukur Tihar",
+      "Laxmi Puja"
     ],
     "events": [],
     "isHoliday": true
@@ -2191,9 +2192,7 @@
     "nakshatra": "Swati",
     "yoga": "Ayushman",
     "karana": "Naga",
-    "festivals": [
-      "Laxmi Puja"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3272,7 +3271,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2048-11-05": {
     "tithi": "Chaturdashi",
@@ -3440,9 +3439,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Shakuni",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [
       "World Wildlife Day"
     ],

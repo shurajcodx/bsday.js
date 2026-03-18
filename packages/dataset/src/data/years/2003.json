@@ -1337,11 +1337,13 @@
     "nakshatra": "Bharani",
     "yoga": "Vriddhi",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "World Humanitarian Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2003-05-03": {
     "tithi": "Ashtami",
@@ -1349,9 +1351,7 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1501,7 +1501,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2003-05-18": {
     "tithi": "Ashtami",
@@ -1846,7 +1846,7 @@
     "yoga": "Sukarma",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [
       "World Teachers Day"
@@ -1859,9 +1859,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2081,9 +2079,7 @@
     "nakshatra": "Vishakha",
     "yoga": "Ayushman",
     "karana": "Bava",
-    "festivals": [
-      "Govardhan Puja / Mha Puja / Gai Puja"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3442,7 +3438,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2003-11-22": {
     "tithi": "Chaturdashi",

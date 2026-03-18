@@ -1373,7 +1373,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2023-05-06": {
     "tithi": "Ashtami",
@@ -1475,9 +1475,7 @@
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Dhriti",
     "karana": "Kaulava",
-    "festivals": [
-      "Gai Jatra"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1539,9 +1537,11 @@
     "nakshatra": "Krittika",
     "yoga": "Harsha",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2023-05-22": {
     "tithi": "Ashtami",
@@ -1549,9 +1549,7 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "International Literacy Day"
     ],
@@ -1693,9 +1691,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Ayushman",
     "karana": "Vanija",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Peace"
     ],
@@ -1707,9 +1703,7 @@
     "nakshatra": "Mula",
     "yoga": "Saubhagya",
     "karana": "Bava",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1719,9 +1713,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Shobhana",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1731,9 +1723,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Atiganda",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

@@ -1908,7 +1908,7 @@
     "yoga": "Sukarma",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Maha Ashtami"
     ],
     "events": [
       "International Day of the Girl Child"
@@ -1922,7 +1922,7 @@
     "yoga": "Dhriti",
     "karana": "Taitila",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1933,9 +1933,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shoola",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2043-06-27": {
     "tithi": "Dwadashi",
@@ -3517,7 +3519,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2043-11-30": {
     "tithi": "Chaturdashi",

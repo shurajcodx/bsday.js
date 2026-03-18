@@ -1497,9 +1497,7 @@
     "nakshatra": "Purva Phalguni",
     "yoga": "Siddha",
     "karana": "Naga",
-    "festivals": [
-      "Kushe Aunsi (Fathers' Day)"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1579,7 +1577,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2081-05-25": {
     "tithi": "Ashtami",
@@ -1883,11 +1881,13 @@
     "nakshatra": "Mula",
     "yoga": "Saubhagya",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [
       "World Post Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2081-06-23": {
     "tithi": "Saptami",
@@ -1896,7 +1896,7 @@
     "yoga": "Atiganda",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [
       "World Mental Health Day"
@@ -1910,7 +1910,7 @@
     "yoga": "Sukarma",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [
       "International Day of the Girl Child"
@@ -1923,9 +1923,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2128,7 +2126,8 @@
     "yoga": "Vishkumbha",
     "karana": "Shakuni",
     "festivals": [
-      "Kukur Tihar"
+      "Kukur Tihar",
+      "Laxmi Puja"
     ],
     "events": [
       "Halloween"
@@ -2141,9 +2140,7 @@
     "nakshatra": "Swati",
     "yoga": "Priti",
     "karana": "Naga",
-    "festivals": [
-      "Laxmi Puja"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3514,7 +3511,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2081-11-29": {
     "tithi": "Chaturdashi",

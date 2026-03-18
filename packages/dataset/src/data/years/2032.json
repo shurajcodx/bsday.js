@@ -1441,11 +1441,13 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "International Day Against Nuclear Tests"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2032-05-13": {
     "tithi": "Ashtami",
@@ -1453,9 +1455,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1905,9 +1905,7 @@
     "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [
       "International Day of the Girl Child"
     ],
@@ -1919,9 +1917,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Atiganda",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1931,9 +1927,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Sukarma",
     "karana": "Balava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1943,9 +1937,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

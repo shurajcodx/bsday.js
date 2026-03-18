@@ -3,5 +3,25 @@
         "removeFestivals": [
             "Laxmi Puja"
         ]
+    },
+    "2081-06-25": {
+        "removeFestivals": [
+            "Vijaya Dashami"
+        ]
+    },
+    "2081-06-26": {
+        "addFestivals": [
+            "Vijaya Dashami"
+        ]
+    },
+    "2082-06-14": {
+        "removeFestivals": [
+            "Vijaya Dashami"
+        ]
+    },
+    "2082-06-15": {
+        "addFestivals": [
+            "Vijaya Dashami"
+        ]
     }
 }

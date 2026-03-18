@@ -1190,7 +1190,7 @@
     "paksha": "Krishna",
     "nakshatra": "Rohini",
     "yoga": "Dhruva",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -1669,9 +1669,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Saubhagya",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1895,9 +1893,7 @@
     "nakshatra": "Chitra",
     "yoga": "Vaidhriti",
     "karana": "Bava",
-    "festivals": [
-      "Ghatasthapana"
-    ],
+    "festivals": [],
     "events": [
       "World Post Day"
     ],
@@ -1953,9 +1949,11 @@
     "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2010-06-28": {
     "tithi": "Saptami",
@@ -1964,7 +1962,7 @@
     "yoga": "Atiganda",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1976,7 +1974,7 @@
     "yoga": "Sukarma",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [
       "World Food Day"
@@ -1990,7 +1988,7 @@
     "yoga": "Dhriti",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [],
     "isHoliday": true
@@ -2005,7 +2003,7 @@
     "events": [
       "Kartik Sankranti"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2010-07-02": {
     "tithi": "Ekadashi",
@@ -3272,7 +3270,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2010-11-04": {
     "tithi": "Chaturdashi",

@@ -1149,7 +1149,7 @@
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
-    "yoga": "Dhriti",
+    "yoga": "Shoola",
     "karana": "Vishti",
     "festivals": [],
     "events": [],
@@ -1451,11 +1451,13 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "International Day Against Nuclear Tests"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2002-05-13": {
     "tithi": "Ashtami",
@@ -1463,9 +1465,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1627,7 +1627,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2002-05-29": {
     "tithi": "Ashtami",
@@ -2201,9 +2201,7 @@
     "nakshatra": "Vishakha",
     "yoga": "Saubhagya",
     "karana": "Bava",
-    "festivals": [
-      "Govardhan Puja / Mha Puja / Gai Puja"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3260,7 +3258,7 @@
     "events": [
       "Valentine's Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2002-11-03": {
     "tithi": "Chaturdashi",

@@ -1349,9 +1349,11 @@
     "nakshatra": "Bharani",
     "yoga": "Vriddhi",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2087-05-04": {
     "tithi": "Ashtami",
@@ -1359,9 +1361,7 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1511,7 +1511,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2087-05-19": {
     "tithi": "Ashtami",
@@ -1819,9 +1819,7 @@
     "nakshatra": "Mula",
     "yoga": "Saubhagya",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1832,7 +1830,7 @@
     "yoga": "Shobhana",
     "karana": "Vishti",
     "festivals": [
-      "Maha Ashtami"
+      "Fulpati"
     ],
     "events": [],
     "isHoliday": true
@@ -1844,7 +1842,7 @@
     "yoga": "Atiganda",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Maha Ashtami"
     ],
     "events": [
       "World Teachers Day"
@@ -1858,7 +1856,7 @@
     "yoga": "Sukarma",
     "karana": "Garaja",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1869,9 +1867,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Dhriti",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2087-06-21": {
     "tithi": "Dwadashi",
@@ -3308,9 +3308,7 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [
       "World Day of Social Justice"
     ],
@@ -3468,7 +3466,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2087-11-24": {
     "tithi": "Chaturdashi",

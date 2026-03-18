@@ -1203,9 +1203,7 @@
     "nakshatra": "Shravana",
     "yoga": "Ayushman",
     "karana": "Bava",
-    "festivals": [
-      "Janai Purnima / Raksha Bandhan"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1585,19 +1583,19 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2066-05-26": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
-    "yoga": "Vajra",
+    "yoga": "Siddhi",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3518,9 +3516,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2066-12-01": {
     "tithi": "Amavasya",

@@ -27,8 +27,30 @@
     "create:year": "node scripts/create-year-template.mjs",
     "prepublishOnly": "npm run build:aggregate && npm run build"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "swisseph-v2": "1.0.4"
-  }
+  },
+  "devDependencies": {},
+  "author": "shurajcodx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shurajcodx/bsday.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shurajcodx/bsday.js/issues"
+  },
+  "homepage": "https://github.com/shurajcodx/bsday.js#readme",
+  "keywords": [
+    "nepali",
+    "calendar",
+    "bs",
+    "ad",
+    "bikram",
+    "sambat",
+    "date",
+    "nepali-date",
+    "panchang",
+    "typescript",
+    "javascript"
+  ]
 }

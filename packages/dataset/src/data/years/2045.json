@@ -1329,9 +1329,7 @@
     "nakshatra": "Chitra",
     "yoga": "Shubha",
     "karana": "Balava",
-    "festivals": [
-      "Rishi Panchami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1355,7 +1353,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2045-05-04": {
     "tithi": "Ashtami",
@@ -1487,9 +1485,11 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2045-05-17": {
     "tithi": "Ashtami",
@@ -1497,9 +1497,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1663,9 +1661,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Priti",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1675,9 +1671,7 @@
     "nakshatra": "Mula",
     "yoga": "Ayushman",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1687,9 +1681,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Saubhagya",
     "karana": "Balava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [
       "Constitution Day"
     ],
@@ -1701,9 +1693,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Shobhana",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Peace"
     ],
@@ -1981,9 +1971,11 @@
     "nakshatra": "Mula",
     "yoga": "Atiganda",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2045-07-01": {
     "tithi": "Saptami",
@@ -1991,11 +1983,13 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Sukarma",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Ashtami"
+    ],
     "events": [
       "Kartik Sankranti"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2045-07-02": {
     "tithi": "Navami",
@@ -2003,9 +1997,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Dhriti",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2045-07-03": {
     "tithi": "Dashami",
@@ -2013,9 +2009,11 @@
     "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2045-07-04": {
     "tithi": "Ekadashi",
@@ -3292,7 +3290,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2045-11-07": {
     "tithi": "Chaturdashi",

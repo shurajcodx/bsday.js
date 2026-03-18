@@ -1391,9 +1391,11 @@
     "nakshatra": "Bharani",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2084-05-08": {
     "tithi": "Ashtami",
@@ -1401,9 +1403,7 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1545,7 +1545,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2084-05-22": {
     "tithi": "Ashtami",
@@ -1851,9 +1851,7 @@
     "nakshatra": "Mula",
     "yoga": "Saubhagya",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1863,9 +1861,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Shobhana",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1875,9 +1871,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Atiganda",
     "karana": "Bava",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1887,9 +1881,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Sukarma",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [
       "World Post Day"
     ],
@@ -1901,9 +1893,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "World Mental Health Day"
     ],
@@ -3494,7 +3484,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2084-11-27": {
     "tithi": "Chaturdashi",

@@ -1,16 +1,18 @@
 # @bsday/dataset
 
-Bikram Sambat (BS) calendar dataset keyed by `YYYY-MM-DD`, including **tithi, nakshatra, yoga, karana, festivals, events, and holiday info**.
-Supports **dynamic Nepali translations** for all core fields.
+Bikram Sambat (BS) calendar dataset and engine, including **tithi, paksha, nakshatra, yoga, karana, festivals, events, and holiday info**.
+
+Supports **dynamic Nepali translations** for all core fields and provides astronomical engines for on-the-fly calculations.
 
 ---
 
 ## Features
 
-* **BS date keyed dataset**: Access any date from 2000–2089.
+* **BS date keyed dataset**: Access any date from 2000–2090.
+* **Panchang Engine**: High-level astronomical engine for Tithi, Nakshatra, etc.
+* **Festival Engine**: Advanced rule-based festival generator (Sunrise, Sunset, Night, Relative rules).
 * **English & Nepali support**: Includes `dataset` (English) and `datasetNepali`.
-* **TypeScript ready**: Types exported for safer usage.
-* **Complete dataset**: All dates include tithi, nakshatra, yoga, karana, festivals, events, and holiday info.
+* **TypeScript ready**: Fully typed interfaces for all data and engines.
 
 ---
 
@@ -18,9 +20,10 @@ Supports **dynamic Nepali translations** for all core fields.
 
 ```ts
 interface BSDayData {
-  tithi: string;        // Lunar day
+  tithi: string;        // Lunar day (Pratipada, Dvitiya, etc.)
+  paksha: string;       // Lunar phase (Shukla, Krishna)
   festivals: string[];  // Religious/cultural festivals (Dashain, Tihar, Holi, etc.)
-  events: string[];     // Secular/cultural observances (Women's Day, Labour Day, etc.)
+  events: string[];     // Secular/cultural observances (Women's Day, Sankranti, etc.)
   isHoliday: boolean;   // True if it's a public/government holiday
   nakshatra: string;    // Lunar mansion
   yoga: string;         // Astrological yoga
@@ -36,68 +39,58 @@ type BSDayDataset = Record<string, BSDayData>;
 
 ```bash
 npm install @bsday/dataset
-# or
-pnpm add @bsday/dataset
-# or
-yarn add @bsday/dataset
 ```
 
 ---
 
-## Usage
+## Basic Usage
 
 ```ts
 import { dataset, datasetNepali, BSDayData } from '@bsday/dataset';
 
 // English dataset
-const englishDay: BSDayData = dataset['2082-11-24'];
-console.log(englishDay.tithi);      // "Panchami"
-console.log(englishDay.festivals);  // ["Nari Divas"]
-console.log(englishDay.isHoliday);  // true/false
+const day: BSDayData = dataset['2081-06-25'];
+console.log(day.tithi);      // "Navami"
+console.log(day.festivals);  // ["Vijaya Dashami"]
+console.log(day.isHoliday);  // true
 
-// Nepali dataset (dynamic translation)
-const nepaliDay: BSDayData = datasetNepali['2082-11-24'];
-console.log(nepaliDay.tithi);       // "पञ्चमी"
-console.log(nepaliDay.festivals);   // ["नारी दिवस"]
-console.log(nepaliDay.isHoliday);   // true/false
+// Nepali dataset
+const nepaliDay = datasetNepali['2081-06-25'];
+console.log(nepaliDay.tithi); // "नवमी"
 ```
-
-* `dataset` → English names
-* `datasetNepali` → Nepali translations (tithi, nakshatra, yoga, karana, festivals, events, isHoliday)
 
 ---
 
-## Notes
+## Advanced: Engines
 
-* Dataset coverage: **BS 2000–2089**.
-* Fully typed for **TypeScript** users.
-* Includes **all known festivals, events, and public holidays**.
+The package exports robust engines for astronomical and calendrical calculations.
+
+### Panchang Engine
+Calculate astronomical data for any date/time using the Swiss Ephemeris.
+
+```ts
+import { PanchangEngine } from '@bsday/dataset';
+
+const date = new Date('2024-10-12');
+const panchang = PanchangEngine.computePanchang(date);
+
+console.log(panchang.tithi); // "Dashami"
+console.log(panchang.paksha); // "Shukla"
+```
+
+### Festival Engine
+Generate festivals based on complex rules including Sunrise, Sunset, Night, and Relative rules.
+
+```ts
+import { FestivalEngine, FestivalRule } from '@bsday/dataset';
+
+const rules: FestivalRule[] = [...]; // Your festival rules
+const engine = new FestivalEngine();
+const results = engine.computeFestivals(yearData, rules, overrides);
+```
 
 ---
 
-## Type Exports
-
-```ts
-import type { BSDayData, BSDayDataset } from '@bsday/dataset';
-```
-
-* `BSDayData` → type for a single day
-* `BSDayDataset` → type for the entire dataset
-
----
-
-## Examples
-
-### Get all festivals on a date
-
-```ts
-const festivalsToday = dataset['2082-11-24'].festivals;
-console.log(festivalsToday); // ["Nari Divas"]
-```
-
-### Check if a date is a public holiday
-
-```ts
-const isHoliday = dataset['2082-11-24'].isHoliday;
-console.log(isHoliday); // true/false
-```
+## Dataset Coverage
+* Coverage: **BS 2000–2090**.
+* Includes **all major Nepali festivals** (Dashain, Tihar, Shivaratri, etc.) accurately calculated using rule-based timing.

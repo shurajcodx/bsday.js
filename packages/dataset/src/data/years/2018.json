@@ -1475,9 +1475,11 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2018-05-16": {
     "tithi": "Ashtami",
@@ -1485,9 +1487,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1573,9 +1573,7 @@
     "nakshatra": "Purva Phalguni",
     "yoga": "Sadhya",
     "karana": "Naga",
-    "festivals": [
-      "Kushe Aunsi (Fathers' Day)"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1655,7 +1653,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2018-06-01": {
     "tithi": "Ashtami",
@@ -1663,9 +1661,7 @@
     "nakshatra": "Mula",
     "yoga": "Ayushman",
     "karana": "Bava",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1675,9 +1671,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Saubhagya",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1687,9 +1681,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Shobhana",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "Constitution Day"
     ],
@@ -1995,11 +1987,13 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [
       "Kartik Sankranti"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2018-07-02": {
     "tithi": "Dashami",
@@ -2007,9 +2001,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shoola",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2018-07-03": {
     "tithi": "Ekadashi",
@@ -3285,7 +3281,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2018-11-06": {
     "tithi": "Chaturdashi",
@@ -3443,9 +3439,11 @@
     "nakshatra": "Shravana",
     "yoga": "Parigha",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2018-11-21": {
     "tithi": "Chaturdashi",
@@ -3453,9 +3451,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

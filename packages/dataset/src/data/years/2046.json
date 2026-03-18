@@ -1381,9 +1381,11 @@
     "nakshatra": "Bharani",
     "yoga": "Dhruva",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2046-05-07": {
     "tithi": "Ashtami",
@@ -1391,9 +1393,7 @@
     "nakshatra": "Rohini",
     "yoga": "Vyaghata",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1853,9 +1853,11 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Saubhagya",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2046-06-20": {
     "tithi": "Saptami",
@@ -1864,7 +1866,7 @@
     "yoga": "Shobhana",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1876,7 +1878,7 @@
     "yoga": "Atiganda",
     "karana": "Vishti",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1888,7 +1890,7 @@
     "yoga": "Sukarma",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [
       "World Post Day"
@@ -1901,9 +1903,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "World Mental Health Day"
     ],
@@ -3334,9 +3334,11 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2046-11-12": {
     "tithi": "Chaturdashi",
@@ -3344,9 +3346,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Parigha",
     "karana": "Shakuni",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3482,7 +3482,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2046-11-26": {
     "tithi": "Chaturdashi",

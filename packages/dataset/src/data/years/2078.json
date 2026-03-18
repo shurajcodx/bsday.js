@@ -1441,11 +1441,13 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "International Day Against Nuclear Tests"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2078-05-13": {
     "tithi": "Ashtami",
@@ -1453,9 +1455,7 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1607,7 +1607,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2078-05-28": {
     "tithi": "Ashtami",
@@ -1919,9 +1919,7 @@
     "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1932,7 +1930,7 @@
     "yoga": "Sukarma",
     "karana": "Vishti",
     "festivals": [
-      "Maha Ashtami"
+      "Fulpati"
     ],
     "events": [],
     "isHoliday": true
@@ -1944,7 +1942,7 @@
     "yoga": "Dhriti",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1956,7 +1954,7 @@
     "yoga": "Shoola",
     "karana": "Taitila",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1967,11 +1965,13 @@
     "nakshatra": "Dhanishta",
     "yoga": "Ganda",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [
       "World Food Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2078-06-30": {
     "tithi": "Dwadashi",
@@ -3248,7 +3248,7 @@
     "events": [
       "Valentine's Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2078-11-03": {
     "tithi": "Chaturdashi",

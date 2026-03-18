@@ -1427,7 +1427,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2047-05-11": {
     "tithi": "Ashtami",
@@ -1581,9 +1581,11 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2047-05-26": {
     "tithi": "Ashtami",
@@ -1591,9 +1593,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Siddhi",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3233,9 +3233,7 @@
     "nakshatra": "Shravana",
     "yoga": "Vyatipata",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [
       "World Radio Day"
     ],

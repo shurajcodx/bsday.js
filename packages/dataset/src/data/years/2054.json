@@ -1391,9 +1391,11 @@
     "nakshatra": "Bharani",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2054-05-08": {
     "tithi": "Ashtami",
@@ -1401,9 +1403,7 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1567,7 +1567,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2054-05-24": {
     "tithi": "Ashtami",
@@ -1873,9 +1873,11 @@
     "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2054-06-22": {
     "tithi": "Saptami",
@@ -1884,7 +1886,7 @@
     "yoga": "Atiganda",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [
       "World Post Day"

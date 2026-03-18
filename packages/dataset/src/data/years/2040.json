@@ -1607,7 +1607,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2040-05-28": {
     "tithi": "Ashtami",
@@ -3258,7 +3258,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2040-11-04": {
     "tithi": "Chaturdashi",
@@ -3402,9 +3402,11 @@
     "nakshatra": "Shravana",
     "yoga": "Parigha",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2040-11-18": {
     "tithi": "Chaturdashi",
@@ -3412,9 +3414,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

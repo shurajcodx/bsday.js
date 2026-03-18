@@ -1329,9 +1329,7 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1639,11 +1637,13 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "World Ozone Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2052-05-31": {
     "tithi": "Ashtami",
@@ -1651,9 +1651,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Siddhi",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1828,7 +1826,7 @@
     "yoga": "Atiganda",
     "karana": "Taitila",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1839,9 +1837,11 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2052-06-18": {
     "tithi": "Dwadashi",
@@ -3439,7 +3439,7 @@
     "events": [
       "World Wildlife Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2052-11-21": {
     "tithi": "Chaturdashi",

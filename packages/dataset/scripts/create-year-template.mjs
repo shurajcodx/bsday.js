@@ -1,6 +1,6 @@
 import { writeFile, mkdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
-import computePanchang, { sunriseJD } from './compute-panchang.mjs';
+import computePanchang, { sunriseJD, findTithiTransition } from './compute-panchang.mjs';
 import { BSDay } from '../../core/dist/index.js';
 
 const year = parseInt(process.argv[2], 10);
@@ -30,14 +30,10 @@ const ALT = 1400;
 
 for (let m = 1; m <= 12; m++) {
   // Use core library to get correct number of days for this BS month
-  let monthDays;
   try {
-    monthDays = BSDay.fromBS([year, m, 1]).clone().setDay(1).addMonths(1).subtractDays(1).day; // A bit hacky but works
-    // Actually BSDay has getBsMonthDays exposed or we can use the manual lookup if we want to be faster
-    // but better to use what we fixed.
-    // For now a simpler way if we want to avoid complex logic:
-    // we can just check validity for each day.
-  } catch (e) {
+    const d = BSDay.fromBS([year, m, 1]).clone().setDay(1).addMonths(1).subtractDays(1).day;
+    if (!d) throw new Error();
+  } catch {
     console.error(`Error calculating month days for ${year}-${m}`);
     continue;
   }
@@ -60,6 +56,7 @@ for (let m = 1; m <= 12; m++) {
     );
 
     const panchang = computePanchang(jdSunrise);
+    const transition = findTithiTransition(jdSunrise);
 
     const adMonth = String(adDate.getUTCMonth() + 1).padStart(2, '0');
     const adDay = String(adDate.getUTCDate()).padStart(2, '0');
@@ -74,19 +71,37 @@ for (let m = 1; m <= 12; m++) {
       ...(bsEvents[bsKey] ?? [])
     ];
 
-    const identifiedFestivals = festivalRules
-      .filter(rule => {
-        const cond = rule.condition;
-        const tithiMatch = cond.tithi === panchang.tithi;
-        const monthMatch = cond.month === m;
-        const pakshaMatch = !cond.paksha || cond.paksha === panchang.paksha;
-        return tithiMatch && monthMatch && pakshaMatch;
-      })
-      .map(rule => rule.name);
+    let identifiedFestivals = [];
+    for (const rule of festivalRules) {
+      const cond = rule.condition || rule;
+      const type = cond.type || cond.time || 'sunrise';
+      const monthMatch = (cond.month === m);
+      if (!monthMatch) continue;
+
+      const pakshaMatch = !cond.paksha || cond.paksha === panchang.paksha;
+
+      if (type === 'sunrise') {
+        if (panchang.tithi === cond.tithi && pakshaMatch) {
+          identifiedFestivals.push(rule.name);
+        }
+      } else if (type === 'sunset') {
+        const sunsetJD = jdSunrise + 0.4;
+        if ((panchang.tithi === cond.tithi && pakshaMatch) ||
+          (transition?.nextTithi === cond.tithi && transition.transitionJD < sunsetJD)) {
+          identifiedFestivals.push(rule.name);
+        }
+      } else if (type === 'night') {
+        const nightJD = jdSunrise + 0.75;
+        if ((panchang.tithi === cond.tithi && pakshaMatch) ||
+          (transition?.nextTithi === cond.tithi && transition.transitionJD < nightJD)) {
+          identifiedFestivals.push(rule.name);
+        }
+      }
+    }
 
     dataset[dateKey] = {
       ...panchang,
-      festivals: identifiedFestivals,
+      festivals: [...new Set(identifiedFestivals)],
       events: mergedEvents,
       isHoliday: false
     };

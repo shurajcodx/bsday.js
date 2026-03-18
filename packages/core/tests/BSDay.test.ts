@@ -75,8 +75,9 @@ describe('BSDay core', () => {
   it('auto-loads bundled dataset by default', () => {
     const date = BSDay.fromBS([2082, 11, 24]);
     expect(date.tithi()).toBe('Panchami');
-    expect(date.festivals()).toContain('नारी दिवस');
+    expect(date.data()?.events).toContain("International Women's Day");
     expect(date.panchang()).toEqual({
+      paksha: 'Krishna',
       nakshatra: 'Swati',
       yoga: 'Dhruva',
       karana: 'Kaulava',
@@ -92,14 +93,20 @@ describe('BSDay core', () => {
     BSDay.setDataset({
       '2082-1-1': {
         tithi: 'Pratipada',
+        paksha: 'Shukla',
         festivals: ['Test Festival'],
+        events: [],
+        isHoliday: true,
         nakshatra: 'Ashwini',
         yoga: 'Vishkumbha',
         karana: 'Bava',
       },
       '2082-11-24': {
         tithi: 'Panchami',
+        paksha: 'Krishna',
         festivals: ['Nari Diwas'],
+        events: [],
+        isHoliday: false,
         nakshatra: 'Swati',
         yoga: 'Dhruva',
         karana: 'Kaulava',
@@ -113,6 +120,7 @@ describe('BSDay core', () => {
     expect(b.tithi()).toBe('Panchami');
     expect(a.festivals()).toEqual(['Test Festival']);
     expect(b.panchang()).toEqual({
+      paksha: 'Krishna',
       nakshatra: 'Swati',
       yoga: 'Dhruva',
       karana: 'Kaulava',
@@ -127,7 +135,10 @@ describe('BSDay core', () => {
         string,
         {
           tithi: string;
+          paksha: string;
           festivals: string[];
+          events: string[];
+          isHoliday: boolean;
           nakshatra: string;
           yoga: string;
           karana: string;

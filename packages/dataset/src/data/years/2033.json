@@ -1339,9 +1339,7 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1483,7 +1481,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2033-05-15": {
     "tithi": "Ashtami",
@@ -1649,11 +1647,13 @@
     "nakshatra": "Rohini",
     "yoga": "Siddhi",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "World Ozone Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2033-05-31": {
     "tithi": "Ashtami",
@@ -1661,9 +1661,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Vyatipata",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1802,7 +1800,7 @@
     "yoga": "Saubhagya",
     "karana": "Vishti",
     "festivals": [
-      "Maha Ashtami"
+      "Fulpati"
     ],
     "events": [],
     "isHoliday": true
@@ -1814,7 +1812,7 @@
     "yoga": "Shobhana",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Maha Ashtami"
     ],
     "events": [
       "International Day of Older Persons"
@@ -1828,7 +1826,7 @@
     "yoga": "Sukarma",
     "karana": "Taitila",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1839,9 +1837,11 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2033-06-17": {
     "tithi": "Dwadashi",

@@ -1371,9 +1371,11 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2038-05-06": {
     "tithi": "Ashtami",
@@ -1381,9 +1383,7 @@
     "nakshatra": "Rohini",
     "yoga": "Vyaghata",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2125,9 +2125,7 @@
     "nakshatra": "Anuradha",
     "yoga": "Saubhagya",
     "karana": "Kaulava",
-    "festivals": [
-      "Bhai Tika"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

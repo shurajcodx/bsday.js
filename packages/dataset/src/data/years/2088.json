@@ -1407,7 +1407,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2088-05-09": {
     "tithi": "Ashtami",
@@ -1551,11 +1551,13 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "International Literacy Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2088-05-23": {
     "tithi": "Ashtami",
@@ -1563,9 +1565,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Vajra",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1705,9 +1705,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Ayushman",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1717,9 +1715,7 @@
     "nakshatra": "Mula",
     "yoga": "Saubhagya",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1729,9 +1725,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Shobhana",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1741,9 +1735,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Atiganda",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2035,9 +2027,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Dhriti",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2088-07-07": {
     "tithi": "Navami",
@@ -2045,11 +2039,13 @@
     "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Maha Ashtami"
+    ],
     "events": [
       "United Nations Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2088-07-08": {
     "tithi": "Dashami",
@@ -2057,9 +2053,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Ganda",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2088-07-09": {
     "tithi": "Ekadashi",
@@ -2067,9 +2065,11 @@
     "nakshatra": "Shatabhisha",
     "yoga": "Vriddhi",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2088-07-10": {
     "tithi": "Dwadashi",
@@ -3338,7 +3338,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2088-11-13": {
     "tithi": "Chaturdashi",

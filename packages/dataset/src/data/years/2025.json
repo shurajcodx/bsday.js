@@ -1459,7 +1459,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2025-05-14": {
     "tithi": "Ashtami",
@@ -1613,9 +1613,11 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2025-05-29": {
     "tithi": "Ashtami",
@@ -1623,9 +1625,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Siddhi",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Democracy"
     ],
@@ -1767,9 +1767,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Ayushman",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1780,7 +1778,7 @@
     "yoga": "Saubhagya",
     "karana": "Vishti",
     "festivals": [
-      "Maha Ashtami"
+      "Fulpati"
     ],
     "events": [],
     "isHoliday": true
@@ -1792,7 +1790,7 @@
     "yoga": "Atiganda",
     "karana": "Balava",
     "festivals": [
-      "Maha Navami"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1804,7 +1802,7 @@
     "yoga": "Sukarma",
     "karana": "Taitila",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [
       "International Day of Older Persons"
@@ -1817,9 +1815,11 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2025-06-16": {
     "tithi": "Dwadashi",
@@ -3416,7 +3416,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2025-11-19": {
     "tithi": "Chaturdashi",

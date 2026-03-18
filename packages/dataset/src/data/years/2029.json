@@ -1463,9 +1463,11 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2029-05-15": {
     "tithi": "Navami",
@@ -1603,9 +1605,7 @@
     "nakshatra": "Vishakha",
     "yoga": "Vaidhriti",
     "karana": "Balava",
-    "festivals": [
-      "Rishi Panchami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1629,7 +1629,7 @@
     "events": [
       "International Day of Democracy"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2029-05-30": {
     "tithi": "Ashtami",
@@ -1659,9 +1659,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Shobhana",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1966,7 +1964,7 @@
     "yoga": "Dhriti",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [
       "World Food Day"
@@ -1980,7 +1978,7 @@
     "yoga": "Shoola",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [],
     "isHoliday": true
@@ -3262,7 +3260,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2029-11-04": {
     "tithi": "Chaturdashi",

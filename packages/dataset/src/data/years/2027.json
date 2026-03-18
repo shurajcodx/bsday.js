@@ -1371,9 +1371,11 @@
     "nakshatra": "Bharani",
     "yoga": "Dhruva",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2027-05-07": {
     "tithi": "Ashtami",
@@ -1381,9 +1383,7 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1547,7 +1547,7 @@
     "events": [
       "International Literacy Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2027-05-23": {
     "tithi": "Ashtami",
@@ -3323,9 +3323,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Variyana",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2027-11-12": {
     "tithi": "Chaturdashi",
@@ -3333,9 +3335,7 @@
     "nakshatra": "Shravana",
     "yoga": "Parigha",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3501,9 +3501,7 @@
     "nakshatra": "Purva Phalguni",
     "yoga": "Shoola",
     "karana": "Bava",
-    "festivals": [
-      "Holi / Phagu Purnima"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

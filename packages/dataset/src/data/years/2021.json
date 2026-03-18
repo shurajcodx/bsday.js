@@ -1607,7 +1607,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2021-05-28": {
     "tithi": "Ashtami",
@@ -1919,9 +1919,11 @@
     "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2021-06-26": {
     "tithi": "Saptami",
@@ -1930,7 +1932,7 @@
     "yoga": "Atiganda",
     "karana": "Vanija",
     "festivals": [
-      "Fulpati"
+      "Maha Ashtami"
     ],
     "events": [],
     "isHoliday": true
@@ -1942,7 +1944,7 @@
     "yoga": "Sukarma",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Maha Navami"
     ],
     "events": [],
     "isHoliday": true
@@ -1954,7 +1956,7 @@
     "yoga": "Dhriti",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Vijaya Dashami"
     ],
     "events": [],
     "isHoliday": true
@@ -1965,9 +1967,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shoola",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "World Food Day"
     ],
@@ -3249,7 +3249,7 @@
     "events": [
       "Valentine's Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2021-11-03": {
     "tithi": "Chaturdashi",

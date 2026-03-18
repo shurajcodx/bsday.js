@@ -1429,9 +1429,11 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2051-05-12": {
     "tithi": "Ashtami",
@@ -1439,9 +1441,7 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "International Day Against Nuclear Tests"
     ],
@@ -1903,9 +1903,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Atiganda",
     "karana": "Vanija",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [
       "International Day of the Girl Child"
     ],
@@ -1917,9 +1915,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Sukarma",
     "karana": "Bava",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1929,9 +1925,7 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1941,9 +1935,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shoola",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3234,7 +3226,7 @@
     "events": [
       "World Radio Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2051-11-02": {
     "tithi": "Chaturdashi",
@@ -3382,9 +3374,11 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2051-11-16": {
     "tithi": "Chaturdashi",
@@ -3392,9 +3386,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Parigha",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

@@ -1431,9 +1431,11 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2013-05-12": {
     "tithi": "Ashtami",
@@ -1441,9 +1443,7 @@
     "nakshatra": "Rohini",
     "yoga": "Vyaghata",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "International Day Against Nuclear Tests"
     ],
@@ -1587,7 +1587,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2013-05-26": {
     "tithi": "Ashtami",
@@ -1671,9 +1671,7 @@
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Shoola",
     "karana": "Vanija",
-    "festivals": [
-      "Indra Jatra"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3388,9 +3386,11 @@
     "nakshatra": "Shravana",
     "yoga": "Parigha",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2013-11-16": {
     "tithi": "Chaturdashi",
@@ -3398,9 +3398,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Shakuni",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3546,7 +3544,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2013-12-01": {
     "tithi": "Chaturdashi",

@@ -1363,7 +1363,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2015-05-05": {
     "tithi": "Ashtami",
@@ -1671,9 +1671,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Priti",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1683,9 +1681,7 @@
     "nakshatra": "Mula",
     "yoga": "Ayushman",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [
       "Constitution Day"
     ],
@@ -1697,9 +1693,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Saubhagya",
     "karana": "Balava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Peace"
     ],
@@ -1711,9 +1705,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2005,9 +1997,11 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Sukarma",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2015-07-03": {
     "tithi": "Ashtami",
@@ -2015,9 +2009,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Dhriti",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Maha Ashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2015-07-04": {
     "tithi": "Navami",
@@ -2025,9 +2021,11 @@
     "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Kaulava",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2015-07-05": {
     "tithi": "Dashami",
@@ -2035,9 +2033,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Ganda",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2015-07-06": {
     "tithi": "Ekadashi",
@@ -3317,7 +3317,7 @@
     "events": [
       "International Mother Language Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2015-11-10": {
     "tithi": "Chaturdashi",

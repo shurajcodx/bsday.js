@@ -1363,7 +1363,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2053-05-05": {
     "tithi": "Ashtami",
@@ -1505,9 +1505,11 @@
     "nakshatra": "Krittika",
     "yoga": "Harsha",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2053-05-19": {
     "tithi": "Ashtami",
@@ -1515,9 +1517,7 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Charity"
     ],
@@ -1679,9 +1679,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Ayushman",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [
       "Constitution Day"
     ],
@@ -1693,9 +1691,7 @@
     "nakshatra": "Mula",
     "yoga": "Saubhagya",
     "karana": "Balava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Peace"
     ],
@@ -1707,9 +1703,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2001,9 +1995,11 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Sukarma",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2053-07-03": {
     "tithi": "Ashtami",
@@ -2011,9 +2007,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Dhriti",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Maha Ashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2053-07-04": {
     "tithi": "Navami",
@@ -2021,9 +2019,11 @@
     "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Kaulava",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2053-07-05": {
     "tithi": "Ekadashi",
@@ -2031,9 +2031,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Ganda",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2053-07-06": {
     "tithi": "Dwadashi",
@@ -3303,7 +3305,7 @@
     "events": [
       "World Day of Social Justice"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2053-11-09": {
     "tithi": "Chaturdashi",

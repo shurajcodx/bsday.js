@@ -1345,11 +1345,13 @@
     "nakshatra": "Bharani",
     "yoga": "Vriddhi",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "World Humanitarian Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2060-05-03": {
     "tithi": "Ashtami",
@@ -1357,9 +1359,7 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1509,7 +1509,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2060-05-18": {
     "tithi": "Navami",
@@ -1815,9 +1815,7 @@
     "nakshatra": "Mula",
     "yoga": "Saubhagya",
     "karana": "Vanija",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1827,9 +1825,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Shobhana",
     "karana": "Bava",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1839,9 +1835,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Atiganda",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1851,9 +1845,7 @@
     "nakshatra": "Shravana",
     "yoga": "Sukarma",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "World Teachers Day"
     ],
@@ -3294,9 +3286,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Vyatipata",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2060-11-07": {
     "tithi": "Chaturdashi",
@@ -3304,9 +3298,7 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Shakuni",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [
       "National Democracy Day"
     ],

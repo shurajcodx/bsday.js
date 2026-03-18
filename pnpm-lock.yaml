@@ -45,7 +45,7 @@ importers:
   packages/dataset:
     dependencies:
       swisseph-v2:
-        specifier: ^1.0.4
+        specifier: 1.0.4
         version: 1.0.4
 
 packages:

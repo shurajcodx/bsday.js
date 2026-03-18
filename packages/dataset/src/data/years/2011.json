@@ -1181,9 +1181,7 @@
     "nakshatra": "Hasta",
     "yoga": "Siddha",
     "karana": "Balava",
-    "festivals": [
-      "Nag Panchami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1351,9 +1349,11 @@
     "nakshatra": "Bharani",
     "yoga": "Vriddhi",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2011-05-04": {
     "tithi": "Ashtami",
@@ -1361,9 +1361,7 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3302,11 +3300,13 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Vyatipata",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [
       "World Day of Social Justice"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2011-11-09": {
     "tithi": "Chaturdashi",
@@ -3314,9 +3314,7 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [
       "International Mother Language Day"
     ],
@@ -3452,7 +3450,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2011-11-23": {
     "tithi": "Chaturdashi",

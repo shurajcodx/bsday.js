@@ -1353,7 +1353,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2007-05-04": {
     "tithi": "Ashtami",
@@ -1517,9 +1517,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Vajra",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Charity"
     ],
@@ -1663,9 +1661,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Priti",
     "karana": "Vanija",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1675,9 +1671,7 @@
     "nakshatra": "Mula",
     "yoga": "Ayushman",
     "karana": "Bava",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1687,9 +1681,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Saubhagya",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [
       "Constitution Day"
     ],
@@ -1701,9 +1693,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Shobhana",
     "karana": "Garaja",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Peace"
     ],
@@ -1983,9 +1973,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Atiganda",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1995,11 +1983,13 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Sukarma",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Fulpati"
+    ],
     "events": [
       "Kartik Sankranti"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2007-07-02": {
     "tithi": "Navami",
@@ -2007,9 +1997,11 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Maha Ashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2007-07-03": {
     "tithi": "Dashami",
@@ -2017,9 +2009,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shoola",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2007-07-04": {
     "tithi": "Ekadashi",
@@ -2027,9 +2021,11 @@
     "nakshatra": "Shatabhisha",
     "yoga": "Ganda",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2007-07-05": {
     "tithi": "Dwadashi",

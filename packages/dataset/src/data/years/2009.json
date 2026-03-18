@@ -1571,9 +1571,11 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2009-05-25": {
     "tithi": "Ashtami",
@@ -1581,9 +1583,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Vajra",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3374,7 +3374,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2009-11-15": {
     "tithi": "Chaturdashi",
@@ -3528,9 +3528,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2009-11-30": {
     "tithi": "Chaturdashi",
@@ -3538,9 +3540,7 @@
     "nakshatra": "Shatabhisha",
     "yoga": "Siddha",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

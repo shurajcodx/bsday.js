@@ -1603,9 +1603,7 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3234,11 +3232,13 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Siddhi",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [
       "World Radio Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2074-11-02": {
     "tithi": "Chaturdashi",
@@ -3246,9 +3246,7 @@
     "nakshatra": "Shravana",
     "yoga": "Vyatipata",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [
       "Valentine's Day"
     ],
@@ -3398,7 +3396,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2074-11-17": {
     "tithi": "Chaturdashi",

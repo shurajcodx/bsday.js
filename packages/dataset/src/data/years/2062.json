@@ -1411,9 +1411,11 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2062-05-10": {
     "tithi": "Ashtami",
@@ -1421,9 +1423,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Kaulava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -2140,7 +2140,6 @@
     "yoga": "Priti",
     "karana": "Shakuni",
     "festivals": [
-      "Kukur Tihar",
       "Laxmi Puja"
     ],
     "events": [],
@@ -3501,7 +3500,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2062-11-29": {
     "tithi": "Chaturdashi",
@@ -3755,9 +3754,7 @@
     "nakshatra": "Punarvasu",
     "yoga": "Sukarma",
     "karana": "Bava",
-    "festivals": [
-      "Chaite Dashain"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

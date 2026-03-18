@@ -1595,7 +1595,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2070-05-27": {
     "tithi": "Ashtami",
@@ -3372,9 +3372,11 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2070-11-16": {
     "tithi": "Chaturdashi",
@@ -3382,9 +3384,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Parigha",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3530,7 +3530,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2070-12-01": {
     "tithi": "Chaturdashi",

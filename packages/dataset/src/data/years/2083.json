@@ -9,7 +9,7 @@
     "events": [
       "Nepali New Year"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2083-01-02": {
     "tithi": "Trayodashi",
@@ -1341,7 +1341,7 @@
     "events": [
       "World Humanitarian Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2083-05-03": {
     "tithi": "Ashtami",
@@ -1503,9 +1503,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1659,9 +1657,7 @@
     "nakshatra": "Jyeshtha",
     "yoga": "Priti",
     "karana": "Vanija",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1671,9 +1667,7 @@
     "nakshatra": "Mula",
     "yoga": "Ayushman",
     "karana": "Bava",
-    "festivals": [
-      "Maha Ashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1683,9 +1677,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Saubhagya",
     "karana": "Kaulava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [
       "Constitution Day"
     ],
@@ -1697,9 +1689,7 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [
       "International Day of Peace"
     ],
@@ -1991,11 +1981,13 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Sukarma",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Ashtami"
+    ],
     "events": [
       "Kartik Sankranti"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2083-07-02": {
     "tithi": "Ashtami",
@@ -2003,9 +1995,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Dhriti",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2083-07-03": {
     "tithi": "Navami",
@@ -2013,9 +2007,11 @@
     "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Kaulava",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2083-07-04": {
     "tithi": "Dashami",
@@ -3303,7 +3299,7 @@
     "events": [
       "National Democracy Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2083-11-08": {
     "tithi": "Chaturdashi",

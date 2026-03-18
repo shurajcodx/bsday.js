@@ -1327,9 +1327,11 @@
     "nakshatra": "Bharani",
     "yoga": "Vriddhi",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2079-05-02": {
     "tithi": "Ashtami",
@@ -1337,9 +1339,7 @@
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "World Humanitarian Day"
     ],
@@ -1501,7 +1501,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2079-05-18": {
     "tithi": "Ashtami",
@@ -1649,9 +1649,11 @@
     "nakshatra": "Rohini",
     "yoga": "Siddhi",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2079-06-01": {
     "tithi": "Ashtami",
@@ -2067,9 +2069,7 @@
     "nakshatra": "Chitra",
     "yoga": "Vishkumbha",
     "karana": "Naga",
-    "festivals": [
-      "Laxmi Puja"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3288,9 +3288,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Vyatipata",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2079-11-07": {
     "tithi": "Chaturdashi",
@@ -3298,9 +3300,7 @@
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Shakuni",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [
       "National Democracy Day"
     ],
@@ -3450,7 +3450,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2079-11-22": {
     "tithi": "Chaturdashi",

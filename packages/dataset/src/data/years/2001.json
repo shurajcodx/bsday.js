@@ -1417,7 +1417,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2001-05-10": {
     "tithi": "Ashtami",
@@ -3524,9 +3524,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2001-11-29": {
     "tithi": "Chaturdashi",

@@ -245,9 +245,7 @@
     "nakshatra": "Bharani",
     "yoga": "Saubhagya",
     "karana": "Naga",
-    "festivals": [
-      "Matatirtha Aunsi (Mothers' Day)"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1559,7 +1557,7 @@
     "events": [
       "International Literacy Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2008-05-23": {
     "tithi": "Ashtami",
@@ -1865,9 +1863,7 @@
     "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Garaja",
-    "festivals": [
-      "Fulpati"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1878,7 +1874,7 @@
     "yoga": "Atiganda",
     "karana": "Bava",
     "festivals": [
-      "Maha Ashtami"
+      "Fulpati"
     ],
     "events": [],
     "isHoliday": true
@@ -1890,7 +1886,7 @@
     "yoga": "Sukarma",
     "karana": "Kaulava",
     "festivals": [
-      "Maha Navami"
+      "Maha Ashtami"
     ],
     "events": [
       "World Post Day"
@@ -1904,7 +1900,7 @@
     "yoga": "Dhriti",
     "karana": "Garaja",
     "festivals": [
-      "Vijaya Dashami"
+      "Maha Navami"
     ],
     "events": [
       "World Mental Health Day"
@@ -1917,11 +1913,13 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shoola",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [
       "International Day of the Girl Child"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2008-06-25": {
     "tithi": "Dwadashi",
@@ -3336,9 +3334,11 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Variyana",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2008-11-12": {
     "tithi": "Chaturdashi",
@@ -3346,9 +3346,7 @@
     "nakshatra": "Shravana",
     "yoga": "Parigha",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3494,7 +3492,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2008-11-27": {
     "tithi": "Chaturdashi",

@@ -1413,9 +1413,7 @@
     "nakshatra": "Hasta",
     "yoga": "Sadhya",
     "karana": "Garaja",
-    "festivals": [
-      "Teej"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1461,7 +1459,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2036-05-14": {
     "tithi": "Ashtami",
@@ -1595,9 +1593,11 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2036-05-27": {
     "tithi": "Ashtami",
@@ -1605,9 +1605,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Vajra",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3246,11 +3244,13 @@
     "nakshatra": "Uttara Ashadha",
     "yoga": "Siddhi",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [
       "Valentine's Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2036-11-03": {
     "tithi": "Chaturdashi",
@@ -3258,9 +3258,7 @@
     "nakshatra": "Shravana",
     "yoga": "Vyatipata",
     "karana": "Vishti",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -3398,7 +3396,7 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2036-11-17": {
     "tithi": "Chaturdashi",

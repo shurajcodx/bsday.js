@@ -1485,9 +1485,11 @@
     "nakshatra": "Krittika",
     "yoga": "Vyaghata",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2075-05-17": {
     "tithi": "Ashtami",
@@ -1495,9 +1497,7 @@
     "nakshatra": "Rohini",
     "yoga": "Harsha",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1643,7 +1643,7 @@
     "events": [
       "World Ozone Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2075-05-31": {
     "tithi": "Ashtami",
@@ -1661,9 +1661,7 @@
     "nakshatra": "Mula",
     "yoga": "Saubhagya",
     "karana": "Balava",
-    "festivals": [
-      "Maha Navami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1673,9 +1671,7 @@
     "nakshatra": "Purva Ashadha",
     "yoga": "Shobhana",
     "karana": "Taitila",
-    "festivals": [
-      "Vijaya Dashami"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1731,9 +1727,7 @@
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Ganda",
     "karana": "Vanija",
-    "festivals": [
-      "Indra Jatra"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },
@@ -1993,11 +1987,13 @@
     "nakshatra": "Shravana",
     "yoga": "Dhriti",
     "karana": "Kaulava",
-    "festivals": [],
+    "festivals": [
+      "Maha Navami"
+    ],
     "events": [
       "Kartik Sankranti"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2075-07-02": {
     "tithi": "Dashami",
@@ -2005,9 +2001,11 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shoola",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Vijaya Dashami"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2075-07-03": {
     "tithi": "Ekadashi",
@@ -3442,9 +3440,11 @@
     "nakshatra": "Shravana",
     "yoga": "Parigha",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2075-11-21": {
     "tithi": "Chaturdashi",
@@ -3452,9 +3452,7 @@
     "nakshatra": "Dhanishta",
     "yoga": "Shiva",
     "karana": "Shakuni",
-    "festivals": [
-      "Maha Shivaratri"
-    ],
+    "festivals": [],
     "events": [],
     "isHoliday": true
   },

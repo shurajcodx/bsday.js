@@ -1623,11 +1623,13 @@
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Krishna Janmashtami"
+    ],
     "events": [
       "International Day of Democracy"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2071-05-30": {
     "tithi": "Ashtami",
@@ -1635,9 +1637,7 @@
     "nakshatra": "Mrigashirsha",
     "yoga": "Siddhi",
     "karana": "Balava",
-    "festivals": [
-      "Krishna Janmashtami"
-    ],
+    "festivals": [],
     "events": [
       "World Ozone Day"
     ],
@@ -3430,7 +3430,7 @@
     "events": [
       "World Wildlife Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2071-11-20": {
     "tithi": "Chaturdashi",
