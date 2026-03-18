@@ -2,6 +2,16 @@ import { MAX_YEAR, MIN_YEAR } from './constants';
 import type { BSDate } from '../types';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
+const NEPALI_NUMBERS = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+
+export function localizeNumber(value: string | number, locale: string = 'en'): string {
+  const str = String(value);
+  if (locale === 'en') return str;
+  return str.split('').map(char => {
+    const num = parseInt(char, 10);
+    return isNaN(num) ? char : NEPALI_NUMBERS[num]!;
+  }).join('');
+}
 
 export function pad(value: number, width = 2): string {
   return String(value).padStart(width, '0');

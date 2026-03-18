@@ -13,7 +13,9 @@ import type {
   BSDayInputBS,
   BSDayPlugin,
   CalendarType,
+  DateUnit,
   FormatTokenResolver,
+  LocaleType,
 } from '../types';
 import {
   DEFAULT_CALENDAR,
@@ -39,6 +41,7 @@ let datasetStore: Record<string, BSDayData> = bundledDataset as Record<string, B
 export class BSDay {
   private adDate: Date;
   private readonly mutableMode: boolean;
+  private _locale: LocaleType = 'en';
 
   static MIN_YEAR = MIN_YEAR;
   static MAX_YEAR = MAX_YEAR;
@@ -76,28 +79,12 @@ export class BSDay {
     return new BSDay();
   }
 
-  static today(): BSDay {
-    return BSDay.now();
-  }
-
   static nowAD(): Date {
     return BSDay.now().toAD();
   }
 
-  static nowBS(pattern = 'YYYY-MM-DD HH:mm'): string {
-    const now = BSDay.now();
-    const bs = now.toBS();
-    const ad = now.toAD();
-
-    const replacements: Record<string, string> = {
-      YYYY: pad(bs.year, 4),
-      MM: pad(bs.month),
-      DD: pad(bs.day),
-      HH: pad(ad.getHours()),
-      mm: pad(ad.getMinutes()),
-    };
-
-    return pattern.replace(/YYYY|MM|DD|HH|mm/g, (token) => replacements[token] ?? token);
+  static nowBS(pattern = 'YYYY-MM-DD HH:mm', locale: LocaleType = 'en'): string {
+    return BSDay.now().format(pattern, 'bs', locale);
   }
 
   static fromAD(input: Date): BSDay {
@@ -115,6 +102,10 @@ export class BSDay {
     }
 
     return BSDay.fromBS([parsed.year, parsed.month, parsed.day]);
+  }
+
+  static extend(plugin: BSDayPlugin): void {
+    BSDay.use(plugin);
   }
 
   static use(plugin: BSDayPlugin): void {
@@ -143,28 +134,49 @@ export class BSDay {
     return isLeapYear(year, calendar);
   }
 
-  static isValid(year: number, month: number, day: number, calendar: CalendarType = 'ad'): boolean {
-    return calendar === 'ad' ? isValidADDate(year, month, day) : isValidBSDate(year, month, day);
-  }
+  static isValid(input: string, pattern?: string, calendar?: CalendarType): boolean;
+  static isValid(input: Date | BSDayInputBS): boolean;
+  static isValid(year: number, month: number, day: number, calendar?: CalendarType): boolean;
+  static isValid(arg1: any, arg2?: any, arg3?: any, arg4?: any): boolean {
+    if (typeof arg1 === 'number' && typeof arg2 === 'number' && typeof arg3 === 'number') {
+      const cal = arg4 ?? 'ad';
+      return cal === 'ad' ? isValidADDate(arg1, arg2, arg3) : isValidBSDate(arg1, arg2, arg3);
+    }
 
-  get ad(): Date {
-    return this.toAD();
-  }
+    if (arg1 instanceof Date) {
+      return !Number.isNaN(arg1.getTime());
+    }
 
-  get bs(): BSDate {
-    return this.toBS();
+    if (arg1 && typeof arg1 === 'object' && 'bs' in arg1 && Array.isArray(arg1.bs)) {
+      const [y, m, d] = arg1.bs;
+      return isValidBSDate(y, m, d);
+    }
+
+    if (typeof arg1 === 'string') {
+      if (arg2 && typeof arg2 === 'string') {
+        try {
+          parseDate(arg1, arg2, arg3 ?? DEFAULT_CALENDAR);
+          return true;
+        } catch {
+          return false;
+        }
+      }
+      return !Number.isNaN(new Date(arg1).getTime());
+    }
+
+    return false;
   }
 
   get year(): number {
-    return this.bs.year;
+    return this.toBS().year;
   }
 
   get month(): number {
-    return this.bs.month;
+    return this.toBS().month;
   }
 
   get day(): number {
-    return this.bs.day;
+    return this.toBS().day;
   }
 
   get dayOfWeek(): number {
@@ -172,7 +184,7 @@ export class BSDay {
   }
 
   get dayOfYear(): number {
-    const bs = this.bs;
+    const bs = this.toBS();
     let dayIndex = bs.day;
 
     for (let month = 1; month < bs.month; month += 1) {
@@ -180,6 +192,23 @@ export class BSDay {
     }
 
     return dayIndex;
+  }
+
+  daysInMonth(calendar: CalendarType = DEFAULT_CALENDAR): number {
+    if (calendar === 'ad') {
+      const year = this.adDate.getUTCFullYear();
+      const month = this.adDate.getUTCMonth();
+      // passing month + 1 with day 0 returns the last day of the current month
+      return new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
+    }
+    const bs = this.toBS();
+    return getBsMonthDays(bs.year, bs.month);
+  }
+
+  isWeekend(): boolean {
+    const day = this.adDate.getUTCDay();
+    // 0 = Sunday, 6 = Saturday
+    return day === 0 || day === 6;
   }
 
   toAD(): Date {
@@ -191,11 +220,13 @@ export class BSDay {
   }
 
   clone(): BSDay {
-    return new BSDay(this.toAD(), { mutable: this.mutableMode });
+    const next = new BSDay(this.toAD(), { mutable: this.mutableMode });
+    (next as any)._locale = this._locale;
+    return next;
   }
 
   isLeapYear(calendar: CalendarType = DEFAULT_CALENDAR): boolean {
-    const year = calendar === 'ad' ? this.adDate.getUTCFullYear() : this.bs.year;
+    const year = calendar === 'ad' ? this.adDate.getUTCFullYear() : this.toBS().year;
     return BSDay.isLeapYear(year, calendar);
   }
 
@@ -206,7 +237,7 @@ export class BSDay {
       return this.withDate(next);
     }
 
-    const bs = this.bs;
+    const bs = this.toBS();
     const safeDay = clamp(bs.day, 1, getBsMonthDays(year, bs.month));
     return this.withBSDate({ year, month: bs.month, day: safeDay });
   }
@@ -218,7 +249,7 @@ export class BSDay {
       return this.withDate(next);
     }
 
-    const bs = this.bs;
+    const bs = this.toBS();
     const normalizedMonth = clamp(month, 1, 12);
     const safeDay = clamp(bs.day, 1, getBsMonthDays(bs.year, normalizedMonth));
     return this.withBSDate({ year: bs.year, month: normalizedMonth, day: safeDay });
@@ -231,7 +262,7 @@ export class BSDay {
       return this.withDate(next);
     }
 
-    const bs = this.bs;
+    const bs = this.toBS();
     const safeDay = clamp(day, 1, getBsMonthDays(bs.year, bs.month));
     return this.withBSDate({ year: bs.year, month: bs.month, day: safeDay });
   }
@@ -256,22 +287,18 @@ export class BSDay {
     return this.withBSDate({ year, month, day });
   }
 
-  addDays(days: number): BSDay {
+  private addDays(days: number): BSDay {
     return this.withDate(addUtcDays(this.adDate, days));
   }
 
-  subtractDays(days: number): BSDay {
-    return this.addDays(-days);
-  }
-
-  addMonths(months: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
+  private addMonths(months: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
     if (calendar === 'ad') {
       const next = this.toAD();
       next.setUTCMonth(next.getUTCMonth() + months);
       return this.withDate(next);
     }
 
-    const bs = this.bs;
+    const bs = this.toBS();
     const monthIndex = bs.month - 1 + months;
     const yearDelta = Math.floor(monthIndex / 12);
     const normalizedMonth = mod(monthIndex, 12) + 1;
@@ -281,25 +308,34 @@ export class BSDay {
     return this.withBSDate({ year, month: normalizedMonth, day: safeDay });
   }
 
-  subtractMonths(months: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
-    return this.addMonths(-months, calendar);
-  }
-
-  addYears(years: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
+  private addYears(years: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
     if (calendar === 'ad') {
       const next = this.toAD();
       next.setUTCFullYear(next.getUTCFullYear() + years);
       return this.withDate(next);
     }
 
-    const bs = this.bs;
+    const bs = this.toBS();
     const year = bs.year + years;
     const safeDay = clamp(bs.day, 1, getBsMonthDays(year, bs.month));
     return this.withBSDate({ year, month: bs.month, day: safeDay });
   }
 
-  subtractYears(years: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
-    return this.addYears(-years, calendar);
+  add(value: number, unit: DateUnit, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
+    switch (unit) {
+      case 'day':
+        return this.addDays(value);
+      case 'month':
+        return this.addMonths(value, calendar);
+      case 'year':
+        return this.addYears(value, calendar);
+      default:
+        throw new Error(`Unknown date unit: ${unit}`);
+    }
+  }
+
+  subtract(value: number, unit: DateUnit, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
+    return this.add(-value, unit, calendar);
   }
 
   isBefore(other: BSDay): boolean {
@@ -314,8 +350,23 @@ export class BSDay {
     return utcStartOfDay(this.adDate) === utcStartOfDay(other.adDate);
   }
 
-  format(pattern: string, calendar: CalendarType = DEFAULT_CALENDAR): string {
-    return formatDate(pattern, calendar, this.adDate, this.bs, formatTokenRegistry);
+  locale(l?: LocaleType): LocaleType | BSDay {
+    if (l === undefined) return this._locale;
+    if (this.mutableMode) {
+      this._locale = l;
+      return this;
+    }
+    const next = this.clone();
+    (next as any)._locale = l;
+    return next;
+  }
+
+  format(
+    pattern: string,
+    calendar: CalendarType = DEFAULT_CALENDAR,
+    locale: LocaleType = this._locale,
+  ): string {
+    return formatDate(pattern, calendar, this.adDate, this.toBS(), formatTokenRegistry, locale);
   }
 
   data(): BSDayData | null {
@@ -359,7 +410,7 @@ export class BSDay {
   }
 
   private lookupDatasetEntry(): BSDayData | null {
-    const bs = this.bs;
+    const bs = this.toBS();
     const strictKey = buildBsKey(bs);
     const strict = datasetStore[strictKey];
     if (strict) {
@@ -377,7 +428,9 @@ export class BSDay {
       return this;
     }
 
-    return new BSDay(date, { mutable: this.mutableMode });
+    const next = new BSDay(date, { mutable: this.mutableMode });
+    (next as any)._locale = this._locale;
+    return next;
   }
 
   private withBSDate(bs: BSDate): BSDay {
@@ -385,7 +438,7 @@ export class BSDay {
   }
 
   toString(): string {
-    const bs = this.bs;
+    const bs = this.toBS();
     return `${pad(bs.year, 4)}-${pad(bs.month)}-${pad(bs.day)}`;
   }
 }

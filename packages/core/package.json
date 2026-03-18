@@ -1,5 +1,5 @@
 {
-  "name": "@bsday/core",
+  "name": "@bsday.js/core",
   "version": "0.1.0",
   "description": "Core BSDay dual-calendar date library",
   "license": "MIT",

@@ -1,4 +1,4 @@
-import type { BSDate, CalendarType, FormatTokenResolver } from '../types';
+import type { BSDate, CalendarType, FormatTokenResolver, LocaleType } from '../types';
 
 function escapeRegex(input: string): string {
   return input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -10,6 +10,7 @@ export function formatDate(
   ad: Date,
   bs: BSDate,
   tokens: Record<string, FormatTokenResolver>,
+  locale: LocaleType,
 ): string {
   const tokenList = Object.keys(tokens).sort((a, b) => b.length - a.length);
   const tokenRegex = new RegExp(tokenList.map(escapeRegex).join('|'), 'g');
@@ -20,6 +21,6 @@ export function formatDate(
       return token;
     }
 
-    return resolver({ calendar, ad, bs });
+    return resolver({ calendar, locale, ad, bs });
   });
 }

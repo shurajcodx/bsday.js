@@ -53,4 +53,54 @@ export const WEEKDAYS_AD = [
   'Saturday',
 ] as const;
 
+export const MONTHS_NEPALI_NE = [
+  'वैशाख',
+  'जेठ',
+  'असार',
+  'साउन',
+  'भदौ',
+  'असोज',
+  'कात्तिक',
+  'मंसिर',
+  'पुष',
+  'माघ',
+  'फागुन',
+  'चैत',
+] as const;
+
+export const WEEKDAYS_NEPALI_NE = [
+  'आइतबार',
+  'सोमबार',
+  'मंगलबार',
+  'बुधबार',
+  'बिहीबार',
+  'शुक्रबार',
+  'शनिबार',
+] as const;
+
+export const MONTHS_AD_NE = [
+  'जनवरी',
+  'फेब्रुअरी',
+  'मार्च',
+  'अप्रिल',
+  'मे',
+  'जुन',
+  'जुलाई',
+  'अगस्ट',
+  'सेप्टेम्बर',
+  'अक्टोबर',
+  'नोभेम्बर',
+  'डिसेम्बर',
+] as const;
+
+export const WEEKDAYS_AD_NE = [
+  'आइतबार',
+  'सोमबार',
+  'मंगलबार',
+  'बुधबार',
+  'बिहीबार',
+  'शुक्रबार',
+  'शनिबार',
+] as const;
+
 export const DEFAULT_CALENDAR: CalendarType = 'bs';
