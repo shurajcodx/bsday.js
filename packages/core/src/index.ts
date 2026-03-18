@@ -1,4 +1,5 @@
 export { BSDay } from './core/BSDay';
+export { relativeTimePlugin } from './plugins/relativeTime';
 export type {
   BSDate,
   BSDayData,
@@ -7,4 +8,5 @@ export type {
   BSDayPlugin,
   CalendarType,
   FormatTokenResolver,
+  LocaleType,
 } from './types';

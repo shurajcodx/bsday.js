@@ -1,23 +1,20 @@
 # @bsday/core
 
-Core library for working with **Bikram Sambat (BS)** and **Gregorian (AD)** dates in JavaScript.
+Core library for working with **Bikram Sambat (BS)** and **Gregorian (AD)** dates in JavaScript and TypeScript.
 
 `@bsday/core` provides utilities for creating, converting, formatting, and manipulating BS dates while keeping full compatibility with the JavaScript `Date` object.
 
----
-
 ## Features
 
-* BS ↔ AD date conversion
-* Lightweight and fast
-* Immutable date instances
-* Formatting and parsing
-* Date arithmetic
-* Dataset integration (tithi, festivals, panchang)
-* Plugin system for extensibility
-* Works in Node.js and browsers
-
----
+* 📅 **Accurate BS ↔ AD date conversion**
+* ⚡ Lightweight and fast
+* 🔒 Immutable date instances
+* 🔢 **Formatting and parsing** routines
+* ➕ **Date arithmetic** (add, subtract days/months/years)
+* 🔍 **Date comparisons** (isBefore, isAfter, isSame)
+* 🪔 Embedded **Panchang capability** (Tithi, Nakshatra, Yoga, Karana)
+* 🧩 Plugin system for extensibility
+* 💻 Works in Node.js and browsers
 
 ## Installation
 
@@ -25,229 +22,104 @@ Core library for working with **Bikram Sambat (BS)** and **Gregorian (AD)** date
 pnpm add @bsday/core
 ```
 
-or
-
-```bash
-npm install @bsday/core
-```
-
----
-
 ## Quick Start
 
-```ts
+```typescript
 import { BSDay } from '@bsday/core';
 
-const date = BSDay.fromBS([2082, 11, 24]);
+// Create a BS Date from AD
+const today = BSDay.fromAD(new Date());
+console.log(`Today in BS is: ${today.format('YYYY-MM-DD')}`);
 
-console.log(date.toAD());
-// → JS Date object
+// Create a BS Date directly
+const dashain = BSDay.fromBS([2081, 6, 26]);
 
-console.log(date.format('YYYY-MM-DD', 'bs'));
-// → 2082-11-24
+// Convert BS to AD
+console.log(dashain.toAD().toISOString()); // "2024-10-12T00:00:00.000Z"
+
+// Format the date
+console.log(dashain.format('YYYY/MM/DD', 'bs')); // "2081/06/26"
+
+// Access Panchang data
+console.log(dashain.tithi()); // "Dashami"
+console.log(dashain.panchang());
+/*
+{
+  paksha: 'Shukla',
+  nakshatra: 'Dhanishta',
+  yoga: 'Shoola',
+  karana: 'Garaja'
+}
+*/
 ```
 
----
+## Creating Dates
 
-# Creating Dates
+Create BSDay instances from AD Date objects, BS tuples, or parsing.
 
-Create BSDay instances from AD or BS dates.
-
-```ts
+```typescript
 import { BSDay } from '@bsday/core';
 
+// Current time
 const now = BSDay.now();
 
-const fromAd = BSDay.fromAD(new Date());
+// From AD Date
+const fromAd = BSDay.fromAD(new Date('2024-10-12'));
 
-const fromBs = BSDay.fromBS([2082, 11, 24]);
+// From BS Tuple [Year, Month, Day]
+const fromBs = BSDay.fromBS([2081, 6, 26]);
+
+// Parse string
+const parsed = BSDay.parse('2081-06-26', 'YYYY-MM-DD', 'bs');
 ```
 
----
+## Formatting
 
-# Current Date Helpers
+Format dates easily in both BS or AD calendars.
 
-Get the current date in AD or BS format.
+```typescript
+const d = BSDay.fromBS([2081, 6, 26]);
 
-```ts
-const ad = BSDay.nowAD(); 
-// Returns native Date
-
-const bs = BSDay.nowBS(); 
-// Returns "YYYY-MM-DD HH:mm"
-
-const bsCustom = BSDay.nowBS('YYYY/MM/DD HH:mm');
+d.format('YYYY-MM-DD', 'bs');  // 2081-06-26
+d.format('YYYY/MM/DD', 'bs');  // 2081/06/26
+d.format('DD-MM-YYYY', 'ad');  // 12-10-2024
 ```
 
----
+## Date Arithmetic
 
-# Conversion
+Add or subtract units from the date. Dates are immutable, so all methods return a new instance.
 
-Convert between BS and AD calendars.
-
-```ts
-const d = BSDay.fromBS([2082, 11, 24]);
-
-const adDate = d.toAD();
-// JavaScript Date
-
-const bsDate = d.toBS();
-// { year, month, day }
-```
-
----
-
-# Formatting
-
-Format dates in BS or AD.
-
-```ts
-const d = BSDay.fromBS([2082, 11, 24]);
-
-d.format('YYYY-MM-DD', 'bs');
-// 2082-11-24
-
-d.format('YYYY/MM/DD', 'bs');
-// 2082/11/24
-
-d.format('YYYY-MM-DD', 'ad');
-// 2026-03-08
-```
-
----
-
-# Parsing
-
-Convert formatted strings into BSDay instances.
-
-```ts
-const d = BSDay.parse('2082-11-24', 'YYYY-MM-DD', 'bs');
-```
-
----
-
-# Date Arithmetic
-
-Add or manipulate dates.
-
-```ts
-const a = BSDay.fromBS([2082, 1, 1]);
+```typescript
+const a = BSDay.fromBS([2081, 1, 1]);
 
 const b = a.addDays(10);
-
 const c = a.addMonths(1);
-
-const d = a.addYears(1);
+const d = b.subtractYears(1);
 ```
 
----
+## Date Comparison
 
-# Date Comparison
+Compare BSDay instances easily.
 
-Compare BSDay instances.
+```typescript
+const a = BSDay.fromBS([2081, 1, 1]);
+const b = BSDay.fromBS([2081, 1, 10]);
 
-```ts
-const a = BSDay.fromBS([2082, 1, 1]);
-const b = BSDay.fromBS([2082, 1, 10]);
-
-a.isBefore(b);
-b.isAfter(a);
-a.isSame(b);
+a.isBefore(b); // true
+b.isAfter(a);  // true
+a.isSame(b);   // false
 ```
 
----
+## Plugin System
 
-# Dataset Methods
+BSDay can be extended with custom formatting tokens and methods using plugins.
 
-`@bsday/core` automatically loads calendar data from `@bsday/dataset`.
-
-This dataset includes:
-
-* tithi
-* festivals
-* panchang data (nakshatra, yoga, karana)
-
-Example:
-
-```ts
-const d = BSDay.fromBS([2082, 11, 24]);
-
-d.tithi();
-// "Panchami"
-
-d.festivals();
-// ["नारी दिवस"]
-
-d.panchang();
-// { nakshatra, yoga, karana }
-```
-
-Override dataset if needed:
-
-```ts
-BSDay.setDataset(customDataset);
-```
-
----
-
-# API Reference
-
-## Static Methods
-
-| Method                                 | Description                             |
-| -------------------------------------- | --------------------------------------- |
-| `BSDay.now()`                          | Create BSDay instance for current time  |
-| `BSDay.nowAD()`                        | Get current AD date                     |
-| `BSDay.nowBS(format?)`                 | Get current BS date as formatted string |
-| `BSDay.fromAD(date)`                   | Create instance from AD Date            |
-| `BSDay.fromBS([y,m,d])`                | Create instance from BS date            |
-| `BSDay.parse(value, format, calendar)` | Parse formatted string                  |
-| `BSDay.setDataset(dataset)`            | Override default dataset                |
-| `BSDay.use(plugin)`                    | Register plugin                         |
-
----
-
-## Instance Methods
-
-| Method                      | Description                     |
-| --------------------------- | ------------------------------- |
-| `toAD()`                    | Convert to JS Date              |
-| `toBS()`                    | Convert to BS object            |
-| `format(format, calendar?)` | Format date                     |
-| `addDays(n)`                | Add days                        |
-| `addMonths(n)`              | Add months                      |
-| `addYears(n)`               | Add years                       |
-| `isBefore(date)`            | Check if date is before another |
-| `isAfter(date)`             | Check if date is after another  |
-| `isSame(date)`              | Check if dates are equal        |
-| `tithi()`                   | Get tithi                       |
-| `festivals()`               | Get festivals                   |
-| `panchang()`                | Get panchang data               |
-
----
-
-# Plugin System
-
-BSDay can be extended with plugins.
-
-Plugin structure:
-
-```ts
+```typescript
 interface BSDayPlugin {
   name: string;
   initialize(bsday: typeof BSDay): void;
 }
-```
 
-Register a plugin:
-
-```ts
-BSDay.use(plugin);
-```
-
-Example plugin:
-
-```ts
 const MyPlugin = {
   name: 'my-plugin',
   initialize(BSDayClass) {
@@ -260,28 +132,39 @@ const MyPlugin = {
 BSDay.use(MyPlugin);
 ```
 
----
+## API Reference
 
-# Ecosystem
+### Static Methods
 
-| Package           | Description       |
-| ----------------- | ----------------- |
-| `@bsday/core`     | Core date library |
-| `@bsday/dataset`  | Calendar dataset  |
-| `@bsday/plugin-*` | Optional plugins  |
+| Method                                 | Description                             |
+| -------------------------------------- | --------------------------------------- |
+| `BSDay.now()`                          | Create BSDay instance for current time  |
+| `BSDay.nowAD()`                        | Get current AD date as a JS `Date`      |
+| `BSDay.nowBS(format?)`                 | Get current BS date as formatted string |
+| `BSDay.fromAD(date)`                   | Create instance from an AD Date         |
+| `BSDay.fromBS([year, month, day])`     | Create instance from a BS tuple         |
+| `BSDay.parse(value, format, calendar)` | Parse a formatted string                |
+| `BSDay.setDataset(dataset)`            | Override the dataset with custom data   |
+| `BSDay.use(plugin)`                    | Register a plugin                       |
 
----
+### Instance Methods
 
-# Contributing
+| Method                          | Description                               |
+| ------------------------------- | ----------------------------------------- |
+| `toAD()`                        | Returns the equivalent JS Date            |
+| `toBS()`                        | Returns `{ year, month, day }` object     |
+| `format(formatStr, calendar?)`  | Returns formatted string representation   |
+| `addDays(n)` / `subtractDays`   | Days arithmetic                           |
+| `addMonths(n)` / `subtractMonths`| Months arithmetic                        |
+| `addYears(n)` / `subtractYears` | Years arithmetic                          |
+| `setYear(n)` / `setMonth(n)` / `setDay(n)` | Set an individual date part    |
+| `isBefore(date)`                | Check if date is before another           |
+| `isAfter(date)`                 | Check if date is after another            |
+| `isSame(date)`                  | Check if dates are exactly equal          |
+| `isLeapYear()`                  | Returns true if current year is leap year |
+| `tithi()`                       | Returns the tithi (e.g. "Dashami")        |
+| `panchang()`                    | Returns `{ paksha, nakshatra, yoga, karana }`|
 
-Contributions are welcome.
+## License
 
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
----
-
-# License
-
-MIT
+MIT © BSDay.js Contributors

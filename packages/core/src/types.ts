@@ -12,15 +12,26 @@ export interface BSDayInputBS {
 
 export type BSDayInput = Date | string | BSDayInputBS | undefined;
 
+export type DateUnit = 'day' | 'month' | 'year';
+export type LocaleType = 'en' | 'ne';
+
 export interface BSDayData {
   tithi: string;
-  festivals: string[];
+  paksha: string;
+  festivals?: string[];
+  events?: string[];
+  isHoliday?: boolean;
   nakshatra: string;
   yoga: string;
   karana: string;
 }
 
-export type FormatTokenResolver = (ctx: { calendar: CalendarType; ad: Date; bs: BSDate }) => string;
+export type FormatTokenResolver = (ctx: {
+  calendar: CalendarType;
+  locale: LocaleType;
+  ad: Date;
+  bs: BSDate;
+}) => string;
 
 export interface BSDayPlugin {
   name: string;

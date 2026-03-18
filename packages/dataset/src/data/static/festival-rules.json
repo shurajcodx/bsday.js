@@ -1,0 +1,166 @@
+[
+    {
+        "name": "Buddha Jayanti",
+        "type": "sunrise",
+        "tithi": "Purnima",
+        "month": 1
+    },
+    {
+        "name": "Matatirtha Aunsi (Mothers' Day)",
+        "type": "sunrise",
+        "tithi": "Amavasya",
+        "month": 1
+    },
+    {
+        "name": "Nag Panchami",
+        "type": "sunrise",
+        "tithi": "Panchami",
+        "month": 4,
+        "paksha": "Shukla"
+    },
+    {
+        "name": "Janai Purnima / Raksha Bandhan",
+        "type": "sunrise",
+        "tithi": "Purnima",
+        "month": 4
+    },
+    {
+        "name": "Gai Jatra",
+        "type": "sunrise",
+        "tithi": "Pratipada",
+        "month": 5,
+        "paksha": "Krishna"
+    },
+    {
+        "name": "Krishna Janmashtami",
+        "type": "night",
+        "tithi": "Ashtami",
+        "month": 5,
+        "paksha": "Krishna"
+    },
+    {
+        "name": "Teej",
+        "type": "sunrise",
+        "tithi": "Tritiya",
+        "month": 5,
+        "paksha": "Shukla"
+    },
+    {
+        "name": "Rishi Panchami",
+        "type": "sunrise",
+        "tithi": "Panchami",
+        "month": 5,
+        "paksha": "Shukla"
+    },
+    {
+        "name": "Kushe Aunsi (Fathers' Day)",
+        "type": "sunrise",
+        "tithi": "Amavasya",
+        "month": 5
+    },
+    {
+        "name": "Ghatasthapana",
+        "type": "sunrise",
+        "tithi": "Pratipada",
+        "month": 6,
+        "paksha": "Shukla"
+    },
+    {
+        "name": "Fulpati",
+        "type": "relative",
+        "base": "Ghatasthapana",
+        "offsetDays": 6
+    },
+    {
+        "name": "Maha Ashtami",
+        "type": "relative",
+        "base": "Ghatasthapana",
+        "offsetDays": 7
+    },
+    {
+        "name": "Maha Navami",
+        "type": "relative",
+        "base": "Ghatasthapana",
+        "offsetDays": 8
+    },
+    {
+        "name": "Vijaya Dashami",
+        "type": "relative",
+        "base": "Ghatasthapana",
+        "offsetDays": 9
+    },
+    {
+        "name": "Indra Jatra",
+        "type": "sunrise",
+        "tithi": "Chaturdashi",
+        "month": 6,
+        "paksha": "Shukla"
+    },
+    {
+        "name": "Kag Tihar",
+        "type": "sunrise",
+        "tithi": "Trayodashi",
+        "month": 7,
+        "paksha": "Krishna"
+    },
+    {
+        "name": "Kukur Tihar",
+        "type": "sunrise",
+        "tithi": "Chaturdashi",
+        "month": 7,
+        "paksha": "Krishna"
+    },
+    {
+        "name": "Laxmi Puja",
+        "type": "sunset",
+        "tithi": "Amavasya",
+        "month": 7
+    },
+    {
+        "name": "Govardhan Puja / Mha Puja / Gai Puja",
+        "type": "sunrise",
+        "tithi": "Pratipada",
+        "month": 7,
+        "paksha": "Shukla"
+    },
+    {
+        "name": "Bhai Tika",
+        "type": "sunrise",
+        "tithi": "Dvitiya",
+        "month": 7,
+        "paksha": "Shukla"
+    },
+    {
+        "name": "Chhath Puja",
+        "type": "sunrise",
+        "tithi": "Shashthi",
+        "month": 7,
+        "paksha": "Shukla"
+    },
+    {
+        "name": "Maha Shivaratri",
+        "type": "night",
+        "tithi": "Chaturdashi",
+        "month": 11,
+        "paksha": "Krishna"
+    },
+    {
+        "name": "Holi / Phagu Purnima",
+        "type": "sunrise",
+        "tithi": "Purnima",
+        "month": 11
+    },
+    {
+        "name": "Ghode Jatra",
+        "type": "sunrise",
+        "tithi": "Amavasya",
+        "month": 12
+    },
+    {
+        "name": "Chaite Dashain",
+        "type": "sunrise",
+        "tithi": "Ashtami",
+        "month": 12,
+        "paksha": "Shukla"
+    }
+]

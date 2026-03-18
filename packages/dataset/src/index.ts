@@ -1,37 +1,17 @@
-import rawDataset from './data/1970-2100.json';
-import rawMetadata from './data/metadata.json';
+import rawDataset from './data/dataset.json';
+import type { BSDayDataset, BSDayData } from './types/bsday';
+import { convertDatasetToNepali } from './convert-to-nepali';
 
-export interface BSDayData {
-  tithi: string;
-  festivals: string[];
-  nakshatra: string;
-  yoga: string;
-  karana: string;
+const dataset = rawDataset as BSDayDataset;
+const datasetNepali = convertDatasetToNepali(dataset);
+
+export {
+    dataset,
+    datasetNepali
 }
 
-export type BSDayDataset = Record<string, BSDayData>;
+export * from './panchang-engine.js';
+export * from './festival-engine.js';
+export * from './types/festival.js';
 
-export const dataset = rawDataset as BSDayDataset;
-export const metadata = rawMetadata as {
-  source: string;
-  sourceEndpoint: string;
-  generatedAt: string;
-  coverage: {
-    startYear: number;
-    endYear: number;
-    keys: number;
-  };
-  requestedRange?: {
-    startYear: number;
-    endYear: number;
-  };
-  quality?: {
-    unknownTithiCount: number;
-    unknownYogaCount: number;
-    unknownKaranaCount: number;
-    unknownNakshatraCount: number;
-  };
-  warnings?: string[];
-};
-
-export default dataset;
+export type { BSDayDataset, BSDayData }
