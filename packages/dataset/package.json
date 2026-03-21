@@ -7,18 +7,25 @@
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "exports": {
+    "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
+    },
+    "./month-data": {
+      "types": "./dist/monthData.d.ts",
+      "import": "./dist/monthData.js",
+      "require": "./dist/monthData.cjs"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "ephe"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "npm run generate:month-data && tsup src/index.ts src/monthData.ts --format esm,cjs --dts --shims",
+    "generate:month-data": "node scripts/generate-month-data.mjs",
     "test": "vitest run",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json --noEmit",

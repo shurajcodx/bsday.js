@@ -10,9 +10,15 @@ export interface BSDayInputBS {
   bs: [number, number, number];
 }
 
-export type BSDayInput = Date | string | BSDayInputBS | undefined;
+import type { BSDay } from './core/BSDay';
 
-export type DateUnit = 'day' | 'month' | 'year';
+export interface ConfigTypeMap {
+  default: string | number | Date | BSDay | null | undefined;
+}
+
+export type BSDayInput = string | number | Date | BSDate | BSDayInputBS | BSDay | null | undefined;
+
+export type DateUnit = 'year' | 'month' | 'date' | 'day' | 'hour' | 'minute' | 'second' | 'millisecond';
 export type LocaleType = 'en' | 'ne';
 
 export interface BSDayData {
@@ -33,10 +39,18 @@ export type FormatTokenResolver = (ctx: {
   bs: BSDate;
 }) => string;
 
-export interface BSDayPlugin {
-  name: string;
-  initialize(bsday: BSDayPluginHost): void;
-}
+export type BSDayPluginFunction = (
+  option: any,
+  bsday: any, // BSDay class
+  factory: any, // bsday() factory
+) => void;
+
+export type BSDayPlugin =
+  | {
+      name: string;
+      initialize: (host: BSDayPluginHost, options?: any) => void;
+    }
+  | BSDayPluginFunction;
 
 export interface BSDayPluginHost {
   prototype: Record<string, unknown>;

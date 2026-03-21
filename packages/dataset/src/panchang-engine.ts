@@ -3,9 +3,14 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 // Set accurate path and Lahiri Ayanamsa
-// Note: In a real package, ephePath should be handled carefully (e.g., via environment variable or package root)
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ephePath = path.resolve(__dirname, '../../ephe');
+const isESM = typeof import.meta !== 'undefined' && import.meta.url;
+const _dirname = isESM ? path.dirname(fileURLToPath(import.meta.url)) : __dirname;
+
+// In the build, __dirname will be 'dist'. In 'src', it's 'src'.
+// The 'ephe' folder is at 'packages/dataset/ephe'.
+// If _dirname is 'dist' or 'src', then '../ephe' is 'packages/dataset/ephe'.
+const ephePath = path.resolve(_dirname, '../ephe');
+
 swisseph.swe_set_ephe_path(ephePath);
 swisseph.swe_set_sid_mode(swisseph.SE_SIDM_LAHIRI, 0, 0);
 

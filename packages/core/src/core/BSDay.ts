@@ -1,22 +1,22 @@
 import { adToBs } from '../converters/adToBs';
-import { dataset as bundledDataset } from '@bsday/dataset';
 import { bsToAd } from '../converters/bsToAd';
 import { getBsMonthDays } from '../converters/monthData';
 import { formatDate } from '../formatting/formatter';
-import { BASE_FORMAT_TOKENS } from '../formatting/formatTokens';
 import { parseDate } from '../parsing/parser';
-import { PluginManager } from '../plugins/PluginManager';
+import { datasetManager } from './datasetManager';
+import { pluginSystem } from './pluginSystem';
 import type {
   BSDate,
   BSDayData,
   BSDayInput,
   BSDayInputBS,
   BSDayPlugin,
+  BSDayPluginHost,
   CalendarType,
-  DateUnit,
   FormatTokenResolver,
-  LocaleType,
 } from '../types';
+export type DateUnit = 'year' | 'month' | 'date' | 'day' | 'hour' | 'minute' | 'second' | 'millisecond';
+export type LocaleType = 'en' | 'ne';
 import {
   DEFAULT_CALENDAR,
   MAX_YEAR,
@@ -24,19 +24,13 @@ import {
   MONTHS_NEPALI,
   WEEKDAYS_NEPALI,
 } from '../utils/constants';
-import { addUtcDays, buildBsKey, clamp, mod, pad, utcStartOfDay } from '../utils/helpers';
+import { addUtcDays, clamp, mod, pad, utcStartOfDay } from '../utils/helpers';
 import { isLeapYear, isValidADDate, isValidBSDate } from '../utils/validation';
+import { normalizeUnit } from '../utils/units';
 
 interface BSDayOptions {
   mutable?: boolean;
 }
-
-const pluginManager = new PluginManager();
-const formatTokenRegistry: Record<string, FormatTokenResolver> = {
-  ...BASE_FORMAT_TOKENS,
-};
-
-let datasetStore: Record<string, BSDayData> = bundledDataset as Record<string, BSDayData>;
 
 export class BSDay {
   private adDate: Date;
@@ -51,8 +45,18 @@ export class BSDay {
   constructor(input?: BSDayInput, options: BSDayOptions = {}) {
     this.mutableMode = options.mutable ?? false;
 
-    if (!input) {
+    if (input === undefined) {
       this.adDate = new Date();
+      return;
+    }
+
+    if (input === null) {
+      this.adDate = new Date(NaN);
+      return;
+    }
+
+    if (typeof input === 'number') {
+      this.adDate = new Date(input);
       return;
     }
 
@@ -62,37 +66,77 @@ export class BSDay {
     }
 
     if (typeof input === 'string') {
-      const parsed = new Date(input);
-      if (Number.isNaN(parsed.getTime())) {
-        throw new Error(`Invalid date string: ${input}`);
+      try {
+        // Try parsing as BS if it matches YYYY-MM-DD
+        if (/^\d{4}-\d{2}-\d{2}$/.test(input)) {
+          const [y, m, d] = input.split('-').map(Number);
+          if (isValidBSDate(y, m, d)) {
+            this.adDate = bsToAd({ year: y, month: m, day: d });
+            return;
+          }
+        }
+      } catch {
+        // Fallback to AD parsing
       }
 
-      this.adDate = parsed;
+      const parsed = new Date(input);
+      if (!Number.isNaN(parsed.getTime())) {
+        this.adDate = parsed;
+        return;
+      }
+    }
+
+    if (typeof input === 'object') {
+      try {
+        if ('bs' in input && Array.isArray((input as any).bs)) {
+          const { bs } = input as BSDayInputBS;
+          this.adDate = bsToAd({ year: bs[0], month: bs[1], day: bs[2] });
+          return;
+        }
+        if ('year' in input && 'month' in input && 'day' in input) {
+          this.adDate = bsToAd(input as BSDate);
+          return;
+        }
+      } catch {
+        // Fall through to invalid
+      }
+    }
+
+    if (input instanceof BSDay) {
+      this.adDate = new Date(input.adDate.getTime());
+      this._locale = input._locale;
       return;
     }
 
-    const { bs } = input as BSDayInputBS;
-    this.adDate = bsToAd({ year: bs[0], month: bs[1], day: bs[2] });
+    // Default to invalid date if no match
+    this.adDate = new Date(NaN);
   }
 
-  static now(): BSDay {
-    return new BSDay();
+  isValid(): boolean {
+    return !Number.isNaN(this.adDate.getTime());
+  }
+
+  static now(): number {
+    return Date.now();
   }
 
   static nowAD(): Date {
-    return BSDay.now().toAD();
+    return new BSDay().toAD();
   }
 
   static nowBS(pattern = 'YYYY-MM-DD HH:mm', locale: LocaleType = 'en'): string {
-    return BSDay.now().format(pattern, 'bs', locale);
+    return new BSDay().format(pattern, 'bs', locale);
   }
 
   static fromAD(input: Date): BSDay {
     return new BSDay(input);
   }
 
-  static fromBS(bs: [number, number, number]): BSDay {
-    return new BSDay({ bs });
+  static fromBS(bs: string | BSDate): BSDay {
+    if (typeof bs === 'string') {
+      return BSDay.parse(bs, 'YYYY-MM-DD', 'bs');
+    }
+    return new BSDay(bs);
   }
 
   static parse(input: string, pattern: string, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
@@ -101,33 +145,33 @@ export class BSDay {
       return BSDay.fromAD(parsed);
     }
 
-    return BSDay.fromBS([parsed.year, parsed.month, parsed.day]);
+    return BSDay.fromBS({ year: parsed.year, month: parsed.month, day: parsed.day });
   }
 
-  static extend(plugin: BSDayPlugin): void {
-    BSDay.use(plugin);
+  static extend(plugin: BSDayPlugin, options?: any): void {
+    BSDay.use(plugin, options);
   }
 
-  static use(plugin: BSDayPlugin): void {
-    pluginManager.use(
+  static use(plugin: BSDayPlugin, options?: any): void {
+    pluginSystem.use(
       plugin,
-      BSDay as unknown as {
-        prototype: Record<string, unknown>;
-        registerFormatToken(token: string, resolver: FormatTokenResolver): void;
-      },
+      BSDay as unknown as BSDayPluginHost,
+      // The actual factory will be passed from index.ts if available
+      undefined,
+      options,
     );
   }
 
   static registerFormatToken(token: string, resolver: FormatTokenResolver): void {
-    formatTokenRegistry[token] = resolver;
+    pluginSystem.registerFormatToken(token, resolver);
   }
 
   static setDataset(dataset: Record<string, BSDayData>): void {
-    datasetStore = dataset;
+    datasetManager.setDataset(dataset);
   }
 
   static dataset(): Record<string, BSDayData> {
-    return datasetStore;
+    return datasetManager.getDataset();
   }
 
   static isLeapYear(year: number, calendar: CalendarType = 'ad'): boolean {
@@ -167,28 +211,86 @@ export class BSDay {
     return false;
   }
 
-  get year(): number {
-    return this.toBS().year;
+  private get bs(): BSDate {
+    return this.toBS();
   }
 
-  get month(): number {
-    return this.toBS().month;
+  // Getters / Setters
+  year(): number;
+  year(value: number): BSDay;
+  year(value?: number): number | BSDay {
+    if (!this.isValid()) return value === undefined ? NaN : this;
+    if (value === undefined) return this.bs.year;
+    return this.setYear(value);
   }
 
-  get day(): number {
-    return this.toBS().day;
+  month(): number;
+  month(value: number): BSDay;
+  month(value?: number): number | BSDay {
+    if (!this.isValid()) return value === undefined ? NaN : this;
+    if (value === undefined) return this.bs.month;
+    return this.setMonth(value);
   }
 
-  get dayOfWeek(): number {
+  date(): number;
+  date(value: number): BSDay;
+  date(value?: number): number | BSDay {
+    if (!this.isValid()) return value === undefined ? NaN : this;
+    if (value === undefined) return this.bs.day;
+    return this.setDay(value);
+  }
+
+  hour(): number;
+  hour(value: number): BSDay;
+  hour(value?: number): number | BSDay {
+    if (!this.isValid()) return value === undefined ? NaN : this;
+    if (value === undefined) return this.adDate.getUTCHours();
+    const next = this.toAD();
+    next.setUTCHours(value);
+    return this.withDate(next);
+  }
+
+  minute(): number;
+  minute(value: number): BSDay;
+  minute(value?: number): number | BSDay {
+    if (!this.isValid()) return value === undefined ? NaN : this;
+    if (value === undefined) return this.adDate.getUTCMinutes();
+    const next = this.toAD();
+    next.setUTCMinutes(value);
+    return this.withDate(next);
+  }
+
+  second(): number;
+  second(value: number): BSDay;
+  second(value?: number): number | BSDay {
+    if (!this.isValid()) return value === undefined ? NaN : this;
+    if (value === undefined) return this.adDate.getUTCSeconds();
+    const next = this.toAD();
+    next.setUTCSeconds(value);
+    return this.withDate(next);
+  }
+
+  millisecond(): number;
+  millisecond(value: number): BSDay;
+  millisecond(value?: number): number | BSDay {
+    if (!this.isValid()) return value === undefined ? NaN : this;
+    if (value === undefined) return this.adDate.getUTCMilliseconds();
+    const next = this.toAD();
+    next.setUTCMilliseconds(value);
+    return this.withDate(next);
+  }
+
+  // Getters / Setters (Day.js style)
+  dayOfWeek(): number {
     return this.adDate.getUTCDay();
   }
 
-  get dayOfYear(): number {
+  dayOfYear(): number {
     const bs = this.toBS();
     let dayIndex = bs.day;
 
-    for (let month = 1; month < bs.month; month += 1) {
-      dayIndex += getBsMonthDays(bs.year, month);
+    for (let m = 1; m < bs.month; m += 1) {
+      dayIndex += getBsMonthDays(bs.year, m);
     }
 
     return dayIndex;
@@ -216,6 +318,9 @@ export class BSDay {
   }
 
   toBS(): BSDate {
+    if (!this.isValid()) {
+      return { year: NaN, month: NaN, day: NaN };
+    }
     return adToBs(this.adDate);
   }
 
@@ -267,26 +372,6 @@ export class BSDay {
     return this.withBSDate({ year: bs.year, month: bs.month, day: safeDay });
   }
 
-  setFullDate(
-    year: number,
-    month: number,
-    day: number,
-    calendar: CalendarType = DEFAULT_CALENDAR,
-  ): BSDay {
-    if (calendar === 'ad') {
-      if (!isValidADDate(year, month, day)) {
-        throw new RangeError(`Invalid AD date ${year}-${month}-${day}.`);
-      }
-      return this.withDate(new Date(Date.UTC(year, month - 1, day)));
-    }
-
-    if (!isValidBSDate(year, month, day)) {
-      throw new RangeError(`Invalid BS date ${year}-${month}-${day}.`);
-    }
-
-    return this.withBSDate({ year, month, day });
-  }
-
   private addDays(days: number): BSDay {
     return this.withDate(addUtcDays(this.adDate, days));
   }
@@ -322,15 +407,26 @@ export class BSDay {
   }
 
   add(value: number, unit: DateUnit, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
-    switch (unit) {
-      case 'day':
-        return this.addDays(value);
-      case 'month':
-        return this.addMonths(value, calendar);
+    if (!this.isValid()) return this;
+    const u = normalizeUnit(unit);
+    switch (u) {
       case 'year':
         return this.addYears(value, calendar);
+      case 'month':
+        return this.addMonths(value, calendar);
+      case 'date':
+      case 'day':
+        return this.addDays(value);
+      case 'hour':
+        return this.hour((this.hour() as number) + value);
+      case 'minute':
+        return this.minute((this.minute() as number) + value);
+      case 'second':
+        return this.second((this.second() as number) + value);
+      case 'millisecond':
+        return this.millisecond((this.millisecond() as number) + value);
       default:
-        throw new Error(`Unknown date unit: ${unit}`);
+        return this;
     }
   }
 
@@ -338,19 +434,145 @@ export class BSDay {
     return this.add(-value, unit, calendar);
   }
 
-  isBefore(other: BSDay): boolean {
-    return utcStartOfDay(this.adDate) < utcStartOfDay(other.adDate);
+  startOf(unit: DateUnit): BSDay {
+    if (!this.isValid()) return this;
+    const u = normalizeUnit(unit);
+    const next = this.toAD();
+
+    switch (u) {
+      case 'year':
+        return this.withBSDate({ year: this.bs.year, month: 1, day: 1 }).startOf('date');
+      case 'month':
+        return this.withBSDate({ year: this.bs.year, month: this.bs.month, day: 1 }).startOf('date');
+      case 'date':
+      case 'day':
+        next.setUTCHours(0, 0, 0, 0);
+        break;
+      case 'hour':
+        next.setUTCMinutes(0, 0, 0);
+        break;
+      case 'minute':
+        next.setUTCSeconds(0, 0);
+        break;
+      case 'second':
+        next.setUTCMilliseconds(0);
+        break;
+      default:
+        return this;
+    }
+    return this.withDate(next);
   }
 
-  isAfter(other: BSDay): boolean {
-    return utcStartOfDay(this.adDate) > utcStartOfDay(other.adDate);
+  endOf(unit: DateUnit): BSDay {
+    if (!this.isValid()) return this;
+    const u = normalizeUnit(unit);
+    // Shortcut: start of next unit - 1ms
+    switch (u) {
+      case 'year':
+        return this.add(1, 'year').startOf('year').subtract(1, 'millisecond');
+      case 'month':
+        return this.add(1, 'month').startOf('month').subtract(1, 'millisecond');
+      case 'date':
+      case 'day':
+        return this.add(1, 'day').startOf('day').subtract(1, 'millisecond');
+      case 'hour':
+        return this.add(1, 'hour').startOf('hour').subtract(1, 'millisecond');
+      case 'minute':
+        return this.add(1, 'minute').startOf('minute').subtract(1, 'millisecond');
+      case 'second':
+        return this.add(1, 'second').startOf('second').subtract(1, 'millisecond');
+      default:
+        return this;
+    }
   }
 
-  isSame(other: BSDay): boolean {
-    return utcStartOfDay(this.adDate) === utcStartOfDay(other.adDate);
+  isBefore(other: BSDay, unit: DateUnit = 'millisecond'): boolean {
+    if (!this.isValid() || !other.isValid()) return false;
+    if (unit === 'millisecond') {
+      return this.adDate.getTime() < other.adDate.getTime();
+    }
+    return this.endOf(unit).adDate.getTime() < other.startOf(unit).adDate.getTime();
   }
 
-  locale(l?: LocaleType): LocaleType | BSDay {
+  isAfter(other: BSDay, unit: DateUnit = 'millisecond'): boolean {
+    if (!this.isValid() || !other.isValid()) return false;
+    if (unit === 'millisecond') {
+      return this.adDate.getTime() > other.adDate.getTime();
+    }
+    return this.startOf(unit).adDate.getTime() > other.endOf(unit).adDate.getTime();
+  }
+
+  isSame(other: BSDay, unit: DateUnit = 'millisecond'): boolean {
+    if (!this.isValid() || !other.isValid()) return false;
+    const u = normalizeUnit(unit);
+    if (u === 'millisecond') {
+      return this.adDate.getTime() === other.adDate.getTime();
+    }
+    return (
+      this.startOf(u).adDate.getTime() <= this.adDate.getTime() &&
+      this.adDate.getTime() <= this.endOf(u).adDate.getTime() &&
+      this.startOf(u).adDate.getTime() === other.startOf(u).adDate.getTime()
+    );
+  }
+
+  isBetween(start: BSDay, end: BSDay, unit: DateUnit = 'millisecond', inclusivity = '[]'): boolean {
+    if (!this.isValid() || !start.isValid() || !end.isValid()) return false;
+    const u = normalizeUnit(unit);
+    const leftBound = inclusivity[0] === '[';
+    const rightBound = inclusivity[1] === ']';
+
+    return (
+      (leftBound ? !this.isBefore(start, u) : this.isAfter(start, u)) &&
+      (rightBound ? !this.isAfter(end, u) : this.isBefore(end, u))
+    );
+  }
+
+  diff(other: BSDay, unit: DateUnit = 'millisecond', float = false): number {
+    if (!this.isValid() || !other.isValid()) return NaN;
+    const u = normalizeUnit(unit);
+    const diffMs = this.adDate.getTime() - other.adDate.getTime();
+
+    let result = 0;
+    switch (u) {
+      case 'year':
+        result = diffMs / (365.25 * 24 * 60 * 60 * 1000);
+        break;
+      case 'month': {
+        if (!float) {
+          const d1 = this.toBS();
+          const d2 = other.toBS();
+          result = (d1.year - d2.year) * 12 + (d1.month - d2.month);
+        } else {
+          result = diffMs / (30.436875 * 24 * 60 * 60 * 1000);
+        }
+        break;
+      }
+      case 'date':
+      case 'day':
+        result = diffMs / (24 * 60 * 60 * 1000);
+        break;
+      case 'hour':
+        result = diffMs / (60 * 60 * 1000);
+        break;
+      case 'minute':
+        result = diffMs / (60 * 1000);
+        break;
+      case 'second':
+        result = diffMs / 1000;
+        break;
+      default:
+        result = diffMs;
+    }
+
+    // Years and months return float by default to match tests and provide precision.
+    // Other units are truncated by default to match Day.js behavior.
+    const isLargeUnit = u === 'year' || u === 'month';
+    return (float || isLargeUnit) ? result : Math.trunc(result);
+  }
+
+  locale(): LocaleType;
+  locale(l: LocaleType): this;
+  locale(l?: LocaleType): LocaleType | this {
     if (l === undefined) return this._locale;
     if (this.mutableMode) {
       this._locale = l;
@@ -358,19 +580,26 @@ export class BSDay {
     }
     const next = this.clone();
     (next as any)._locale = l;
-    return next;
+    return next as this;
   }
 
   format(
-    pattern: string,
+    pattern = 'YYYY-MM-DD HH:mm:ss',
     calendar: CalendarType = DEFAULT_CALENDAR,
     locale: LocaleType = this._locale,
   ): string {
-    return formatDate(pattern, calendar, this.adDate, this.toBS(), formatTokenRegistry, locale);
+    return formatDate(
+      pattern,
+      calendar,
+      this.adDate,
+      this.toBS(),
+      pluginSystem.getFormatTokenRegistry(),
+      locale,
+    );
   }
 
   data(): BSDayData | null {
-    const data = this.lookupDatasetEntry();
+    const data = datasetManager.lookupEntry(this.toBS());
     if (!data) {
       return null;
     }
@@ -387,16 +616,16 @@ export class BSDay {
     };
   }
 
-  tithi(): string | null {
-    return this.lookupDatasetEntry()?.tithi ?? null;
+  get tithi(): string | null {
+    return datasetManager.lookupEntry(this.toBS())?.tithi ?? null;
   }
 
   // festivals(): string[] {
   //   return [...(this.lookupDatasetEntry()?.festivals ?? [])];
   // }
 
-  panchang(): Omit<BSDayData, 'tithi' | 'festivals' | 'isHoliday' | 'events'> | null {
-    const data = this.lookupDatasetEntry();
+  get panchang(): Omit<BSDayData, 'tithi' | 'festivals' | 'isHoliday' | 'events'> | null {
+    const data = datasetManager.lookupEntry(this.toBS());
     if (!data) {
       return null;
     }
@@ -407,19 +636,6 @@ export class BSDay {
       yoga: data.yoga,
       karana: data.karana,
     };
-  }
-
-  private lookupDatasetEntry(): BSDayData | null {
-    const bs = this.toBS();
-    const strictKey = buildBsKey(bs);
-    const strict = datasetStore[strictKey];
-    if (strict) {
-      return strict;
-    }
-
-    // Allow non-padded keys too (e.g. 2082-1-1) to keep manual dataset edits ergonomic.
-    const looseKey = `${bs.year}-${bs.month}-${bs.day}`;
-    return datasetStore[looseKey] ?? null;
   }
 
   private withDate(date: Date): BSDay {
@@ -439,6 +655,17 @@ export class BSDay {
 
   toString(): string {
     const bs = this.toBS();
-    return `${pad(bs.year, 4)}-${pad(bs.month)}-${pad(bs.day)}`;
+    const time = `${pad(this.adDate.getUTCHours())}:${pad(this.adDate.getUTCMinutes())}:${pad(
+      this.adDate.getUTCSeconds(),
+    )}`;
+    return `${pad(bs.year, 4)}-${pad(bs.month)}-${pad(bs.day)} ${time}`;
+  }
+
+  toJSON(): string {
+    return this.toString();
+  }
+
+  [Symbol.for('nodejs.util.inspect.custom')]() {
+    return `BSDay("${this.toString()}")`;
   }
 }
