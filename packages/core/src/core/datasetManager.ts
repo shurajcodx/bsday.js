@@ -1,8 +1,7 @@
-import { dataset as bundledDataset } from '@bsday/dataset';
 import type { BSDayData, BSDate } from '../types';
 import { buildBsKey } from '../utils/helpers';
 
-let datasetStore: Record<string, BSDayData> = bundledDataset as Record<string, BSDayData>;
+let datasetStore: Record<string, BSDayData> = {};
 
 export const datasetManager = {
   getDataset(): Record<string, BSDayData> {

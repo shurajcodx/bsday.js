@@ -27,9 +27,10 @@ It is built as a **modular monorepo** designed to support plugins, datasets, and
 Install via npm, pnpm, or yarn:
 
 ```bash
-pnpm add @bsday/core @bsday/dataset
+pnpm add @bsday.js/core @bsday/dataset
 ```
-*(Note: `@bsday/core` can be used standalone, but `@bsday/dataset` provides the full Panchang and festival data).*
+`@bsday.js/core` works by itself for BS/AD conversion and date math.
+`@bsday/dataset` is optional and is only needed when you want panchang/day data.
 
 ---
 
@@ -37,35 +38,43 @@ pnpm add @bsday/core @bsday/dataset
 
 ### Basic Conversion & Manipulation
 ```typescript
-import { BSDay } from '@bsday/core';
-import '@bsday/dataset'; // imports panchang and festival dataset automatically
+import { BSDay } from '@bsday.js/core';
+import { dataset } from '@bsday/dataset';
+
+BSDay.setDataset(dataset);
 
 // Create a BS Date
-const bsDate = BSDay.fromBS([2081, 6, 26]);
-console.log(bsDate.format('YYYY-MM-DD')); // "2081-06-26"
+const bsDate = BSDay.fromBS({ year: 2081, month: 6, day: 27 });
+console.log(bsDate.format('YYYY-MM-DD', 'bs')); // "2081-06-27"
 
 // Convert to AD
 const adDate = bsDate.toAD();
-console.log(adDate.toISOString()); // "2024-10-12T00:00:00.000Z"
+console.log(adDate.toISOString()); // "2024-10-11T18:15:00.000Z"
 
 // Create from AD Date
 const today = BSDay.fromAD(new Date());
 console.log(`Today in BS is: ${today.format('YYYY-MM-DD')}`);
 
 // Date Arithmetic
-const nextWeek = bsDate.addDays(7);
-console.log(nextWeek.format('YYYY-MM-DD'));
+const nextWeek = bsDate.add(7, 'day');
+console.log(nextWeek.format('YYYY-MM-DD', 'bs'));
 ```
 
 ### Accessing Panchang & Festival Data
 ```typescript
-import { BSDay } from '@bsday/core';
+import { BSDay } from '@bsday.js/core';
+import { dataset } from '@bsday/dataset';
 
-const dashain = BSDay.fromBS([2081, 6, 26]);
+BSDay.setDataset(dataset);
 
-console.log(dashain.isHoliday()); // true
-console.log(dashain.getFestivals()); // ["Vijaya Dashami"]
-console.log(dashain.getPanchang());
+const dashain = BSDay.fromBS({ year: 2081, month: 6, day: 27 });
+
+console.log(dashain.tithi); // e.g. "Dashami"
+console.log(dashain.festivals); // []
+console.log(dashain.events); // []
+console.log(dashain.isHoliday); // false
+console.log(dashain.panchang);
+console.log(dashain.data());
 /*
 {
   tithi: 'Dashami',
@@ -81,7 +90,7 @@ console.log(dashain.getPanchang());
 
 ## Packages
 
-### `@bsday/core`
+### `@bsday.js/core`
 The main library providing:
 * `BSDay` class
 * BS ↔ AD conversion
@@ -93,7 +102,7 @@ The main library providing:
 ### `@bsday/dataset`
 Daily Bikram Sambat dataset keyed by `YYYY-MM-DD`. Dataset fields include:
 * `tithi`, `festivals`, `nakshatra`, `yoga`, `karana`, `events`, `isHoliday`
-The dataset is automatically loaded by `@bsday/core` when imported.
+Load it explicitly with `BSDay.setDataset(dataset)`.
 
 ---
 
@@ -184,7 +193,7 @@ Typical workflow:
 
 ## Requirements
 
-* Node.js ≥ 24
+* Node.js ≥ 20
 * pnpm ≥ 10
 
 ---

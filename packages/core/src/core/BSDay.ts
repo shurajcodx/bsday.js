@@ -567,24 +567,80 @@ export class BSDay {
     );
   }
 
+  private diffInBsMonths(other: BSDay, float: boolean): number {
+    if (this.adDate.getTime() === other.adDate.getTime()) {
+      return 0;
+    }
+
+    if (this.adDate.getTime() < other.adDate.getTime()) {
+      return -other.diffInBsMonths(this, float);
+    }
+
+    const current = this.toBS();
+    const base = other.toBS();
+    let wholeMonths = (current.year - base.year) * 12 + (current.month - base.month);
+    let anchor = other.add(wholeMonths, 'month');
+
+    if (anchor.adDate.getTime() > this.adDate.getTime()) {
+      wholeMonths -= 1;
+      anchor = other.add(wholeMonths, 'month');
+    }
+
+    if (!float) {
+      return wholeMonths;
+    }
+
+    const nextAnchor = other.add(wholeMonths + 1, 'month');
+    const spanMs = nextAnchor.adDate.getTime() - anchor.adDate.getTime();
+    const fraction = spanMs === 0 ? 0 : (this.adDate.getTime() - anchor.adDate.getTime()) / spanMs;
+
+    return wholeMonths + fraction;
+  }
+
+  private diffInBsYears(other: BSDay, float: boolean): number {
+    if (this.adDate.getTime() === other.adDate.getTime()) {
+      return 0;
+    }
+
+    if (this.adDate.getTime() < other.adDate.getTime()) {
+      return -other.diffInBsYears(this, float);
+    }
+
+    const current = this.toBS();
+    const base = other.toBS();
+    let wholeYears = current.year - base.year;
+    let anchor = other.add(wholeYears, 'year');
+
+    if (anchor.adDate.getTime() > this.adDate.getTime()) {
+      wholeYears -= 1;
+      anchor = other.add(wholeYears, 'year');
+    }
+
+    if (!float) {
+      return wholeYears;
+    }
+
+    const nextAnchor = other.add(wholeYears + 1, 'year');
+    const spanMs = nextAnchor.adDate.getTime() - anchor.adDate.getTime();
+    const fraction = spanMs === 0 ? 0 : (this.adDate.getTime() - anchor.adDate.getTime()) / spanMs;
+
+    return wholeYears + fraction;
+  }
+
   diff(other: BSDay, unit: DateUnit = 'millisecond', float = false): number {
     if (!this.isValid() || !other.isValid()) return NaN;
     const u = normalizeUnit(unit);
     const diffMs = this.adDate.getTime() - other.adDate.getTime();
+    const isLargeUnit = u === 'year' || u === 'month';
+    const shouldReturnFloat = arguments.length >= 3 ? float : isLargeUnit;
 
     let result = 0;
     switch (u) {
       case 'year':
-        result = diffMs / (365.25 * 24 * 60 * 60 * 1000);
+        result = this.diffInBsYears(other, shouldReturnFloat);
         break;
       case 'month': {
-        if (!float) {
-          const d1 = this.toBS();
-          const d2 = other.toBS();
-          result = (d1.year - d2.year) * 12 + (d1.month - d2.month);
-        } else {
-          result = diffMs / (30.436875 * 24 * 60 * 60 * 1000);
-        }
+        result = this.diffInBsMonths(other, shouldReturnFloat);
         break;
       }
       case 'date':
@@ -604,10 +660,9 @@ export class BSDay {
         result = diffMs;
     }
 
-    // Years and months return float by default to match tests and provide precision.
+    // Years and months return fractional BS-calendar diffs by default.
     // Other units are truncated by default to match Day.js behavior.
-    const isLargeUnit = u === 'year' || u === 'month';
-    return (float || isLargeUnit) ? result : Math.trunc(result);
+    return shouldReturnFloat ? result : Math.trunc(result);
   }
 
   locale(): LocaleType;
@@ -638,8 +693,12 @@ export class BSDay {
     );
   }
 
+  private lookupDatasetEntry(): BSDayData | null {
+    return datasetManager.lookupEntry(this.toBS());
+  }
+
   data(): BSDayData | null {
-    const data = datasetManager.lookupEntry(this.toBS());
+    const data = this.lookupDatasetEntry();
     if (!data) {
       return null;
     }
@@ -647,9 +706,9 @@ export class BSDay {
     return {
       tithi: data.tithi,
       paksha: data.paksha,
-      // festivals: [...data.festivals],
-      // events: [...data.events],
-      // isHoliday: data.isHoliday,
+      festivals: [...(data.festivals ?? [])],
+      events: [...(data.events ?? [])],
+      isHoliday: data.isHoliday ?? false,
       nakshatra: data.nakshatra,
       yoga: data.yoga,
       karana: data.karana,
@@ -657,15 +716,23 @@ export class BSDay {
   }
 
   get tithi(): string | null {
-    return datasetManager.lookupEntry(this.toBS())?.tithi ?? null;
+    return this.lookupDatasetEntry()?.tithi ?? null;
   }
 
-  // festivals(): string[] {
-  //   return [...(this.lookupDatasetEntry()?.festivals ?? [])];
-  // }
+  get festivals(): string[] {
+    return [...(this.lookupDatasetEntry()?.festivals ?? [])];
+  }
+
+  get events(): string[] {
+    return [...(this.lookupDatasetEntry()?.events ?? [])];
+  }
+
+  get isHoliday(): boolean {
+    return this.lookupDatasetEntry()?.isHoliday ?? false;
+  }
 
   get panchang(): Omit<BSDayData, 'tithi' | 'festivals' | 'isHoliday' | 'events'> | null {
-    const data = datasetManager.lookupEntry(this.toBS());
+    const data = this.lookupDatasetEntry();
     if (!data) {
       return null;
     }

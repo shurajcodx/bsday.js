@@ -1,9 +1,5 @@
-import { describe, it, expect, beforeAll, vi } from 'vitest';
+import { describe, it, expect, beforeAll } from 'vitest';
 import bundledDataset from '../../dataset/src/data/dataset.json';
-
-vi.mock('@bsday/dataset', () => ({
-    dataset: bundledDataset,
-}));
 
 import { BSDay } from '../src';
 
@@ -95,8 +91,10 @@ describe('BSDay Edge Cases', () => {
         const d2 = new BSDay({ year: 2081, month: 1, day: 2 });
         // Correct difference is 2 days (31st doesn't exist in 2080 month 12)
         expect(d2.diff(d1, 'day')).toBe(2);
-        expect(d2.diff(d1, 'month')).toBe(1);
-        expect(d2.diff(d1, 'year')).toBeCloseTo(0.0055, 3);
+        expect(d2.diff(d1, 'month')).toBeCloseTo(2 / 30, 6);
+        expect(d2.diff(d1, 'month', false)).toBe(0);
+        expect(d2.diff(d1, 'year')).toBeCloseTo(2 / 365, 6);
+        expect(d2.diff(d1, 'year', false)).toBe(0);
     });
 
     it('dataset missing entries', () => {
@@ -104,6 +102,24 @@ describe('BSDay Edge Cases', () => {
         expect(d.tithi).toBeNull();
         expect(d.panchang).toBeNull();
         expect(d.data()).toBeNull();
+        expect(d.festivals).toEqual([]);
+        expect(d.events).toEqual([]);
+        expect(d.isHoliday).toBe(false);
+    });
+
+    it('keeps dataset-backed panchang opt-in', () => {
+        const existingDataset = BSDay.dataset();
+        BSDay.setDataset({});
+
+        const d = new BSDay({ year: 2080, month: 1, day: 1 });
+        expect(d.tithi).toBeNull();
+        expect(d.panchang).toBeNull();
+        expect(d.data()).toBeNull();
+        expect(d.festivals).toEqual([]);
+        expect(d.events).toEqual([]);
+        expect(d.isHoliday).toBe(false);
+
+        BSDay.setDataset(existingDataset);
     });
 
     it('plugin safe multiple extension', () => {

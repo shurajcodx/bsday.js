@@ -1,9 +1,5 @@
-import { describe, it, expect, beforeAll, vi } from 'vitest';
+import { describe, it, expect, beforeAll } from 'vitest';
 import bundledDataset from '../../dataset/src/data/dataset.json';
-
-vi.mock('@bsday/dataset', () => ({
-    dataset: bundledDataset,
-}));
 
 import { BSDay } from '../src';
 
@@ -85,7 +81,9 @@ describe('BSDay Core Features', () => {
         const b = new BSDay({ year: 2080, month: 1, day: 1 });
         expect(a.diff(b, 'day')).toBeGreaterThan(0);
         expect(a.diff(b, 'month')).toBeGreaterThan(0);
-        expect(a.diff(b, 'year')).toBeCloseTo(1, 0);
+        expect(a.diff(b, 'year')).toBe(1);
+        expect(a.diff(b, 'month', true)).toBe(12);
+        expect(a.diff(b, 'year', false)).toBe(1);
     });
 
     it('plugin system works', () => {
@@ -115,6 +113,31 @@ describe('BSDay Core Features', () => {
         expect(d.tithi).toBeDefined();
         expect(d.panchang).toBeDefined();
         expect(d.data()).toBeDefined();
+    });
+
+    it('exposes the full dataset day record and clones array fields', () => {
+        const d = new BSDay({ year: 2090, month: 12, day: 6 });
+        const record = d.data();
+
+        expect(record).toEqual({
+            tithi: 'Amavasya',
+            paksha: 'Krishna',
+            festivals: ['Ghode Jatra'],
+            events: ['International Day of Happiness'],
+            isHoliday: true,
+            nakshatra: 'Purva Bhadrapada',
+            yoga: 'Shubha',
+            karana: 'Naga',
+        });
+        expect(d.festivals).toEqual(['Ghode Jatra']);
+        expect(d.events).toEqual(['International Day of Happiness']);
+        expect(d.isHoliday).toBe(true);
+
+        record!.festivals!.push('Mutated');
+        record!.events!.push('Changed');
+
+        expect(d.festivals).toEqual(['Ghode Jatra']);
+        expect(d.events).toEqual(['International Day of Happiness']);
     });
 
     it('maps exact Nepal midnight instants to the first supported BS date', () => {
