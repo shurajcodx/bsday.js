@@ -129,4 +129,31 @@ describe('BSDay Core Features', () => {
         expect(d.format('YYYY-MM-DD HH:mm:ss', 'ad')).toBe('2024-04-13 00:00:00');
     });
 
+    it('round-trips BS datetimes with time tokens', () => {
+        const original = new BSDay({ year: 2081, month: 6, day: 27 }).hour(13).minute(5).second(9);
+        const formatted = original.format('YYYY-MM-DD HH:mm:ss', 'bs');
+        const parsed = BSDay.parse(formatted, 'YYYY-MM-DD HH:mm:ss', 'bs');
+
+        expect(parsed.toBS()).toEqual(original.toBS());
+        expect(parsed.hour()).toBe(13);
+        expect(parsed.minute()).toBe(5);
+        expect(parsed.second()).toBe(9);
+    });
+
+    it('parses Nepali numerals and Nepali month labels', () => {
+        const nepaliFormattedBs = new BSDay({ year: 2081, month: 6, day: 27 })
+            .hour(13)
+            .minute(5)
+            .second(9)
+            .locale('ne')
+            .format('YYYY MMMM DD HH:mm:ss', 'bs');
+        const parsedBs = BSDay.parse(nepaliFormattedBs, 'YYYY MMMM DD HH:mm:ss', 'bs');
+        const parsedAd = BSDay.parse('२०२४ अप्रिल १३ ००:००:००', 'YYYY MMMM DD HH:mm:ss', 'ad');
+
+        expect(parsedBs.toBS()).toEqual({ year: 2081, month: 6, day: 27 });
+        expect(parsedBs.hour()).toBe(13);
+        expect(parsedAd.toBS()).toEqual({ year: 2081, month: 1, day: 1 });
+        expect(parsedAd.hour()).toBe(0);
+    });
+
 });

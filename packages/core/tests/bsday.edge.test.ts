@@ -23,6 +23,31 @@ describe('BSDay Edge Cases', () => {
         expect(d.isValid()).toBe(false);
     });
 
+    it('rejects ambiguous bare ISO date strings', () => {
+        expect(new BSDay('2024-10-12').isValid()).toBe(false);
+        expect(BSDay.isValid('2024-10-12')).toBe(false);
+    });
+
+    it('accepts explicit calendar parsing for ambiguous strings', () => {
+        const bs = BSDay.fromBS('2081-06-27');
+        const ad = BSDay.parse('2024-10-12', 'YYYY-MM-DD', 'ad');
+
+        expect(bs.isValid()).toBe(true);
+        expect(bs.toAD().toISOString()).toBe('2024-10-11T18:15:00.000Z');
+        expect(ad.isValid()).toBe(true);
+        expect(ad.toBS()).toEqual({ year: 2081, month: 6, day: 27 });
+    });
+
+    it('still accepts unambiguous bare ISO date strings', () => {
+        const adOnly = new BSDay('1969-07-20');
+        const bsOnly = new BSDay('2099-03-32');
+
+        expect(adOnly.isValid()).toBe(true);
+        expect(adOnly.format('YYYY-MM-DD', 'ad')).toBe('1969-07-20');
+        expect(bsOnly.isValid()).toBe(true);
+        expect(bsOnly.toBS()).toEqual({ year: 2099, month: 3, day: 32 });
+    });
+
     it('AD leap years', () => {
         expect(BSDay.isLeapYear(2000, 'ad')).toBe(true);
         expect(BSDay.isLeapYear(1900, 'ad')).toBe(false);

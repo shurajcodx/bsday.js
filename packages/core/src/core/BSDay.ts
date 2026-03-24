@@ -2,7 +2,7 @@ import { adToBs } from '../converters/adToBs';
 import { bsToAd } from '../converters/bsToAd';
 import { getBsMonthDays } from '../converters/monthData';
 import { formatDate } from '../formatting/formatter';
-import { parseDate } from '../parsing/parser';
+import { parseDate, type ParsedBSDateTime } from '../parsing/parser';
 import { datasetManager } from './datasetManager';
 import { pluginSystem } from './pluginSystem';
 import type {
@@ -40,6 +40,40 @@ interface BSDayOptions {
   mutable?: boolean;
 }
 
+type CalendarResolution = 'bs' | 'ad' | 'ambiguous' | 'invalid';
+
+function resolveIsoLikeDateString(input: string): {
+  resolution: CalendarResolution;
+  year: number;
+  month: number;
+  day: number;
+} | null {
+  const match = input.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) {
+    return null;
+  }
+
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  const validBS = isValidBSDate(year, month, day);
+  const validAD = isValidADDate(year, month, day);
+
+  if (validBS && validAD) {
+    return { resolution: 'ambiguous', year, month, day };
+  }
+
+  if (validBS) {
+    return { resolution: 'bs', year, month, day };
+  }
+
+  if (validAD) {
+    return { resolution: 'ad', year, month, day };
+  }
+
+  return { resolution: 'invalid', year, month, day };
+}
+
 export class BSDay {
   private adDate: Date;
   private readonly mutableMode: boolean;
@@ -75,11 +109,20 @@ export class BSDay {
 
     if (typeof input === 'string') {
       try {
-        // Try parsing as BS if it matches YYYY-MM-DD
-        if (/^\d{4}-\d{2}-\d{2}$/.test(input)) {
-          const [y, m, d] = input.split('-').map(Number);
-          if (isValidBSDate(y, m, d)) {
-            this.adDate = bsToAd({ year: y, month: m, day: d });
+        const isoLikeDate = resolveIsoLikeDateString(input);
+        if (isoLikeDate) {
+          if (isoLikeDate.resolution === 'bs') {
+            this.adDate = bsToAd({ year: isoLikeDate.year, month: isoLikeDate.month, day: isoLikeDate.day });
+            return;
+          }
+
+          if (isoLikeDate.resolution === 'ad') {
+            this.adDate = parseDate(input, 'YYYY-MM-DD', 'ad') as Date;
+            return;
+          }
+
+          if (isoLikeDate.resolution === 'ambiguous') {
+            this.adDate = new Date(NaN);
             return;
           }
         }
@@ -153,7 +196,12 @@ export class BSDay {
       return BSDay.fromAD(parsed);
     }
 
-    return BSDay.fromBS({ year: parsed.year, month: parsed.month, day: parsed.day });
+    const parsedBS = parsed as ParsedBSDateTime;
+    let result = BSDay.fromBS({ year: parsedBS.year, month: parsedBS.month, day: parsedBS.day });
+    result = result.hour(parsedBS.hour) as BSDay;
+    result = result.minute(parsedBS.minute) as BSDay;
+    result = result.second(parsedBS.second) as BSDay;
+    return result;
   }
 
   static extend(plugin: BSDayPlugin, options?: any): void {
@@ -213,6 +261,11 @@ export class BSDay {
           return false;
         }
       }
+      const isoLikeDate = resolveIsoLikeDateString(arg1);
+      if (isoLikeDate) {
+        return isoLikeDate.resolution === 'bs' || isoLikeDate.resolution === 'ad';
+      }
+
       return !Number.isNaN(new Date(arg1).getTime());
     }
 
