@@ -1,13 +1,13 @@
 import type { BSDate } from '../types';
 import { MIN_YEAR } from '../utils/constants';
-import { assertBsYearRange } from '../utils/helpers';
+import { assertBsYearRange, createNepalDate, DAY_MS } from '../utils/helpers';
 import { getBsMonthDays, getBsYearDays } from './monthData';
 import { isValidBSDate } from '../utils/validation';
 
 const BS_EPOCH: BSDate = { year: 1970, month: 1, day: 1 };
 // Anchor mapping:
-// 1970-01-01 BS == 1913-04-14 AD (UTC date boundary).
-const AD_EPOCH_UTC = Date.UTC(1913, 3, 14);
+// 1970-01-01 BS == 1913-04-13 00:00 in Nepal time.
+const AD_EPOCH_UTC = createNepalDate(1913, 4, 13).getTime();
 
 function daysSinceBsEpoch(date: BSDate): number {
   let days = 0;
@@ -32,7 +32,7 @@ export function bsToAd(date: BSDate): Date {
   }
 
   const offsetDays = daysSinceBsEpoch(date);
-  return new Date(AD_EPOCH_UTC + offsetDays * 24 * 60 * 60 * 1000);
+  return new Date(AD_EPOCH_UTC + offsetDays * DAY_MS);
 }
 
 export { AD_EPOCH_UTC, BS_EPOCH, MIN_YEAR };

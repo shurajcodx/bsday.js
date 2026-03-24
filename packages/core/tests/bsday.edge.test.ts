@@ -1,6 +1,11 @@
-import { describe, it, expect, beforeAll } from 'vitest';
+import { describe, it, expect, beforeAll, vi } from 'vitest';
+import bundledDataset from '../../dataset/src/data/dataset.json';
+
+vi.mock('@bsday/dataset', () => ({
+    dataset: bundledDataset,
+}));
+
 import { BSDay } from '../src';
-import { dataset as bundledDataset } from '@bsday/dataset';
 
 beforeAll(() => {
     BSDay.setDataset(bundledDataset);
@@ -26,10 +31,12 @@ describe('BSDay Edge Cases', () => {
     });
 
     it('BS month/day boundaries', () => {
-        const d = new BSDay({ year: 2080, month: 12, day: 30 });
+        const d = new BSDay({ year: 2080, month: 12, day: 30 }).hour(9).minute(45);
         const overflow = d.add(1, 'day');
         expect(overflow.date()).toBe(1);
         expect(overflow.month()).toBe(1);
+        expect(overflow.hour()).toBe(9);
+        expect(overflow.minute()).toBe(45);
     });
 
     it('clamp BS day on setMonth', () => {
@@ -51,11 +58,11 @@ describe('BSDay Edge Cases', () => {
     });
 
     it('startOf and endOf', () => {
-        const d = new BSDay({ year: 2080, month: 5, day: 10 });
+        const d = new BSDay({ year: 2080, month: 5, day: 10 }).hour(8).minute(10).second(15);
         const start = d.startOf('day').toAD();
         const end = d.endOf('day').toAD();
-        expect(start.getUTCHours()).toBe(0);
-        expect(end.getUTCHours()).toBe(23);
+        expect(new BSDay(start).hour()).toBe(0);
+        expect(new BSDay(end).hour()).toBe(23);
     });
 
     it('diff across year boundary', () => {
@@ -92,6 +99,11 @@ describe('BSDay Edge Cases', () => {
 
         const updated = d.add(1, 'day');
         expect(updated.toString()).not.toBe(d.toString());
+    });
+
+    it('rejects instants before the Nepal-local epoch boundary', () => {
+        const beforeBoundary = BSDay.fromAD(new Date('1913-04-12T18:14:59.999Z'));
+        expect(() => beforeBoundary.toBS()).toThrow(RangeError);
     });
 
 });

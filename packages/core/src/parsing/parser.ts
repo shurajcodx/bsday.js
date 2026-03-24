@@ -1,5 +1,6 @@
 import type { BSDate, CalendarType } from '../types';
 import { MONTHS_AD, MONTHS_NEPALI } from '../utils/constants';
+import { createNepalDate } from '../utils/helpers';
 import { isValidADDate, isValidBSDate } from '../utils/validation';
 
 interface ParsedDateParts {
@@ -114,7 +115,7 @@ export function parseDate(input: string, pattern: string, calendar: CalendarType
     if (!isValidADDate(parsed.year, parsed.month, parsed.day)) {
       throw new RangeError(`Invalid AD date ${parsed.year}-${parsed.month}-${parsed.day}.`);
     }
-    return new Date(Date.UTC(parsed.year, parsed.month - 1, parsed.day));
+    return createNepalDate(parsed.year, parsed.month, parsed.day);
   }
 
   if (!isValidBSDate(parsed.year, parsed.month, parsed.day)) {

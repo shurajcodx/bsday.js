@@ -24,7 +24,15 @@ import {
   MONTHS_NEPALI,
   WEEKDAYS_NEPALI,
 } from '../utils/constants';
-import { addUtcDays, clamp, mod, pad, utcStartOfDay } from '../utils/helpers';
+import {
+  addCalendarDays,
+  clamp,
+  getNepalDateTimeParts,
+  mod,
+  nepalStartOfDay,
+  pad,
+  updateNepalDateTime,
+} from '../utils/helpers';
 import { isLeapYear, isValidADDate, isValidBSDate } from '../utils/validation';
 import { normalizeUnit } from '../utils/units';
 
@@ -244,45 +252,37 @@ export class BSDay {
   hour(value: number): BSDay;
   hour(value?: number): number | BSDay {
     if (!this.isValid()) return value === undefined ? NaN : this;
-    if (value === undefined) return this.adDate.getUTCHours();
-    const next = this.toAD();
-    next.setUTCHours(value);
-    return this.withDate(next);
+    if (value === undefined) return getNepalDateTimeParts(this.adDate).hour;
+    return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCHours(value)));
   }
 
   minute(): number;
   minute(value: number): BSDay;
   minute(value?: number): number | BSDay {
     if (!this.isValid()) return value === undefined ? NaN : this;
-    if (value === undefined) return this.adDate.getUTCMinutes();
-    const next = this.toAD();
-    next.setUTCMinutes(value);
-    return this.withDate(next);
+    if (value === undefined) return getNepalDateTimeParts(this.adDate).minute;
+    return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCMinutes(value)));
   }
 
   second(): number;
   second(value: number): BSDay;
   second(value?: number): number | BSDay {
     if (!this.isValid()) return value === undefined ? NaN : this;
-    if (value === undefined) return this.adDate.getUTCSeconds();
-    const next = this.toAD();
-    next.setUTCSeconds(value);
-    return this.withDate(next);
+    if (value === undefined) return getNepalDateTimeParts(this.adDate).second;
+    return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCSeconds(value)));
   }
 
   millisecond(): number;
   millisecond(value: number): BSDay;
   millisecond(value?: number): number | BSDay {
     if (!this.isValid()) return value === undefined ? NaN : this;
-    if (value === undefined) return this.adDate.getUTCMilliseconds();
-    const next = this.toAD();
-    next.setUTCMilliseconds(value);
-    return this.withDate(next);
+    if (value === undefined) return getNepalDateTimeParts(this.adDate).millisecond;
+    return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCMilliseconds(value)));
   }
 
   // Getters / Setters (Day.js style)
   dayOfWeek(): number {
-    return this.adDate.getUTCDay();
+    return getNepalDateTimeParts(this.adDate).dayOfWeek;
   }
 
   dayOfYear(): number {
@@ -298,17 +298,16 @@ export class BSDay {
 
   daysInMonth(calendar: CalendarType = DEFAULT_CALENDAR): number {
     if (calendar === 'ad') {
-      const year = this.adDate.getUTCFullYear();
-      const month = this.adDate.getUTCMonth();
+      const { year, month } = getNepalDateTimeParts(this.adDate);
       // passing month + 1 with day 0 returns the last day of the current month
-      return new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
+      return new Date(Date.UTC(year, month, 0)).getUTCDate();
     }
     const bs = this.toBS();
     return getBsMonthDays(bs.year, bs.month);
   }
 
   isWeekend(): boolean {
-    const day = this.adDate.getUTCDay();
+    const day = this.dayOfWeek();
     // 0 = Sunday, 6 = Saturday
     return day === 0 || day === 6;
   }
@@ -331,15 +330,13 @@ export class BSDay {
   }
 
   isLeapYear(calendar: CalendarType = DEFAULT_CALENDAR): boolean {
-    const year = calendar === 'ad' ? this.adDate.getUTCFullYear() : this.toBS().year;
+    const year = calendar === 'ad' ? getNepalDateTimeParts(this.adDate).year : this.toBS().year;
     return BSDay.isLeapYear(year, calendar);
   }
 
   setYear(year: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
     if (calendar === 'ad') {
-      const next = this.toAD();
-      next.setUTCFullYear(year);
-      return this.withDate(next);
+      return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCFullYear(year)));
     }
 
     const bs = this.toBS();
@@ -349,9 +346,7 @@ export class BSDay {
 
   setMonth(month: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
     if (calendar === 'ad') {
-      const next = this.toAD();
-      next.setUTCMonth(month - 1);
-      return this.withDate(next);
+      return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCMonth(month - 1)));
     }
 
     const bs = this.toBS();
@@ -362,9 +357,7 @@ export class BSDay {
 
   setDay(day: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
     if (calendar === 'ad') {
-      const next = this.toAD();
-      next.setUTCDate(day);
-      return this.withDate(next);
+      return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCDate(day)));
     }
 
     const bs = this.toBS();
@@ -373,14 +366,14 @@ export class BSDay {
   }
 
   private addDays(days: number): BSDay {
-    return this.withDate(addUtcDays(this.adDate, days));
+    return this.withDate(addCalendarDays(this.adDate, days));
   }
 
   private addMonths(months: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
     if (calendar === 'ad') {
-      const next = this.toAD();
-      next.setUTCMonth(next.getUTCMonth() + months);
-      return this.withDate(next);
+      return this.withDate(
+        updateNepalDateTime(this.adDate, (next) => next.setUTCMonth(next.getUTCMonth() + months)),
+      );
     }
 
     const bs = this.toBS();
@@ -395,9 +388,9 @@ export class BSDay {
 
   private addYears(years: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
     if (calendar === 'ad') {
-      const next = this.toAD();
-      next.setUTCFullYear(next.getUTCFullYear() + years);
-      return this.withDate(next);
+      return this.withDate(
+        updateNepalDateTime(this.adDate, (next) => next.setUTCFullYear(next.getUTCFullYear() + years)),
+      );
     }
 
     const bs = this.toBS();
@@ -437,7 +430,6 @@ export class BSDay {
   startOf(unit: DateUnit): BSDay {
     if (!this.isValid()) return this;
     const u = normalizeUnit(unit);
-    const next = this.toAD();
 
     switch (u) {
       case 'year':
@@ -446,21 +438,16 @@ export class BSDay {
         return this.withBSDate({ year: this.bs.year, month: this.bs.month, day: 1 }).startOf('date');
       case 'date':
       case 'day':
-        next.setUTCHours(0, 0, 0, 0);
-        break;
+        return this.withDate(new Date(nepalStartOfDay(this.adDate)));
       case 'hour':
-        next.setUTCMinutes(0, 0, 0);
-        break;
+        return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCMinutes(0, 0, 0)));
       case 'minute':
-        next.setUTCSeconds(0, 0);
-        break;
+        return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCSeconds(0, 0)));
       case 'second':
-        next.setUTCMilliseconds(0);
-        break;
+        return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCMilliseconds(0)));
       default:
         return this;
     }
-    return this.withDate(next);
   }
 
   endOf(unit: DateUnit): BSDay {
@@ -650,14 +637,17 @@ export class BSDay {
   }
 
   private withBSDate(bs: BSDate): BSDay {
-    return this.withDate(bsToAd(bs));
+    const next = bsToAd(bs);
+    const { hour, minute, second, millisecond } = getNepalDateTimeParts(this.adDate);
+    return this.withDate(
+      updateNepalDateTime(next, (shifted) => shifted.setUTCHours(hour, minute, second, millisecond)),
+    );
   }
 
   toString(): string {
     const bs = this.toBS();
-    const time = `${pad(this.adDate.getUTCHours())}:${pad(this.adDate.getUTCMinutes())}:${pad(
-      this.adDate.getUTCSeconds(),
-    )}`;
+    const { hour, minute, second } = getNepalDateTimeParts(this.adDate);
+    const time = `${pad(hour)}:${pad(minute)}:${pad(second)}`;
     return `${pad(bs.year, 4)}-${pad(bs.month)}-${pad(bs.day)} ${time}`;
   }
 
