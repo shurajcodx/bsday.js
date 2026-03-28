@@ -23,46 +23,46 @@
 
 1. **Current Date & Time**
 
-   * `BSDay.now()` → current date/time (BSDay instance)
-   * `BSDay.today()` → alias for now()
+   * `BSDay.now()` → current Unix timestamp
+   * `BSDay.nowAD()` → current AD `Date`
+   * `BSDay.nowBS(pattern?, locale?)` → formatted BS string
 
 2. **Date Creation**
 
    * `new BSDay()` → current date/time
    * `new BSDay(Date)` → from AD
-   * `new BSDay(string)` → parse date string
-   * `new BSDay({ bs: [year, month, day] })` → from BS
+   * `new BSDay(string)` → from AD-like string input
+   * `BSDay.bs('YYYY/MM/DD')` → explicit BS input
+   * `BSDay.bs(year, month, day)` → explicit BS input
    * `BSDay.fromAD(date)` → convert AD → BSDay
-   * `BSDay.fromBS([year, month, day])` → convert BS → BSDay
+   * `BSDay.fromBS(...)` → compatibility alias for BS input
 
 3. **Conversion**
 
    * `.toAD()` → JS Date object
    * `.toBS()` → BS object `{ year, month, day }`
-   * `.ad` / `.bs` getters for convenience
 
 4. **Dataset Access (Optional)**
 
-   * Access **tithi, festivals, Panchang info** via `BSDay.dataset()` or instance methods
+   * Register optional day data via `BSDay.setDataset(dataset)`
+   * Access **tithi, festivals, events, isHoliday, Panchang info** via instance getters or `data()`
 
 5. **Getters**
 
-   * `.year`, `.month`, `.day` (calendar optional)
-   * `.dayOfWeek` → 0–6 (calculated dynamically)
-   * `.dayOfYear` → 1–365/366
+   * `.year()`, `.month()`, `.date()` for BS values
+   * `.hour()`, `.minute()`, `.second()`, `.millisecond()` for Nepal-local time
+   * `.dayOfWeek()` → 0–6 (calculated dynamically)
+   * `.dayOfYear()` → 1–365/366
    * `.isLeapYear(calendar?)` → boolean
 
 6. **Setters / Mutators**
 
    * `.setYear(y, calendar?)`, `.setMonth(m, calendar?)`, `.setDay(d, calendar?)`
-   * `.setFullDate(y, m, d, calendar?)`
    * Supports **immutable** and **mutable** variants
 
 7. **Date Arithmetic**
 
-   * `.addDays(n, calendar?)`, `.subtractDays(n, calendar?)`
-   * `.addMonths(n, calendar?)`, `.subtractMonths(n, calendar?)`
-   * `.addYears(n, calendar?)`, `.subtractYears(n, calendar?)`
+   * `.add(value, unit, calendar?)`, `.subtract(value, unit, calendar?)`
 
 8. **Comparison**
 
@@ -132,7 +132,10 @@ interface BSDayPlugin {
 ```ts
 interface BSDayData {
   tithi: string
+  paksha: string
   festivals: string[]
+  events: string[]
+  isHoliday: boolean
   nakshatra: string
   yoga: string
   karana: string
@@ -162,22 +165,24 @@ interface BSDayData {
 ## 6. Example Usage
 
 ```ts
-import { BSDay } from '@bsday/core'
+import { BSDay } from '@bsday.js/core'
 import { dataset } from '@bsday/dataset'
 
+BSDay.setDataset(dataset)
+
 // Create a BS date
-const bsDate = new BSDay({ bs: [2082, 12, 1] })
-console.log(bsDate.tithi())       // 'Pratipada'
-console.log(bsDate.festivals())   // ['Holi']
+const bsDate = BSDay.bs('2082/12/01')
+console.log(bsDate.tithi)         // 'Pratipada'
+console.log(bsDate.festivals)     // ['Holi']
 
 // AD date
-const adDate = new BSDay(new Date())
+const adDate = new BSDay('2026-03-28')
 
 // Formatting
-console.log(bsDate.format('YYYY-MM-DD', 'bs')) // '2082-12-01'
+console.log(bsDate.format()) // '2082/12/01'
 
 // Arithmetic
-bsDate.addDays(5).addMonths(1)
+bsDate.add(5, 'day').add(1, 'month')
 
 // Comparison
 console.log(bsDate.isBefore(adDate))
@@ -193,37 +198,35 @@ console.log(bsDate.format('NN/MM/YYYY', 'bs'))
 
 | Method / Property                   | Type     | Description                                       |
 | ----------------------------------- | -------- | ------------------------------------------------- |
-| `BSDay.now()`                       | static   | Returns current date/time as BSDay instance       |
-| `BSDay.today()`                     | static   | Alias for `now()`                                 |
+| `BSDay.now()`                       | static   | Returns current Unix timestamp                    |
+| `BSDay.nowAD()`                     | static   | Returns current AD `Date`                         |
+| `BSDay.nowBS()`                     | static   | Returns formatted BS string                       |
+| `BSDay.bs(input)` / `BSDay.bs(y,m,d)` | static | Create BSDay from explicit BS input               |
 | `BSDay.fromAD(date)`                | static   | Convert AD Date → BSDay                           |
-| `BSDay.fromBS([y,m,d])`             | static   | Convert BS → BSDay                                |
+| `BSDay.fromBS(value)`               | static   | Compatibility alias for BS → BSDay                |
 | `BSDay.parse(string, pattern, cal)` | static   | Parse string into BSDay instance                  |
 | `.toAD()`                           | instance | Returns JS Date                                   |
 | `.toBS()`                           | instance | Returns BS object `{year, month, day}`            |
-| `.ad`                               | instance | AD getter                                         |
-| `.bs`                               | instance | BS getter                                         |
-| `.year`                             | instance | Year number                                       |
-| `.month`                            | instance | Month number (1–12)                               |
-| `.day`                              | instance | Day number (1–31)                                 |
-| `.dayOfWeek`                        | instance | 0–6 Sunday–Saturday                               |
-| `.dayOfYear`                        | instance | Day index in year                                 |
+| `.year()`                           | instance | BS year number                                    |
+| `.month()`                          | instance | BS month number (1–12)                            |
+| `.date()`                           | instance | BS day number                                     |
+| `.dayOfWeek()`                      | instance | 0–6 Sunday–Saturday                               |
+| `.dayOfYear()`                      | instance | Day index in year                                 |
 | `.isLeapYear(calendar?)`            | instance | Checks leap year                                  |
-| `.addDays(n, calendar?)`            | instance | Add n days                                        |
-| `.addMonths(n, calendar?)`          | instance | Add n months                                      |
-| `.addYears(n, calendar?)`           | instance | Add n years                                       |
-| `.subtractDays(n, calendar?)`       | instance | Subtract n days                                   |
-| `.subtractMonths(n, calendar?)`     | instance | Subtract n months                                 |
-| `.subtractYears(n, calendar?)`      | instance | Subtract n years                                  |
+| `.add(value, unit, calendar?)`      | instance | Add a unit                                        |
+| `.subtract(value, unit, calendar?)` | instance | Subtract a unit                                   |
 | `.setYear(y, calendar?)`            | instance | Set year                                          |
 | `.setMonth(m, calendar?)`           | instance | Set month                                         |
 | `.setDay(d, calendar?)`             | instance | Set day                                           |
-| `.setFullDate(y,m,d,calendar?)`     | instance | Set full date                                     |
 | `.isBefore(other)`                  | instance | Check if date is before another                   |
 | `.isAfter(other)`                   | instance | Check if date is after another                    |
 | `.isSame(other)`                    | instance | Check if dates are equal                          |
-| `.tithi()`                          | instance | Returns tithi from dataset                        |
-| `.festivals()`                      | instance | Returns festivals array for this BS date          |
-| `.panchang()`                       | instance | Returns Panchang info `{nakshatra, yoga, karana}` |
+| `.tithi`                            | instance | Returns tithi from dataset                        |
+| `.festivals`                        | instance | Returns festivals array for this BS date          |
+| `.events`                           | instance | Returns events array for this BS date             |
+| `.isHoliday`                        | instance | Returns holiday flag for this BS date             |
+| `.panchang`                         | instance | Returns Panchang info `{nakshatra, yoga, karana}` |
+| `.data()`                           | instance | Returns the full registered day record            |
 | `BSDay.dataset()`                   | static   | Access full dataset (tithi, festivals, Panchang)  |
 | `BSDay.use(plugin)`                 | static   | Register a plugin                                 |
 

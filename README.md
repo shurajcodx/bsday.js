@@ -38,26 +38,26 @@ pnpm add @bsday.js/core @bsday/dataset
 
 ### Basic Conversion & Manipulation
 ```typescript
-import { BSDay } from '@bsday.js/core';
+import { BSDay, bsday } from '@bsday.js/core';
 import { dataset } from '@bsday/dataset';
 
 BSDay.setDataset(dataset);
 
-// Create a BS Date
-const bsDate = BSDay.fromBS({ year: 2081, month: 6, day: 27 });
-console.log(bsDate.format('YYYY-MM-DD', 'bs')); // "2081-06-27"
+// Create a BS Date explicitly
+const bsDate = BSDay.bs('2081/06/27');
+console.log(bsDate.format()); // "2081/06/27"
 
 // Convert to AD
 const adDate = bsDate.toAD();
 console.log(adDate.toISOString()); // "2024-10-11T18:15:00.000Z"
 
-// Create from AD Date
-const today = BSDay.fromAD(new Date());
-console.log(`Today in BS is: ${today.format('YYYY-MM-DD')}`);
+// Create from familiar AD-like input
+const today = bsday('2024-10-12');
+console.log(`Today in BS is: ${today.format()}`);
 
 // Date Arithmetic
 const nextWeek = bsDate.add(7, 'day');
-console.log(nextWeek.format('YYYY-MM-DD', 'bs'));
+console.log(nextWeek.format());
 ```
 
 ### Accessing Panchang & Festival Data
@@ -67,7 +67,7 @@ import { dataset } from '@bsday/dataset';
 
 BSDay.setDataset(dataset);
 
-const dashain = BSDay.fromBS({ year: 2081, month: 6, day: 27 });
+const dashain = BSDay.bs('2081/06/27');
 
 console.log(dashain.tithi); // e.g. "Dashami"
 console.log(dashain.festivals); // []
@@ -171,6 +171,7 @@ pnpm format:check
 Detailed documentation is available in the `docs/` directory.
 
 * `docs/requirement.md` — project requirements and goals
+* `docs/api-design.md` — API shape options and ergonomics tradeoffs
 * `docs/technical.md` — architecture and implementation details
 * `docs/plugin-development.md` — how to develop BSDay plugins
 * `docs/roadmap.md` — planned features and future direction

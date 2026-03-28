@@ -25,23 +25,23 @@ pnpm add @bsday.js/core
 ## Quick Start
 
 ```typescript
-import { BSDay } from '@bsday.js/core';
+import { BSDay, bsday } from '@bsday.js/core';
 import { dataset } from '@bsday/dataset';
 
 BSDay.setDataset(dataset);
 
-// Create a BS Date from AD
-const today = BSDay.fromAD(new Date());
-console.log(`Today in BS is: ${today.format('YYYY-MM-DD')}`);
+// Create a BSDay from AD-like input
+const today = bsday('2024-10-12');
+console.log(`Today in BS is: ${today.format()}`);
 
-// Create a BS Date directly
-const dashain = BSDay.fromBS({ year: 2081, month: 6, day: 27 });
+// Create a BS date explicitly
+const dashain = BSDay.bs('2081/06/27');
 
 // Convert BS to AD
 console.log(dashain.toAD().toISOString()); // "2024-10-11T18:15:00.000Z"
 
 // Format the date
-console.log(dashain.format('YYYY/MM/DD', 'bs')); // "2081/06/27"
+console.log(dashain.format()); // "2081/06/27"
 
 // Access Panchang data
 console.log(dashain.tithi); // e.g. "Dashami"
@@ -63,7 +63,7 @@ console.log(dashain.data());
 
 ## Creating Dates
 
-Create BSDay instances from AD Date objects, BS tuples, or parsing.
+Create BSDay instances from AD-like input, explicit BS input, or parsing.
 
 ```typescript
 import { BSDay } from '@bsday.js/core';
@@ -74,24 +74,34 @@ const nowAd = BSDay.nowAD();
 // From AD Date
 const fromAd = BSDay.fromAD(new Date('2024-10-12'));
 
-// From a BS object
-const fromBs = BSDay.fromBS({ year: 2081, month: 6, day: 27 });
+// From an explicit BS string
+const fromBs = BSDay.bs('2081/06/27');
 
-// From the tuple-style constructor form
-const tupleStyle = new BSDay({ bs: [2081, 6, 27] });
+// From explicit BS numbers
+const fromBsNumbers = BSDay.bs(2081, 6, 27);
 
 // Parse string
-const parsed = BSDay.parse('2081-06-26', 'YYYY-MM-DD', 'bs');
+const parsed = BSDay.parse('2081/06/26', 'YYYY/MM/DD', 'bs');
 ```
+
+The constructor remains useful for familiar AD-style input:
+
+```typescript
+new BSDay()
+new BSDay(new Date())
+new BSDay('2024-10-12')
+```
+
+Slash-delimited BS strings such as `2081/06/27` are intentionally reserved for `BSDay.bs(...)` and `bsday.bs(...)` so calendar intent stays explicit.
 
 ## Formatting
 
 Format dates easily in both BS or AD calendars.
 
 ```typescript
-const d = BSDay.fromBS({ year: 2081, month: 6, day: 27 });
+const d = BSDay.bs('2081/06/27');
 
-d.format('YYYY-MM-DD', 'bs');            // 2081-06-27
+d.format();                              // 2081/06/27
 d.format('YYYY/MM/DD', 'bs');            // 2081/06/27
 d.format('DD-MM-YYYY', 'ad');            // 12-10-2024
 d.locale('ne').format('YYYY MMMM DD');   // २०८१ असोज २७
@@ -102,7 +112,7 @@ d.locale('ne').format('YYYY MMMM DD');   // २०८१ असोज २७
 Add or subtract units from the date. Dates are immutable, so all methods return a new instance.
 
 ```typescript
-const a = BSDay.fromBS({ year: 2081, month: 1, day: 1 });
+const a = BSDay.bs('2081/01/01');
 
 const b = a.add(10, 'day');
 const c = a.add(1, 'month');
@@ -114,8 +124,8 @@ const d = b.subtract(1, 'year');
 Compare BSDay instances easily.
 
 ```typescript
-const a = BSDay.fromBS({ year: 2081, month: 1, day: 1 });
-const b = BSDay.fromBS({ year: 2081, month: 1, day: 10 });
+const a = BSDay.bs('2081/01/01');
+const b = BSDay.bs('2081/01/10');
 
 a.isBefore(b); // true
 b.isAfter(a);  // true
@@ -153,8 +163,9 @@ BSDay.use(MyPlugin);
 | `BSDay.now()`                          | Returns the current Unix timestamp      |
 | `BSDay.nowAD()`                        | Get current AD date as a JS `Date`      |
 | `BSDay.nowBS(format?)`                 | Get current BS date as formatted string |
+| `BSDay.bs(input)` / `BSDay.bs(y, m, d)`| Create instance from explicit BS input  |
 | `BSDay.fromAD(date)`                   | Create instance from an AD Date         |
-| `BSDay.fromBS({ year, month, day })`   | Create instance from a BS date object   |
+| `BSDay.fromBS(value)`                  | Compatibility alias for BS creation     |
 | `BSDay.parse(value, format, calendar)` | Parse a formatted string                |
 | `BSDay.setDataset(dataset)`            | Register optional panchang/day data     |
 | `BSDay.use(plugin)`                    | Register a plugin                       |

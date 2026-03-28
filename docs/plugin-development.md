@@ -38,7 +38,7 @@ export interface BSDayPlugin {
 Use `BSDay.use()` to register any plugin:
 
 ```ts
-import { BSDay } from '@bsday/core';
+import { BSDay } from '@bsday.js/core';
 import { MyPlugin } from './myPlugin';
 
 BSDay.use(new MyPlugin());
@@ -117,7 +117,7 @@ console.log(date.formatNepali()); // Output: २०८२-०२-०१
 
 ```ts
 import { describe, it, expect } from 'vitest';
-import { BSDay } from '@bsday/core';
+import { BSDay } from '@bsday.js/core';
 import { NepaliNumberPlugin } from './NepaliNumberPlugin';
 
 BSDay.use(new NepaliNumberPlugin());

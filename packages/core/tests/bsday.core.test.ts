@@ -31,6 +31,7 @@ describe('BSDay Core Features', () => {
         const formattedAD = d.format('YYYY-MM-DD', 'ad');
         expect(formattedBS).toMatch(/^\d{4}-\d{2}-\d{2}$/);
         expect(formattedAD).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+        expect(d.format()).toBe('2080/05/10');
 
         expect(d.locale('ne').format('YYYY MMMM DD')).toContain('२०८०');
         expect(d.locale('en').format('YYYY MMMM DD')).toContain('2080');
@@ -150,12 +151,13 @@ describe('BSDay Core Features', () => {
     it('formats AD values in Nepal local civil time', () => {
         const d = new BSDay({ year: 2081, month: 1, day: 1 });
         expect(d.format('YYYY-MM-DD HH:mm:ss', 'ad')).toBe('2024-04-13 00:00:00');
+        expect(BSDay.nowBS().split('/')).toHaveLength(3);
     });
 
     it('round-trips BS datetimes with time tokens', () => {
         const original = new BSDay({ year: 2081, month: 6, day: 27 }).hour(13).minute(5).second(9);
-        const formatted = original.format('YYYY-MM-DD HH:mm:ss', 'bs');
-        const parsed = BSDay.parse(formatted, 'YYYY-MM-DD HH:mm:ss', 'bs');
+        const formatted = original.format('YYYY/MM/DD HH:mm:ss', 'bs');
+        const parsed = BSDay.parse(formatted, 'YYYY/MM/DD HH:mm:ss', 'bs');
 
         expect(parsed.toBS()).toEqual(original.toBS());
         expect(parsed.hour()).toBe(13);

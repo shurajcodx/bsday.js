@@ -27,7 +27,7 @@
 ```text
 bsday-monorepo/
 ├─ packages/
-│  ├─ core/                # @bsday/core
+│  ├─ core/                # @bsday.js/core
 │  │  ├─ src/
 │  │  │  ├─ index.ts
 │  │  │  ├─ core/BSDay.ts
@@ -67,7 +67,7 @@ packages:
 ## 3. Core Architecture
 
 * **BSDay Class:** Stores **internal AD date**, converts to BS dynamically.
-* **Dataset (@bsday/dataset):** Provides BS-specific **tithi, festivals, Panchang**.
+* **Dataset (@bsday/dataset):** Optional day-data package providing **tithi, festivals, Panchang**.
 * **Plugins:** Extend BSDay prototype, static helpers, or formatting tokens.
 
 **Internal Flow:**
@@ -118,7 +118,7 @@ export interface BSDayData {
 
 ---
 
-## 5. Core BSDay Class (@bsday/core)
+## 5. Core BSDay Class (@bsday.js/core)
 
 ### Constructor
 
@@ -135,25 +135,22 @@ new BSDay({ bs: [year, month, day] })
 import { dataset } from '@bsday/dataset'
 
 class BSDay {
-  constructor({ bs }: { bs: [number, number, number] }) {
-    this.bs = bs
-    this.ad = convertBSToAD(bs)
-    this.dayData = dataset[`${bs[0]}-${bs[1]}-${bs[2]}`]
+  static setDataset(data) {
+    datasetManager.setDataset(data)
   }
 
-  tithi() { return this.dayData?.tithi ?? null }
-  festivals() { return this.dayData?.festivals ?? [] }
-  panchang() {
-    return {
-      nakshatra: this.dayData?.nakshatra,
-      yoga: this.dayData?.yoga,
-      karana: this.dayData?.karana
-    }
+  data() {
+    return this.lookupDatasetEntry()
   }
+
+  get tithi() { return this.lookupDatasetEntry()?.tithi ?? null }
+  get festivals() { return [...(this.lookupDatasetEntry()?.festivals ?? [])] }
+  get events() { return [...(this.lookupDatasetEntry()?.events ?? [])] }
+  get isHoliday() { return this.lookupDatasetEntry()?.isHoliday ?? false }
 }
 ```
 
-* All arithmetic, formatting, parsing remain the same
+* Dataset-backed access is **opt-in** via `BSDay.setDataset(dataset)`
 * Weekday is **calculated dynamically** from internal AD date
 
 ---
@@ -181,8 +178,8 @@ BSDay.parse('2082-12-01', 'YYYY-MM-DD', 'bs')
 
 Methods:
 
-* `addDays()`, `addMonths()`, `addYears()`
-* `subtractDays()`, `subtractMonths()`, `subtractYears()`
+* `add(value, unit, calendar?)`
+* `subtract(value, unit, calendar?)`
 * `isBefore()`, `isAfter()`, `isSame()`, `diff()`
 
 Operations return **new BSDay instances (immutable)**

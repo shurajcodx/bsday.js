@@ -57,7 +57,7 @@ A structured checklist to make **bsday.js** production-ready, scalable, and wide
 
 * [x] `daysInMonth()`
 * [x] `isWeekend()`
-* [ ] `isHoliday()`
+* [x] `isHoliday`
 
 ---
 
@@ -160,7 +160,7 @@ A structured checklist to make **bsday.js** production-ready, scalable, and wide
 
 * [ ] Plan package split:
 
-  * [ ] `@bsday/core`
+  * [ ] `@bsday.js/core`
   * [ ] `@bsday/panchang`
   * [ ] `@bsday/react` (future)
 

@@ -40,38 +40,33 @@ interface BSDayOptions {
   mutable?: boolean;
 }
 
-type CalendarResolution = 'bs' | 'ad' | 'ambiguous' | 'invalid';
-
-function resolveIsoLikeDateString(input: string): {
-  resolution: CalendarResolution;
-  year: number;
-  month: number;
-  day: number;
-} | null {
-  const match = input.match(/^(\d{4})-(\d{2})-(\d{2})$/);
-  if (!match) {
+function parseAdLikeString(input: string): Date | null {
+  if (/^\d{4}\/\d{2}\/\d{2}\b/.test(input.trim())) {
     return null;
+  }
+
+  const parsed = new Date(input);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+function parseBsString(input: string): BSDate {
+  const slashMatch = input.match(/^(\d{4})\/(\d{2})\/(\d{2})$/);
+  const dashMatch = input.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  const match = slashMatch ?? dashMatch;
+
+  if (!match) {
+    throw new Error(`Invalid BS date string "${input}". Expected YYYY/MM/DD.`);
   }
 
   const year = Number(match[1]);
   const month = Number(match[2]);
   const day = Number(match[3]);
-  const validBS = isValidBSDate(year, month, day);
-  const validAD = isValidADDate(year, month, day);
 
-  if (validBS && validAD) {
-    return { resolution: 'ambiguous', year, month, day };
+  if (!isValidBSDate(year, month, day)) {
+    throw new RangeError(`Invalid BS date ${year}-${month}-${day}.`);
   }
 
-  if (validBS) {
-    return { resolution: 'bs', year, month, day };
-  }
-
-  if (validAD) {
-    return { resolution: 'ad', year, month, day };
-  }
-
-  return { resolution: 'invalid', year, month, day };
+  return { year, month, day };
 }
 
 export class BSDay {
@@ -108,30 +103,8 @@ export class BSDay {
     }
 
     if (typeof input === 'string') {
-      try {
-        const isoLikeDate = resolveIsoLikeDateString(input);
-        if (isoLikeDate) {
-          if (isoLikeDate.resolution === 'bs') {
-            this.adDate = bsToAd({ year: isoLikeDate.year, month: isoLikeDate.month, day: isoLikeDate.day });
-            return;
-          }
-
-          if (isoLikeDate.resolution === 'ad') {
-            this.adDate = parseDate(input, 'YYYY-MM-DD', 'ad') as Date;
-            return;
-          }
-
-          if (isoLikeDate.resolution === 'ambiguous') {
-            this.adDate = new Date(NaN);
-            return;
-          }
-        }
-      } catch {
-        // Fallback to AD parsing
-      }
-
-      const parsed = new Date(input);
-      if (!Number.isNaN(parsed.getTime())) {
+      const parsed = parseAdLikeString(input);
+      if (parsed) {
         this.adDate = parsed;
         return;
       }
@@ -175,7 +148,7 @@ export class BSDay {
     return new BSDay().toAD();
   }
 
-  static nowBS(pattern = 'YYYY-MM-DD HH:mm', locale: LocaleType = 'en'): string {
+  static nowBS(pattern = 'YYYY/MM/DD', locale: LocaleType = 'en'): string {
     return new BSDay().format(pattern, 'bs', locale);
   }
 
@@ -183,9 +156,28 @@ export class BSDay {
     return new BSDay(input);
   }
 
+  static bs(input: BSDate): BSDay;
+  static bs(input: string): BSDay;
+  static bs(year: number, month: number, day: number): BSDay;
+  static bs(arg1: BSDate | string | number, arg2?: number, arg3?: number): BSDay {
+    if (arg1 && typeof arg1 === 'object') {
+      return new BSDay(arg1);
+    }
+
+    if (typeof arg1 === 'string') {
+      return new BSDay(parseBsString(arg1));
+    }
+
+    if (typeof arg1 === 'number' && typeof arg2 === 'number' && typeof arg3 === 'number') {
+      return new BSDay({ year: arg1, month: arg2, day: arg3 });
+    }
+
+    return new BSDay(NaN);
+  }
+
   static fromBS(bs: string | BSDate): BSDay {
     if (typeof bs === 'string') {
-      return BSDay.parse(bs, 'YYYY-MM-DD', 'bs');
+      return BSDay.bs(bs);
     }
     return new BSDay(bs);
   }
@@ -261,12 +253,7 @@ export class BSDay {
           return false;
         }
       }
-      const isoLikeDate = resolveIsoLikeDateString(arg1);
-      if (isoLikeDate) {
-        return isoLikeDate.resolution === 'bs' || isoLikeDate.resolution === 'ad';
-      }
-
-      return !Number.isNaN(new Date(arg1).getTime());
+      return parseAdLikeString(arg1) !== null;
     }
 
     return false;
@@ -679,12 +666,13 @@ export class BSDay {
   }
 
   format(
-    pattern = 'YYYY-MM-DD HH:mm:ss',
+    pattern?: string,
     calendar: CalendarType = DEFAULT_CALENDAR,
     locale: LocaleType = this._locale,
   ): string {
+    const resolvedPattern = pattern ?? (calendar === 'bs' ? 'YYYY/MM/DD' : 'YYYY-MM-DD HH:mm:ss');
     return formatDate(
-      pattern,
+      resolvedPattern,
       calendar,
       this.adDate,
       this.toBS(),
@@ -768,7 +756,7 @@ export class BSDay {
     const bs = this.toBS();
     const { hour, minute, second } = getNepalDateTimeParts(this.adDate);
     const time = `${pad(hour)}:${pad(minute)}:${pad(second)}`;
-    return `${pad(bs.year, 4)}-${pad(bs.month)}-${pad(bs.day)} ${time}`;
+    return `${pad(bs.year, 4)}/${pad(bs.month)}/${pad(bs.day)} ${time}`;
   }
 
   toJSON(): string {

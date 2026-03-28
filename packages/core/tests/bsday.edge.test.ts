@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import bundledDataset from '../../dataset/src/data/dataset.json';
 
-import { BSDay } from '../src';
+import { BSDay, bsday } from '../src';
 
 beforeAll(() => {
     BSDay.setDataset(bundledDataset);
@@ -19,29 +19,35 @@ describe('BSDay Edge Cases', () => {
         expect(d.isValid()).toBe(false);
     });
 
-    it('rejects ambiguous bare ISO date strings', () => {
-        expect(new BSDay('2024-10-12').isValid()).toBe(false);
-        expect(BSDay.isValid('2024-10-12')).toBe(false);
+    it('treats bare constructor strings as AD-like input', () => {
+        const d = new BSDay('2024-10-12');
+        expect(d.isValid()).toBe(true);
+        expect(BSDay.isValid('2024-10-12')).toBe(true);
+        expect(d.format('YYYY-MM-DD', 'ad')).toBe('2024-10-12');
     });
 
-    it('accepts explicit calendar parsing for ambiguous strings', () => {
-        const bs = BSDay.fromBS('2081-06-27');
+    it('accepts explicit BS creation through BSDay.bs', () => {
+        const bs = BSDay.bs('2081/06/27');
+        const bsFromNumbers = BSDay.bs(2081, 6, 27);
+        const bsFromFactory = bsday.bs('2081/06/27');
         const ad = BSDay.parse('2024-10-12', 'YYYY-MM-DD', 'ad');
 
         expect(bs.isValid()).toBe(true);
         expect(bs.toAD().toISOString()).toBe('2024-10-11T18:15:00.000Z');
+        expect(bsFromNumbers.toBS()).toEqual({ year: 2081, month: 6, day: 27 });
+        expect(bsFromFactory.toBS()).toEqual({ year: 2081, month: 6, day: 27 });
         expect(ad.isValid()).toBe(true);
         expect(ad.toBS()).toEqual({ year: 2081, month: 6, day: 27 });
     });
 
-    it('still accepts unambiguous bare ISO date strings', () => {
+    it('does not treat BS slash strings as implicit constructor input', () => {
         const adOnly = new BSDay('1969-07-20');
-        const bsOnly = new BSDay('2099-03-32');
+        const bsOnly = new BSDay('2081/06/27');
 
         expect(adOnly.isValid()).toBe(true);
         expect(adOnly.format('YYYY-MM-DD', 'ad')).toBe('1969-07-20');
-        expect(bsOnly.isValid()).toBe(true);
-        expect(bsOnly.toBS()).toEqual({ year: 2099, month: 3, day: 32 });
+        expect(bsOnly.isValid()).toBe(false);
+        expect(BSDay.isValid('2081/06/27')).toBe(false);
     });
 
     it('AD leap years', () => {

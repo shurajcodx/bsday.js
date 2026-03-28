@@ -61,7 +61,7 @@ packages/
   dataset/
 ```
 
-### `@bsday/core`
+### `@bsday.js/core`
 
 Contains the main BSDay implementation:
 
