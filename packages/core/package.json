@@ -1,7 +1,13 @@
 {
   "name": "@bsday.js/core",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Core BSDay dual-calendar date library",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
   "license": "MIT",
   "type": "module",
   "main": "dist/index.cjs",
@@ -20,6 +26,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --shims",
     "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
