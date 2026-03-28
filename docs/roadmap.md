@@ -35,7 +35,7 @@
 **Monorepo & Packaging:**
 
 * `@bsday.js/core` → core library
-* `@bsday/dataset` → optional dataset package
+* `@bsday.js/dataset` → optional dataset package
 * pnpm workspace setup
 * TypeScript paths & package dependencies configured
 * Build outputs: ESM + CJS + type definitions

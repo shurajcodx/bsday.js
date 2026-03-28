@@ -41,7 +41,7 @@ bsday-monorepo/
 │  │  ├─ tests/
 │  │  └─ package.json
 │  │
-│  ├─ dataset/             # @bsday/dataset
+│  ├─ dataset/             # @bsday.js/dataset
 │  │  ├─ src/index.ts
 │  │  ├─ src/data/1970-2100.json
 │  │  ├─ types/index.ts
@@ -67,7 +67,7 @@ packages:
 ## 3. Core Architecture
 
 * **BSDay Class:** Stores **internal AD date**, converts to BS dynamically.
-* **Dataset (@bsday/dataset):** Optional day-data package providing **tithi, festivals, Panchang**.
+* **Dataset (@bsday.js/dataset):** Optional day-data package providing **tithi, festivals, Panchang**.
 * **Plugins:** Extend BSDay prototype, static helpers, or formatting tokens.
 
 **Internal Flow:**
@@ -132,7 +132,7 @@ new BSDay({ bs: [year, month, day] })
 ### Access Dataset
 
 ```ts
-import { dataset } from '@bsday/dataset'
+import { dataset } from '@bsday.js/dataset'
 
 class BSDay {
   static setDataset(data) {

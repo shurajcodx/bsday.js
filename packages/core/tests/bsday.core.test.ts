@@ -2,6 +2,7 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import bundledDataset from '../../dataset/src/data/dataset.json';
 
 import { BSDay } from '../src';
+import type { BSDayPluginHost } from '../src';
 
 beforeAll(() => {
     BSDay.setDataset(bundledDataset);
@@ -88,15 +89,16 @@ describe('BSDay Core Features', () => {
     });
 
     it('plugin system works', () => {
-        const testPlugin = (option: any, BSDayClass: any) => {
+        type GreetingBSDay = BSDay & { sayHello(): string };
+        const testPlugin = (_option: unknown, BSDayClass: BSDayPluginHost) => {
             BSDayClass.prototype.sayHello = function () {
                 return 'hello';
             };
         };
 
         BSDay.extend(testPlugin);
-        const d = new BSDay();
-        expect((d as any).sayHello()).toBe('hello');
+        const d = new BSDay() as GreetingBSDay;
+        expect(d.sayHello()).toBe('hello');
     });
 
     it('clone and immutability', () => {

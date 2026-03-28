@@ -23,9 +23,6 @@
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
-  "dependencies": {
-    "@bsday/dataset": "workspace:*"
-  },
   "author": "shurajcodx",
   "repository": {
     "type": "git",

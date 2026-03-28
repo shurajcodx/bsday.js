@@ -26,7 +26,7 @@ pnpm add @bsday.js/core
 
 ```typescript
 import { BSDay, bsday } from '@bsday.js/core';
-import { dataset } from '@bsday/dataset';
+import { dataset } from '@bsday.js/dataset';
 
 BSDay.setDataset(dataset);
 

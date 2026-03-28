@@ -1,5 +1,5 @@
 import { localizeNumber } from '../utils/helpers';
-import type { BSDayPlugin, BSDayPluginHost } from '../types';
+import type { BSDayPlugin, BSDayPluginHost, LocaleType } from '../types';
 
 const L = {
   en: {
@@ -32,34 +32,76 @@ const L = {
     y: 'एक वर्ष',
     yy: '%d वर्ष',
   },
+} as const;
+
+type RelativeTimeLocale = keyof typeof L;
+type RelativeTimePhraseKey = keyof typeof L.en;
+type RelativeTimeComparable = {
+  toAD(): Date;
+};
+
+interface RelativeTimeInstance extends RelativeTimeComparable {
+  _locale?: LocaleType;
+  constructor: new () => RelativeTimeInstance;
+  from(other: RelativeTimeComparable, withoutSuffix?: boolean, locale?: RelativeTimeLocale): string;
+  to(other: RelativeTimeComparable, withoutSuffix?: boolean, locale?: RelativeTimeLocale): string;
+  diffInMs(other: RelativeTimeComparable): number;
+}
+
+type RelativeTimePrototype = BSDayPluginHost['prototype'] & {
+  fromNow?: (this: RelativeTimeInstance, withoutSuffix?: boolean) => string;
+  toNow?: (this: RelativeTimeInstance, withoutSuffix?: boolean) => string;
+  from?: (
+    this: RelativeTimeInstance,
+    other: RelativeTimeComparable,
+    withoutSuffix?: boolean,
+    locale?: RelativeTimeLocale,
+  ) => string;
+  to?: (
+    this: RelativeTimeInstance,
+    other: RelativeTimeComparable,
+    withoutSuffix?: boolean,
+    locale?: RelativeTimeLocale,
+  ) => string;
+  diffInMs?: (this: RelativeTimeInstance, other: RelativeTimeComparable) => number;
 };
 
 export const relativeTimePlugin: BSDayPlugin = {
   name: 'relativeTime',
   initialize(host: BSDayPluginHost) {
-    const proto = host.prototype as any;
+    const proto = host.prototype as RelativeTimePrototype;
 
-    proto.fromNow = function (withoutSuffix?: boolean): string {
-      const locale = (this as any)._locale || 'en';
-      const now = new (this.constructor)();
+    proto.fromNow = function (this: RelativeTimeInstance, withoutSuffix?: boolean): string {
+      const locale = this._locale ?? 'en';
+      const now = new this.constructor();
       return this.from(now, withoutSuffix, locale);
     };
 
-    proto.toNow = function (withoutSuffix?: boolean): string {
-      const locale = (this as any)._locale || 'en';
-      const now = new (this.constructor)();
+    proto.toNow = function (this: RelativeTimeInstance, withoutSuffix?: boolean): string {
+      const locale = this._locale ?? 'en';
+      const now = new this.constructor();
       return this.to(now, withoutSuffix, locale);
     };
 
-    proto.from = function (other: any, withoutSuffix?: boolean, locale = 'en'): string {
+    proto.from = function (
+      this: RelativeTimeInstance,
+      other: RelativeTimeComparable,
+      withoutSuffix?: boolean,
+      locale: RelativeTimeLocale = 'en',
+    ): string {
       return formatRelative(this.diffInMs(other), withoutSuffix, false, locale);
     };
 
-    proto.to = function (other: any, withoutSuffix?: boolean, locale = 'en'): string {
+    proto.to = function (
+      this: RelativeTimeInstance,
+      other: RelativeTimeComparable,
+      withoutSuffix?: boolean,
+      locale: RelativeTimeLocale = 'en',
+    ): string {
       return formatRelative(this.diffInMs(other), withoutSuffix, true, locale);
     };
 
-    proto.diffInMs = function (other: any): number {
+    proto.diffInMs = function (this: RelativeTimeInstance, other: RelativeTimeComparable): number {
       return this.toAD().getTime() - other.toAD().getTime();
     };
   },
@@ -69,7 +111,7 @@ function formatRelative(
   diffMs: number,
   withoutSuffix: boolean | undefined,
   isTo: boolean,
-  locale: string,
+  locale: RelativeTimeLocale,
 ): string {
   const absDiff = Math.abs(diffMs);
   const seconds = absDiff / 1000;
@@ -79,9 +121,9 @@ function formatRelative(
   const months = days / 30; // Approximation
   const years = days / 365;
 
-  const loc = (L as any)[locale] || L.en;
+  const loc = L[locale] ?? L.en;
 
-  let unitKey = 's';
+  let unitKey: RelativeTimePhraseKey = 's';
   let value = 0;
 
   if (seconds < 45) {
@@ -103,11 +145,11 @@ function formatRelative(
     unitKey = value === 1 ? 'y' : 'yy';
   }
 
-  let result = loc[unitKey].replace('%d', localizeNumber(value, locale));
+  const result = loc[unitKey].replace('%d', localizeNumber(value, locale));
 
   if (withoutSuffix) return result;
 
   const past = diffMs < 0;
-  const suffixKey = isTo ? (past ? 'future' : 'past') : (past ? 'past' : 'future');
+  const suffixKey: 'future' | 'past' = isTo ? (past ? 'future' : 'past') : (past ? 'past' : 'future');
   return loc[suffixKey].replace('%s', result);
 }

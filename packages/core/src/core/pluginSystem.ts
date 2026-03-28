@@ -1,6 +1,6 @@
 import { PluginManager } from '../plugins/PluginManager';
 import { BASE_FORMAT_TOKENS } from '../formatting/formatTokens';
-import type { FormatTokenResolver, BSDayPluginHost, BSDayPlugin } from '../types';
+import type { FormatTokenResolver, BSDayFactoryLike, BSDayPluginHost, BSDayPlugin } from '../types';
 
 const pluginManager = new PluginManager();
 const formatTokenRegistry: Record<string, FormatTokenResolver> = {
@@ -16,11 +16,11 @@ export const pluginSystem = {
     formatTokenRegistry[token] = resolver;
   },
 
-  use(plugin: BSDayPlugin, host: BSDayPluginHost, factory?: any, options?: any): void {
+  use(plugin: BSDayPlugin, host: BSDayPluginHost, factory?: BSDayFactoryLike, options?: unknown): void {
     pluginManager.use(plugin, host, factory, options);
   },
 
-  extend(plugin: BSDayPlugin, host: BSDayPluginHost, factory?: any, options?: any): void {
+  extend(plugin: BSDayPlugin, host: BSDayPluginHost, factory?: BSDayFactoryLike, options?: unknown): void {
     this.use(plugin, host, factory, options);
   },
 };

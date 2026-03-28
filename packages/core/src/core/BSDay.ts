@@ -40,6 +40,32 @@ interface BSDayOptions {
   mutable?: boolean;
 }
 
+function isBSDayInputBS(input: unknown): input is BSDayInputBS {
+  if (!input || typeof input !== 'object') {
+    return false;
+  }
+
+  const candidate = input as { bs?: unknown };
+  return (
+    Array.isArray(candidate.bs) &&
+    candidate.bs.length === 3 &&
+    candidate.bs.every((part) => typeof part === 'number')
+  );
+}
+
+function isBSDate(input: unknown): input is BSDate {
+  if (!input || typeof input !== 'object') {
+    return false;
+  }
+
+  const candidate = input as Partial<Record<'year' | 'month' | 'day', unknown>>;
+  return (
+    typeof candidate.year === 'number' &&
+    typeof candidate.month === 'number' &&
+    typeof candidate.day === 'number'
+  );
+}
+
 function parseAdLikeString(input: string): Date | null {
   if (/^\d{4}\/\d{2}\/\d{2}\b/.test(input.trim())) {
     return null;
@@ -112,13 +138,13 @@ export class BSDay {
 
     if (typeof input === 'object') {
       try {
-        if ('bs' in input && Array.isArray((input as any).bs)) {
-          const { bs } = input as BSDayInputBS;
+        if (isBSDayInputBS(input)) {
+          const { bs } = input;
           this.adDate = bsToAd({ year: bs[0], month: bs[1], day: bs[2] });
           return;
         }
-        if ('year' in input && 'month' in input && 'day' in input) {
-          this.adDate = bsToAd(input as BSDate);
+        if (isBSDate(input)) {
+          this.adDate = bsToAd(input);
           return;
         }
       } catch {
@@ -196,11 +222,11 @@ export class BSDay {
     return result;
   }
 
-  static extend(plugin: BSDayPlugin, options?: any): void {
+  static extend(plugin: BSDayPlugin, options?: unknown): void {
     BSDay.use(plugin, options);
   }
 
-  static use(plugin: BSDayPlugin, options?: any): void {
+  static use(plugin: BSDayPlugin, options?: unknown): void {
     pluginSystem.use(
       plugin,
       BSDay as unknown as BSDayPluginHost,
@@ -227,9 +253,9 @@ export class BSDay {
   }
 
   static isValid(input: string, pattern?: string, calendar?: CalendarType): boolean;
-  static isValid(input: Date | BSDayInputBS): boolean;
+  static isValid(input: Date | BSDayInputBS | BSDate): boolean;
   static isValid(year: number, month: number, day: number, calendar?: CalendarType): boolean;
-  static isValid(arg1: any, arg2?: any, arg3?: any, arg4?: any): boolean {
+  static isValid(arg1: unknown, arg2?: unknown, arg3?: unknown, arg4?: unknown): boolean {
     if (typeof arg1 === 'number' && typeof arg2 === 'number' && typeof arg3 === 'number') {
       const cal = arg4 ?? 'ad';
       return cal === 'ad' ? isValidADDate(arg1, arg2, arg3) : isValidBSDate(arg1, arg2, arg3);
@@ -239,15 +265,20 @@ export class BSDay {
       return !Number.isNaN(arg1.getTime());
     }
 
-    if (arg1 && typeof arg1 === 'object' && 'bs' in arg1 && Array.isArray(arg1.bs)) {
+    if (isBSDayInputBS(arg1)) {
       const [y, m, d] = arg1.bs;
       return isValidBSDate(y, m, d);
+    }
+
+    if (isBSDate(arg1)) {
+      return isValidBSDate(arg1.year, arg1.month, arg1.day);
     }
 
     if (typeof arg1 === 'string') {
       if (arg2 && typeof arg2 === 'string') {
         try {
-          parseDate(arg1, arg2, arg3 ?? DEFAULT_CALENDAR);
+          const calendar = arg3 === 'ad' || arg3 === 'bs' ? arg3 : DEFAULT_CALENDAR;
+          parseDate(arg1, arg2, calendar);
           return true;
         } catch {
           return false;
@@ -365,7 +396,7 @@ export class BSDay {
 
   clone(): BSDay {
     const next = new BSDay(this.toAD(), { mutable: this.mutableMode });
-    (next as any)._locale = this._locale;
+    next._locale = this._locale;
     return next;
   }
 
@@ -660,9 +691,9 @@ export class BSDay {
       this._locale = l;
       return this;
     }
-    const next = this.clone();
-    (next as any)._locale = l;
-    return next as this;
+    const next = this.clone() as this;
+    next._locale = l;
+    return next;
   }
 
   format(
@@ -740,7 +771,7 @@ export class BSDay {
     }
 
     const next = new BSDay(date, { mutable: this.mutableMode });
-    (next as any)._locale = this._locale;
+    next._locale = this._locale;
     return next;
   }
 

@@ -39,20 +39,30 @@ export type FormatTokenResolver = (ctx: {
   bs: BSDate;
 }) => string;
 
+export interface BSDayFactoryLike {
+  (input?: BSDayInput): BSDay;
+  bs(bs: string | BSDate): BSDay;
+  bs(year: number, month: number, day: number): BSDay;
+  ad(ad: Date): BSDay;
+  now(): number;
+  extend(plugin: BSDayPlugin, options?: unknown): void;
+  BSDay: typeof BSDay;
+}
+
 export type BSDayPluginFunction = (
-  option: any,
-  bsday: any, // BSDay class
-  factory: any, // bsday() factory
+  option: unknown,
+  bsday: BSDayPluginHost,
+  factory?: BSDayFactoryLike,
 ) => void;
 
 export type BSDayPlugin =
   | {
       name: string;
-      initialize: (host: BSDayPluginHost, options?: any) => void;
+      initialize: (host: BSDayPluginHost, options?: unknown) => void;
     }
   | BSDayPluginFunction;
 
 export interface BSDayPluginHost {
-  prototype: Record<string, unknown>;
+  prototype: object;
   registerFormatToken(token: string, resolver: FormatTokenResolver): void;
 }

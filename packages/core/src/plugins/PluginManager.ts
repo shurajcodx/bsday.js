@@ -1,9 +1,9 @@
-import type { BSDayPlugin, BSDayPluginHost } from '../types';
+import type { BSDayFactoryLike, BSDayPlugin, BSDayPluginHost } from '../types';
 
 export class PluginManager {
-  private readonly used = new Set<any>();
+  private readonly used = new Set<BSDayPlugin | string>();
 
-  use(plugin: BSDayPlugin, host: BSDayPluginHost, factory: any, options?: any): void {
+  use(plugin: BSDayPlugin, host: BSDayPluginHost, factory?: BSDayFactoryLike, options?: unknown): void {
     if (this.used.has(plugin)) {
       return;
     }

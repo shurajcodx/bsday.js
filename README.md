@@ -27,10 +27,10 @@ It is built as a **modular monorepo** designed to support plugins, datasets, and
 Install via npm, pnpm, or yarn:
 
 ```bash
-pnpm add @bsday.js/core @bsday/dataset
+pnpm add @bsday.js/core @bsday.js/dataset
 ```
 `@bsday.js/core` works by itself for BS/AD conversion and date math.
-`@bsday/dataset` is optional and is only needed when you want panchang/day data.
+`@bsday.js/dataset` is optional and is only needed when you want panchang/day data.
 
 ---
 
@@ -39,7 +39,7 @@ pnpm add @bsday.js/core @bsday/dataset
 ### Basic Conversion & Manipulation
 ```typescript
 import { BSDay, bsday } from '@bsday.js/core';
-import { dataset } from '@bsday/dataset';
+import { dataset } from '@bsday.js/dataset';
 
 BSDay.setDataset(dataset);
 
@@ -63,7 +63,7 @@ console.log(nextWeek.format());
 ### Accessing Panchang & Festival Data
 ```typescript
 import { BSDay } from '@bsday.js/core';
-import { dataset } from '@bsday/dataset';
+import { dataset } from '@bsday.js/dataset';
 
 BSDay.setDataset(dataset);
 
@@ -99,7 +99,7 @@ The main library providing:
 * comparison utilities
 * plugin system
 
-### `@bsday/dataset`
+### `@bsday.js/dataset`
 Daily Bikram Sambat dataset keyed by `YYYY-MM-DD`. Dataset fields include:
 * `tithi`, `festivals`, `nakshatra`, `yoga`, `karana`, `events`, `isHoliday`
 Load it explicitly with `BSDay.setDataset(dataset)`.

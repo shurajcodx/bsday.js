@@ -1,7 +1,8 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import bundledDataset from '../../dataset/src/data/dataset.json';
 
-import { BSDay, bsday } from '../src';
+import { BSDay, bsday, relativeTimePlugin } from '../src';
+import type { BSDayPluginHost } from '../src';
 
 beforeAll(() => {
     BSDay.setDataset(bundledDataset);
@@ -38,6 +39,12 @@ describe('BSDay Edge Cases', () => {
         expect(bsFromFactory.toBS()).toEqual({ year: 2081, month: 6, day: 27 });
         expect(ad.isValid()).toBe(true);
         expect(ad.toBS()).toEqual({ year: 2081, month: 6, day: 27 });
+    });
+
+    it('keeps default-factory exports attached for CommonJS consumers', () => {
+        expect(bsday.BSDay).toBe(BSDay);
+        expect(bsday.bsday).toBe(bsday);
+        expect(bsday.relativeTimePlugin).toBe(relativeTimePlugin);
     });
 
     it('does not treat BS slash strings as implicit constructor input', () => {
@@ -129,14 +136,15 @@ describe('BSDay Edge Cases', () => {
     });
 
     it('plugin safe multiple extension', () => {
-        const plugin = (opt: any, BSDayClass: any) => {
+        type PluginBSDay = BSDay & { pluginTest(): string };
+        const plugin = (_opt: unknown, BSDayClass: BSDayPluginHost) => {
             BSDayClass.prototype.pluginTest = () => 'ok';
         };
         BSDay.extend(plugin);
         BSDay.extend(plugin);
 
-        const d = new BSDay();
-        expect((d as any).pluginTest()).toBe('ok');
+        const d = new BSDay() as PluginBSDay;
+        expect(d.pluginTest()).toBe('ok');
     });
 
     it('clone immutability edge', () => {

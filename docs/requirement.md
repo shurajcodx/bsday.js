@@ -125,7 +125,7 @@ interface BSDayPlugin {
 
 ---
 
-## 5. Dataset Structure (@bsday/dataset)
+## 5. Dataset Structure (@bsday.js/dataset)
 
 * Each BS date key (`YYYY-MM-DD`) contains:
 
@@ -166,7 +166,7 @@ interface BSDayData {
 
 ```ts
 import { BSDay } from '@bsday.js/core'
-import { dataset } from '@bsday/dataset'
+import { dataset } from '@bsday.js/dataset'
 
 BSDay.setDataset(dataset)
 

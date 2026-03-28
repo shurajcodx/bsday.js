@@ -36,11 +36,7 @@ importers:
         specifier: ^3.0.8
         version: 3.2.4(@types/node@22.19.15)
 
-  packages/core:
-    dependencies:
-      '@bsday/dataset':
-        specifier: workspace:*
-        version: link:../dataset
+  packages/core: {}
 
   packages/dataset:
     dependencies:

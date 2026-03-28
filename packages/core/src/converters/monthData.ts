@@ -1,5 +1,5 @@
 import { MAX_YEAR, MIN_YEAR } from '../utils/constants';
-import { ACCURATE_BS_MONTH_TABLE } from '@bsday/dataset/month-data';
+import { ACCURATE_BS_MONTH_TABLE } from './accurateMonthData';
 
 export type BsMonthTable = Record<number, readonly number[]>;
 
@@ -9,7 +9,7 @@ export const BS_MONTH_TABLE: BsMonthTable = (() => {
   const table: Record<number, readonly number[]> = {};
 
   for (let year = MIN_YEAR; year <= MAX_YEAR; year++) {
-    table[year] = (ACCURATE_BS_MONTH_TABLE as any)[year] || BASE_PATTERN;
+    table[year] = ACCURATE_BS_MONTH_TABLE[year] || BASE_PATTERN;
   }
 
   return table;

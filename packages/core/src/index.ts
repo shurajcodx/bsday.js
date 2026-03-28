@@ -1,19 +1,14 @@
 import { BSDay } from './core/BSDay';
-import type { BSDayInput, BSDate } from './types';
+import { relativeTimePlugin } from './plugins/relativeTime';
+import { pluginSystem } from './core/pluginSystem';
+import type { BSDayInput, BSDate, BSDayFactoryLike, BSDayPlugin } from './types';
 
 export { BSDay };
 
-export interface BSDayFactory {
-  (input?: BSDayInput): BSDay;
-  bs(bs: string | BSDate): BSDay;
-  bs(year: number, month: number, day: number): BSDay;
-  ad(ad: Date): BSDay;
-  now(): number;
-  extend(plugin: any): void; // Adding extend to the factory
-  BSDay: typeof BSDay;
+export interface BSDayFactory extends BSDayFactoryLike {
+  bsday: BSDayFactory;
+  relativeTimePlugin: typeof relativeTimePlugin;
 }
-
-import { pluginSystem } from './core/pluginSystem';
 
 const bsdayFactory = ((input?: BSDayInput) => new BSDay(input)) as BSDayFactory;
 
@@ -31,21 +26,25 @@ bsdayFactory.bs = ((arg1: string | BSDate | number, arg2?: number, arg3?: number
 }) as BSDayFactory['bs'];
 bsdayFactory.ad = (ad: Date) => BSDay.fromAD(ad);
 bsdayFactory.now = () => BSDay.now();
-bsdayFactory.extend = (plugin: any, options?: any) =>
-  pluginSystem.extend(plugin, BSDay as any, bsdayFactory, options);
+bsdayFactory.extend = (plugin: BSDayPlugin, options?: unknown) =>
+  pluginSystem.extend(plugin, BSDay, bsdayFactory, options);
 bsdayFactory.BSDay = BSDay;
+bsdayFactory.bsday = bsdayFactory;
+bsdayFactory.relativeTimePlugin = relativeTimePlugin;
 
 export const bsday = bsdayFactory;
 
 export default bsday;
 
-export { relativeTimePlugin } from './plugins/relativeTime';
+export { relativeTimePlugin };
 export type {
   BSDate,
+  BSDayFactoryLike,
   BSDayData,
   BSDayInput,
   BSDayInputBS,
   BSDayPlugin,
+  BSDayPluginHost,
   CalendarType,
   FormatTokenResolver,
   LocaleType,
