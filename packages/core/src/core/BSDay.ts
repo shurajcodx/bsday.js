@@ -67,7 +67,7 @@ function isBSDate(input: unknown): input is BSDate {
 }
 
 function parseAdLikeString(input: string): Date | null {
-  if (/^\d{4}\/\d{2}\/\d{2}\b/.test(input.trim())) {
+  if (/^\d{4}\/\d{1,2}\/\d{1,2}\b/.test(input.trim())) {
     return null;
   }
 
@@ -76,12 +76,12 @@ function parseAdLikeString(input: string): Date | null {
 }
 
 function parseBsString(input: string): BSDate {
-  const slashMatch = input.match(/^(\d{4})\/(\d{2})\/(\d{2})$/);
-  const dashMatch = input.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  const slashMatch = input.match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})$/);
+  const dashMatch = input.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
   const match = slashMatch ?? dashMatch;
 
   if (!match) {
-    throw new Error(`Invalid BS date string "${input}". Expected YYYY/MM/DD.`);
+    throw new Error(`Invalid BS date string "${input}". Expected YYYY/MM/DD or YYYY-MM-DD.`);
   }
 
   const year = Number(match[1]);
@@ -133,6 +133,17 @@ export class BSDay {
       if (parsed) {
         this.adDate = parsed;
         return;
+      }
+
+      // If AD parsing fails, check if it matches BS format (YYYY/MM/DD or YYYY-MM-DD)
+      if (/^\d{4}[\/-]\d{1,2}[\/-]\d{1,2}$/.test(input.trim())) {
+        try {
+          const bsDate = parseBsString(input);
+          this.adDate = bsToAd(bsDate);
+          return;
+        } catch {
+          // Fall through to invalid
+        }
       }
     }
 
@@ -284,7 +295,18 @@ export class BSDay {
           return false;
         }
       }
-      return parseAdLikeString(arg1) !== null;
+      if (parseAdLikeString(arg1) !== null) {
+        return true;
+      }
+      if (/^\d{4}[\/-]\d{1,2}[\/-]\d{1,2}$/.test(arg1.trim())) {
+        try {
+          const bsDate = parseBsString(arg1);
+          return isValidBSDate(bsDate.year, bsDate.month, bsDate.day);
+        } catch {
+          return false;
+        }
+      }
+      return false;
     }
 
     return false;

@@ -7,6 +7,8 @@ import {
   WEEKDAYS_AD_NE,
   WEEKDAYS_NEPALI,
   WEEKDAYS_NEPALI_NE,
+  AM_PM_AD,
+  AM_PM_NE,
 } from '../utils/constants';
 import { getNepalDateTimeParts, localizeNumber, pad } from '../utils/helpers';
 import type { FormatTokenResolver } from '../types';
@@ -41,8 +43,8 @@ export const BASE_FORMAT_TOKENS: Record<string, FormatTokenResolver> = {
     const monthIndex = calendar === 'ad' ? adParts.month - 1 : bs.month - 1;
     if (locale === 'ne') {
       return calendar === 'ad'
-        ? MONTHS_AD_NE[monthIndex]!.slice(0, 3)
-        : MONTHS_NEPALI_NE[monthIndex]!.slice(0, 3);
+        ? MONTHS_AD_NE[monthIndex]!
+        : MONTHS_NEPALI_NE[monthIndex]!;
     }
     return calendar === 'ad'
       ? MONTHS_AD[monthIndex]!.slice(0, 3)
@@ -61,8 +63,8 @@ export const BASE_FORMAT_TOKENS: Record<string, FormatTokenResolver> = {
     const dayIndex = getNepalDateTimeParts(ad).dayOfWeek;
     if (locale === 'ne') {
       return calendar === 'ad'
-        ? WEEKDAYS_AD_NE[dayIndex]!.slice(0, 3)
-        : WEEKDAYS_NEPALI_NE[dayIndex]!.slice(0, 3);
+        ? WEEKDAYS_AD_NE[dayIndex]!
+        : WEEKDAYS_NEPALI_NE[dayIndex]!;
     }
     return calendar === 'ad'
       ? WEEKDAYS_AD[dayIndex]!.slice(0, 3)
@@ -78,4 +80,14 @@ export const BASE_FORMAT_TOKENS: Record<string, FormatTokenResolver> = {
   HH: ({ ad, locale }) => localizeNumber(pad(getNepalDateTimeParts(ad).hour), locale),
   mm: ({ ad, locale }) => localizeNumber(pad(getNepalDateTimeParts(ad).minute), locale),
   ss: ({ ad, locale }) => localizeNumber(pad(getNepalDateTimeParts(ad).second), locale),
+  A: ({ ad, locale }) => {
+    const { hour } = getNepalDateTimeParts(ad);
+    const index = hour < 12 ? 0 : 1;
+    return locale === 'ne' ? AM_PM_NE[index]! : AM_PM_AD[index]!;
+  },
+  a: ({ ad, locale }) => {
+    const { hour } = getNepalDateTimeParts(ad);
+    const index = hour < 12 ? 0 : 1;
+    return locale === 'ne' ? AM_PM_NE[index]! : AM_PM_AD[index]!.toLowerCase();
+  },
 };
