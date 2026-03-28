@@ -104,3 +104,6 @@ export const WEEKDAYS_AD_NE = [
 ] as const;
 
 export const DEFAULT_CALENDAR: CalendarType = 'bs';
+
+export const AM_PM_AD = ['AM', 'PM'] as const;
+export const AM_PM_NE = ['पूर्वाह्न', 'अपराह्न'] as const;
