@@ -10,7 +10,7 @@ export {
     datasetNepali
 }
 
-export * from './panchang-engine.js';
+export * from './monthData';
 export * from './festival-engine.js';
 export * from './types/festival.js';
 

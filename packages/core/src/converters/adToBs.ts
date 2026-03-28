@@ -1,13 +1,13 @@
 import type { BSDate } from '../types';
 import { MAX_YEAR, MIN_YEAR } from '../utils/constants';
-import { diffInUtcDays } from '../utils/helpers';
+import { diffInCalendarDays } from '../utils/helpers';
 import { getBsMonthDays, getBsYearDays } from './monthData';
 import { AD_EPOCH_UTC, BS_EPOCH } from './bsToAd';
 
 const AD_EPOCH = new Date(AD_EPOCH_UTC);
 
 export function adToBs(ad: Date): BSDate {
-  let remaining = diffInUtcDays(ad, AD_EPOCH);
+  let remaining = diffInCalendarDays(ad, AD_EPOCH);
   if (remaining < 0) {
     throw new RangeError(
       `AD date ${ad.toISOString()} is before supported BS range (${MIN_YEAR}-${MAX_YEAR}).`,

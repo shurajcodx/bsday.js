@@ -61,7 +61,7 @@ packages/
   dataset/
 ```
 
-### `@bsday/core`
+### `@bsday.js/core`
 
 Contains the main BSDay implementation:
 
@@ -70,7 +70,7 @@ Contains the main BSDay implementation:
 * date utilities
 * plugin system
 
-### `@bsday/dataset`
+### `@bsday.js/dataset`
 
 Contains the Panchang dataset including:
 

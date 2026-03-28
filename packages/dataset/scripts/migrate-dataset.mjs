@@ -159,13 +159,13 @@ function sunriseJD(year, month, day, lat = LAT, lon = LON, alt = ALT) {
 // Generate all dates for a BS year using BSDay library
 function generateBsDates(bsYear) {
     const dates = [];
-    
+
     // Use BSDay to get actual month days
     for (let month = 1; month <= 12; month++) {
         // Try each day, BSDay.isValid will tell us if it exists
         for (let day = 1; day <= 32; day++) {
             if (!BSDay.isValid(bsYear, month, day, 'bs')) break;
-            
+
             dates.push({
                 year: bsYear,
                 month,
@@ -181,22 +181,22 @@ function generateBsDates(bsYear) {
 function computeFestivalsForDay(dayData, allDays, festivalRules, index) {
     const festivals = [];
     const day = dayData.panchang;
-    
+
     for (const rule of festivalRules) {
         const cond = rule.condition || rule;
         const type = cond.type || cond.time || 'sunrise';
         const monthMatch = (cond.month === day.month);
-        
+
         if (!monthMatch) continue;
-        
+
         const pakshaMatch = !cond.paksha || cond.paksha === day.paksha;
-        
+
         if (type === 'sunrise') {
             if (day.tithi === cond.tithi && pakshaMatch) {
                 // Check if matched yesterday to avoid duplicates on Vriddhi
                 const prevDay = allDays[index - 1];
                 let alreadyMatched = false;
-                if (prevDay && prevDay.panchang.tithi === cond.tithi && 
+                if (prevDay && prevDay.panchang.tithi === cond.tithi &&
                     (!cond.paksha || cond.paksha === prevDay.panchang.paksha)) {
                     alreadyMatched = true;
                 }
@@ -208,9 +208,9 @@ function computeFestivalsForDay(dayData, allDays, festivalRules, index) {
             const offset = (type === 'sunset') ? 0.45 : 0.75;
             const targetJD = day.jdSunrise + offset;
             const panchangAtWindow = computePanchang(targetJD);
-            
+
             const targetPakshaMatch = !cond.paksha || cond.paksha === panchangAtWindow.paksha;
-            
+
             if (panchangAtWindow.tithi === cond.tithi && targetPakshaMatch) {
                 // Check if already matched yesterday to avoid duplicates on Vriddhi
                 const prevDay = allDays[index - 1];
@@ -218,30 +218,30 @@ function computeFestivalsForDay(dayData, allDays, festivalRules, index) {
                 if (prevDay) {
                     const prevTargetJD = prevDay.panchang.jdSunrise + offset;
                     const prevPanchang = computePanchang(prevTargetJD);
-                    if (prevPanchang.tithi === cond.tithi && 
+                    if (prevPanchang.tithi === cond.tithi &&
                         (!cond.paksha || cond.paksha === prevPanchang.paksha)) {
                         alreadyMatched = true;
                     }
                 }
-                
+
                 if (!alreadyMatched) {
                     festivals.push(rule.name);
                 }
             }
         }
     }
-    
+
     return festivals;
 }
 
 // Apply relative rules (e.g., Vijaya Dashami = Ghatasthapana + 9 days)
 function applyRelativeRules(yearData, allDays, festivalRules) {
-    const relativeRules = festivalRules.filter(r => 
+    const relativeRules = festivalRules.filter(r =>
         (r.condition?.type === 'relative' || r.type === 'relative')
     );
-    
+
     const dateKeys = Object.keys(yearData).sort();
-    
+
     for (const rule of relativeRules) {
         const cond = rule.condition || rule;
         // Find base festival
@@ -264,7 +264,7 @@ function applyRelativeRules(yearData, allDays, festivalRules) {
 // Get events for a date using BSDay for accurate AD conversion
 function getEventsForDate(bsYear, bsMonth, bsDay, intEvents, bsEvents) {
     const bsKey = `${String(bsMonth).padStart(2, '0')}-${String(bsDay).padStart(2, '0')}`;
-    
+
     // Use BSDay for accurate AD date conversion
     try {
         const bsDate = BSDay.fromBS([bsYear, bsMonth, bsDay]);
@@ -272,12 +272,12 @@ function getEventsForDate(bsYear, bsMonth, bsDay, intEvents, bsEvents) {
         const adMonth = String(adDate.getUTCMonth() + 1).padStart(2, '0');
         const adDay = String(adDate.getUTCDate()).padStart(2, '0');
         const adKey = `${adMonth}-${adDay}`;
-        
+
         const events = [
             ...(intEvents[adKey] ?? []),
             ...(bsEvents[bsKey] ?? [])
         ];
-        
+
         return events;
     } catch {
         // Fallback if BSDay conversion fails
@@ -288,16 +288,16 @@ function getEventsForDate(bsYear, bsMonth, bsDay, intEvents, bsEvents) {
 // Main migration function
 async function migrateYear(bsYear, { intEvents, bsEvents, festivalRules, festivalOverrides }) {
     console.log(`Migrating year ${bsYear}...`);
-    
+
     const dates = generateBsDates(bsYear);
     const allDays = [];
-    
+
     // First pass: Compute panchang for all days
     for (const dateInfo of dates) {
         // Use BSDay for accurate BS to AD conversion
         const bsDate = BSDay.fromBS([dateInfo.year, dateInfo.month, dateInfo.day]);
         const adDate = bsDate.toAD();
-        
+
         const jdSunrise = sunriseJD(
             adDate.getUTCFullYear(),
             adDate.getUTCMonth() + 1,
@@ -306,7 +306,7 @@ async function migrateYear(bsYear, { intEvents, bsEvents, festivalRules, festiva
         );
         const panchang = computePanchang(jdSunrise);
         const transition = findTithiTransition(jdSunrise);
-        
+
         allDays.push({
             ...dateInfo,
             panchang: {
@@ -318,15 +318,15 @@ async function migrateYear(bsYear, { intEvents, bsEvents, festivalRules, festiva
             }
         });
     }
-    
+
     // Second pass: Compute festivals and events
     const yearData = {};
-    
+
     for (let i = 0; i < allDays.length; i++) {
         const day = allDays[i];
         const festivals = computeFestivalsForDay(day, allDays, festivalRules, i);
         const events = getEventsForDate(day.year, day.month, day.day, intEvents, bsEvents);
-        
+
         // Apply overrides
         const override = festivalOverrides[day.dateStr];
         if (override) {
@@ -340,10 +340,10 @@ async function migrateYear(bsYear, { intEvents, bsEvents, festivalRules, festiva
                 festivals.push(...override.addFestivals);
             }
         }
-        
+
         // Remove duplicates
         const uniqueFestivals = [...new Set(festivals)];
-        
+
         yearData[day.dateStr] = {
             tithi: day.panchang.tithi,
             paksha: day.panchang.paksha,
@@ -355,21 +355,21 @@ async function migrateYear(bsYear, { intEvents, bsEvents, festivalRules, festiva
             isHoliday: uniqueFestivals.length > 0
         };
     }
-    
+
     // Third pass: Apply relative rules
     applyRelativeRules(yearData, allDays, festivalRules);
-    
+
     return yearData;
 }
 
 // Main execution
 async function main() {
     const args = process.argv.slice(2);
-    
+
     // Parse arguments
     let startYear = 1950;
     let endYear = 2100;
-    
+
     for (let i = 0; i < args.length; i++) {
         if (args[i] === '--start' && args[i + 1]) {
             startYear = parseInt(args[i + 1], 10);
@@ -382,43 +382,43 @@ async function main() {
             i++;
         }
     }
-    
+
     console.log(`🚀 Starting migration for BS years ${startYear} to ${endYear}`);
     console.log(`📁 Output directory: data/years-migrated/`);
-    
+
     // Create output directory
     const outputDir = path.resolve(__dirname, '../src/data/years-migrated');
     await mkdir(outputDir, { recursive: true });
-    
+
     // Load static data
     console.log('📖 Loading static data (events, rules, overrides)...');
     const staticData = await loadStaticData();
-    
+
     // Process each year
     const startTime = Date.now();
-    
+
     for (let year = startYear; year <= endYear; year++) {
         const yearData = await migrateYear(year, staticData);
-        
+
         // Sort keys
         const sortedKeys = Object.keys(yearData).sort();
         const sortedYearData = {};
         for (const key of sortedKeys) {
             sortedYearData[key] = yearData[key];
         }
-        
+
         // Write year file
         const outputPath = path.join(outputDir, `${year}.json`);
         await writeFile(outputPath, JSON.stringify(sortedYearData, null, 2) + '\n');
-        
+
         const recordCount = Object.keys(sortedYearData).length;
         const festivalCount = Object.values(sortedYearData).reduce(
             (sum, d) => sum + d.festivals.length, 0
         );
-        
+
         console.log(`  ✅ ${year}: ${recordCount} days, ${festivalCount} festivals`);
     }
-    
+
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(2);
     console.log(`\n🎉 Migration complete! Processed ${endYear - startYear + 1} years in ${elapsed}s`);
     console.log(`📂 Output: ${outputDir}`);

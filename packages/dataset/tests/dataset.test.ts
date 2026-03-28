@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { dataset, datasetNepali } from '../src';
 
-describe('@bsday/dataset', () => {
+describe('@bsday.js/dataset', () => {
   it('exports dataset keyed by BS date', () => {
     const keys = Object.keys(dataset);
     expect(keys.length).toBeGreaterThan(1000);

@@ -1,4 +1,4 @@
-# @bsday/dataset
+# @bsday.js/dataset
 
 Bikram Sambat (BS) calendar dataset and engine, including **tithi, paksha, nakshatra, yoga, karana, festivals, events, and holiday info**.
 
@@ -38,7 +38,7 @@ type BSDayDataset = Record<string, BSDayData>;
 ## Installation
 
 ```bash
-npm install @bsday/dataset
+npm install @bsday.js/dataset
 ```
 
 ---
@@ -46,7 +46,7 @@ npm install @bsday/dataset
 ## Basic Usage
 
 ```ts
-import { dataset, datasetNepali, BSDayData } from '@bsday/dataset';
+import { dataset, datasetNepali, BSDayData } from '@bsday.js/dataset';
 
 // English dataset
 const day: BSDayData = dataset['2081-06-25'];
@@ -69,10 +69,11 @@ The package exports robust engines for astronomical and calendrical calculations
 Calculate astronomical data for any date/time using the Swiss Ephemeris.
 
 ```ts
-import { PanchangEngine } from '@bsday/dataset';
+import { computePanchang } from '@bsday.js/dataset/panchang-engine';
 
-const date = new Date('2024-10-12');
-const panchang = PanchangEngine.computePanchang(date);
+// Julian day (UT) for the instant you want to inspect.
+const jdUt = 2460595.5;
+const panchang = computePanchang(jdUt);
 
 console.log(panchang.tithi); // "Dashami"
 console.log(panchang.paksha); // "Shukla"
@@ -82,7 +83,7 @@ console.log(panchang.paksha); // "Shukla"
 Generate festivals based on complex rules including Sunrise, Sunset, Night, and Relative rules.
 
 ```ts
-import { FestivalEngine, FestivalRule } from '@bsday/dataset';
+import { FestivalEngine, FestivalRule } from '@bsday.js/dataset';
 
 const rules: FestivalRule[] = [...]; // Your festival rules
 const engine = new FestivalEngine();

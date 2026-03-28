@@ -1,5 +1,5 @@
 {
-  "name": "@bsday/dataset",
+  "name": "@bsday.js/dataset",
   "version": "0.1.0",
   "description": "BSDay optional festival and panchang dataset",
   "license": "MIT",
@@ -12,13 +12,25 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
+    },
+    "./month-data": {
+      "types": "./dist/monthData.d.ts",
+      "import": "./dist/monthData.js",
+      "require": "./dist/monthData.cjs"
+    },
+    "./panchang-engine": {
+      "types": "./dist/panchang-engine.d.ts",
+      "import": "./dist/panchang-engine.js",
+      "require": "./dist/panchang-engine.cjs"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "ephe"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "npm run generate:month-data && tsup src/index.ts src/monthData.ts src/panchang-engine.ts --format esm,cjs --dts --shims",
+    "generate:month-data": "node scripts/reconstruct-bs-calendar.mjs",
     "test": "vitest run",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json --noEmit",

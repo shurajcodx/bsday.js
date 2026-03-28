@@ -11,7 +11,7 @@
 
 * AD ↔ BS conversion engine
 * `BSDay` class (constructors, getters, setters)
-* Date arithmetic (`addDays`, `addMonths`, `addYears`)
+* Date arithmetic (`add`, `subtract`)
 * Comparison methods (`isBefore`, `isAfter`, `isSame`)
 * Formatting engine (standard tokens)
 * Parsing engine (string → BSDay)
@@ -34,8 +34,8 @@
 
 **Monorepo & Packaging:**
 
-* `@bsday/core` → core library
-* `@bsday/dataset` → optional dataset package
+* `@bsday.js/core` → core library
+* `@bsday.js/dataset` → optional dataset package
 * pnpm workspace setup
 * TypeScript paths & package dependencies configured
 * Build outputs: ESM + CJS + type definitions
@@ -64,8 +64,8 @@
 
 2. **Time & Extended Date Support**
 
-   * Hour, minute, second support
-   * Timezone awareness (`Asia/Kathmandu`)
+   * Millisecond token support
+   * Additional timezone APIs beyond Nepal-local behavior
    * Extended date calculations: workdays, fiscal year, lunar calendar
 
 3. **Localization & Formatting**
