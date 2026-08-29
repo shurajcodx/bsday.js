@@ -47,7 +47,6 @@ export const fiscalYearPlugin: BSDayPlugin = {
         result = `${startYear}/${end2Digit}`;
       }
 
-
       return localizeNumber(result, loc);
     };
   },

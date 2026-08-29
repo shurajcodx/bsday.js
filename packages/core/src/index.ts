@@ -5,7 +5,6 @@ import { getCalendarMatrix } from './calendar/calendarGrid';
 import { pluginSystem } from './core/pluginSystem';
 import type { BSDayInput, BSDate, BSDayFactoryLike, BSDayPlugin } from './types';
 
-
 export { BSDay };
 
 export interface BSDayFactory extends BSDayFactoryLike {
@@ -59,11 +58,7 @@ export {
   type CalendarMatrixOptions,
 } from './calendar/calendarGrid';
 
-export {
-  getBsMonthDays,
-  getBsYearDays,
-  isBsLeapYear,
-} from './converters/monthData';
+export { getBsMonthDays, getBsYearDays, isBsLeapYear } from './converters/monthData';
 
 export {
   isDateInRange,
@@ -92,6 +87,3 @@ export type {
   FormatTokenResolver,
   LocaleType,
 } from './types';
-
-
-

@@ -17,7 +17,7 @@ const NEPAL_OFFSET_DAYS = 5.75 / 24;
 function findIngress(jd_start, targetLong) {
   let low = jd_start;
   let high = jd_start + 32;
-  
+
   for (let i = 0; i < 25; i++) {
     const mid = (low + high) / 2;
     const res = swisseph.swe_calc_ut(mid, swisseph.SE_SUN, FLAGS);
@@ -39,10 +39,10 @@ function jdToNepalDate(jd_ut) {
 
 async function reconstruct() {
   const table = {};
-  
+
   // Starting point: April 1913 (BS 1970 starts)
   let currentJD = findIngress(swisseph.swe_julday(1913, 4, 1, 0, swisseph.SE_GREG_CAL), 0);
-  
+
   for (let bsYear = 1970; bsYear <= 2100; bsYear++) {
     const monthLengths = [];
     const sankrantiJDs = [];
@@ -57,14 +57,20 @@ async function reconstruct() {
 
     for (let i = 0; i < 12; i++) {
       const start = jdToNepalDate(sankrantiJDs[i]);
-      const end = jdToNepalDate(sankrantiJDs[i+1]);
-      
-      const startJD = swisseph.swe_julday(start.year, start.month, start.day, 0, swisseph.SE_GREG_CAL);
+      const end = jdToNepalDate(sankrantiJDs[i + 1]);
+
+      const startJD = swisseph.swe_julday(
+        start.year,
+        start.month,
+        start.day,
+        0,
+        swisseph.SE_GREG_CAL,
+      );
       const endJD = swisseph.swe_julday(end.year, end.month, end.day, 0, swisseph.SE_GREG_CAL);
-      
+
       monthLengths.push(Math.round(endJD - startJD));
     }
-    
+
     table[bsYear] = monthLengths;
   }
 

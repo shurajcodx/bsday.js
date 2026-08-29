@@ -1,6 +1,6 @@
 {
   "name": "@bsday.js/core",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Core BSDay dual-calendar date library",
   "publishConfig": {
     "access": "public"
@@ -11,7 +11,6 @@
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
-
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -40,7 +39,7 @@
   "bugs": {
     "url": "https://github.com/shurajcodx/bsday.js/issues"
   },
-  "homepage": "https://github.com/shurajcodx/bsday.js#readme",
+  "homepage": "https://bsdayjs.vercel.app",
   "keywords": [
     "nepali",
     "calendar",

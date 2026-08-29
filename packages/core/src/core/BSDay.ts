@@ -42,7 +42,11 @@ import {
 
 import { isLeapYear, isValidADDate, isValidBSDate } from '../utils/validation';
 import { normalizeUnit } from '../utils/units';
-import { getCalendarMatrix, type CalendarCell, type CalendarMatrixOptions } from '../calendar/calendarGrid';
+import {
+  getCalendarMatrix,
+  type CalendarCell,
+  type CalendarMatrixOptions,
+} from '../calendar/calendarGrid';
 import {
   localizeBSDayData,
   TITHI_NE_MAP,
@@ -153,7 +157,6 @@ export class BSDay {
         return;
       }
     }
-
 
     if (typeof input === 'object') {
       try {
@@ -275,7 +278,6 @@ export class BSDay {
     return datasetManager.getDataset();
   }
 
-
   static isLeapYear(year: number, calendar: CalendarType = 'ad'): boolean {
     return isLeapYear(year, calendar);
   }
@@ -292,11 +294,13 @@ export class BSDay {
     return new BSDay({ year: endYear, month: 3, day: lastDay }).endOf('date');
   }
 
-  static getCalendarMatrix(year: number, month: number, options?: CalendarMatrixOptions): CalendarCell[][] {
+  static getCalendarMatrix(
+    year: number,
+    month: number,
+    options?: CalendarMatrixOptions,
+  ): CalendarCell[][] {
     return getCalendarMatrix(year, month, options);
   }
-
-
 
   static isValid(input: string, pattern?: string, calendar?: CalendarType): boolean;
   static isValid(input: Date | BSDayInputBS | BSDate): boolean;
@@ -333,7 +337,6 @@ export class BSDay {
       return parseAdLikeString(arg1) !== null;
     }
 
-
     return false;
   }
 
@@ -360,7 +363,6 @@ export class BSDay {
     return this.setMonth(targetMonth);
   }
 
-
   month(): number;
   month(value: number): BSDay;
   month(value?: number): number | BSDay {
@@ -385,7 +387,6 @@ export class BSDay {
     if (value === undefined) return this.bs.day;
     return this.setDay(value);
   }
-
 
   hour(): number;
   hour(value: number): BSDay;
@@ -416,7 +417,9 @@ export class BSDay {
   millisecond(value?: number): number | BSDay {
     if (!this.isValid()) return value === undefined ? NaN : this;
     if (value === undefined) return getNepalDateTimeParts(this.adDate).millisecond;
-    return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCMilliseconds(value)));
+    return this.withDate(
+      updateNepalDateTime(this.adDate, (next) => next.setUTCMilliseconds(value)),
+    );
   }
 
   // Getters / Setters (Day.js style)
@@ -528,7 +531,9 @@ export class BSDay {
   private addYears(years: number, calendar: CalendarType = DEFAULT_CALENDAR): BSDay {
     if (calendar === 'ad') {
       return this.withDate(
-        updateNepalDateTime(this.adDate, (next) => next.setUTCFullYear(next.getUTCFullYear() + years)),
+        updateNepalDateTime(this.adDate, (next) =>
+          next.setUTCFullYear(next.getUTCFullYear() + years),
+        ),
       );
     }
 
@@ -588,20 +593,27 @@ export class BSDay {
         const startYear = this.fiscalYearNumber();
         if (fq === 1) return this.withBSDate({ year: startYear, month: 4, day: 1 }).startOf('date');
         if (fq === 2) return this.withBSDate({ year: startYear, month: 7, day: 1 }).startOf('date');
-        if (fq === 3) return this.withBSDate({ year: startYear, month: 10, day: 1 }).startOf('date');
+        if (fq === 3)
+          return this.withBSDate({ year: startYear, month: 10, day: 1 }).startOf('date');
         return this.withBSDate({ year: startYear + 1, month: 1, day: 1 }).startOf('date');
       }
       case 'month':
-        return this.withBSDate({ year: this.bs.year, month: this.bs.month, day: 1 }).startOf('date');
+        return this.withBSDate({ year: this.bs.year, month: this.bs.month, day: 1 }).startOf(
+          'date',
+        );
       case 'date':
       case 'day':
         return this.withDate(new Date(nepalStartOfDay(this.adDate)));
       case 'hour':
-        return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCMinutes(0, 0, 0)));
+        return this.withDate(
+          updateNepalDateTime(this.adDate, (next) => next.setUTCMinutes(0, 0, 0)),
+        );
       case 'minute':
         return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCSeconds(0, 0)));
       case 'second':
-        return this.withDate(updateNepalDateTime(this.adDate, (next) => next.setUTCMilliseconds(0)));
+        return this.withDate(
+          updateNepalDateTime(this.adDate, (next) => next.setUTCMilliseconds(0)),
+        );
       default:
         return this;
     }
@@ -625,10 +637,29 @@ export class BSDay {
       case 'fiscalQuarter': {
         const fq = this.fiscalQuarter();
         const startYear = this.fiscalYearNumber();
-        if (fq === 1) return this.withBSDate({ year: startYear, month: 6, day: getBsMonthDays(startYear, 6) }).endOf('date');
-        if (fq === 2) return this.withBSDate({ year: startYear, month: 9, day: getBsMonthDays(startYear, 9) }).endOf('date');
-        if (fq === 3) return this.withBSDate({ year: startYear, month: 12, day: getBsMonthDays(startYear, 12) }).endOf('date');
-        return this.withBSDate({ year: startYear + 1, month: 3, day: getBsMonthDays(startYear + 1, 3) }).endOf('date');
+        if (fq === 1)
+          return this.withBSDate({
+            year: startYear,
+            month: 6,
+            day: getBsMonthDays(startYear, 6),
+          }).endOf('date');
+        if (fq === 2)
+          return this.withBSDate({
+            year: startYear,
+            month: 9,
+            day: getBsMonthDays(startYear, 9),
+          }).endOf('date');
+        if (fq === 3)
+          return this.withBSDate({
+            year: startYear,
+            month: 12,
+            day: getBsMonthDays(startYear, 12),
+          }).endOf('date');
+        return this.withBSDate({
+          year: startYear + 1,
+          month: 3,
+          day: getBsMonthDays(startYear + 1, 3),
+        }).endOf('date');
       }
       case 'month':
         return this.add(1, 'month').startOf('month').subtract(1, 'millisecond');
@@ -645,7 +676,6 @@ export class BSDay {
         return this;
     }
   }
-
 
   isBefore(other: BSDay, unit: DateUnit = 'millisecond'): boolean {
     if (!this.isValid() || !other.isValid()) return false;
@@ -794,7 +824,6 @@ export class BSDay {
     return shouldReturnFloat ? result : Math.trunc(result);
   }
 
-
   locale(): LocaleType;
   locale(l: LocaleType): this;
   locale(l?: LocaleType): LocaleType | this {
@@ -916,7 +945,9 @@ export class BSDay {
     const next = bsToAd(bs);
     const { hour, minute, second, millisecond } = getNepalDateTimeParts(this.adDate);
     return this.withDate(
-      updateNepalDateTime(next, (shifted) => shifted.setUTCHours(hour, minute, second, millisecond)),
+      updateNepalDateTime(next, (shifted) =>
+        shifted.setUTCHours(hour, minute, second, millisecond),
+      ),
     );
   }
 
@@ -947,7 +978,6 @@ export class BSDay {
   }
 
   fiscalYearNumber(): number {
-
     if (!this.isValid()) return NaN;
     const bs = this.toBS();
     return bs.month >= 4 ? bs.year : bs.year - 1;
@@ -977,7 +1007,6 @@ export class BSDay {
     } else {
       result = `${startYear}/${end2Digit}`;
     }
-
 
     return localizeNumber(result, loc);
   }
@@ -1038,8 +1067,6 @@ export class BSDay {
   }
 
   toString(): string {
-
-
     const bs = this.toBS();
     const { hour, minute, second } = getNepalDateTimeParts(this.adDate);
     const time = `${pad(hour)}:${pad(minute)}:${pad(second)}`;
@@ -1054,4 +1081,3 @@ export class BSDay {
     return `BSDay("${this.toString()}")`;
   }
 }
-

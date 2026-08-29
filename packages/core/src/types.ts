@@ -49,8 +49,6 @@ export interface BSAge {
   days: number;
 }
 
-
-
 export interface BSDayData {
   tithi: string;
   paksha: string;

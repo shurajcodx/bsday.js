@@ -154,7 +154,6 @@ function formatRelative(
   }
 
   const past = diffMs < 0;
-  const suffixKey: 'future' | 'past' = isTo ? (past ? 'future' : 'past') : (past ? 'past' : 'future');
+  const suffixKey: 'future' | 'past' = isTo ? (past ? 'future' : 'past') : past ? 'past' : 'future';
   return loc[suffixKey].replace('%s', result);
 }
-

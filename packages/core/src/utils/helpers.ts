@@ -9,10 +9,13 @@ const NEPALI_NUMBERS = ['०', '१', '२', '३', '४', '५', '६', '७', 
 export function localizeNumber(value: string | number, locale: string = 'en'): string {
   const str = String(value);
   if (locale === 'en') return str;
-  return str.split('').map(char => {
-    const num = parseInt(char, 10);
-    return isNaN(num) ? char : NEPALI_NUMBERS[num]!;
-  }).join('');
+  return str
+    .split('')
+    .map((char) => {
+      const num = parseInt(char, 10);
+      return isNaN(num) ? char : NEPALI_NUMBERS[num]!;
+    })
+    .join('');
 }
 
 export function pad(value: number, width = 2): string {
@@ -58,7 +61,9 @@ export function createNepalDate(
   second = 0,
   millisecond = 0,
 ): Date {
-  return new Date(Date.UTC(year, month - 1, day, hour, minute, second, millisecond) - NEPAL_OFFSET_MS);
+  return new Date(
+    Date.UTC(year, month - 1, day, hour, minute, second, millisecond) - NEPAL_OFFSET_MS,
+  );
 }
 
 export function updateNepalDateTime(date: Date, updater: (shifted: Date) => void): Date {
@@ -69,7 +74,10 @@ export function updateNepalDateTime(date: Date, updater: (shifted: Date) => void
 
 export function nepalStartOfDay(date: Date): number {
   const shifted = shiftToNepal(date);
-  return Date.UTC(shifted.getUTCFullYear(), shifted.getUTCMonth(), shifted.getUTCDate()) - NEPAL_OFFSET_MS;
+  return (
+    Date.UTC(shifted.getUTCFullYear(), shifted.getUTCMonth(), shifted.getUTCDate()) -
+    NEPAL_OFFSET_MS
+  );
 }
 
 export function addCalendarDays(date: Date, days: number): Date {

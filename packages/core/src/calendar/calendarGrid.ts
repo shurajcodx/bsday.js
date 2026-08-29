@@ -49,9 +49,7 @@ export function getCalendarMatrix(
   const firstDayOfWeek = firstDayBS.day(); // 0 = Sun, 6 = Sat
 
   // Offset from start of row
-  const leadingDays = startOfWeek === 1
-    ? (firstDayOfWeek + 6) % 7
-    : firstDayOfWeek;
+  const leadingDays = startOfWeek === 1 ? (firstDayOfWeek + 6) % 7 : firstDayOfWeek;
 
   const cells: CalendarCell[] = [];
 
@@ -74,7 +72,11 @@ export function getCalendarMatrix(
 
   // 3. Next Month Trailing Days
   const totalCells = cells.length;
-  const targetTotal = options.fixedWeeks ? 42 : (totalCells % 7 === 0 ? totalCells : totalCells + (7 - (totalCells % 7)));
+  const targetTotal = options.fixedWeeks
+    ? 42
+    : totalCells % 7 === 0
+      ? totalCells
+      : totalCells + (7 - (totalCells % 7));
   const trailingDays = targetTotal - totalCells;
 
   if (trailingDays > 0) {
@@ -121,7 +123,6 @@ function buildCell(
   const paksha = data?.paksha;
   const festivals = bsInstance.festivals;
   const events = bsInstance.events;
-
 
   const adYear = ad.getUTCFullYear();
   const adMonth = pad(ad.getUTCMonth() + 1);

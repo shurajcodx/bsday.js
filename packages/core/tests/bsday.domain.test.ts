@@ -25,7 +25,6 @@ describe('Nepali Fiscal Year (आर्थिक वर्ष)', () => {
     expect(d.fiscalYear('extended')).toBe('आ.व. २०८१/८२');
   });
 
-
   it('correctly calculates fiscal quarters (Q1-Q4)', () => {
     // Q1: Shrawan (4), Bhadra (5), Ashwin (6)
     expect(bsday.bs(2081, 4, 15).fiscalQuarter()).toBe(1);

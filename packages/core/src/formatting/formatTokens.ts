@@ -42,9 +42,7 @@ export const BASE_FORMAT_TOKENS: Record<string, FormatTokenResolver> = {
     const adParts = getNepalDateTimeParts(ad);
     const monthIndex = calendar === 'ad' ? adParts.month - 1 : bs.month - 1;
     if (locale === 'ne') {
-      return calendar === 'ad'
-        ? MONTHS_AD_NE[monthIndex]!
-        : MONTHS_NEPALI_NE[monthIndex]!;
+      return calendar === 'ad' ? MONTHS_AD_NE[monthIndex]! : MONTHS_NEPALI_NE[monthIndex]!;
     }
     return calendar === 'ad'
       ? MONTHS_AD[monthIndex]!.slice(0, 3)
@@ -62,9 +60,7 @@ export const BASE_FORMAT_TOKENS: Record<string, FormatTokenResolver> = {
   ddd: ({ calendar, locale, ad }) => {
     const dayIndex = getNepalDateTimeParts(ad).dayOfWeek;
     if (locale === 'ne') {
-      return calendar === 'ad'
-        ? WEEKDAYS_AD_NE[dayIndex]!
-        : WEEKDAYS_NEPALI_NE[dayIndex]!;
+      return calendar === 'ad' ? WEEKDAYS_AD_NE[dayIndex]! : WEEKDAYS_NEPALI_NE[dayIndex]!;
     }
     return calendar === 'ad'
       ? WEEKDAYS_AD[dayIndex]!.slice(0, 3)
@@ -109,4 +105,3 @@ export const BASE_FORMAT_TOKENS: Record<string, FormatTokenResolver> = {
     return locale === 'ne' ? AM_PM_NE[index]! : AM_PM_AD[index]!.toLowerCase();
   },
 };
-

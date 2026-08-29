@@ -41,7 +41,10 @@ describe('Panchang, Tithi and Festival Accuracy', () => {
 
   it('accurately identifies 2081 Tihar festival dates (Kag Tihar, Laxmi Puja, Bhai Tika)', () => {
     // Kag Tihar: 2081-07-13 or 2081-07-14
-    expect(dataset['2081-07-13'].festivals.includes('Kag Tihar') || dataset['2081-07-14'].festivals.includes('Kag Tihar')).toBe(true);
+    expect(
+      dataset['2081-07-13'].festivals.includes('Kag Tihar') ||
+        dataset['2081-07-14'].festivals.includes('Kag Tihar'),
+    ).toBe(true);
 
     // Laxmi Puja: 2081-07-15
     const laxmi = dataset['2081-07-15'];

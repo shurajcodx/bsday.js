@@ -92,4 +92,3 @@ export function validateBSDateString(
 
   return { isValid: true, bs: { year, month, day } };
 }
-

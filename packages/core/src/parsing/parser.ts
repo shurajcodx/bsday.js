@@ -60,9 +60,8 @@ function normalizeLabel(value: string): string {
 }
 
 function monthNameToIndex(label: string, calendar: CalendarType): number {
-  const collections = calendar === 'ad'
-    ? [MONTHS_AD, MONTHS_AD_NE]
-    : [MONTHS_NEPALI, MONTHS_NEPALI_NE];
+  const collections =
+    calendar === 'ad' ? [MONTHS_AD, MONTHS_AD_NE] : [MONTHS_NEPALI, MONTHS_NEPALI_NE];
   const normalized = normalizeLabel(label);
 
   for (const collection of collections) {
@@ -79,7 +78,11 @@ function monthNameToIndex(label: string, calendar: CalendarType): number {
   return -1;
 }
 
-export function parseDate(input: string, pattern: string, calendar: CalendarType): Date | ParsedBSDateTime {
+export function parseDate(
+  input: string,
+  pattern: string,
+  calendar: CalendarType,
+): Date | ParsedBSDateTime {
   const usedTokens: string[] = [];
   const normalizedInput = normalizeDigits(input);
 
@@ -171,9 +174,12 @@ export function parseDate(input: string, pattern: string, calendar: CalendarType
   });
 
   if (
-    parsed.hour < 0 || parsed.hour > 23 ||
-    parsed.minute < 0 || parsed.minute > 59 ||
-    parsed.second < 0 || parsed.second > 59
+    parsed.hour < 0 ||
+    parsed.hour > 23 ||
+    parsed.minute < 0 ||
+    parsed.minute > 59 ||
+    parsed.second < 0 ||
+    parsed.second > 59
   ) {
     throw new RangeError(`Invalid time ${parsed.hour}:${parsed.minute}:${parsed.second}.`);
   }
@@ -182,7 +188,14 @@ export function parseDate(input: string, pattern: string, calendar: CalendarType
     if (!isValidADDate(parsed.year, parsed.month, parsed.day)) {
       throw new RangeError(`Invalid AD date ${parsed.year}-${parsed.month}-${parsed.day}.`);
     }
-    return createNepalDate(parsed.year, parsed.month, parsed.day, parsed.hour, parsed.minute, parsed.second);
+    return createNepalDate(
+      parsed.year,
+      parsed.month,
+      parsed.day,
+      parsed.hour,
+      parsed.minute,
+      parsed.second,
+    );
   }
 
   if (!isValidBSDate(parsed.year, parsed.month, parsed.day)) {

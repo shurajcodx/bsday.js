@@ -13,7 +13,7 @@ describe('@bsday.js/dataset', () => {
     const day = dataset['2082-11-24'];
     expect(day.tithi).toBe('Panchami');
     expect(day.paksha).toBe('Krishna');
-    expect(day.events).toContain('International Women\'s Day');
+    expect(day.events).toContain("International Women's Day");
     expect(day.isHoliday).toBe(false);
   });
 
@@ -79,4 +79,3 @@ describe('@bsday.js/dataset', () => {
     }
   });
 });
-
