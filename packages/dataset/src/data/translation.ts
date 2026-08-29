@@ -14,7 +14,13 @@ const TITHI_NE: Record<string, string> = {
   "Trayodashi": "त्रयोदशी",
   "Chaturdashi": "चतुर्दशी",
   "Purnima": "पूर्णिमा",
-  "Amavasya": "अमावस्या"
+  "Amavasya": "औंसी",
+  "Aunsi": "औंसी"
+};
+
+const PAKSHA_NE: Record<string, string> = {
+  "Shukla": "शुक्ल",
+  "Krishna": "कृष्ण"
 };
 
 const NAKSHATRA_NE: Record<string, string> = {
@@ -37,18 +43,18 @@ const NAKSHATRA_NE: Record<string, string> = {
   "Anuradha": "अनुराधा",
   "Jyeshtha": "ज्येष्ठा",
   "Mula": "मूला",
-  "Purva Ashadha": "पूर्वाषाढ़ा",
-  "Uttara Ashadha": "उत्तराषाढ़ा",
+  "Purva Ashadha": "पूर्वाषाढा",
+  "Uttara Ashadha": "उत्तराषाढा",
   "Shravana": "श्रवण",
   "Dhanishta": "धनिष्ठा",
   "Shatabhisha": "शतभिषा",
-  "Purva Bhadrapada": "पूर्व भद्रपदा",
-  "Uttara Bhadrapada": "उत्तर भद्रपदा",
+  "Purva Bhadrapada": "पूर्व भाद्रपदा",
+  "Uttara Bhadrapada": "उत्तर भाद्रपदा",
   "Revati": "रेवती"
 };
 
 const YOGA_NE: Record<string, string> = {
-  "Vishkumbha": "विश्कुम्भ",
+  "Vishkumbha": "विष्कम्भ",
   "Priti": "प्रीति",
   "Ayushman": "आयुष्मान",
   "Saubhagya": "सौभाग्य",
@@ -65,43 +71,130 @@ const YOGA_NE: Record<string, string> = {
   "Vajra": "वज्र",
   "Siddhi": "सिद्धि",
   "Vyatipata": "व्यतीपात",
-  "Variyana": "वरीय",
+  "Variyana": "वरीयान",
   "Parigha": "परिघ",
   "Shiva": "शिव",
   "Siddha": "सिद्ध",
   "Sadhya": "साध्य",
   "Shubha": "शुभ",
   "Shukla": "शुक्ल",
-  "Brahma": "ब्रह्मा",
+  "Brahma": "ब्रह्म",
   "Indra": "इन्द्र",
   "Vaidhriti": "वैधृति"
 };
 
 const KARANA_NE: Record<string, string> = {
   "Bava": "बव",
-  "Balava": "बलव",
+  "Balava": "बालव",
   "Kaulava": "कौलव",
   "Taitila": "तैतिल",
-  "Garaja": "गरज",
-  "Vanija": "वनिज",
-  "Vishti": "विश्ठि"
+  "Garaja": "गर",
+  "Vanija": "वणिज",
+  "Vishti": "विष्टि",
+  "Shakuni": "शकुनि",
+  "Chatushpada": "चतुष्पद",
+  "Naga": "नाग",
+  "Kimstughna": "किस्तुघ्न"
 };
 
 const FESTIVAL_NE: Record<string, string> = {
-  "Dashain": "दशैँ",
-  "Tihar": "तिहार",
+  "Matatirtha Aunsi (Mothers' Day)": "मातातीर्थ औंसी (आमाको मुख हेर्ने दिन)",
+  "Buddha Jayanti / Ubhauli Parva": "बुद्ध जयन्ती / उभौली पर्व",
+  "Buddha Jayanti": "बुद्ध जयन्ती",
+  "Sithi Nakha": "सिथि नखः",
+  "Guru Purnima": "गुरु पूर्णिमा",
+  "Nag Panchami": "नाग पञ्चमी",
+  "Raksha Bandhan / Janai Purnima / Kwati Khane Din / Rishi Tarpani / Sanskrit Diwas": "रक्षा बन्धन / जनै पूर्णिमा / क्वाँटी खाने दिन / ऋषितर्पणी / संस्कृत दिवस",
+  "Janai Purnima / Raksha Bandhan / Kwati Pune": "जनै पूर्णिमा / रक्षाबन्धन / क्वाँटी पुन्ही",
+  "Janai Purnima / Raksha Bandhan": "जनै पूर्णिमा / रक्षाबन्धन",
+  "Gai Jatra": "गाईजात्रा",
+  "Krishna Janmashtami / Gaura Parva": "श्रीकृष्ण जन्माष्टमी / गौरा पर्व",
+  "Krishna Janmashtami": "श्रीकृष्ण जन्माष्टमी",
+  "Kushe Aunsi (Fathers' Day)": "कुशे औंसी (बाबुको मुख हेर्ने दिन)",
+  "Dar Khane Din": "दर खाने दिन",
+  "Haritalika Teej": "हरितालिका तीज (महिला बिदा)",
+  "Teej": "हरितालिका तीज",
+  "Ganesh Chaturthi": "गणेश चतुर्थी",
+  "Rishi Panchami": "ऋषि पञ्चमी",
+  "Indra Jatra / Ananta Chaturdashi": "इन्द्रजात्रा / अनन्त चतुर्दशी",
+  "Indra Jatra": "इन्द्रजात्रा",
+  "Jitiya Parva": "जितिया पर्व (महिला बिदा)",
+  "Sohra Shraddha Samapti (Mahalaya)": "सोह्र श्राद्ध समाप्ति (महालय)",
+  "Ghatasthapana": "घटस्थापना (नवरात्र आरम्भ)",
+  "Fulpati": "फूलपाती",
+  "Maha Ashtami": "महा अष्टमी (कालरात्रि)",
+  "Maha Navami": "महा नवमी",
+  "Vijaya Dashami": "विजया दशमी (बडा दशैं टीका)",
+  "Papankusha Ekadashi": "पापाङ्कुशा एकादशी",
+  "Dashain Holiday": "दशैं बिदा",
+  "Kojagrat Purnima": "कोजाग्रत पूर्णिमा (दशैं समापन)",
+  "Kag Tihar": "काग तिहार (यमपञ्चक आरम्भ)",
+  "Kukur Tihar": "कुकुर तिहार / नरक चतुर्दशी",
+  "Laxmi Puja": "लक्ष्मी पूजा / दीपमालिका",
+  "Govardhan Puja / Mha Puja / Gai Puja": "गोवर्धन पूजा / म्ह पूजा / गाई पूजा / हली तिहार",
+  "Bhai Tika": "भाइटीका / किजा पूजा",
+  "Tihar Holiday": "तिहार बिदा",
+  "Chhath Puja": "छठ पर्व",
+  "Haribodhini Ekadashi / Tulsi Bibaha": "हरिबोधिनी एकादशी (ठूली एकादशी) / तुलसी विवाह",
+  "Bala Chaturdashi": "बाला चतुर्दशी",
+  "Bibaha Panchami": "विवाह पञ्चमी",
+  "Udhauli Parva / Yomari Punhi": "उधौली पर्व / योमरी पुन्ही",
+  "Sonam Lhosar": "सोनाम ल्होसार",
+  "Basanta Panchami / Saraswati Puja": "वसन्त पञ्चमी / सरस्वती पूजा (श्रीपञ्चमी)",
+  "Maha Shivaratri": "महाशिवरात्रि / सेना दिवस",
+  "Gyalpo Lhosar": "ग्याल्पो ल्होसार",
+  "Holi / Phagu Purnima (Hilly)": "होली / फागु पूर्णिमा (पहाडी)",
+  "Holi / Phagu Purnima (Terai)": "होली / फागु पूर्णिमा (तराई)",
+  "Holi / Phagu Purnima": "होली / फागु पूर्णिमा",
   "Holi": "होली",
-  "Nari Divas": "नारी दिवस",
-  "New Year": "नयाँ वर्ष",
-  "Buddha Jayanti": "बुद्ध जयन्ती"
+  "Ghode Jatra": "घोडे जात्रा",
+  "Chaite Dashain": "चैते दशैं",
+  "Ram Navami": "रामनवमी",
+  "Dashain": "दशैँ",
+  "Tihar": "तिहार"
 };
 
 const EVENT_NE: Record<string, string> = {
-  "International Women's Day": "नारी दिवस",
-  "International Labour Day": "श्रमिक दिवस",
+  "Nepali New Year / Biska Jatra": "नयाँ वर्ष / बिस्का जात्रा",
+  "Nepali New Year": "नयाँ वर्ष",
+  "Loktantra Diwas": "लोकतन्त्र दिवस",
+  "Loktantra Day": "लोकतन्त्र दिवस",
+  "Republic Day (Ganatantra Diwas)": "गणतन्त्र दिवस",
+  "Republic Day": "गणतन्त्र दिवस",
+  "Rastriya Dhan Diwas": "राष्ट्रिय धान दिवस (असार १५)",
+  "Shrawan Sankranti / Luto Falne Din": "साउने संक्रान्ति / लुतो फाल्ने दिन",
+  "Shrawan Sankranti": "साउने संक्रान्ति",
+  "Kheer Khane Din": "खीर खाने दिन",
+  "Bhadra Sankranti": "भाद्र संक्रान्ति",
+  "Ashwin Sankranti / Bishwakarma Puja": "असोज संक्रान्ति / विश्वकर्मा पूजा",
+  "Constitution Day (Sambidhan Diwas)": "संविधान दिवस",
   "Constitution Day": "संविधान दिवस",
+  "Kartik Sankranti": "कात्तिक संक्रान्ति",
+  "Mangsir Sankranti": "मंसिर संक्रान्ति",
+  "Poush Sankranti": "पुष संक्रान्ति",
+  "Tamu Lhosar": "तमु ल्होसार",
+  "National Unity Day (Prithvi Jayanti)": "राष्ट्रिय एकता दिवस (पृथ्वी जयन्ती)",
+  "National Unity Day": "राष्ट्रिय एकता दिवस",
+  "Maghe Sankranti / Maghi Parva": "माघे संक्रान्ति / माघी पर्व",
+  "Maghe Sankranti": "माघे संक्रान्ति",
+  "Martyrs' Day (Shahid Diwas)": "शहीद दिवस",
+  "Martyrs' Day": "शहीद दिवस",
+  "Falgun Sankranti": "फागुन संक्रान्ति",
+  "National Democracy Day (Prajatantra Diwas)": "राष्ट्रिय प्रजातन्त्र दिवस",
+  "National Democracy Day": "राष्ट्रिय प्रजातन्त्र दिवस",
+  "Chaitra Sankranti": "चैत संक्रान्ति",
+  "Dashain Holiday": "दशैं बिदा",
+  "Tihar Holiday": "तिहार बिदा",
+  "International Women's Day (Nari Diwas)": "अन्तर्राष्ट्रिय महिला दिवस",
+  "International Women's Day": "अन्तर्राष्ट्रिय महिला दिवस",
+  "Nari Divas": "नारी दिवस",
+  "International Labour Day (Majdoor Diwas)": "अन्तर्राष्ट्रिय श्रमिक दिवस",
+  "International Labour Day": "श्रमिक दिवस",
   "Earth Day": "पृथ्वी दिवस",
-  "Nepali New Year": "नयाँ वर्ष"
+  "Christmas Day": "क्रिसमस डे",
+  "International New Year": "अन्तर्राष्ट्रिय नयाँ वर्ष",
+  "World Environment Day": "विश्व वातावरण दिवस",
+  "International Yoga Day": "अन्तर्राष्ट्रिय योग दिवस"
 };
 
 export {
@@ -109,6 +202,7 @@ export {
   FESTIVAL_NE,
   KARANA_NE,
   NAKSHATRA_NE,
+  PAKSHA_NE,
   TITHI_NE,
   YOGA_NE
-}
+};

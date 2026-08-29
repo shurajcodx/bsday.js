@@ -60,6 +60,12 @@ export {
 } from './calendar/calendarGrid';
 
 export {
+  getBsMonthDays,
+  getBsYearDays,
+  isBsLeapYear,
+} from './converters/monthData';
+
+export {
   isDateInRange,
   isDateDisabled,
   getDateRange,

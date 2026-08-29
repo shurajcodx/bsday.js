@@ -1,10 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import {
   bsday,
-  BSDay,
   getCalendarMatrix,
   isDateInRange,
-  isDateDisabled,
   getDateRange,
   getMonthNames,
   getWeekdayNames,
@@ -36,7 +34,6 @@ describe('Headless Calendar Matrix Generator', () => {
     // 2081 Bhadra 1 started on Sunday (dayOfWeek 0)
     // In 2081, Bhadra 1 is 2081-05-01 (Aug 17, 2024 = Saturday in AD, let's verify)
     const weeks = getCalendarMatrix(2081, 5);
-    const firstCell = weeks[0][0];
 
     // Find first cell with isCurrentMonth = true
     const currentMonthCells = weeks.flat().filter((c) => c.isCurrentMonth);

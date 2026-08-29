@@ -71,7 +71,7 @@ export function toBSDayHelper(input: BSDayInput): BSDay {
   }
   if (typeof input === 'string') {
     const trimmed = input.trim();
-    const match = trimmed.match(/^(\d{4})[\/-](\d{1,2})[\/-](\d{1,2})/);
+    const match = trimmed.match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})/);
     if (match) {
       const year = Number(match[1]);
       if (year >= 1970 && year <= 2100) {

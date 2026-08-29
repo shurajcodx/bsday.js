@@ -43,7 +43,16 @@ import {
 import { isLeapYear, isValidADDate, isValidBSDate } from '../utils/validation';
 import { normalizeUnit } from '../utils/units';
 import { getCalendarMatrix, type CalendarCell, type CalendarMatrixOptions } from '../calendar/calendarGrid';
-
+import {
+  localizeBSDayData,
+  TITHI_NE_MAP,
+  PAKSHA_NE_MAP,
+  NAKSHATRA_NE_MAP,
+  YOGA_NE_MAP,
+  KARANA_NE_MAP,
+  FESTIVAL_NE_MAP,
+  EVENT_NE_MAP,
+} from '../utils/nepaliTerms';
 
 interface BSDayOptions {
   mutable?: boolean;
@@ -819,13 +828,14 @@ export class BSDay {
     return datasetManager.lookupEntry(this.toBS());
   }
 
-  data(): BSDayData | null {
+  data(locale?: LocaleType): BSDayData | null {
     const data = this.lookupDatasetEntry();
     if (!data) {
       return null;
     }
 
-    return {
+    const loc = locale ?? this._locale ?? 'en';
+    const cloned: BSDayData = {
       tithi: data.tithi,
       paksha: data.paksha,
       festivals: [...(data.festivals ?? [])],
@@ -835,18 +845,33 @@ export class BSDay {
       yoga: data.yoga,
       karana: data.karana,
     };
+
+    return localizeBSDayData(cloned, loc);
   }
 
   get tithi(): string | null {
-    return this.lookupDatasetEntry()?.tithi ?? null;
+    const raw = this.lookupDatasetEntry()?.tithi ?? null;
+    if (!raw) return null;
+    if (this._locale === 'ne') {
+      return TITHI_NE_MAP[raw] ?? raw;
+    }
+    return raw;
   }
 
   get festivals(): string[] {
-    return [...(this.lookupDatasetEntry()?.festivals ?? [])];
+    const raw = this.lookupDatasetEntry()?.festivals ?? [];
+    if (this._locale === 'ne') {
+      return raw.map((f) => FESTIVAL_NE_MAP[f] ?? f);
+    }
+    return [...raw];
   }
 
   get events(): string[] {
-    return [...(this.lookupDatasetEntry()?.events ?? [])];
+    const raw = this.lookupDatasetEntry()?.events ?? [];
+    if (this._locale === 'ne') {
+      return raw.map((e) => EVENT_NE_MAP[e] ?? e);
+    }
+    return [...raw];
   }
 
   get isHoliday(): boolean {
@@ -857,6 +882,15 @@ export class BSDay {
     const data = this.lookupDatasetEntry();
     if (!data) {
       return null;
+    }
+
+    if (this._locale === 'ne') {
+      return {
+        paksha: PAKSHA_NE_MAP[data.paksha] ?? data.paksha,
+        nakshatra: NAKSHATRA_NE_MAP[data.nakshatra] ?? data.nakshatra,
+        yoga: YOGA_NE_MAP[data.yoga] ?? data.yoga,
+        karana: KARANA_NE_MAP[data.karana] ?? data.karana,
+      };
     }
 
     return {

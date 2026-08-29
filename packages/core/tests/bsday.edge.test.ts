@@ -31,10 +31,10 @@ describe('BSDay Edge Cases', () => {
         const bs = BSDay.bs('2081/06/27');
         const bsFromNumbers = BSDay.bs(2081, 6, 27);
         const bsFromFactory = bsday.bs('2081/06/27');
-        const ad = BSDay.parse('2024-10-12', 'YYYY-MM-DD', 'ad');
+        const ad = BSDay.parse('2024-10-13', 'YYYY-MM-DD', 'ad');
 
         expect(bs.isValid()).toBe(true);
-        expect(bs.toAD().toISOString()).toBe('2024-10-11T18:15:00.000Z');
+        expect(bs.toAD().toISOString()).toBe('2024-10-12T18:15:00.000Z');
         expect(bsFromNumbers.toBS()).toEqual({ year: 2081, month: 6, day: 27 });
         expect(bsFromFactory.toBS()).toEqual({ year: 2081, month: 6, day: 27 });
         expect(ad.isValid()).toBe(true);

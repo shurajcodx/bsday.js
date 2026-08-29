@@ -8,7 +8,7 @@ Supports **dynamic Nepali translations** for all core fields and provides astron
 
 ## Features
 
-* **BS date keyed dataset**: Access any date from 2000–2090.
+* **BS date keyed dataset**: Access any date from 1990–2100 BS (111 years, 40,543 days).
 * **Panchang Engine**: High-level astronomical engine for Tithi, Nakshatra, etc.
 * **Festival Engine**: Advanced rule-based festival generator (Sunrise, Sunset, Night, Relative rules).
 * **English & Nepali support**: Includes `dataset` (English) and `datasetNepali`.

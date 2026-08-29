@@ -1,17 +1,27 @@
 {
   "2001-01-01": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Variyana",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "Nepali New Year / Biska Jatra"
+    ],
+    "isHoliday": true
+  },
+  "2001-01-02": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Mula",
     "yoga": "Parigha",
     "karana": "Garaja",
     "festivals": [],
-    "events": [
-      "Nepali New Year"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2001-01-02": {
+  "2001-01-03": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -21,7 +31,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-03": {
+  "2001-01-04": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
@@ -31,7 +41,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-04": {
+  "2001-01-05": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -41,19 +51,19 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-05": {
+  "2001-01-06": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
     "yoga": "Shubha",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [
       "International Day for Monuments and Sites"
     ],
     "isHoliday": false
   },
-  "2001-01-06": {
+  "2001-01-07": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
@@ -63,7 +73,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-07": {
+  "2001-01-08": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
@@ -73,7 +83,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-08": {
+  "2001-01-09": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -83,7 +93,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-09": {
+  "2001-01-10": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Revati",
@@ -95,9 +105,9 @@
     "events": [
       "Earth Day"
     ],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-01-10": {
+  "2001-01-11": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
@@ -105,23 +115,22 @@
     "karana": "Kimstughna",
     "festivals": [],
     "events": [
-      "World Book Day"
-    ],
-    "isHoliday": false
-  },
-  "2001-01-11": {
-    "tithi": "Dvitiya",
-    "paksha": "Shukla",
-    "nakshatra": "Bharani",
-    "yoga": "Ayushman",
-    "karana": "Balava",
-    "festivals": [],
-    "events": [
-      "Loktantra Day"
+      "World Book Day",
+      "Loktantra Diwas"
     ],
     "isHoliday": false
   },
   "2001-01-12": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Ayushman",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2001-01-13": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
@@ -133,17 +142,17 @@
     ],
     "isHoliday": false
   },
-  "2001-01-13": {
+  "2001-01-14": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
-    "yoga": "Shobhana",
+    "yoga": "Atiganda",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-01-14": {
+  "2001-01-15": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -153,17 +162,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-15": {
+  "2001-01-16": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
-    "nakshatra": "Ardra",
+    "nakshatra": "Punarvasu",
     "yoga": "Dhriti",
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-01-16": {
+  "2001-01-17": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
@@ -173,7 +182,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-17": {
+  "2001-01-18": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
@@ -183,7 +192,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-18": {
+  "2001-01-19": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -195,17 +204,17 @@
     ],
     "isHoliday": false
   },
-  "2001-01-19": {
+  "2001-01-20": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Magha",
-    "yoga": "Vriddhi",
+    "yoga": "Dhruva",
     "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-01-20": {
+  "2001-01-21": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
@@ -217,7 +226,7 @@
     ],
     "isHoliday": false
   },
-  "2001-01-21": {
+  "2001-01-22": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
@@ -227,7 +236,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-22": {
+  "2001-01-23": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
@@ -237,7 +246,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-23": {
+  "2001-01-24": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
@@ -247,7 +256,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-24": {
+  "2001-01-25": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -257,21 +266,21 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-25": {
+  "2001-01-26": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
     "yoga": "Vyatipata",
     "karana": "Bava",
     "festivals": [
-      "Buddha Jayanti"
+      "Buddha Jayanti / Ubhauli Parva"
     ],
     "events": [
       "World Red Cross Day"
     ],
     "isHoliday": true
   },
-  "2001-01-26": {
+  "2001-01-27": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
@@ -281,17 +290,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-27": {
+  "2001-01-28": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
-    "yoga": "Parigha",
+    "yoga": "Shiva",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-01-28": {
+  "2001-01-29": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -301,7 +310,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-29": {
+  "2001-01-30": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -313,7 +322,7 @@
     ],
     "isHoliday": false
   },
-  "2001-01-30": {
+  "2001-01-31": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
@@ -323,7 +332,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-01-31": {
+  "2001-02-01": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -333,7 +342,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-01": {
+  "2001-02-02": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
@@ -345,7 +354,7 @@
     ],
     "isHoliday": false
   },
-  "2001-02-02": {
+  "2001-02-03": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
@@ -355,7 +364,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-03": {
+  "2001-02-04": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
@@ -367,7 +376,7 @@
     ],
     "isHoliday": false
   },
-  "2001-02-04": {
+  "2001-02-05": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -377,17 +386,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-05": {
+  "2001-02-06": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Revati",
     "yoga": "Ayushman",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-02-06": {
+  "2001-02-07": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
@@ -397,7 +406,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-07": {
+  "2001-02-08": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
@@ -409,7 +418,7 @@
     ],
     "isHoliday": false
   },
-  "2001-02-08": {
+  "2001-02-09": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
@@ -419,7 +428,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-09": {
+  "2001-02-10": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
@@ -429,7 +438,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-10": {
+  "2001-02-11": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
@@ -439,7 +448,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-11": {
+  "2001-02-12": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -449,7 +458,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-12": {
+  "2001-02-13": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
@@ -459,7 +468,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-13": {
+  "2001-02-14": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
@@ -469,29 +478,31 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-14": {
+  "2001-02-15": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
     "yoga": "Dhruva",
     "karana": "Taitila",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "festivals": [
+      "Sithi Nakha"
+    ],
+    "events": [
+      "Republic Day (Ganatantra Diwas)"
+    ],
+    "isHoliday": true
   },
-  "2001-02-15": {
+  "2001-02-16": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Magha",
     "yoga": "Vyaghata",
     "karana": "Vanija",
     "festivals": [],
-    "events": [
-      "Republic Day"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2001-02-16": {
+  "2001-02-17": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
@@ -501,7 +512,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-17": {
+  "2001-02-18": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
@@ -513,10 +524,10 @@
     ],
     "isHoliday": false
   },
-  "2001-02-18": {
+  "2001-02-19": {
     "tithi": "Dashami",
     "paksha": "Shukla",
-    "nakshatra": "Uttara Phalguni",
+    "nakshatra": "Hasta",
     "yoga": "Siddhi",
     "karana": "Taitila",
     "festivals": [],
@@ -525,7 +536,7 @@
     ],
     "isHoliday": false
   },
-  "2001-02-19": {
+  "2001-02-20": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
@@ -535,7 +546,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-20": {
+  "2001-02-21": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
@@ -547,7 +558,7 @@
     ],
     "isHoliday": false
   },
-  "2001-02-21": {
+  "2001-02-22": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -557,7 +568,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-22": {
+  "2001-02-23": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
@@ -569,7 +580,7 @@
     ],
     "isHoliday": false
   },
-  "2001-02-23": {
+  "2001-02-24": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -579,7 +590,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-24": {
+  "2001-02-25": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
@@ -589,7 +600,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-25": {
+  "2001-02-26": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -601,7 +612,7 @@
     ],
     "isHoliday": false
   },
-  "2001-02-26": {
+  "2001-02-27": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -611,17 +622,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-27": {
+  "2001-02-28": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
     "yoga": "Indra",
-    "karana": "Bava",
+    "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-02-28": {
+  "2001-02-29": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -631,10 +642,10 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-29": {
+  "2001-02-30": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
-    "nakshatra": "Dhanishta",
+    "nakshatra": "Shatabhisha",
     "yoga": "Vishkumbha",
     "karana": "Vanija",
     "festivals": [],
@@ -643,7 +654,7 @@
     ],
     "isHoliday": false
   },
-  "2001-02-30": {
+  "2001-02-31": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
@@ -653,7 +664,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-02-31": {
+  "2001-03-01": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -665,7 +676,7 @@
     ],
     "isHoliday": false
   },
-  "2001-03-01": {
+  "2001-03-02": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Revati",
@@ -675,7 +686,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-02": {
+  "2001-03-03": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
@@ -685,17 +696,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-03": {
+  "2001-03-04": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
-    "yoga": "Atiganda",
+    "yoga": "Sukarma",
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-03-04": {
+  "2001-03-05": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
@@ -705,7 +716,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-05": {
+  "2001-03-06": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
@@ -715,7 +726,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-06": {
+  "2001-03-07": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
@@ -727,7 +738,7 @@
     ],
     "isHoliday": false
   },
-  "2001-03-07": {
+  "2001-03-08": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -739,7 +750,7 @@
     ],
     "isHoliday": false
   },
-  "2001-03-08": {
+  "2001-03-09": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
@@ -749,7 +760,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-09": {
+  "2001-03-10": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
@@ -759,7 +770,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-10": {
+  "2001-03-11": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -769,17 +780,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-11": {
+  "2001-03-12": {
     "tithi": "Panchami",
     "paksha": "Shukla",
-    "nakshatra": "Ashlesha",
+    "nakshatra": "Magha",
     "yoga": "Vajra",
     "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-03-12": {
+  "2001-03-13": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -791,32 +802,22 @@
     ],
     "isHoliday": false
   },
-  "2001-03-13": {
-    "tithi": "Shashthi",
-    "paksha": "Shukla",
-    "nakshatra": "Purva Phalguni",
-    "yoga": "Vyatipata",
-    "karana": "Taitila",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
-  },
   "2001-03-14": {
     "tithi": "Saptami",
     "paksha": "Shukla",
-    "nakshatra": "Uttara Phalguni",
-    "yoga": "Variyana",
-    "karana": "Vanija",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Vyatipata",
+    "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
   "2001-03-15": {
-    "tithi": "Ashtami",
+    "tithi": "Saptami",
     "paksha": "Shukla",
-    "nakshatra": "Hasta",
-    "yoga": "Parigha",
-    "karana": "Bava",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Variyana",
+    "karana": "Vanija",
     "festivals": [],
     "events": [
       "Rastriya Dhan Diwas"
@@ -824,6 +825,16 @@
     "isHoliday": false
   },
   "2001-03-16": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Parigha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2001-03-17": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
@@ -833,7 +844,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-17": {
+  "2001-03-18": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -843,7 +854,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-18": {
+  "2001-03-19": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
@@ -853,7 +864,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-19": {
+  "2001-03-20": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -863,7 +874,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-20": {
+  "2001-03-21": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -873,7 +884,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-21": {
+  "2001-03-22": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Mula",
@@ -883,27 +894,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-22": {
+  "2001-03-23": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
     "yoga": "Indra",
     "karana": "Bava",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
-  },
-  "2001-03-23": {
-    "tithi": "Pratipada",
-    "paksha": "Krishna",
-    "nakshatra": "Uttara Ashadha",
-    "yoga": "Vaidhriti",
-    "karana": "Kaulava",
-    "festivals": [],
+    "festivals": [
+      "Guru Purnima"
+    ],
     "events": [],
     "isHoliday": false
   },
   "2001-03-24": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Vaidhriti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2001-03-25": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -913,7 +926,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-25": {
+  "2001-03-26": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
@@ -923,7 +936,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-26": {
+  "2001-03-27": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
@@ -933,19 +946,19 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-27": {
+  "2001-03-28": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Shobhana",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [
       "World Population Day"
     ],
     "isHoliday": false
   },
-  "2001-03-28": {
+  "2001-03-29": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -955,17 +968,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-29": {
+  "2001-03-30": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
-    "nakshatra": "Revati",
+    "nakshatra": "Ashwini",
     "yoga": "Sukarma",
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-03-30": {
+  "2001-03-31": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
@@ -975,7 +988,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-31": {
+  "2001-03-32": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
@@ -985,32 +998,32 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-03-32": {
+  "2001-04-01": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
     "yoga": "Ganda",
     "karana": "Balava",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Shrawan Sankranti / Luto Falne Din"
+    ],
     "isHoliday": false
   },
-  "2001-04-01": {
+  "2001-04-02": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
     "yoga": "Vriddhi",
     "karana": "Taitila",
     "festivals": [],
-    "events": [
-      "Shrawan Sankranti"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2001-04-02": {
+  "2001-04-03": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
-    "nakshatra": "Mrigashirsha",
+    "nakshatra": "Ardra",
     "yoga": "Dhruva",
     "karana": "Vanija",
     "festivals": [],
@@ -1019,7 +1032,7 @@
     ],
     "isHoliday": false
   },
-  "2001-04-03": {
+  "2001-04-04": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
@@ -1029,7 +1042,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-04": {
+  "2001-04-05": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
@@ -1039,7 +1052,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-05": {
+  "2001-04-06": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
@@ -1049,7 +1062,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-06": {
+  "2001-04-07": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -1059,7 +1072,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-07": {
+  "2001-04-08": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -1069,7 +1082,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-08": {
+  "2001-04-09": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
@@ -1079,7 +1092,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-09": {
+  "2001-04-10": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
@@ -1089,9 +1102,9 @@
       "Nag Panchami"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-04-10": {
+  "2001-04-11": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
@@ -1101,7 +1114,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-11": {
+  "2001-04-12": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
@@ -1111,7 +1124,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-12": {
+  "2001-04-13": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -1123,17 +1136,17 @@
     ],
     "isHoliday": false
   },
-  "2001-04-13": {
+  "2001-04-14": {
     "tithi": "Navami",
     "paksha": "Shukla",
-    "nakshatra": "Swati",
+    "nakshatra": "Vishakha",
     "yoga": "Shubha",
     "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-04-14": {
+  "2001-04-15": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
@@ -1141,11 +1154,12 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [
-      "International Day of Friendship"
+      "International Day of Friendship",
+      "Kheer Khane Din"
     ],
     "isHoliday": false
   },
-  "2001-04-15": {
+  "2001-04-16": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -1155,7 +1169,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-16": {
+  "2001-04-17": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -1165,17 +1179,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-17": {
+  "2001-04-18": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
-    "nakshatra": "Mula",
-    "yoga": "Vaidhriti",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Vishkumbha",
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-04-18": {
+  "2001-04-19": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
@@ -1185,19 +1199,19 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-19": {
+  "2001-04-20": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
     "yoga": "Ayushman",
     "karana": "Vishti",
     "festivals": [
-      "Janai Purnima / Raksha Bandhan"
+      "Raksha Bandhan / Janai Purnima / Kwati Khane Din / Rishi Tarpani / Sanskrit Diwas"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-04-20": {
+  "2001-04-21": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
@@ -1207,7 +1221,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-21": {
+  "2001-04-22": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
@@ -1217,7 +1231,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-22": {
+  "2001-04-23": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
@@ -1227,7 +1241,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-23": {
+  "2001-04-24": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -1237,7 +1251,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-24": {
+  "2001-04-25": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Revati",
@@ -1249,7 +1263,7 @@
     ],
     "isHoliday": false
   },
-  "2001-04-25": {
+  "2001-04-26": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
@@ -1259,7 +1273,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-26": {
+  "2001-04-27": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
@@ -1269,39 +1283,39 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-27": {
+  "2001-04-28": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
-    "karana": "Taitila",
+    "karana": "Garaja",
     "festivals": [],
     "events": [
       "International Youth Day"
     ],
     "isHoliday": false
   },
-  "2001-04-28": {
+  "2001-04-29": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
     "yoga": "Vyaghata",
-    "karana": "Vanija",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
-  },
-  "2001-04-29": {
-    "tithi": "Ekadashi",
-    "paksha": "Krishna",
-    "nakshatra": "Mrigashirsha",
-    "yoga": "Harsha",
-    "karana": "Bava",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
   "2001-04-30": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Harsha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2001-04-31": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
@@ -1311,17 +1325,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-04-31": {
+  "2001-05-01": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
     "yoga": "Siddhi",
     "karana": "Garaja",
     "festivals": [],
+    "events": [
+      "Bhadra Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "2001-05-02": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Vyatipata",
+    "karana": "Vishti",
+    "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-05-01": {
+  "2001-05-03": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -1331,9 +1357,9 @@
       "Kushe Aunsi (Fathers' Day)"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-05-02": {
+  "2001-05-04": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -1345,49 +1371,55 @@
     ],
     "isHoliday": false
   },
-  "2001-05-03": {
+  "2001-05-05": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
     "yoga": "Shiva",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Dar Khane Din"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2001-05-04": {
-    "tithi": "Dvitiya",
+  "2001-05-06": {
+    "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
     "yoga": "Siddha",
-    "karana": "Kaulava",
-    "festivals": [],
+    "karana": "Taitila",
+    "festivals": [
+      "Haritalika Teej"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2001-05-05": {
+  "2001-05-07": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
     "yoga": "Sadhya",
     "karana": "Garaja",
     "festivals": [
-      "Teej"
+      "Haritalika Teej"
     ],
     "events": [],
     "isHoliday": true
   },
-  "2001-05-06": {
+  "2001-05-08": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
     "yoga": "Shubha",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Ganesh Chaturthi"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2001-05-07": {
+  "2001-05-09": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
@@ -1399,7 +1431,7 @@
     "events": [],
     "isHoliday": true
   },
-  "2001-05-08": {
+  "2001-05-10": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -1409,7 +1441,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-09": {
+  "2001-05-11": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
@@ -1417,9 +1449,9 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-05-10": {
+  "2001-05-12": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -1429,7 +1461,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-11": {
+  "2001-05-13": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -1439,7 +1471,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-12": {
+  "2001-05-14": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Mula",
@@ -1451,7 +1483,7 @@
     ],
     "isHoliday": false
   },
-  "2001-05-13": {
+  "2001-05-15": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
@@ -1461,7 +1493,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-14": {
+  "2001-05-16": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
@@ -1471,7 +1503,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-15": {
+  "2001-05-17": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
@@ -1481,7 +1513,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-16": {
+  "2001-05-18": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
@@ -1491,10 +1523,10 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-17": {
+  "2001-05-19": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
-    "nakshatra": "Shatabhisha",
+    "nakshatra": "Purva Bhadrapada",
     "yoga": "Dhriti",
     "karana": "Balava",
     "festivals": [
@@ -1503,7 +1535,7 @@
     "events": [],
     "isHoliday": true
   },
-  "2001-05-18": {
+  "2001-05-20": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -1513,7 +1545,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-19": {
+  "2001-05-21": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Revati",
@@ -1525,7 +1557,7 @@
     ],
     "isHoliday": false
   },
-  "2001-05-20": {
+  "2001-05-22": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
@@ -1535,7 +1567,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-21": {
+  "2001-05-23": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
@@ -1545,31 +1577,31 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-22": {
-    "tithi": "Shashthi",
+  "2001-05-24": {
+    "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
     "yoga": "Harsha",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [
       "International Literacy Day"
     ],
     "isHoliday": false
   },
-  "2001-05-23": {
+  "2001-05-25": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
     "yoga": "Vajra",
     "karana": "Balava",
     "festivals": [
-      "Krishna Janmashtami"
+      "Krishna Janmashtami / Gaura Parva"
     ],
     "events": [],
     "isHoliday": true
   },
-  "2001-05-24": {
+  "2001-05-26": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
@@ -1579,7 +1611,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-25": {
+  "2001-05-27": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
@@ -1589,17 +1621,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-26": {
-    "tithi": "Dashami",
+  "2001-05-28": {
+    "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
     "yoga": "Variyana",
-    "karana": "Vishti",
+    "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-05-27": {
+  "2001-05-29": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -1609,7 +1641,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-28": {
+  "2001-05-30": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -1619,7 +1651,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-05-29": {
+  "2001-05-31": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -1631,7 +1663,7 @@
     ],
     "isHoliday": false
   },
-  "2001-05-30": {
+  "2001-06-01": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
@@ -1639,35 +1671,38 @@
     "karana": "Shakuni",
     "festivals": [],
     "events": [
-      "World Ozone Day"
+      "World Ozone Day",
+      "Ashwin Sankranti / Bishwakarma Puja"
     ],
     "isHoliday": false
   },
-  "2001-05-31": {
+  "2001-06-02": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
     "yoga": "Shubha",
     "karana": "Naga",
     "festivals": [
-      "Kushe Aunsi (Fathers' Day)"
+      "Sohra Shraddha Samapti (Mahalaya)"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-06-01": {
+  "2001-06-03": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
     "yoga": "Shukla",
-    "karana": "Kimstughna",
+    "karana": "Bava",
     "festivals": [
       "Ghatasthapana"
     ],
-    "events": [],
+    "events": [
+      "Constitution Day (Sambidhan Diwas)"
+    ],
     "isHoliday": true
   },
-  "2001-06-02": {
+  "2001-06-04": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
@@ -1677,19 +1712,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-06-03": {
+  "2001-06-05": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
     "yoga": "Indra",
     "karana": "Taitila",
     "festivals": [],
-    "events": [
-      "Constitution Day"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2001-06-04": {
+  "2001-06-06": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -1701,7 +1734,7 @@
     ],
     "isHoliday": false
   },
-  "2001-06-05": {
+  "2001-06-07": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
@@ -1711,7 +1744,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-06-06": {
+  "2001-06-08": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -1721,7 +1754,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-06-07": {
+  "2001-06-09": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -1733,7 +1766,7 @@
     "events": [],
     "isHoliday": true
   },
-  "2001-06-08": {
+  "2001-06-10": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Mula",
@@ -1745,7 +1778,7 @@
     "events": [],
     "isHoliday": true
   },
-  "2001-06-09": {
+  "2001-06-11": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
@@ -1757,7 +1790,7 @@
     "events": [],
     "isHoliday": true
   },
-  "2001-06-10": {
+  "2001-06-12": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
@@ -1771,61 +1804,67 @@
     ],
     "isHoliday": true
   },
-  "2001-06-11": {
+  "2001-06-13": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
     "yoga": "Sukarma",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Papankusha Ekadashi"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2001-06-12": {
+  "2001-06-14": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
     "yoga": "Dhriti",
     "karana": "Bava",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
-  },
-  "2001-06-13": {
-    "tithi": "Trayodashi",
-    "paksha": "Shukla",
-    "nakshatra": "Shatabhisha",
-    "yoga": "Shoola",
-    "karana": "Kaulava",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
-  },
-  "2001-06-14": {
-    "tithi": "Chaturdashi",
-    "paksha": "Shukla",
-    "nakshatra": "Purva Bhadrapada",
-    "yoga": "Ganda",
-    "karana": "Vanija",
-    "festivals": [
-      "Indra Jatra"
-    ],
     "events": [
-      "International Day of Older Persons"
+      "Dashain Holiday"
     ],
     "isHoliday": true
   },
   "2001-06-15": {
-    "tithi": "Purnima",
+    "tithi": "Trayodashi",
     "paksha": "Shukla",
-    "nakshatra": "Uttara Bhadrapada",
-    "yoga": "Dhruva",
-    "karana": "Bava",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Shoola",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
   "2001-06-16": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Vriddhi",
+    "karana": "Vanija",
+    "festivals": [
+      "Indra Jatra / Ananta Chaturdashi"
+    ],
+    "events": [
+      "International Day of Older Persons"
+    ],
+    "isHoliday": false
+  },
+  "2001-06-17": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Dhruva",
+    "karana": "Bava",
+    "festivals": [
+      "Kojagrat Purnima"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2001-06-18": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Revati",
@@ -1835,7 +1874,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-06-17": {
+  "2001-06-19": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
@@ -1845,7 +1884,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-06-18": {
+  "2001-06-20": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
@@ -1857,7 +1896,7 @@
     ],
     "isHoliday": false
   },
-  "2001-06-19": {
+  "2001-06-21": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
@@ -1867,39 +1906,41 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-06-20": {
+  "2001-06-22": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
     "yoga": "Variyana",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-06-21": {
+  "2001-06-23": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
     "yoga": "Parigha",
-    "karana": "Vishti",
+    "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-06-22": {
+  "2001-06-24": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
     "yoga": "Shiva",
-    "karana": "Balava",
-    "festivals": [],
+    "karana": "Kaulava",
+    "festivals": [
+      "Jitiya Parva"
+    ],
     "events": [
       "World Post Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2001-06-23": {
+  "2001-06-25": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -1911,7 +1952,7 @@
     ],
     "isHoliday": false
   },
-  "2001-06-24": {
+  "2001-06-26": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -1923,7 +1964,7 @@
     ],
     "isHoliday": false
   },
-  "2001-06-25": {
+  "2001-06-27": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -1933,7 +1974,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-06-26": {
+  "2001-06-28": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -1943,49 +1984,57 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-06-27": {
+  "2001-06-29": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
-    "yoga": "Shukla",
+    "yoga": "Brahma",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Kag Tihar"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2001-06-28": {
-    "tithi": "Trayodashi",
+  "2001-06-30": {
+    "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
-    "yoga": "Brahma",
-    "karana": "Vanija",
+    "yoga": "Indra",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-06-29": {
+  "2001-06-31": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
     "yoga": "Indra",
     "karana": "Shakuni",
-    "festivals": [],
+    "festivals": [
+      "Kukur Tihar"
+    ],
     "events": [
       "World Food Day"
     ],
     "isHoliday": false
   },
-  "2001-06-30": {
+  "2001-07-01": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
     "yoga": "Vaidhriti",
     "karana": "Naga",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "festivals": [
+      "Laxmi Puja"
+    ],
+    "events": [
+      "Kartik Sankranti"
+    ],
+    "isHoliday": true
   },
-  "2001-07-01": {
+  "2001-07-02": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -1994,12 +2043,10 @@
     "festivals": [
       "Govardhan Puja / Mha Puja / Gai Puja"
     ],
-    "events": [
-      "Kartik Sankranti"
-    ],
+    "events": [],
     "isHoliday": true
   },
-  "2001-07-02": {
+  "2001-07-03": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
@@ -2011,17 +2058,21 @@
     "events": [],
     "isHoliday": true
   },
-  "2001-07-03": {
+  "2001-07-04": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
     "yoga": "Ayushman",
     "karana": "Garaja",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "festivals": [
+      "Tihar Holiday"
+    ],
+    "events": [
+      "Tihar Holiday"
+    ],
+    "isHoliday": true
   },
-  "2001-07-04": {
+  "2001-07-05": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -2031,20 +2082,20 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-05": {
+  "2001-07-06": {
     "tithi": "Panchami",
     "paksha": "Shukla",
-    "nakshatra": "Jyeshtha",
+    "nakshatra": "Mula",
     "yoga": "Shobhana",
     "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-07-06": {
+  "2001-07-07": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
-    "nakshatra": "Mula",
+    "nakshatra": "Purva Ashadha",
     "yoga": "Atiganda",
     "karana": "Taitila",
     "festivals": [
@@ -2053,7 +2104,7 @@
     "events": [],
     "isHoliday": true
   },
-  "2001-07-07": {
+  "2001-07-08": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
@@ -2065,27 +2116,27 @@
     ],
     "isHoliday": false
   },
-  "2001-07-08": {
+  "2001-07-09": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
-    "nakshatra": "Uttara Ashadha",
+    "nakshatra": "Shravana",
     "yoga": "Shoola",
     "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-07-09": {
+  "2001-07-10": {
     "tithi": "Navami",
     "paksha": "Shukla",
-    "nakshatra": "Shravana",
+    "nakshatra": "Dhanishta",
     "yoga": "Ganda",
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-07-10": {
+  "2001-07-11": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
@@ -2095,17 +2146,19 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-11": {
+  "2001-07-12": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Haribodhini Ekadashi / Tulsi Bibaha"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2001-07-12": {
+  "2001-07-13": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
@@ -2115,7 +2168,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-13": {
+  "2001-07-14": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Revati",
@@ -2125,7 +2178,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-14": {
+  "2001-07-15": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
@@ -2137,7 +2190,7 @@
     ],
     "isHoliday": false
   },
-  "2001-07-15": {
+  "2001-07-16": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
@@ -2147,7 +2200,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-16": {
+  "2001-07-17": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
@@ -2157,7 +2210,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-17": {
+  "2001-07-18": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
@@ -2167,7 +2220,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-18": {
+  "2001-07-19": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
@@ -2177,7 +2230,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-19": {
+  "2001-07-20": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
@@ -2187,7 +2240,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-20": {
+  "2001-07-21": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
@@ -2197,7 +2250,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-21": {
+  "2001-07-22": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -2207,7 +2260,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-22": {
+  "2001-07-23": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -2217,7 +2270,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-23": {
+  "2001-07-24": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -2227,7 +2280,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-24": {
+  "2001-07-25": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
@@ -2239,17 +2292,17 @@
     ],
     "isHoliday": false
   },
-  "2001-07-25": {
+  "2001-07-26": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
     "yoga": "Vaidhriti",
-    "karana": "Bava",
+    "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-07-26": {
+  "2001-07-27": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -2259,59 +2312,52 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-07-27": {
+  "2001-07-28": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
     "yoga": "Priti",
     "karana": "Garaja",
-    "festivals": [
-      "Kag Tihar"
-    ],
+    "festivals": [],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-07-28": {
+  "2001-07-29": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Swati",
     "yoga": "Ayushman",
     "karana": "Vishti",
-    "festivals": [
-      "Kukur Tihar"
-    ],
+    "festivals": [],
     "events": [
       "World Diabetes Day"
     ],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-07-29": {
+  "2001-07-30": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Swati",
     "yoga": "Saubhagya",
     "karana": "Chatushpada",
-    "festivals": [
-      "Laxmi Puja"
-    ],
+    "festivals": [],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-07-30": {
+  "2001-08-01": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
     "yoga": "Shobhana",
     "karana": "Kimstughna",
-    "festivals": [
-      "Govardhan Puja / Mha Puja / Gai Puja"
-    ],
+    "festivals": [],
     "events": [
-      "International Day for Tolerance"
+      "International Day for Tolerance",
+      "Mangsir Sankranti"
     ],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-08-01": {
+  "2001-08-02": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -2321,7 +2367,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-02": {
+  "2001-08-03": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -2331,7 +2377,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-03": {
+  "2001-08-04": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Mula",
@@ -2343,19 +2389,21 @@
     ],
     "isHoliday": false
   },
-  "2001-08-04": {
+  "2001-08-05": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
     "yoga": "Shoola",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Bibaha Panchami"
+    ],
     "events": [
       "Universal Children's Day"
     ],
     "isHoliday": false
   },
-  "2001-08-05": {
+  "2001-08-06": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
@@ -2365,17 +2413,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-06": {
+  "2001-08-07": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
-    "yoga": "Vriddhi",
+    "yoga": "Dhruva",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-08-07": {
+  "2001-08-08": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
@@ -2385,7 +2433,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-08": {
+  "2001-08-09": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
@@ -2395,7 +2443,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-09": {
+  "2001-08-10": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
@@ -2407,17 +2455,17 @@
     ],
     "isHoliday": false
   },
-  "2001-08-10": {
+  "2001-08-11": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
-    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra": "Revati",
     "yoga": "Siddhi",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-08-11": {
+  "2001-08-12": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
@@ -2427,7 +2475,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-12": {
+  "2001-08-13": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Bharani",
@@ -2437,7 +2485,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-13": {
+  "2001-08-14": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Krittika",
@@ -2447,17 +2495,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-14": {
-    "tithi": "Purnima",
-    "paksha": "Shukla",
+  "2001-08-15": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
     "nakshatra": "Rohini",
     "yoga": "Siddha",
-    "karana": "Bava",
+    "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-08-15": {
+  "2001-08-16": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
@@ -2469,7 +2517,7 @@
     ],
     "isHoliday": false
   },
-  "2001-08-16": {
+  "2001-08-17": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
@@ -2479,7 +2527,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-17": {
+  "2001-08-18": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
@@ -2491,7 +2539,7 @@
     ],
     "isHoliday": false
   },
-  "2001-08-18": {
+  "2001-08-19": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -2501,7 +2549,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-19": {
+  "2001-08-20": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -2513,7 +2561,7 @@
     ],
     "isHoliday": false
   },
-  "2001-08-20": {
+  "2001-08-21": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -2523,17 +2571,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-21": {
-    "tithi": "Saptami",
+  "2001-08-22": {
+    "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
     "yoga": "Vishkumbha",
-    "karana": "Bava",
+    "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-08-22": {
+  "2001-08-23": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
@@ -2543,7 +2591,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-23": {
+  "2001-08-24": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
@@ -2553,7 +2601,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-24": {
+  "2001-08-25": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -2565,7 +2613,7 @@
     ],
     "isHoliday": false
   },
-  "2001-08-25": {
+  "2001-08-26": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
@@ -2575,7 +2623,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-26": {
+  "2001-08-27": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Swati",
@@ -2585,37 +2633,41 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-08-27": {
+  "2001-08-28": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
     "yoga": "Sukarma",
-    "karana": "Garaja",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
-  },
-  "2001-08-28": {
-    "tithi": "Chaturdashi",
-    "paksha": "Krishna",
-    "nakshatra": "Anuradha",
-    "yoga": "Dhriti",
-    "karana": "Vishti",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
   "2001-08-29": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Dhriti",
+    "karana": "Vishti",
+    "festivals": [
+      "Bala Chaturdashi"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2001-09-01": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
     "yoga": "Shoola",
     "karana": "Chatushpada",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Poush Sankranti"
+    ],
     "isHoliday": false
   },
-  "2001-09-01": {
+  "2001-09-02": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Mula",
@@ -2625,17 +2677,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-02": {
+  "2001-09-03": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
     "yoga": "Vriddhi",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-09-03": {
+  "2001-09-04": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
@@ -2647,7 +2699,7 @@
     ],
     "isHoliday": false
   },
-  "2001-09-04": {
+  "2001-09-05": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
@@ -2657,7 +2709,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-05": {
+  "2001-09-06": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
@@ -2667,7 +2719,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-06": {
+  "2001-09-07": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
@@ -2677,7 +2729,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-07": {
+  "2001-09-08": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
@@ -2687,7 +2739,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-08": {
+  "2001-09-09": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
@@ -2697,7 +2749,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-09": {
+  "2001-09-10": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Revati",
@@ -2707,7 +2759,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-10": {
+  "2001-09-11": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
@@ -2717,9 +2769,9 @@
     "events": [
       "Christmas Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2001-09-11": {
+  "2001-09-12": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Bharani",
@@ -2729,49 +2781,49 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-12": {
+  "2001-09-13": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
-    "nakshatra": "Krittika",
+    "nakshatra": "Rohini",
     "yoga": "Sadhya",
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-09-13": {
+  "2001-09-14": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
-    "nakshatra": "Rohini",
-    "yoga": "Shubha",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Shukla",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-09-14": {
+  "2001-09-15": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
     "yoga": "Brahma",
     "karana": "Vishti",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "Tamu Lhosar"
+    ],
+    "isHoliday": true
   },
-  "2001-09-15": {
+  "2001-09-16": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
     "yoga": "Indra",
     "karana": "Balava",
     "festivals": [],
-    "events": [
-      "Tamu Lhosar"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2001-09-16": {
+  "2001-09-17": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -2781,10 +2833,10 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-17": {
+  "2001-09-18": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
-    "nakshatra": "Pushya",
+    "nakshatra": "Ashlesha",
     "yoga": "Vishkumbha",
     "karana": "Vanija",
     "festivals": [],
@@ -2794,7 +2846,7 @@
     ],
     "isHoliday": false
   },
-  "2001-09-18": {
+  "2001-09-19": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -2804,7 +2856,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-19": {
+  "2001-09-20": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -2814,7 +2866,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-20": {
+  "2001-09-21": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
@@ -2826,7 +2878,7 @@
     ],
     "isHoliday": false
   },
-  "2001-09-21": {
+  "2001-09-22": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
@@ -2836,7 +2888,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-22": {
+  "2001-09-23": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -2846,7 +2898,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-23": {
+  "2001-09-24": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
@@ -2856,7 +2908,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-24": {
+  "2001-09-25": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Swati",
@@ -2866,7 +2918,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-25": {
+  "2001-09-26": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
@@ -2876,29 +2928,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-26": {
+  "2001-09-27": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
     "yoga": "Ganda",
     "karana": "Balava",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "National Unity Day (Prithvi Jayanti)"
+    ],
+    "isHoliday": true
   },
-  "2001-09-27": {
+  "2001-09-28": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
     "yoga": "Vriddhi",
     "karana": "Taitila",
     "festivals": [],
-    "events": [
-      "National Unity Day"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2001-09-28": {
+  "2001-09-29": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -2908,7 +2960,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-29": {
+  "2001-09-30": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -2918,39 +2970,41 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-09-30": {
+  "2001-10-01": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
     "yoga": "Harsha",
     "karana": "Naga",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "Maghe Sankranti / Maghi Parva"
+    ],
+    "isHoliday": true
   },
-  "2001-10-01": {
+  "2001-10-02": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
     "yoga": "Vajra",
     "karana": "Bava",
-    "festivals": [],
-    "events": [
-      "Maghe Sankranti"
+    "festivals": [
+      "Sonam Lhosar"
     ],
-    "isHoliday": false
+    "events": [],
+    "isHoliday": true
   },
-  "2001-10-02": {
-    "tithi": "Dvitiya",
+  "2001-10-03": {
+    "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
     "yoga": "Siddhi",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-10-03": {
+  "2001-10-04": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
@@ -2960,17 +3014,19 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-04": {
+  "2001-10-05": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
-    "yoga": "Variyana",
+    "yoga": "Parigha",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Basanta Panchami / Saraswati Puja"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2001-10-05": {
+  "2001-10-06": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
@@ -2980,17 +3036,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-06": {
+  "2001-10-07": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Revati",
     "yoga": "Siddha",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-10-07": {
+  "2001-10-08": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
@@ -3000,7 +3056,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-08": {
+  "2001-10-09": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Bharani",
@@ -3010,7 +3066,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-09": {
+  "2001-10-10": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Krittika",
@@ -3020,7 +3076,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-10": {
+  "2001-10-11": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
@@ -3032,7 +3088,7 @@
     ],
     "isHoliday": false
   },
-  "2001-10-11": {
+  "2001-10-12": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
@@ -3042,7 +3098,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-12": {
+  "2001-10-13": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -3052,11 +3108,11 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-13": {
+  "2001-10-14": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
-    "yoga": "Vishkumbha",
+    "yoga": "Priti",
     "karana": "Vanija",
     "festivals": [],
     "events": [
@@ -3064,59 +3120,59 @@
     ],
     "isHoliday": false
   },
-  "2001-10-14": {
+  "2001-10-15": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
-    "yoga": "Priti",
+    "yoga": "Ayushman",
     "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-10-15": {
+  "2001-10-16": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
     "yoga": "Saubhagya",
     "karana": "Kaulava",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Martyrs' Day (Shahid Diwas)"
+    ],
     "isHoliday": false
   },
-  "2001-10-16": {
+  "2001-10-17": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Magha",
     "yoga": "Shobhana",
     "karana": "Garaja",
     "festivals": [],
-    "events": [
-      "Martyrs' Day"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2001-10-17": {
+  "2001-10-18": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
-    "yoga": "Shobhana",
+    "yoga": "Atiganda",
     "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-10-18": {
+  "2001-10-19": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
-    "yoga": "Atiganda",
+    "yoga": "Sukarma",
     "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-10-19": {
+  "2001-10-20": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -3128,7 +3184,7 @@
     ],
     "isHoliday": false
   },
-  "2001-10-20": {
+  "2001-10-21": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
@@ -3138,10 +3194,10 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-21": {
+  "2001-10-22": {
     "tithi": "Saptami",
     "paksha": "Krishna",
-    "nakshatra": "Chitra",
+    "nakshatra": "Swati",
     "yoga": "Shoola",
     "karana": "Vishti",
     "festivals": [],
@@ -3150,7 +3206,7 @@
     ],
     "isHoliday": false
   },
-  "2001-10-22": {
+  "2001-10-23": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Swati",
@@ -3160,7 +3216,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-23": {
+  "2001-10-24": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
@@ -3170,7 +3226,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-24": {
+  "2001-10-25": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
@@ -3180,27 +3236,27 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-25": {
-    "tithi": "Dashami",
-    "paksha": "Krishna",
-    "nakshatra": "Jyeshtha",
-    "yoga": "Vyaghata",
-    "karana": "Vishti",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
-  },
   "2001-10-26": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
-    "nakshatra": "Mula",
-    "yoga": "Harsha",
-    "karana": "Balava",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Vyaghata",
+    "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
   "2001-10-27": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Harsha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2001-10-28": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -3210,7 +3266,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-10-28": {
+  "2001-10-29": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
@@ -3222,41 +3278,45 @@
     ],
     "isHoliday": false
   },
-  "2001-10-29": {
+  "2001-11-01": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
     "yoga": "Variyana",
     "karana": "Chatushpada",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Falgun Sankranti"
+    ],
     "isHoliday": false
   },
-  "2001-11-01": {
+  "2001-11-02": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
     "yoga": "Parigha",
     "karana": "Kimstughna",
-    "festivals": [],
+    "festivals": [
+      "Gyalpo Lhosar"
+    ],
     "events": [
       "World Radio Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2001-11-02": {
+  "2001-11-03": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
-    "nakshatra": "Shatabhisha",
+    "nakshatra": "Purva Bhadrapada",
     "yoga": "Shiva",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [
       "Valentine's Day"
     ],
     "isHoliday": false
   },
-  "2001-11-03": {
+  "2001-11-04": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
@@ -3266,7 +3326,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-04": {
+  "2001-11-05": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Revati",
@@ -3276,39 +3336,39 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-05": {
-    "tithi": "Panchami",
+  "2001-11-06": {
+    "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
     "yoga": "Shukla",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-11-06": {
+  "2001-11-07": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Bharani",
     "yoga": "Brahma",
     "karana": "Garaja",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "National Democracy Day (Prajatantra Diwas)"
+    ],
+    "isHoliday": true
   },
-  "2001-11-07": {
+  "2001-11-08": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Krittika",
     "yoga": "Indra",
     "karana": "Vishti",
     "festivals": [],
-    "events": [
-      "National Democracy Day"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2001-11-08": {
+  "2001-11-09": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
@@ -3320,7 +3380,7 @@
     ],
     "isHoliday": false
   },
-  "2001-11-09": {
+  "2001-11-10": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
@@ -3332,7 +3392,7 @@
     ],
     "isHoliday": false
   },
-  "2001-11-10": {
+  "2001-11-11": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -3342,7 +3402,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-11": {
+  "2001-11-12": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
@@ -3352,7 +3412,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-12": {
+  "2001-11-13": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
@@ -3362,7 +3422,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-13": {
+  "2001-11-14": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -3372,29 +3432,31 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-14": {
+  "2001-11-15": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Magha",
     "yoga": "Atiganda",
     "karana": "Vishti",
     "festivals": [
-      "Holi / Phagu Purnima"
+      "Holi / Phagu Purnima (Hilly)"
     ],
     "events": [],
     "isHoliday": true
   },
-  "2001-11-15": {
+  "2001-11-16": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
     "yoga": "Sukarma",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Holi / Phagu Purnima (Terai)"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2001-11-16": {
+  "2001-11-17": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
@@ -3404,7 +3466,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-17": {
+  "2001-11-18": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
@@ -3414,7 +3476,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-18": {
+  "2001-11-19": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -3424,7 +3486,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-19": {
+  "2001-11-20": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
@@ -3436,7 +3498,7 @@
     ],
     "isHoliday": false
   },
-  "2001-11-20": {
+  "2001-11-21": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Swati",
@@ -3446,17 +3508,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-21": {
+  "2001-11-22": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
     "yoga": "Vyaghata",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-11-22": {
+  "2001-11-23": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
@@ -3466,7 +3528,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-23": {
+  "2001-11-24": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
@@ -3476,7 +3538,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-24": {
+  "2001-11-25": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -3488,7 +3550,7 @@
     ],
     "isHoliday": false
   },
-  "2001-11-25": {
+  "2001-11-26": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -3498,7 +3560,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-26": {
+  "2001-11-27": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
@@ -3508,7 +3570,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-27": {
+  "2001-11-28": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -3518,11 +3580,11 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-11-28": {
+  "2001-11-29": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
-    "yoga": "Shiva",
+    "yoga": "Siddha",
     "karana": "Vanija",
     "festivals": [
       "Maha Shivaratri"
@@ -3530,7 +3592,7 @@
     "events": [],
     "isHoliday": true
   },
-  "2001-11-29": {
+  "2001-11-30": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
@@ -3538,19 +3600,23 @@
     "karana": "Shakuni",
     "festivals": [],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-11-30": {
+  "2001-12-01": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Shubha",
     "karana": "Naga",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "festivals": [
+      "Ghode Jatra"
+    ],
+    "events": [
+      "Chaitra Sankranti"
+    ],
+    "isHoliday": true
   },
-  "2001-12-01": {
+  "2001-12-02": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
@@ -3560,7 +3626,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-02": {
+  "2001-12-03": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Revati",
@@ -3570,17 +3636,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-03": {
+  "2001-12-04": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Bharani",
-    "yoga": "Indra",
+    "yoga": "Vaidhriti",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-12-04": {
+  "2001-12-05": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Krittika",
@@ -3590,7 +3656,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-05": {
+  "2001-12-06": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
@@ -3600,7 +3666,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-06": {
+  "2001-12-07": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
@@ -3612,7 +3678,7 @@
     ],
     "isHoliday": false
   },
-  "2001-12-07": {
+  "2001-12-08": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -3624,21 +3690,23 @@
     "events": [
       "International Day of Forests"
     ],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2001-12-08": {
+  "2001-12-09": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
     "yoga": "Shobhana",
     "karana": "Kaulava",
-    "festivals": [],
+    "festivals": [
+      "Ram Navami"
+    ],
     "events": [
       "World Water Day"
     ],
     "isHoliday": false
   },
-  "2001-12-09": {
+  "2001-12-10": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
@@ -3650,7 +3718,7 @@
     ],
     "isHoliday": false
   },
-  "2001-12-10": {
+  "2001-12-11": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -3662,7 +3730,7 @@
     ],
     "isHoliday": false
   },
-  "2001-12-11": {
+  "2001-12-12": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -3672,7 +3740,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-12": {
+  "2001-12-13": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -3682,7 +3750,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-13": {
+  "2001-12-14": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
@@ -3692,7 +3760,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-14": {
+  "2001-12-15": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
@@ -3702,7 +3770,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-15": {
+  "2001-12-16": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -3712,7 +3780,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-16": {
+  "2001-12-17": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
@@ -3722,7 +3790,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-17": {
+  "2001-12-18": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Swati",
@@ -3732,17 +3800,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-18": {
-    "tithi": "Tritiya",
+  "2001-12-19": {
+    "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
     "yoga": "Vajra",
-    "karana": "Vishti",
+    "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-12-19": {
+  "2001-12-20": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
@@ -3754,7 +3822,7 @@
     ],
     "isHoliday": false
   },
-  "2001-12-20": {
+  "2001-12-21": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
@@ -3764,7 +3832,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-21": {
+  "2001-12-22": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -3774,7 +3842,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-22": {
+  "2001-12-23": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -3784,7 +3852,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-23": {
+  "2001-12-24": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -3794,7 +3862,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-24": {
+  "2001-12-25": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
@@ -3806,7 +3874,7 @@
     ],
     "isHoliday": false
   },
-  "2001-12-25": {
+  "2001-12-26": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -3816,17 +3884,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-26": {
+  "2001-12-27": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
-    "nakshatra": "Dhanishta",
+    "nakshatra": "Shatabhisha",
     "yoga": "Shubha",
     "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2001-12-27": {
+  "2001-12-28": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
@@ -3836,7 +3904,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-28": {
+  "2001-12-29": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -3846,7 +3914,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2001-12-29": {
+  "2001-12-30": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Revati",
@@ -3857,15 +3925,5 @@
     ],
     "events": [],
     "isHoliday": true
-  },
-  "2001-12-30": {
-    "tithi": "Pratipada",
-    "paksha": "Shukla",
-    "nakshatra": "Ashwini",
-    "yoga": "Vishkumbha",
-    "karana": "Bava",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
   }
 }

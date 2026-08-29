@@ -50,23 +50,23 @@ describe('Nepali Fiscal Year (आर्थिक वर्ष)', () => {
     expect(startFY.format('YYYY/MM/DD HH:mm:ss.SSS')).toBe('2081/04/01 00:00:00.000');
 
     const endFY = d.endOf('fiscalYear');
-    expect(endFY.format('YYYY/MM/DD HH:mm:ss.SSS')).toBe('2082/03/31 23:59:59.999');
+    expect(endFY.format('YYYY/MM/DD HH:mm:ss.SSS')).toBe('2082/03/32 23:59:59.999');
 
     // Static helpers
     const staticStart = BSDay.startOfFiscalYear(2081);
     expect(staticStart.format('YYYY/MM/DD')).toBe('2081/04/01');
     const staticEnd = BSDay.endOfFiscalYear(2081);
-    expect(staticEnd.format('YYYY/MM/DD')).toBe('2082/03/31');
+    expect(staticEnd.format('YYYY/MM/DD')).toBe('2082/03/32');
   });
 
   it('calculates startOf and endOf fiscalQuarter', () => {
     const q1Date = bsday.bs(2081, 5, 10);
     expect(q1Date.startOf('fiscalQuarter').format('YYYY/MM/DD')).toBe('2081/04/01');
-    expect(q1Date.endOf('fiscalQuarter').format('YYYY/MM/DD')).toBe('2081/06/31');
+    expect(q1Date.endOf('fiscalQuarter').format('YYYY/MM/DD')).toBe('2081/06/30');
 
     const q4Date = bsday.bs(2082, 2, 10);
     expect(q4Date.startOf('fiscalQuarter').format('YYYY/MM/DD')).toBe('2082/01/01');
-    expect(q4Date.endOf('fiscalQuarter').format('YYYY/MM/DD')).toBe('2082/03/31');
+    expect(q4Date.endOf('fiscalQuarter').format('YYYY/MM/DD')).toBe('2082/03/32');
   });
 });
 

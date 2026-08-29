@@ -32,7 +32,6 @@ export const fiscalYearPlugin: BSDayPlugin = {
     };
 
     proto.fiscalYear = function (format: FiscalYearFormat = 'short', locale?: LocaleType): string {
-      const bs = this.toBS();
       const loc = locale ?? this._locale ?? 'en';
       const startYear = this.fiscalYearNumber();
       const endYear = startYear + 1;

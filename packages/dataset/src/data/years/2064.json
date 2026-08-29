@@ -1,15 +1,15 @@
 {
   "2064-01-01": {
-    "tithi": "Ekadashi",
+    "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
     "yoga": "Shukla",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [
-      "Nepali New Year"
+      "Nepali New Year / Biska Jatra"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-01-02": {
     "tithi": "Trayodashi",
@@ -36,12 +36,12 @@
     "paksha": "Krishna",
     "nakshatra": "Revati",
     "yoga": "Vaidhriti",
-    "karana": "Chatushpada",
+    "karana": "Naga",
     "festivals": [
       "Matatirtha Aunsi (Mothers' Day)"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-01-05": {
     "tithi": "Pratipada",
@@ -58,7 +58,7 @@
   "2064-01-06": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
-    "nakshatra": "Bharani",
+    "nakshatra": "Krittika",
     "yoga": "Ayushman",
     "karana": "Kaulava",
     "festivals": [],
@@ -66,11 +66,11 @@
     "isHoliday": false
   },
   "2064-01-07": {
-    "tithi": "Tritiya",
+    "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
     "yoga": "Saubhagya",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -113,11 +113,11 @@
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
-    "yoga": "Dhriti",
+    "yoga": "Shoola",
     "karana": "Vishti",
     "festivals": [],
     "events": [
-      "Loktantra Day"
+      "Loktantra Diwas"
     ],
     "isHoliday": false
   },
@@ -125,7 +125,7 @@
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
-    "yoga": "Shoola",
+    "yoga": "Ganda",
     "karana": "Balava",
     "festivals": [],
     "events": [
@@ -137,7 +137,7 @@
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Magha",
-    "yoga": "Ganda",
+    "yoga": "Vriddhi",
     "karana": "Taitila",
     "festivals": [],
     "events": [],
@@ -147,7 +147,7 @@
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
-    "yoga": "Vriddhi",
+    "yoga": "Dhruva",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
@@ -202,7 +202,7 @@
     "yoga": "Siddhi",
     "karana": "Bava",
     "festivals": [
-      "Buddha Jayanti"
+      "Buddha Jayanti / Ubhauli Parva"
     ],
     "events": [],
     "isHoliday": true
@@ -224,7 +224,7 @@
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
     "yoga": "Variyana",
-    "karana": "Taitila",
+    "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -274,7 +274,7 @@
   "2064-01-26": {
     "tithi": "Saptami",
     "paksha": "Krishna",
-    "nakshatra": "Uttara Ashadha",
+    "nakshatra": "Shravana",
     "yoga": "Shubha",
     "karana": "Vishti",
     "festivals": [],
@@ -284,7 +284,7 @@
   "2064-01-27": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
-    "nakshatra": "Shravana",
+    "nakshatra": "Dhanishta",
     "yoga": "Shukla",
     "karana": "Balava",
     "festivals": [],
@@ -295,7 +295,7 @@
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
-    "yoga": "Brahma",
+    "yoga": "Indra",
     "karana": "Taitila",
     "festivals": [],
     "events": [],
@@ -306,7 +306,7 @@
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Vaidhriti",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [
       "International Nurses Day"
@@ -415,7 +415,9 @@
     "nakshatra": "Pushya",
     "yoga": "Vriddhi",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Sithi Nakha"
+    ],
     "events": [],
     "isHoliday": false
   },
@@ -454,7 +456,7 @@
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
     "yoga": "Vajra",
-    "karana": "Taitila",
+    "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -487,9 +489,9 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [
-      "Republic Day"
+      "Republic Day (Ganatantra Diwas)"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-02-16": {
     "tithi": "Chaturdashi",
@@ -514,11 +516,11 @@
     "isHoliday": false
   },
   "2064-02-18": {
-    "tithi": "Purnima",
-    "paksha": "Shukla",
-    "nakshatra": "Anuradha",
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
     "yoga": "Siddha",
-    "karana": "Bava",
+    "karana": "Balava",
     "festivals": [],
     "events": [
       "Global Day of Parents"
@@ -580,11 +582,11 @@
     "isHoliday": false
   },
   "2064-02-24": {
-    "tithi": "Shashthi",
+    "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
     "yoga": "Vaidhriti",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -615,7 +617,7 @@
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
-    "yoga": "Ayushman",
+    "yoga": "Saubhagya",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
@@ -624,7 +626,7 @@
   "2064-02-28": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
-    "nakshatra": "Revati",
+    "nakshatra": "Ashwini",
     "yoga": "Shobhana",
     "karana": "Bava",
     "festivals": [],
@@ -636,7 +638,7 @@
     "paksha": "Krishna",
     "nakshatra": "Bharani",
     "yoga": "Atiganda",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [
       "World Day Against Child Labour"
@@ -679,7 +681,7 @@
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
-    "yoga": "Ganda",
+    "yoga": "Vriddhi",
     "karana": "Balava",
     "festivals": [],
     "events": [],
@@ -772,7 +774,7 @@
   "2064-03-11": {
     "tithi": "Dashami",
     "paksha": "Shukla",
-    "nakshatra": "Chitra",
+    "nakshatra": "Swati",
     "yoga": "Shiva",
     "karana": "Garaja",
     "festivals": [],
@@ -816,7 +818,7 @@
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
     "yoga": "Shukla",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [
       "Rastriya Dhan Diwas"
@@ -828,8 +830,10 @@
     "paksha": "Shukla",
     "nakshatra": "Mula",
     "yoga": "Brahma",
-    "karana": "Vishti",
-    "festivals": [],
+    "karana": "Bava",
+    "festivals": [
+      "Guru Purnima"
+    ],
     "events": [],
     "isHoliday": false
   },
@@ -838,7 +842,7 @@
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
     "yoga": "Indra",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -848,7 +852,7 @@
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
     "yoga": "Vaidhriti",
-    "karana": "Taitila",
+    "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -914,11 +918,11 @@
     "isHoliday": false
   },
   "2064-03-25": {
-    "tithi": "Navami",
+    "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
-    "yoga": "Sukarma",
-    "karana": "Garaja",
+    "yoga": "Dhriti",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -948,7 +952,7 @@
   "2064-03-28": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
-    "nakshatra": "Rohini",
+    "nakshatra": "Mrigashirsha",
     "yoga": "Vriddhi",
     "karana": "Garaja",
     "festivals": [],
@@ -970,7 +974,7 @@
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
     "yoga": "Vyaghata",
-    "karana": "Chatushpada",
+    "karana": "Naga",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -1003,7 +1007,7 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [
-      "Shrawan Sankranti"
+      "Shrawan Sankranti / Luto Falne Din"
     ],
     "isHoliday": false
   },
@@ -1022,21 +1026,21 @@
   "2064-04-03": {
     "tithi": "Panchami",
     "paksha": "Shukla",
-    "nakshatra": "Purva Phalguni",
+    "nakshatra": "Uttara Phalguni",
     "yoga": "Variyana",
     "karana": "Balava",
     "festivals": [
       "Nag Panchami"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-04-04": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
     "yoga": "Parigha",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -1092,11 +1096,11 @@
     "isHoliday": false
   },
   "2064-04-10": {
-    "tithi": "Ekadashi",
+    "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
     "yoga": "Brahma",
-    "karana": "Vishti",
+    "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -1124,37 +1128,39 @@
     "isHoliday": false
   },
   "2064-04-13": {
-    "tithi": "Chaturdashi",
+    "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
     "yoga": "Vishkumbha",
-    "karana": "Vanija",
-    "festivals": [],
+    "karana": "Vishti",
+    "festivals": [
+      "Raksha Bandhan / Janai Purnima / Kwati Khane Din / Rishi Tarpani / Sanskrit Diwas"
+    ],
     "events": [],
     "isHoliday": false
   },
   "2064-04-14": {
-    "tithi": "Purnima",
-    "paksha": "Shukla",
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
     "nakshatra": "Shravana",
     "yoga": "Priti",
-    "karana": "Bava",
-    "festivals": [
-      "Janai Purnima / Raksha Bandhan"
-    ],
+    "karana": "Balava",
+    "festivals": [],
     "events": [
       "International Day of Friendship"
     ],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-04-15": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
-    "yoga": "Ayushman",
+    "yoga": "Saubhagya",
     "karana": "Taitila",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Kheer Khane Din"
+    ],
     "isHoliday": false
   },
   "2064-04-16": {
@@ -1192,7 +1198,7 @@
     "paksha": "Krishna",
     "nakshatra": "Revati",
     "yoga": "Dhriti",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -1250,11 +1256,11 @@
     "isHoliday": false
   },
   "2064-04-25": {
-    "tithi": "Dwadashi",
+    "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
     "yoga": "Vajra",
-    "karana": "Taitila",
+    "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -1312,11 +1318,11 @@
     "isHoliday": false
   },
   "2064-04-31": {
-    "tithi": "Tritiya",
+    "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
     "yoga": "Siddha",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -1340,7 +1346,9 @@
     "festivals": [
       "Rishi Panchami"
     ],
-    "events": [],
+    "events": [
+      "Bhadra Sankranti"
+    ],
     "isHoliday": true
   },
   "2064-05-02": {
@@ -1363,7 +1371,7 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-05-04": {
     "tithi": "Ashtami",
@@ -1378,9 +1386,9 @@
   "2064-05-05": {
     "tithi": "Navami",
     "paksha": "Shukla",
-    "nakshatra": "Anuradha",
+    "nakshatra": "Jyeshtha",
     "yoga": "Vaidhriti",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -1430,7 +1438,7 @@
     "paksha": "Shukla",
     "nakshatra": "Shravana",
     "yoga": "Shobhana",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -1448,7 +1456,7 @@
   "2064-05-12": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
-    "nakshatra": "Shatabhisha",
+    "nakshatra": "Purva Bhadrapada",
     "yoga": "Sukarma",
     "karana": "Kaulava",
     "festivals": [
@@ -1463,7 +1471,7 @@
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
-    "yoga": "Dhriti",
+    "yoga": "Shoola",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
@@ -1506,7 +1514,7 @@
     "yoga": "Vyaghata",
     "karana": "Vishti",
     "festivals": [
-      "Krishna Janmashtami"
+      "Krishna Janmashtami / Gaura Parva"
     ],
     "events": [],
     "isHoliday": true
@@ -1519,14 +1527,14 @@
     "karana": "Balava",
     "festivals": [],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-05-19": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
     "yoga": "Vajra",
-    "karana": "Taitila",
+    "karana": "Garaja",
     "festivals": [],
     "events": [
       "International Day of Charity"
@@ -1537,7 +1545,7 @@
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
-    "yoga": "Siddhi",
+    "yoga": "Vyatipata",
     "karana": "Vishti",
     "festivals": [],
     "events": [],
@@ -1595,14 +1603,14 @@
       "Kushe Aunsi (Fathers' Day)"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-05-26": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
     "yoga": "Shubha",
-    "karana": "Kimstughna",
+    "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -1613,7 +1621,9 @@
     "nakshatra": "Hasta",
     "yoga": "Shukla",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Dar Khane Din"
+    ],
     "events": [],
     "isHoliday": false
   },
@@ -1624,7 +1634,7 @@
     "yoga": "Brahma",
     "karana": "Taitila",
     "festivals": [
-      "Teej"
+      "Haritalika Teej"
     ],
     "events": [],
     "isHoliday": true
@@ -1632,14 +1642,17 @@
   "2064-05-29": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
-    "nakshatra": "Chitra",
+    "nakshatra": "Swati",
     "yoga": "Indra",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Ganesh Chaturthi",
+      "Haritalika Teej"
+    ],
     "events": [
       "International Day of Democracy"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-05-30": {
     "tithi": "Panchami",
@@ -1669,21 +1682,23 @@
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
-    "yoga": "Vishkumbha",
+    "yoga": "Priti",
     "karana": "Taitila",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Ashwin Sankranti / Bishwakarma Puja"
+    ],
     "isHoliday": false
   },
   "2064-06-02": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
-    "yoga": "Priti",
+    "yoga": "Ayushman",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-06-03": {
     "tithi": "Ashtami",
@@ -1693,7 +1708,7 @@
     "karana": "Bava",
     "festivals": [],
     "events": [
-      "Constitution Day"
+      "Constitution Day (Sambidhan Diwas)"
     ],
     "isHoliday": true
   },
@@ -1701,23 +1716,23 @@
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
-    "yoga": "Saubhagya",
+    "yoga": "Shobhana",
     "karana": "Kaulava",
     "festivals": [],
     "events": [
       "International Day of Peace"
     ],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-06-05": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
-    "yoga": "Shobhana",
+    "yoga": "Atiganda",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-06-06": {
     "tithi": "Ekadashi",
@@ -1740,12 +1755,14 @@
     "isHoliday": false
   },
   "2064-06-08": {
-    "tithi": "Trayodashi",
+    "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
     "yoga": "Shoola",
-    "karana": "Taitila",
-    "festivals": [],
+    "karana": "Garaja",
+    "festivals": [
+      "Indra Jatra / Ananta Chaturdashi"
+    ],
     "events": [],
     "isHoliday": false
   },
@@ -1784,7 +1801,7 @@
   "2064-06-12": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
-    "nakshatra": "Ashwini",
+    "nakshatra": "Bharani",
     "yoga": "Harsha",
     "karana": "Vishti",
     "festivals": [],
@@ -1829,9 +1846,11 @@
     "nakshatra": "Ardra",
     "yoga": "Variyana",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Jitiya Parva"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-06-17": {
     "tithi": "Navami",
@@ -1839,9 +1858,11 @@
     "nakshatra": "Punarvasu",
     "yoga": "Parigha",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Jitiya Parva"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-06-18": {
     "tithi": "Dashami",
@@ -1886,11 +1907,11 @@
     "isHoliday": false
   },
   "2064-06-22": {
-    "tithi": "Trayodashi",
+    "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
     "yoga": "Shukla",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [
       "World Post Day"
@@ -1900,7 +1921,7 @@
   "2064-06-23": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
-    "nakshatra": "Uttara Phalguni",
+    "nakshatra": "Hasta",
     "yoga": "Brahma",
     "karana": "Shakuni",
     "festivals": [],
@@ -1915,7 +1936,9 @@
     "nakshatra": "Hasta",
     "yoga": "Indra",
     "karana": "Naga",
-    "festivals": [],
+    "festivals": [
+      "Sohra Shraddha Samapti (Mahalaya)"
+    ],
     "events": [
       "International Day of the Girl Child"
     ],
@@ -1958,7 +1981,7 @@
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
     "yoga": "Ayushman",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -2041,26 +2064,30 @@
     "nakshatra": "Shatabhisha",
     "yoga": "Ganda",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Papankusha Ekadashi"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-07-06": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
-    "yoga": "Vriddhi",
+    "yoga": "Dhruva",
     "karana": "Bava",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "Dashain Holiday"
+    ],
+    "isHoliday": true
   },
   "2064-07-07": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
     "yoga": "Vyaghata",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [
       "United Nations Day"
@@ -2083,16 +2110,18 @@
     "nakshatra": "Ashwini",
     "yoga": "Vajra",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Kojagrat Purnima"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-07-10": {
-    "tithi": "Pratipada",
+    "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
     "yoga": "Siddhi",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -2101,7 +2130,7 @@
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
-    "yoga": "Vyatipata",
+    "yoga": "Variyana",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
@@ -2120,9 +2149,9 @@
   "2064-07-13": {
     "tithi": "Panchami",
     "paksha": "Krishna",
-    "nakshatra": "Mrigashirsha",
+    "nakshatra": "Ardra",
     "yoga": "Shiva",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -2162,7 +2191,7 @@
   "2064-07-17": {
     "tithi": "Navami",
     "paksha": "Krishna",
-    "nakshatra": "Ashlesha",
+    "nakshatra": "Magha",
     "yoga": "Shukla",
     "karana": "Garaja",
     "festivals": [],
@@ -2209,7 +2238,7 @@
       "Kag Tihar"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-07-22": {
     "tithi": "Chaturdashi",
@@ -2221,7 +2250,7 @@
       "Kukur Tihar"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
   "2064-07-23": {
     "tithi": "Amavasya",
@@ -2250,12 +2279,14 @@
     "isHoliday": true
   },
   "2064-07-25": {
-    "tithi": "Pratipada",
+    "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
     "yoga": "Shobhana",
-    "karana": "Bava",
-    "festivals": [],
+    "karana": "Balava",
+    "festivals": [
+      "Bhai Tika"
+    ],
     "events": [],
     "isHoliday": true
   },
@@ -2266,15 +2297,17 @@
     "yoga": "Atiganda",
     "karana": "Kaulava",
     "festivals": [
-      "Bhai Tika"
+      "Tihar Holiday"
     ],
-    "events": [],
+    "events": [
+      "Tihar Holiday"
+    ],
     "isHoliday": true
   },
   "2064-07-27": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
-    "nakshatra": "Jyeshtha",
+    "nakshatra": "Mula",
     "yoga": "Sukarma",
     "karana": "Garaja",
     "festivals": [],
@@ -2324,7 +2357,9 @@
     "yoga": "Vriddhi",
     "karana": "Vanija",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Mangsir Sankranti"
+    ],
     "isHoliday": false
   },
   "2064-08-02": {
@@ -2367,16 +2402,18 @@
     "nakshatra": "Uttara Bhadrapada",
     "yoga": "Vajra",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Haribodhini Ekadashi / Tulsi Bibaha"
+    ],
     "events": [],
     "isHoliday": false
   },
   "2064-08-06": {
-    "tithi": "Dwadashi",
+    "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Revati",
     "yoga": "Vyatipata",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -2397,7 +2434,9 @@
     "nakshatra": "Krittika",
     "yoga": "Parigha",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Udhauli Parva / Yomari Punhi"
+    ],
     "events": [],
     "isHoliday": false
   },
@@ -2476,11 +2515,11 @@
     "isHoliday": false
   },
   "2064-08-16": {
-    "tithi": "Ashtami",
+    "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
     "yoga": "Vishkumbha",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -2542,10 +2581,12 @@
   "2064-08-22": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
-    "nakshatra": "Vishakha",
+    "nakshatra": "Anuradha",
     "yoga": "Sukarma",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Bala Chaturdashi"
+    ],
     "events": [],
     "isHoliday": false
   },
@@ -2607,7 +2648,9 @@
     "nakshatra": "Shravana",
     "yoga": "Vyaghata",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Bibaha Panchami"
+    ],
     "events": [],
     "isHoliday": false
   },
@@ -2628,7 +2671,9 @@
     "yoga": "Vajra",
     "karana": "Garaja",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Poush Sankranti"
+    ],
     "isHoliday": false
   },
   "2064-09-02": {
@@ -2678,7 +2723,7 @@
     "paksha": "Shukla",
     "nakshatra": "Bharani",
     "yoga": "Siddha",
-    "karana": "Bava",
+    "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -2696,7 +2741,7 @@
   "2064-09-08": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
-    "nakshatra": "Rohini",
+    "nakshatra": "Mrigashirsha",
     "yoga": "Shubha",
     "karana": "Vanija",
     "festivals": [],
@@ -2704,11 +2749,11 @@
     "isHoliday": false
   },
   "2064-09-09": {
-    "tithi": "Purnima",
-    "paksha": "Shukla",
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
     "nakshatra": "Ardra",
     "yoga": "Shukla",
-    "karana": "Bava",
+    "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -2723,13 +2768,13 @@
     "events": [
       "Christmas Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-09-11": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
-    "yoga": "Indra",
+    "yoga": "Vaidhriti",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
@@ -2775,7 +2820,7 @@
     "events": [
       "Tamu Lhosar"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-09-16": {
     "tithi": "Ashtami",
@@ -2811,11 +2856,11 @@
     "isHoliday": false
   },
   "2064-09-19": {
-    "tithi": "Dashami",
+    "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Swati",
     "yoga": "Dhriti",
-    "karana": "Vishti",
+    "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -2900,9 +2945,9 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [
-      "National Unity Day"
+      "National Unity Day (Prithvi Jayanti)"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-09-28": {
     "tithi": "Chaturthi",
@@ -2942,9 +2987,9 @@
     "karana": "Vanija",
     "festivals": [],
     "events": [
-      "Maghe Sankranti"
+      "Maghe Sankranti / Maghi Parva"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-10-02": {
     "tithi": "Ashtami",
@@ -2970,7 +3015,7 @@
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Krittika",
-    "yoga": "Shubha",
+    "yoga": "Shukla",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
@@ -3052,7 +3097,7 @@
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
-    "yoga": "Shobhana",
+    "yoga": "Atiganda",
     "karana": "Balava",
     "festivals": [],
     "events": [],
@@ -3062,7 +3107,7 @@
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
-    "yoga": "Atiganda",
+    "yoga": "Sukarma",
     "karana": "Taitila",
     "festivals": [],
     "events": [
@@ -3074,7 +3119,7 @@
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
-    "yoga": "Sukarma",
+    "yoga": "Dhriti",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
@@ -3084,7 +3129,7 @@
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
-    "yoga": "Dhriti",
+    "yoga": "Shoola",
     "karana": "Vishti",
     "festivals": [],
     "events": [],
@@ -3098,7 +3143,7 @@
     "karana": "Balava",
     "festivals": [],
     "events": [
-      "Martyrs' Day"
+      "Martyrs' Day (Shahid Diwas)"
     ],
     "isHoliday": false
   },
@@ -3135,11 +3180,11 @@
     "isHoliday": false
   },
   "2064-10-20": {
-    "tithi": "Ekadashi",
+    "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Mula",
     "yoga": "Vyaghata",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -3159,7 +3204,7 @@
   "2064-10-22": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
-    "nakshatra": "Purva Ashadha",
+    "nakshatra": "Uttara Ashadha",
     "yoga": "Vajra",
     "karana": "Vanija",
     "festivals": [],
@@ -3192,16 +3237,18 @@
     "nakshatra": "Dhanishta",
     "yoga": "Parigha",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Sonam Lhosar"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-10-26": {
-    "tithi": "Dvitiya",
+    "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
     "yoga": "Shiva",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -3209,7 +3256,7 @@
   "2064-10-27": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
-    "nakshatra": "Purva Bhadrapada",
+    "nakshatra": "Uttara Bhadrapada",
     "yoga": "Siddha",
     "karana": "Vanija",
     "festivals": [],
@@ -3222,11 +3269,13 @@
     "nakshatra": "Revati",
     "yoga": "Sadhya",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Basanta Panchami / Saraswati Puja"
+    ],
     "events": [
       "International Day of Women and Girls in Science"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-10-29": {
     "tithi": "Shashthi",
@@ -3246,7 +3295,8 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [
-      "World Radio Day"
+      "World Radio Day",
+      "Falgun Sankranti"
     ],
     "isHoliday": false
   },
@@ -3267,7 +3317,7 @@
     "paksha": "Shukla",
     "nakshatra": "Rohini",
     "yoga": "Indra",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -3310,7 +3360,7 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [
-      "National Democracy Day"
+      "National Democracy Day (Prajatantra Diwas)"
     ],
     "isHoliday": true
   },
@@ -3333,7 +3383,7 @@
     "yoga": "Atiganda",
     "karana": "Bava",
     "festivals": [
-      "Holi / Phagu Purnima"
+      "Holi / Phagu Purnima (Hilly)"
     ],
     "events": [
       "International Mother Language Day"
@@ -3346,9 +3396,11 @@
     "nakshatra": "Purva Phalguni",
     "yoga": "Sukarma",
     "karana": "Kaulava",
-    "festivals": [],
+    "festivals": [
+      "Holi / Phagu Purnima (Terai)"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-11-11": {
     "tithi": "Dvitiya",
@@ -3403,7 +3455,7 @@
   "2064-11-16": {
     "tithi": "Saptami",
     "paksha": "Krishna",
-    "nakshatra": "Vishakha",
+    "nakshatra": "Anuradha",
     "yoga": "Vyaghata",
     "karana": "Bava",
     "festivals": [],
@@ -3500,18 +3552,20 @@
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Sadhya",
     "karana": "Kimstughna",
-    "festivals": [],
+    "festivals": [
+      "Gyalpo Lhosar"
+    ],
     "events": [
       "International Women's Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
   "2064-11-26": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
     "yoga": "Shukla",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -3565,16 +3619,20 @@
     "festivals": [
       "Chaite Dashain"
     ],
-    "events": [],
-    "isHoliday": true
+    "events": [
+      "Chaitra Sankranti"
+    ],
+    "isHoliday": false
   },
   "2064-12-02": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
-    "yoga": "Ayushman",
+    "yoga": "Saubhagya",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Ram Navami"
+    ],
     "events": [],
     "isHoliday": false
   },
@@ -3657,7 +3715,7 @@
   "2064-12-10": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
-    "nakshatra": "Hasta",
+    "nakshatra": "Chitra",
     "yoga": "Dhruva",
     "karana": "Taitila",
     "festivals": [],
@@ -3689,11 +3747,11 @@
     "isHoliday": false
   },
   "2064-12-13": {
-    "tithi": "Chaturthi",
+    "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
     "yoga": "Vajra",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -3816,7 +3874,7 @@
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
-    "yoga": "Vaidhriti",
+    "yoga": "Vishkumbha",
     "karana": "Balava",
     "festivals": [],
     "events": [
@@ -3849,7 +3907,7 @@
     "paksha": "Shukla",
     "nakshatra": "Rohini",
     "yoga": "Saubhagya",
-    "karana": "Bava",
+    "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false

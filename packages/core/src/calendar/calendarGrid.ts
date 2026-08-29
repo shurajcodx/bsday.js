@@ -105,7 +105,7 @@ function buildCell(
   weekendDays: number[],
   todayBS: BSDate,
 ): CalendarCell {
-  const bsInstance = BSDay.bs(year, month, day);
+  const bsInstance = BSDay.bs(year, month, day).locale(locale);
   const ad = bsInstance.toAD();
   const dayOfWeek = bsInstance.day();
 
@@ -117,7 +117,7 @@ function buildCell(
   const isDisabled = isDateDisabled(bsInstance, options);
 
   const tithi = bsInstance.tithi;
-  const data = bsInstance.data();
+  const data = bsInstance.data(locale);
   const paksha = data?.paksha;
   const festivals = bsInstance.festivals;
   const events = bsInstance.events;

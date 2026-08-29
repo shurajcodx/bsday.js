@@ -140,20 +140,27 @@ export function findTithiTransition(jd_start: number): { nextTithi: string, tran
     return null;
 }
 
-// Ensure sunrise calculations for scripts needing it are exported here or handled correctly.
 export function sunriseJD(year: number, month: number, day: number, lat: number = 27.7172, lon: number = 85.3240, alt: number = 1400): number {
     const jdMidnight = swisseph.swe_julday(year, month, day, 0, swisseph.SE_GREG_CAL);
     try {
-        // Use any to bypass version-specific arguments for now as the original JS was working with 7
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const res = (swisseph as any).swe_rise_trans(jdMidnight, swisseph.SE_SUN, swisseph.SEFLG_SWIEPH, swisseph.SE_CALC_RISE, lat, lon, alt);
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        if (res && (res as any).rise) return (res as any).rise;
+        const res = (swisseph as any).swe_rise_trans(
+            jdMidnight,
+            swisseph.SE_SUN,
+            '',
+            swisseph.SEFLG_SWIEPH,
+            swisseph.SE_CALC_RISE,
+            [lon, lat, alt],
+            1013.25,
+            15
+        );
+        const transitRes = res as { transitTime?: number; rise?: number } | undefined;
+        if (transitRes && typeof transitRes.transitTime === 'number') return transitRes.transitTime;
+        if (transitRes && typeof transitRes.rise === 'number') return transitRes.rise;
     } catch {
         // console.warn('Sunrise calculation failed, using fallback');
     }
-    // Fallback to approx 6:30 AM Kathmandu (LT) = 00:45 AM UTC
-    // 0.5 is Noon UTC, 0.0 is Midnight UTC.
-    // 00:45 is 0.75 / 24 = 0.03125
-    return jdMidnight + 0.03125;
+    // Fallback to approx 6:00 AM Kathmandu (LT) = 00:15 AM UTC
+    // 00:15 UTC = 0.25 / 24 = ~0.0104167 days
+    return jdMidnight + 0.0104167;
 }

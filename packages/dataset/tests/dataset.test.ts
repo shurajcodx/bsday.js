@@ -28,15 +28,16 @@ describe('@bsday.js/dataset', () => {
   });
 
   it('correctly identifies Tihar festivals', () => {
-    // Laxmi Puja and Kukur Tihar overlap in 2082-07-03
+    // 2082
     expect(dataset['2082-07-03'].festivals).toContain('Laxmi Puja');
-    expect(dataset['2082-07-03'].festivals).toContain('Kukur Tihar');
+    expect(dataset['2082-07-02'].festivals).toContain('Kag Tihar');
+    expect(dataset['2082-07-06'].festivals).toContain('Bhai Tika');
   });
 
   it('handles future year generation correctly (2090 BS)', () => {
     const nny2090 = dataset['2090-01-01'];
-    expect(nny2090.events).toContain('Nepali New Year');
-    expect(nny2090.festivals).toContain('Buddha Jayanti');
+    expect(nny2090.events).toContain('Nepali New Year / Biska Jatra');
+    expect(nny2090.festivals).toContain('Buddha Jayanti / Ubhauli Parva');
     expect(nny2090.tithi).toBe('Purnima');
     expect(nny2090.paksha).toBe('Shukla');
   });
@@ -52,9 +53,9 @@ describe('@bsday.js/dataset', () => {
     const dayNe = datasetNepali['2082-11-24'];
     expect(dayNe.tithi).toBe('पञ्चमी');
     expect(dayNe.nakshatra).toBe('स्वाति');
-    expect(dayNe.yoga).toBe('ध्रुव');
+    expect(dayNe.yoga).toBe('व्याघात');
     expect(dayNe.karana).toBe('कौलव');
-    expect(dayNe.events).toContain('नारी दिवस');
+    expect(dayNe.events).toContain('अन्तर्राष्ट्रिय महिला दिवस');
   });
 
   it('converts an individual day to Nepali on demand without full dataset copy', () => {
@@ -62,9 +63,9 @@ describe('@bsday.js/dataset', () => {
     const dayNe = convertDayToNepali(day);
     expect(dayNe.tithi).toBe('पञ्चमी');
     expect(dayNe.nakshatra).toBe('स्वाति');
-    expect(dayNe.yoga).toBe('ध्रुव');
+    expect(dayNe.yoga).toBe('व्याघात');
     expect(dayNe.karana).toBe('कौलव');
-    expect(dayNe.events).toContain('नारी दिवस');
+    expect(dayNe.events).toContain('अन्तर्राष्ट्रिय महिला दिवस');
   });
 
   it('ensures all dataset entries have correct structure', () => {
