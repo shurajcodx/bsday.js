@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/logo.png" alt="bsday.js logo" width="120" height="120" style="border-radius: 28px;" />
+  <img src="./assets/og-image.jpg" alt="bsday.js logo" style="border-radius: 28px;" />
 </p>
 
 # 🇳🇵 bsday.js
