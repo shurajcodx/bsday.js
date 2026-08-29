@@ -14,7 +14,7 @@ We actively provide security patches and updates for the following versions of `
 If you discover a security vulnerability within `bsday.js`, please follow these guidelines:
 
 1. **Do not open a public GitHub issue.**
-2. Send an email directly to [shurajcodx@gmail.com](mailto:shurajcodx@gmail.com) with the subject line `[SECURITY] bsday.js Vulnerability Report`.
+2. Send an email directly to [shuraj.shampang@gmail.com](mailto:shuraj.shampang@gmail.com) with the subject line `[SECURITY] bsday.js Vulnerability Report`.
 3. Provide a detailed description of the vulnerability, including:
    - Steps or a minimal reproducible example to reproduce the issue.
    - Potential impact of the vulnerability.
