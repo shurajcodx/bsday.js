@@ -1,3 +1,8 @@
+/**
+ * @module @bsday.js/dataset
+ * Comprehensive Bikram Sambat calendar dataset, Vedic Panchang, and festival calculation utilities.
+ */
+
 export * from './monthData';
 export * from './festival-engine';
 export * from './types/festival';

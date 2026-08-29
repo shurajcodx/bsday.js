@@ -42,7 +42,7 @@ importers:
   packages/core: {}
 
   packages/dataset:
-    dependencies:
+    devDependencies:
       swisseph-v2:
         specifier: 1.0.4
         version: 1.0.4

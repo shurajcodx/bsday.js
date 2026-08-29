@@ -1,0 +1,41 @@
+name: 💡 Feature Request
+description: Suggest a new feature, plugin, or enhancement for bsday.js
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to make **bsday.js** even better? We'd love to hear your suggestions!
+  - type: input
+    id: package
+    attributes:
+      label: Target Package
+      description: Which package would this feature belong to?
+      placeholder: '@bsday.js/core, @bsday.js/dataset, or a new plugin'
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: Is your feature request related to a specific problem or use case? Please describe.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution / API
+      description: Describe the solution or new API syntax you would like to see.
+      render: typescript
+      placeholder: |
+        // Example proposed API
+        bsday.bs(2081, 1, 1).customFeature();
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative solutions or workarounds you've considered.
+    validations:
+      required: false
