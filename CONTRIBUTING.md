@@ -4,7 +4,7 @@ First off, thank you for considering contributing to `bsday.js`! It's people lik
 
 ## Code of Conduct
 
-Help us keep `bsday.js` open and inclusive. Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) (coming soon).
+Help us keep `bsday.js` open and inclusive. Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## How Can I Contribute?
 
