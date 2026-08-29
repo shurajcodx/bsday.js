@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./assets/og-image.jpg" alt="bsday.js logo" style="border-radius: 28px;" />
-</p>
-
 # 🇳🇵 bsday.js
 
 > **The ultra-fast, zero-bloat, Day.js-compatible dual calendar (Bikram Sambat ↔ Gregorian) SDK and astronomical Panchang engine for the modern Nepali software ecosystem.**
