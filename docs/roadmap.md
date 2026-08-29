@@ -1,111 +1,69 @@
-# bsday.js — Full roadmap
+# 🗺️ bsday.js — Public Roadmap
 
-**Project:** bsday.js
-**Purpose:** A modern, modular toolkit for **Bikram Sambat ↔ Gregorian (AD) dates**, dataset, and plugin support.
-
-## ✅ v1.0.0 — Initial Release
-
-**Objective:** Publish a stable, fully functional BS ↔ AD library with dataset and plugin support.
-
-**Core Features:**
-
-* AD ↔ BS conversion engine
-* `BSDay` class (constructors, getters, setters)
-* Date arithmetic (`add`, `subtract`)
-* Comparison methods (`isBefore`, `isAfter`, `isSame`)
-* Formatting engine (standard tokens)
-* Parsing engine (string → BSDay)
-* Static helpers & constants (`MONTHS_NEPALI`, `WEEKDAYS_NEPALI`, `isLeapYear`)
-
-**Dataset features:**
-
-* BS dataset integrated (1970–2100)
-* Panchang info: tithi, festivals, nakshatra, yoga, karana
-* Static access: `BSDay.dataset()`
-* Optimized size & performance
-* Unit-tested for accuracy
-
-**Plugin system:**
-
-* Plugin interface ready (`BSDay.use()`)
-* PluginManager included
-* Developer guide available (`docs/plugin-development.md`)
-* Example plugins included in guide
-
-**Monorepo & Packaging:**
-
-* `@bsday.js/core` → core library
-* `@bsday.js/dataset` → optional dataset package
-* pnpm workspace setup
-* TypeScript paths & package dependencies configured
-* Build outputs: ESM + CJS + type definitions
-* ESLint & Prettier enforced
-
-**Developer utilities:**
-
-* Unit tests for all core features
-* TypeScript type safety
-* Easy dataset override (`BSDay.setDataset(customDataset)`)
+**Project:** bsday.js  
+**Purpose:** Ultra-fast, zero-dependency Day.js-compatible dual-calendar SDK (Bikram Sambat ↔ Gregorian AD) and Vedic Panchang ecosystem for JavaScript & TypeScript.
 
 ---
 
-## 🌟 Upcoming / Priority features
+## 🚀 Shipped Milestones
 
-**High-Priority enhancements:**
+### ✅ v1.0.0 — Initial Foundation
+- **Dual-Calendar Conversion**: High-performance BS ↔ AD conversion engine.
+- **Core Day.js API Parity**: `BSDay` class with standard getters, setters, arithmetic (`add`, `subtract`), and comparisons (`isBefore`, `isSameOrAfter`, `isBetween`, `diff`).
+- **Formatting & Parsing Engine**: Formatting tokens (`YYYY`, `MMMM`, `DD`, `dddd`, etc.) with dual-calendar and locale support.
+- **Plugin Architecture**: Extensible plugin manager via `bsday.extend(plugin)`.
 
-1. **BS Date picker component plugin**
-
-   * Fully interactive UI component to select BS dates
-   * Highlights festivals, tithis, and Panchang info from the dataset
-   * Automatic conversion to AD for form submission or APIs
-   * Framework agnostic: vanilla JS / Web Component
-   * Optional adapters for React, Vue, Angular
-   * Localization-ready (month/day names in Nepali or other locales)
-
-2. **Time & Extended Date Support**
-
-   * Millisecond token support
-   * Additional timezone APIs beyond Nepal-local behavior
-   * Extended date calculations: workdays, fiscal year, lunar calendar
-
-3. **Localization & Formatting**
-
-   * Locale-aware formatting for month/day names
-
-4. **Optional Plugins / Packages**
-
-   * Festival utilities plugin (`@bsday/festivals`)
-   * Holiday utilities plugin (`@bsday/holidays`)
-   * Lunar calendar plugin
-   * Nepali numeral formatting plugin
-
-5. **Developer & Ecosystem Improvements**
-
-   * Example plugin library / playground
-   * Improved dataset management and lazy loading
-   * Tree-shaking & minimal bundle size for plugins
-   * Advanced documentation: guides, migration examples
+### ✅ v1.1.0 — Enterprise & Fintech Capabilities (Current)
+- **Nepali Fiscal Year (आर्थिक वर्ष) Engine**:
+  - `short` (`2081/82`), `full` (`2081/2082`), and `extended` (`FY 2081/82` / `आ.व. २०८१/८२`) formats.
+  - Tax quarter calculation (`fiscalQuarter()`) and unit bounds (`startOf('fiscalYear')`, `endOf('fiscalYear')`).
+- **KYC & Chronological Age Calculation**:
+  - `age()`, `formatAge()`, and `isAdult(threshold)` taking into account irregular Bikram Sambat month lengths without day drift.
+- **Headless Calendar Matrix**:
+  - `getCalendarMatrix()` producing 42-cell 6×7 grids with previous/next month padding and holiday tagging.
+- **Form & Schema Validation**:
+  - `isValidBSDate()`, `isValidADDate()`, `isBsLeapYear()`, and `validateBSDateString()` for direct Zod / React Hook Form integration.
+- **111-Year Astronomical Dataset (`@bsday.js/dataset`)**:
+  - 40,543 daily records (1990–2100 BS) with Hamro Patro & Panchang Nirnayak Samiti parity.
+  - Sidereal Lahiri calculation for _Tithi_, _Paksha_, _Nakshatra_, _Yoga_, and _Karana_ with zero unknown fields.
+  - Continuous multi-day public holiday blocks (Dashain 6 days, Tihar 4 days).
+- **Dual-Language Localization**:
+  - Seamless English and Devanagari (`locale('ne')` / `datasetNepali`) output.
 
 ---
 
-## 🏆 Milestones
+## 🌟 Future Roadmap (v1.2.0+)
 
-| Milestone                                 | Status      |
-| ----------------------------------------- | ----------  |
-| Core library completion                   | ✅ Done     |
-| Dataset integration                       | ✅ Done     |
-| Plugin system ready                       | ✅ Done     |
-| BS Date Picker plugin & framework support | ⚡ Upcoming |
-| Time & extended date support              | ⚡ Upcoming |
-| Localization & formatting                 | ⚡ Upcoming |
-| Optional plugins / packages               | ⚡ Upcoming |
-| Developer & ecosystem improvements        | ⚡ Upcoming |
+### 1. 🎨 UI & Framework Components (`@bsday.js/react` / `@bsday.js/vue`)
+- Fully styled and headless accessible Nepali DatePicker components.
+- Range picker for date ranges and booking applications.
+- Month and Year selector popups with Nepali holiday indicators.
+
+### 2. 🌍 Timezone & Internationalization Enhancements
+- First-class timezone plugin (`@bsday.js/plugin-timezone`) with full `Asia/Kathmandu` offset handling.
+- Additional ethnic Nepali language locales (Newari / Nepal Bhasa, Maithili, Bhojpuri).
+
+### 3. ⏱️ Advanced Business Day & Workday Calculations
+- `addBusinessDays(n)` and `isBusinessDay()` taking into account government public holidays and Saturdays.
+- Custom working week configurations (e.g. 5-day vs 6-day work weeks).
+
+### 4. 🧰 CLI Utilities
+- `npx bsday today` - Print today's BS date, Tithi, and festival directly in the terminal.
+- `npx bsday convert 2081-05-15` - Quick terminal conversion tool.
 
 ---
 
-## Notes
+## 🏆 Milestone Overview
 
-* Dataset **does not include AD dates or weekdays** to reduce size
-* Festivals, Panchang info, and tithi are **dynamic via dataset**
-* Core API is **lightweight and fast**; optional packages extend features
-* v1.0 focuses on **core stability**, upcoming features focus on **UI and ecosystem expansion**
+| Feature Area | Status | Target Release |
+| :--- | :---: | :---: |
+| **BS ↔ AD Core Dual Engine** | ✅ Shipped | `v1.0.0` |
+| **Fiscal Year (आर्थिक वर्ष) Engine** | ✅ Shipped | `v1.1.0` |
+| **KYC Chronological Age Calculation** | ✅ Shipped | `v1.1.0` |
+| **Headless Calendar Matrix Grid** | ✅ Shipped | `v1.1.0` |
+| **111-Year Panchang & Festival Dataset** | ✅ Shipped | `v1.1.0` |
+| **Zod & Form Validation Utilities** | ✅ Shipped | `v1.1.0` |
+| **React / Headless DatePicker Package** | ⚡ In Planning | `v1.2.0` |
+| **Business Days & Workday Engine** | ⚡ In Planning | `v1.2.0` |
+| **Official CLI Tool (`npx bsday`)** | ⚡ In Planning | `v1.3.0` |
+
