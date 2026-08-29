@@ -5,13 +5,16 @@
   "packageManager": "pnpm@10.31.0",
   "scripts": {
     "build": "pnpm -r build",
-    "test": "pnpm -r test",
+    "test": "vitest run",
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test:coverage": "pnpm -r test --coverage"
+    "test:coverage": "vitest run --coverage",
+    "benchmark": "node benchmarks/benchmark.mjs"
   },
+
+
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/node": "^22.13.9",

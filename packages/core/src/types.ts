@@ -18,8 +18,38 @@ export interface ConfigTypeMap {
 
 export type BSDayInput = string | number | Date | BSDate | BSDayInputBS | BSDay | null | undefined;
 
-export type DateUnit = 'year' | 'month' | 'date' | 'day' | 'hour' | 'minute' | 'second' | 'millisecond';
+export type DateUnit =
+  | 'year'
+  | 'quarter'
+  | 'month'
+  | 'date'
+  | 'day'
+  | 'hour'
+  | 'minute'
+  | 'second'
+  | 'millisecond'
+  | 'fiscalYear'
+  | 'fiscalQuarter';
 export type LocaleType = 'en' | 'ne';
+export type FiscalYearFormat = 'short' | 'full' | 'extended';
+
+export interface BSDayObject {
+  years: number;
+  months: number;
+  date: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+  milliseconds: number;
+}
+
+export interface BSAge {
+  years: number;
+  months: number;
+  days: number;
+}
+
+
 
 export interface BSDayData {
   tithi: string;

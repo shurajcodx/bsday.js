@@ -78,8 +78,26 @@ export const BASE_FORMAT_TOKENS: Record<string, FormatTokenResolver> = {
     return calendar === 'ad' ? WEEKDAYS_AD[dayIndex]! : WEEKDAYS_NEPALI[dayIndex]!;
   },
   HH: ({ ad, locale }) => localizeNumber(pad(getNepalDateTimeParts(ad).hour), locale),
+  hh: ({ ad, locale }) => {
+    const hour = getNepalDateTimeParts(ad).hour;
+    const h12 = hour % 12 === 0 ? 12 : hour % 12;
+    return localizeNumber(pad(h12), locale);
+  },
+  h: ({ ad, locale }) => {
+    const hour = getNepalDateTimeParts(ad).hour;
+    const h12 = hour % 12 === 0 ? 12 : hour % 12;
+    return localizeNumber(h12, locale);
+  },
   mm: ({ ad, locale }) => localizeNumber(pad(getNepalDateTimeParts(ad).minute), locale),
+  m: ({ ad, locale }) => localizeNumber(getNepalDateTimeParts(ad).minute, locale),
   ss: ({ ad, locale }) => localizeNumber(pad(getNepalDateTimeParts(ad).second), locale),
+  s: ({ ad, locale }) => localizeNumber(getNepalDateTimeParts(ad).second, locale),
+  SSS: ({ ad, locale }) => localizeNumber(pad(getNepalDateTimeParts(ad).millisecond, 3), locale),
+  Q: ({ calendar, locale, ad, bs }) => {
+    const month = calendar === 'ad' ? getNepalDateTimeParts(ad).month : bs.month;
+    const quarter = Math.ceil(month / 3);
+    return localizeNumber(quarter, locale);
+  },
   A: ({ ad, locale }) => {
     const { hour } = getNepalDateTimeParts(ad);
     const index = hour < 12 ? 0 : 1;
@@ -91,3 +109,4 @@ export const BASE_FORMAT_TOKENS: Record<string, FormatTokenResolver> = {
     return locale === 'ne' ? AM_PM_NE[index]! : AM_PM_AD[index]!.toLowerCase();
   },
 };
+

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { dataset, datasetNepali } from '../src';
+import { dataset, datasetNepali } from '../src/all';
+import { convertDayToNepali } from '../src';
 
 describe('@bsday.js/dataset', () => {
   it('exports dataset keyed by BS date', () => {
@@ -56,6 +57,16 @@ describe('@bsday.js/dataset', () => {
     expect(dayNe.events).toContain('नारी दिवस');
   });
 
+  it('converts an individual day to Nepali on demand without full dataset copy', () => {
+    const day = dataset['2082-11-24'];
+    const dayNe = convertDayToNepali(day);
+    expect(dayNe.tithi).toBe('पञ्चमी');
+    expect(dayNe.nakshatra).toBe('स्वाति');
+    expect(dayNe.yoga).toBe('ध्रुव');
+    expect(dayNe.karana).toBe('कौलव');
+    expect(dayNe.events).toContain('नारी दिवस');
+  });
+
   it('ensures all dataset entries have correct structure', () => {
     for (const date in dataset) {
       const day = dataset[date];
@@ -67,3 +78,4 @@ describe('@bsday.js/dataset', () => {
     }
   });
 });
+

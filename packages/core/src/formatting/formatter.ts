@@ -13,14 +13,20 @@ export function formatDate(
   locale: LocaleType,
 ): string {
   const tokenList = Object.keys(tokens).sort((a, b) => b.length - a.length);
-  const tokenRegex = new RegExp(tokenList.map(escapeRegex).join('|'), 'g');
+  const tokenPattern = tokenList.map(escapeRegex).join('|');
+  const regex = new RegExp(`\\[([^\\]]+)\\]|(${tokenPattern})`, 'g');
 
-  return pattern.replace(tokenRegex, (token) => {
+  return pattern.replace(regex, (match, escapedLiteral, token) => {
+    if (escapedLiteral !== undefined) {
+      return escapedLiteral;
+    }
+
     const resolver = tokens[token];
     if (!resolver) {
-      return token;
+      return match;
     }
 
     return resolver({ calendar, locale, ad, bs });
   });
 }
+

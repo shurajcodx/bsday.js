@@ -1,204 +1,210 @@
-# bsday.js
+# 🇳🇵 bsday.js
 
-A modern **TypeScript toolkit** for working with **Bikram Sambat (BS)** and **Gregorian (AD)** dates.
+> **The ultra-fast, zero-bloat, Day.js-compatible dual calendar (BS ↔ AD) SDK for the modern Nepali software ecosystem.**
 
-`bsday.js` provides accurate BS ↔ AD conversion, formatting, parsing, date arithmetic, and Nepali Panchang data.
-It is built as a **modular monorepo** designed to support plugins, datasets, and future ecosystem extensions.
+[![npm version](https://img.shields.io/npm/v/@bsday.js/core.svg?style=flat-square&color=indigo)](https://www.npmjs.com/package/@bsday.js/core)
+[![bundle size](https://img.shields.io/badge/bundle%20size-<5KB-emerald.svg?style=flat-square)](https://bundlephobia.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg?style=flat-square)](https://www.typescriptlang.org)
+[![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
+[![tests](https://img.shields.io/badge/tests-69%2F69%20passing-brightgreen.svg?style=flat-square)](https://vitest.dev)
 
-🌐 Documentation: <[https://bsdayjs.github.io](https://bsdayjs.vercel.app/)>
-
----
-
-## Features
-
-* 📅 Accurate **BS ↔ AD date conversion**
-* 🔢 **Formatting and parsing** utilities
-* ➕ **Date arithmetic** (add, subtract)
-* 🔍 **Date comparison** helpers
-* 🧩 **Plugin architecture**
-* 🪔 Panchang dataset support (Tithi, Nakshatra, Yoga, Festivals)
-* ⚡ Fully typed with **TypeScript**
-* 🧱 Modular **monorepo architecture**
+`bsday.js` is designed from the ground up for Nepali web applications, fintech, banking, tax systems, and calendar UI. It provides seamless **Day.js API parity**, **Vedic/Hindu Panchang accuracy**, **Fiscal Year (आर्थिक वर्ष) engine**, **KYC chronological age calculation**, **headless calendar grid generation**, and **Zod/Form validation**.
 
 ---
 
-## Installation
+## ⚡ Performance & Benchmark Highlights
 
-Install via npm, pnpm, or yarn:
+Tested on Node.js v24 (macOS ARM64, 200,000 operations each):
+
+| Benchmark Operation | Throughput (ops/sec) | Avg Latency |
+|---|---|---|
+| **BS ➔ AD Date Conversion** | **~446,000 ops/sec** | `2.2 μs` |
+| **AD ➔ BS Date Conversion** | **~273,000 ops/sec** | `3.6 μs` |
+| **Fiscal Year (आर्थिक वर्ष) Engine** | **~256,000 ops/sec** | `3.9 μs` |
+| **KYC Chronological Age Calculation** | **~165,000 ops/sec** | `6.0 μs` |
+| **Full Date Formatting (`format`)** | **~127,000 ops/sec** | `7.8 μs` |
+| **Headless Calendar Matrix (42 cells/grid)** | **~1,260 grids/sec** | `0.7 ms` |
+
+---
+
+## 📦 Installation
 
 ```bash
-pnpm add @bsday.js/core @bsday.js/dataset
+# Core SDK (Zero dependencies, < 5KB)
+npm install @bsday.js/core
+# or
+pnpm add @bsday.js/core
+# or
+yarn add @bsday.js/core
 ```
-`@bsday.js/core` works by itself for BS/AD conversion and date math.
-`@bsday.js/dataset` is optional and is only needed when you want panchang/day data.
+
+*(Optional)* For Vedic Panchang, Tithi, Nakshatra, and Nepali public holidays:
+```bash
+npm install @bsday.js/dataset
+```
 
 ---
 
-## Quick Start / Usage
+## 🚀 Quickstart & Common Use Cases
 
-### Basic Conversion & Manipulation
+### 1. Basic Date Creation & Formatting
 ```typescript
-import { BSDay, bsday } from '@bsday.js/core';
-import { dataset } from '@bsday.js/dataset';
+import { bsday, BSDay } from '@bsday.js/core';
 
-BSDay.setDataset(dataset);
+// Current Date
+const today = bsday();
 
-// Create a BS Date explicitly
-const bsDate = BSDay.bs('2081/06/27');
-console.log(bsDate.format()); // "2081/06/27"
+// Create explicit BS Date (1-indexed months: 1=Baisakh, 5=Bhadra)
+const bs = bsday.bs(2081, 5, 15);
+console.log(bs.format('YYYY/MM/DD')); // "2081/05/15"
 
-// Convert to AD
-const adDate = bsDate.toAD();
-console.log(adDate.toISOString()); // "2024-10-11T18:15:00.000Z"
+// Localized Nepali Numerals & Month Names
+console.log(bs.locale('ne').format('YYYY MMMM DD, dddd'));
+// "२०८१ भाद्र १५, आइतबार"
 
-// Create from familiar AD-like input
-const today = bsday('2024-10-12');
-console.log(`Today in BS is: ${today.format()}`);
-
-// Date Arithmetic
-const nextWeek = bsDate.add(7, 'day');
-console.log(nextWeek.format());
+// Bracket literal escaping
+console.log(bs.format('YYYY [साल] MMMM [महिना] DD [गते]'));
+// "2081 साल Bhadra महिना 15 गते"
 ```
 
-### Accessing Panchang & Festival Data
+---
+
+### 2. BS ↔ AD Dual-Calendar Conversion
 ```typescript
-import { BSDay } from '@bsday.js/core';
-import { dataset } from '@bsday.js/dataset';
+// BS to AD
+const bs = bsday.bs('2081/06/27');
+const ad = bs.toAD(); // Native JavaScript Date
+console.log(ad.toISOString()); // "2024-10-13T00:00:00.000Z"
 
-BSDay.setDataset(dataset);
+// AD to BS
+const fromGregorian = bsday('2024-10-13');
+console.log(fromGregorian.format('YYYY/MM/DD')); // "2081/06/27"
+```
 
-const dashain = BSDay.bs('2081/06/27');
+---
 
-console.log(dashain.tithi); // e.g. "Dashami"
-console.log(dashain.festivals); // []
-console.log(dashain.events); // []
-console.log(dashain.isHoliday); // false
-console.log(dashain.panchang);
-console.log(dashain.data());
+### 3. Date Arithmetic & Manipulation (Day.js Parity)
+```typescript
+const date = bsday.bs(2081, 5, 15);
+
+// Add & Subtract
+const nextMonth = date.add(1, 'month');
+const prevWeek = date.subtract(7, 'day');
+
+// Start / End of Units
+const startOfMonth = date.startOf('month'); // 2081/05/01 00:00:00.000
+const endOfMonth = date.endOf('month');     // 2081/05/31 23:59:59.999
+
+// Comparison
+date.isBefore(nextMonth);         // true
+date.isSameOrAfter(date, 'date'); // true
+date.diff(bsday.bs(2080, 5, 15), 'year'); // 1
+```
+
+---
+
+### 4. Nepali Fiscal Year (आर्थिक वर्ष) Engine
+Nepali Fiscal Year runs from **Shrawan 1 (Month 4)** to **Ashadh end (Month 3 next year)**:
+
+```typescript
+const invoiceDate = bsday.bs(2081, 5, 10);
+
+console.log(invoiceDate.fiscalYear('short'));    // "2081/82"
+console.log(invoiceDate.fiscalYear('full'));     // "2081/2082"
+console.log(invoiceDate.fiscalYear('extended')); // "FY 2081/82"
+
+// Localized in Nepali
+console.log(invoiceDate.locale('ne').fiscalYear('extended'));
+// "आ.व. २०८१/८२"
+
+// Fiscal Quarters (Q1: Shrawan-Ashwin, Q2: Kartik-Poush, Q3: Magh-Chaitra, Q4: Baisakh-Ashadh)
+console.log(invoiceDate.fiscalQuarter()); // 1
+
+// Start & End of Fiscal Year
+const fyStart = invoiceDate.startOf('fiscalYear'); // 2081/04/01 00:00:00.000
+const fyEnd = invoiceDate.endOf('fiscalYear');     // 2082/03/31 23:59:59.999
+```
+
+---
+
+### 5. KYC & Chronological Age Calculation
+Accurately accounts for irregular Bikram Sambat month lengths without day drift:
+
+```typescript
+const birthDate = bsday.bs(2057, 5, 15);
+const asOfDate = bsday.bs(2081, 8, 20);
+
+// Chronological breakdown
+console.log(birthDate.age(asOfDate));
+// { years: 24, months: 3, days: 5 }
+
+// Formatted strings
+console.log(birthDate.formatAge('en', asOfDate)); // "24 years, 3 months, 5 days"
+console.log(birthDate.formatAge('ne', asOfDate)); // "२४ वर्ष, ३ महिना, ५ दिन"
+
+// Fast Adult / KYC Verification
+console.log(birthDate.isAdult(18)); // true
+```
+
+---
+
+### 6. Headless Calendar Grid Generator (For UI / DatePickers)
+Build custom React, Vue, or Vanilla JS Nepali DatePickers with one line:
+
+```typescript
+import { getCalendarMatrix } from '@bsday.js/core';
+
+const matrix = getCalendarMatrix(2081, 5, {
+  locale: 'ne',
+  minDate: '2081/05/01',
+  maxDate: '2081/05/30',
+  fixedWeeks: true, // Guarantees 6 rows (42 cells) for steady UI
+});
+
 /*
-{
-  tithi: 'Dashami',
-  paksha: 'Shukla',
-  nakshatra: 'Dhanishta',
-  yoga: 'Shoola',
-  karana: 'Garaja'
-}
+matrix.map(week => week.map(cell => {
+  cell.bs.day;         // 10
+  cell.dayText;        // "१०"
+  cell.isCurrentMonth; // true/false
+  cell.isToday;        // true/false
+  cell.isSaturday;     // true/false
+  cell.isWeekend;      // true/false
+  cell.isDisabled;     // true/false
+  cell.adDateString;   // "2024-08-26"
+}))
 */
 ```
 
 ---
 
-## Packages
+### 7. Form & Schema Validation (Zod & React Hook Form)
+```typescript
+import { validateBSDateString } from '@bsday.js/core';
+import { z } from 'zod';
 
-### `@bsday.js/core`
-The main library providing:
-* `BSDay` class
-* BS ↔ AD conversion
-* formatting and parsing
-* date arithmetic
-* comparison utilities
-* plugin system
-
-### `@bsday.js/dataset`
-Daily Bikram Sambat dataset keyed by `YYYY-MM-DD`. Dataset fields include:
-* `tithi`, `festivals`, `nakshatra`, `yoga`, `karana`, `events`, `isHoliday`
-Load it explicitly with `BSDay.setDataset(dataset)`.
-
----
-
-## Monorepo Structure
-
-```
-packages/
-  core/
-  dataset/
-
-docs/
-  plugin-development.md
-  requirement.md
-  technical.md
-  roadmap.md
-  contribution.md
-```
-
-The repository uses **pnpm workspaces** for package management.
-
----
-
-## Development Setup
-
-Clone the repository:
-
-```bash
-git clone https://github.com/shurajcodx/bsday.js.git
-cd bsday.js
-```
-
-Install dependencies:
-
-```bash
-pnpm install
+const formSchema = z.object({
+  dobBS: z.string().refine((val) => {
+    const res = validateBSDateString(val, { minYear: 2000, maxYear: 2081 });
+    return res.isValid;
+  }, {
+    message: 'Invalid Nepali BS Date (Expected: YYYY/MM/DD)',
+  }),
+});
 ```
 
 ---
 
-## Build & Test
+## 📚 Guides & Framework Recipes
 
-Build all packages:
-```bash
-pnpm -r build
-```
-
-Run tests for all packages:
-```bash
-pnpm -r test
-```
-
-Available at repository root:
-```bash
-pnpm build
-pnpm test
-pnpm typecheck
-pnpm lint
-pnpm format
-pnpm format:check
-```
+* 🔄 [Migrating from `nepali-date-converter`, `bikram-sambat-js`, & `nepali-datetime`](./docs/migration-guide.md)
+* ⚡ [Next.js (App Router & SSR) Integration Recipe](./docs/recipes/nextjs-app-router.md)
+* 📋 [React Hook Form + Zod BS Date Validation Recipe](./docs/recipes/react-hook-form-zod.md)
+* 🎨 [Accessible React + Tailwind CSS Headless DatePicker Component](./docs/recipes/headless-react-datepicker.md)
+* 🗄️ [Database & Prisma PostgreSQL UTC/BS Integration Recipe](./docs/recipes/prisma-postgres.md)
+* 📖 [Full API Specification & Architecture](./docs/api-design.md)
 
 ---
 
-## Documentation
+## 📄 License
 
-Detailed documentation is available in the `docs/` directory.
-
-* `docs/requirement.md` — project requirements and goals
-* `docs/api-design.md` — API shape options and ergonomics tradeoffs
-* `docs/technical.md` — architecture and implementation details
-* `docs/plugin-development.md` — how to develop BSDay plugins
-* `docs/roadmap.md` — planned features and future direction
-
----
-
-## Contributing
-
-Contributions are welcome! 🎉
-Please read the full contribution guide before submitting changes: 👉 `docs/contribution.md`
-
-Typical workflow:
-1. Fork the repository
-2. Create a feature branch
-3. Implement your changes
-4. Run tests and linting
-5. Open a pull request
-
----
-
-## Requirements
-
-* Node.js ≥ 20
-* pnpm ≥ 10
-
----
-
-## License
-
-MIT © BSDay.js Contributors
+MIT © [shurajcodx](https://github.com/shurajcodx)

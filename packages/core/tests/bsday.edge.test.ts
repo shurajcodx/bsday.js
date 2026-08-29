@@ -104,11 +104,12 @@ describe('BSDay Edge Cases', () => {
         const d2 = new BSDay({ year: 2081, month: 1, day: 2 });
         // Correct difference is 2 days (31st doesn't exist in 2080 month 12)
         expect(d2.diff(d1, 'day')).toBe(2);
-        expect(d2.diff(d1, 'month')).toBeCloseTo(2 / 30, 6);
-        expect(d2.diff(d1, 'month', false)).toBe(0);
-        expect(d2.diff(d1, 'year')).toBeCloseTo(2 / 365, 6);
-        expect(d2.diff(d1, 'year', false)).toBe(0);
+        expect(d2.diff(d1, 'month')).toBe(0);
+        expect(d2.diff(d1, 'month', true)).toBeCloseTo(2 / 30, 6);
+        expect(d2.diff(d1, 'year')).toBe(0);
+        expect(d2.diff(d1, 'year', true)).toBeCloseTo(2 / 365, 6);
     });
+
 
     it('dataset missing entries', () => {
         const d = new BSDay({ year: 3000, month: 1, day: 1 });

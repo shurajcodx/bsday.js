@@ -149,7 +149,12 @@ function formatRelative(
 
   if (withoutSuffix) return result;
 
+  if (locale === 'ne' && seconds < 15) {
+    return 'भर्खरै';
+  }
+
   const past = diffMs < 0;
   const suffixKey: 'future' | 'past' = isTo ? (past ? 'future' : 'past') : (past ? 'past' : 'future');
   return loc[suffixKey].replace('%s', result);
 }
+

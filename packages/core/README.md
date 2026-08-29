@@ -2,194 +2,103 @@
 
 Core library for working with **Bikram Sambat (BS)** and **Gregorian (AD)** dates in JavaScript and TypeScript.
 
-`@bsday.js/core` provides utilities for creating, converting, formatting, and manipulating BS dates while keeping full compatibility with the JavaScript `Date` object.
+`@bsday.js/core` provides ultra-fast, zero-bloat (< 5KB) dual-calendar operations with **Day.js syntax parity**, **Nepali Fiscal Year engine**, **KYC chronological age calculation**, **headless calendar grid generation**, and **Zod/Form validation**.
 
-## Features
-
-* 📅 **Accurate BS ↔ AD date conversion**
-* ⚡ Lightweight and fast
-* 🔒 Immutable date instances
-* 🔢 **Formatting and parsing** routines
-* ➕ **Date arithmetic** (add, subtract days/months/years)
-* 🔍 **Date comparisons** (isBefore, isAfter, isSame)
-* 🪔 Embedded **Panchang capability** (Tithi, Nakshatra, Yoga, Karana)
-* 🧩 Plugin system for extensibility
-* 💻 Works in Node.js and browsers
+---
 
 ## Installation
 
 ```bash
+npm install @bsday.js/core
+# or
 pnpm add @bsday.js/core
+# or
+yarn add @bsday.js/core
 ```
 
-## Quick Start
+---
 
+## Features & Quick Reference
+
+### 1. Dual-Calendar Creation & Conversion
 ```typescript
-import { BSDay, bsday } from '@bsday.js/core';
-import { dataset } from '@bsday.js/dataset';
+import { bsday, BSDay } from '@bsday.js/core';
 
-BSDay.setDataset(dataset);
+// Current time
+const now = bsday();
 
-// Create a BSDay from AD-like input
-const today = bsday('2024-10-12');
-console.log(`Today in BS is: ${today.format()}`);
+// Explicit BS date (1-indexed months: 1=Baisakh, 5=Bhadra)
+const bs = bsday.bs(2081, 5, 15);
+const ad = bs.toAD(); // Native JavaScript Date
+console.log(bs.format('YYYY/MM/DD')); // "2081/05/15"
 
-// Create a BS date explicitly
-const dashain = BSDay.bs('2081/06/27');
-
-// Convert BS to AD
-console.log(dashain.toAD().toISOString()); // "2024-10-11T18:15:00.000Z"
-
-// Format the date
-console.log(dashain.format()); // "2081/06/27"
-
-// Access Panchang data
-console.log(dashain.tithi); // e.g. "Dashami"
-console.log(dashain.festivals); // []
-console.log(dashain.events); // []
-console.log(dashain.isHoliday); // false
-console.log(dashain.panchang);
-console.log(dashain.data());
-/*
-{
-  tithi: 'Dashami',
-  paksha: 'Shukla',
-  nakshatra: 'Dhanishta',
-  yoga: 'Shoola',
-  karana: 'Garaja'
-}
-*/
+// Explicit AD date
+const fromAd = bsday('2024-08-30');
+console.log(fromAd.format('YYYY/MM/DD')); // "2081/05/14"
 ```
 
-## Creating Dates
-
-Create BSDay instances from AD-like input, explicit BS input, or parsing.
-
+### 2. Day.js Compatible Date Arithmetic & Comparison
 ```typescript
-import { BSDay } from '@bsday.js/core';
+const d = bsday.bs(2081, 5, 15);
 
-// Current AD time as a JS Date
-const nowAd = BSDay.nowAD();
+// Arithmetic
+d.add(1, 'month');
+d.subtract(7, 'day');
+d.startOf('month'); // 2081/05/01 00:00:00.000
+d.endOf('month');   // 2081/05/31 23:59:59.999
 
-// From AD Date
-const fromAd = BSDay.fromAD(new Date('2024-10-12'));
-
-// From an explicit BS string
-const fromBs = BSDay.bs('2081/06/27');
-
-// From explicit BS numbers
-const fromBsNumbers = BSDay.bs(2081, 6, 27);
-
-// Parse string
-const parsed = BSDay.parse('2081/06/26', 'YYYY/MM/DD', 'bs');
+// Comparison
+d.isBefore(other);
+d.isSameOrAfter(other, 'day');
+d.diff(other, 'year');
 ```
 
-The constructor remains useful for familiar AD-style input:
-
+### 3. Nepali Fiscal Year (आर्थिक वर्ष)
 ```typescript
-new BSDay()
-new BSDay(new Date())
-new BSDay('2024-10-12')
+const date = bsday.bs(2081, 5, 10);
+
+date.fiscalYear('short');    // "2081/82"
+date.fiscalYear('full');     // "2081/2082"
+date.fiscalYear('extended'); // "FY 2081/82"
+date.locale('ne').fiscalYear('extended'); // "आ.व. २०८१/८२"
+
+date.fiscalQuarter(); // 1 (Q1: Shrawan-Ashwin)
+date.startOf('fiscalYear'); // 2081/04/01 00:00:00.000
+date.endOf('fiscalYear');   // 2082/03/31 23:59:59.999
 ```
 
-Slash-delimited BS strings such as `2081/06/27` are intentionally reserved for `BSDay.bs(...)` and `bsday.bs(...)` so calendar intent stays explicit.
-
-## Formatting
-
-Format dates easily in both BS or AD calendars.
-
+### 4. KYC & Chronological Age Calculation
 ```typescript
-const d = BSDay.bs('2081/06/27');
+const birth = bsday.bs(2057, 5, 15);
 
-d.format();                              // 2081/06/27
-d.format('YYYY/MM/DD', 'bs');            // 2081/06/27
-d.format('DD-MM-YYYY', 'ad');            // 12-10-2024
-d.locale('ne').format('YYYY MMMM DD');   // २०८१ असोज २७
+birth.age(); // { years: 24, months: 3, days: 5 }
+birth.formatAge('en'); // "24 years, 3 months, 5 days"
+birth.formatAge('ne'); // "२४ वर्ष, ३ महिना, ५ दिन"
+birth.isAdult(18);     // true
 ```
 
-## Date Arithmetic
-
-Add or subtract units from the date. Dates are immutable, so all methods return a new instance.
-
+### 5. Headless Calendar Grid Generator
 ```typescript
-const a = BSDay.bs('2081/01/01');
+import { getCalendarMatrix } from '@bsday.js/core';
 
-const b = a.add(10, 'day');
-const c = a.add(1, 'month');
-const d = b.subtract(1, 'year');
+const matrix = getCalendarMatrix(2081, 5, {
+  locale: 'ne',
+  minDate: '2081/05/01',
+  maxDate: '2081/05/30',
+  fixedWeeks: true,
+});
 ```
 
-## Date Comparison
-
-Compare BSDay instances easily.
-
+### 6. Form & Zod Validation Helper
 ```typescript
-const a = BSDay.bs('2081/01/01');
-const b = BSDay.bs('2081/01/10');
+import { validateBSDateString } from '@bsday.js/core';
 
-a.isBefore(b); // true
-b.isAfter(a);  // true
-a.isSame(b);   // false
+const res = validateBSDateString('2081/05/10', { minYear: 2000, maxYear: 2081 });
+console.log(res.isValid); // true
 ```
 
-## Plugin System
-
-BSDay can be extended with custom formatting tokens and methods using plugins.
-
-```typescript
-interface BSDayPlugin {
-  name: string;
-  initialize(bsday: typeof BSDay): void;
-}
-
-const MyPlugin = {
-  name: 'my-plugin',
-  initialize(BSDayClass) {
-    BSDayClass.prototype.hello = function () {
-      return 'Hello BSDay';
-    };
-  }
-};
-
-BSDay.use(MyPlugin);
-```
-
-## API Reference
-
-### Static Methods
-
-| Method                                 | Description                             |
-| -------------------------------------- | --------------------------------------- |
-| `BSDay.now()`                          | Returns the current Unix timestamp      |
-| `BSDay.nowAD()`                        | Get current AD date as a JS `Date`      |
-| `BSDay.nowBS(format?)`                 | Get current BS date as formatted string |
-| `BSDay.bs(input)` / `BSDay.bs(y, m, d)`| Create instance from explicit BS input  |
-| `BSDay.fromAD(date)`                   | Create instance from an AD Date         |
-| `BSDay.fromBS(value)`                  | Compatibility alias for BS creation     |
-| `BSDay.parse(value, format, calendar)` | Parse a formatted string                |
-| `BSDay.setDataset(dataset)`            | Register optional panchang/day data     |
-| `BSDay.use(plugin)`                    | Register a plugin                       |
-
-### Instance Methods
-
-| Method                          | Description                               |
-| ------------------------------- | ----------------------------------------- |
-| `toAD()`                        | Returns the equivalent JS Date            |
-| `toBS()`                        | Returns `{ year, month, day }` object     |
-| `format(formatStr, calendar?)`  | Returns formatted string representation   |
-| `add(value, unit)` / `subtract(value, unit)` | Date arithmetic                |
-| `setYear(n)` / `setMonth(n)` / `setDay(n)` | Set an individual date part    |
-| `isBefore(date)`                | Check if date is before another           |
-| `isAfter(date)`                 | Check if date is after another            |
-| `isSame(date)`                  | Check if dates are exactly equal          |
-| `isLeapYear()`                  | Returns true if current year is leap year |
-| `tithi`                         | Optional tithi getter from dataset        |
-| `festivals`                     | Optional festivals getter from dataset    |
-| `events`                        | Optional events getter from dataset       |
-| `isHoliday`                     | Optional holiday flag from dataset        |
-| `panchang`                      | Optional panchang getter from dataset     |
-| `data()`                        | Returns the current registered day record |
+---
 
 ## License
 
-MIT © BSDay.js Contributors
+MIT © [shurajcodx](https://github.com/shurajcodx)

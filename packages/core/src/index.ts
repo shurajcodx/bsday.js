@@ -1,13 +1,18 @@
 import { BSDay } from './core/BSDay';
 import { relativeTimePlugin } from './plugins/relativeTime';
+import { fiscalYearPlugin } from './plugins/fiscalYear';
+import { getCalendarMatrix } from './calendar/calendarGrid';
 import { pluginSystem } from './core/pluginSystem';
 import type { BSDayInput, BSDate, BSDayFactoryLike, BSDayPlugin } from './types';
+
 
 export { BSDay };
 
 export interface BSDayFactory extends BSDayFactoryLike {
   bsday: BSDayFactory;
   relativeTimePlugin: typeof relativeTimePlugin;
+  fiscalYearPlugin: typeof fiscalYearPlugin;
+  getCalendarMatrix: typeof getCalendarMatrix;
 }
 
 const bsdayFactory = ((input?: BSDayInput) => new BSDay(input)) as BSDayFactory;
@@ -31,21 +36,56 @@ bsdayFactory.extend = (plugin: BSDayPlugin, options?: unknown) =>
 bsdayFactory.BSDay = BSDay;
 bsdayFactory.bsday = bsdayFactory;
 bsdayFactory.relativeTimePlugin = relativeTimePlugin;
+bsdayFactory.fiscalYearPlugin = fiscalYearPlugin;
+bsdayFactory.getCalendarMatrix = getCalendarMatrix;
 
 export const bsday = bsdayFactory;
 
 export default bsday;
 
-export { relativeTimePlugin };
+export { relativeTimePlugin, fiscalYearPlugin };
+export {
+  isValidBSDate,
+  isValidADDate,
+  isLeapYear,
+  validateBSDateString,
+  type BSDateValidationOptions,
+  type BSDateValidationResult,
+} from './utils/validation';
+
+export {
+  getCalendarMatrix,
+  type CalendarCell,
+  type CalendarMatrixOptions,
+} from './calendar/calendarGrid';
+
+export {
+  isDateInRange,
+  isDateDisabled,
+  getDateRange,
+  getMonthNames,
+  getWeekdayNames,
+  MONTH_NAMES,
+  WEEKDAY_NAMES,
+  type DateDisabledOptions,
+} from './calendar/range';
+
 export type {
+  BSAge,
   BSDate,
   BSDayFactoryLike,
   BSDayData,
   BSDayInput,
   BSDayInputBS,
+  BSDayObject,
   BSDayPlugin,
   BSDayPluginHost,
   CalendarType,
+  DateUnit,
+  FiscalYearFormat,
   FormatTokenResolver,
   LocaleType,
 } from './types';
+
+
+

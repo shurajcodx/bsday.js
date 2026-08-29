@@ -12,6 +12,15 @@ export const datasetManager = {
     datasetStore = dataset;
   },
 
+  addDataset(dataset: Record<string, BSDayData>): void {
+    datasetStore = { ...datasetStore, ...dataset };
+  },
+
+  registerYear(year: number, dataset: Record<string, BSDayData>): void {
+    datasetStore = { ...datasetStore, ...dataset };
+  },
+
+
   lookupEntry(bs: BSDate): BSDayData | null {
     const strictKey = buildBsKey(bs);
     const strict = datasetStore[strictKey];
