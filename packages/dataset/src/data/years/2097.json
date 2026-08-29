@@ -1,0 +1,3924 @@
+{
+  "2097-01-01": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Ayushman",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "Nepali New Year / Biska Jatra"
+    ],
+    "isHoliday": true
+  },
+  "2097-01-02": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Saubhagya",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-03": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Shobhana",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-04": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Atiganda",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-05": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Sukarma",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "International Day for Monuments and Sites"
+    ],
+    "isHoliday": false
+  },
+  "2097-01-06": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Dhriti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-07": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Shoola",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-08": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Ganda",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-09": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Vriddhi",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "Earth Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-01-10": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Dhruva",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Book Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-01-11": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Vyaghata",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "Loktantra Diwas"
+    ],
+    "isHoliday": false
+  },
+  "2097-01-12": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Harsha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World Malaria Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-01-13": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Vajra",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-14": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Siddhi",
+    "karana": "Bava",
+    "festivals": [
+      "Buddha Jayanti / Ubhauli Parva"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-01-15": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Vyatipata",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-16": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Variyana",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-17": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Parigha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-18": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Siddha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "International Labour Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-01-19": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Sadhya",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-20": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Shubha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "World Press Freedom Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-01-21": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Shukla",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-22": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Brahma",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-23": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Indra",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-24": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Vaidhriti",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-25": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Vishkumbha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World Red Cross Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-01-26": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Priti",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-27": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Ayushman",
+    "karana": "Shakuni",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-28": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Saubhagya",
+    "karana": "Naga",
+    "festivals": [
+      "Matatirtha Aunsi (Mothers' Day)"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-29": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Shobhana",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "International Nurses Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-01-30": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Atiganda",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-01-31": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Sukarma",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-01": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Dhriti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "International Day of Families"
+    ],
+    "isHoliday": false
+  },
+  "2097-02-02": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Shoola",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-03": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Ganda",
+    "karana": "Kaulava",
+    "festivals": [
+      "Sithi Nakha"
+    ],
+    "events": [
+      "World Telecommunication Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-02-04": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Vriddhi",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-05": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Dhruva",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-06": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Vyaghata",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-07": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Harsha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World Day for Cultural Diversity"
+    ],
+    "isHoliday": false
+  },
+  "2097-02-08": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Vajra",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-09": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Siddhi",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-10": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Vyatipata",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-11": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Parigha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-12": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Shiva",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-13": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Siddha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-14": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Sadhya",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-15": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Shubha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "Republic Day (Ganatantra Diwas)"
+    ],
+    "isHoliday": true
+  },
+  "2097-02-16": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Shukla",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-17": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Indra",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "World No Tobacco Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-02-18": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Vaidhriti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "Global Day of Parents"
+    ],
+    "isHoliday": false
+  },
+  "2097-02-19": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Vishkumbha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-20": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Priti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "World Bicycle Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-02-21": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Ayushman",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-22": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Saubhagya",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "World Environment Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-02-23": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Shobhana",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-24": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Atiganda",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-25": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Sukarma",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Oceans Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-02-26": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Dhriti",
+    "karana": "Chatushpada",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-27": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Shoola",
+    "karana": "Kimstughna",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-28": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Ganda",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-29": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Vriddhi",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World Day Against Child Labour"
+    ],
+    "isHoliday": false
+  },
+  "2097-02-30": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Dhruva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-02-31": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Vyaghata",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Blood Donor Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-03-01": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Harsha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-02": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Vajra",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-03": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Siddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-04": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Vyatipata",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-05": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Variyana",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-06": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Parigha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "World Refugee Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-03-07": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Shiva",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "International Day of Yoga"
+    ],
+    "isHoliday": false
+  },
+  "2097-03-08": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Siddha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-09": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Sadhya",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-10": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Shukla",
+    "karana": "Vishti",
+    "festivals": [
+      "Guru Purnima"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-11": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Brahma",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-12": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Indra",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "International Day Against Drug Abuse"
+    ],
+    "isHoliday": false
+  },
+  "2097-03-13": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Vaidhriti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-14": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Vishkumbha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-15": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Ayushman",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "Rastriya Dhan Diwas"
+    ],
+    "isHoliday": false
+  },
+  "2097-03-16": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Saubhagya",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-17": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Shobhana",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-18": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Atiganda",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-19": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Sukarma",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-20": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Dhriti",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-21": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Shoola",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-22": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Ganda",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-23": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Vriddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-24": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Dhruva",
+    "karana": "Shakuni",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-25": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Vyaghata",
+    "karana": "Naga",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-26": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Harsha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-27": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Vajra",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "World Population Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-03-28": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Siddhi",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-29": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Vyatipata",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-30": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Variyana",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-03-31": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Parigha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-01": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Shiva",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "Shrawan Sankranti / Luto Falne Din"
+    ],
+    "isHoliday": false
+  },
+  "2097-04-02": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Siddha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-03": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Sadhya",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "Nelson Mandela International Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-04-04": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Shubha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-05": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Shukla",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-06": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Brahma",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-07": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Indra",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-08": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Vaidhriti",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-09": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Priti",
+    "karana": "Bava",
+    "festivals": [
+      "Raksha Bandhan / Janai Purnima / Kwati Khane Din / Rishi Tarpani / Sanskrit Diwas"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-10": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Ayushman",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-11": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Saubhagya",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-12": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Shobhana",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-13": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Atiganda",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World Hepatitis Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-04-14": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Sukarma",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-15": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Shoola",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "International Day of Friendship",
+      "Kheer Khane Din"
+    ],
+    "isHoliday": false
+  },
+  "2097-04-16": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Ganda",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-17": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Vriddhi",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-18": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Dhruva",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-19": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Vyaghata",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-20": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Vyaghata",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-21": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Harsha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-22": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Vajra",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-23": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Siddhi",
+    "karana": "Chatushpada",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-24": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Vyatipata",
+    "karana": "Kimstughna",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-25": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Variyana",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "International Day of the World's Indigenous Peoples"
+    ],
+    "isHoliday": false
+  },
+  "2097-04-26": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Parigha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-27": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Shiva",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-28": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Siddha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "International Youth Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-04-29": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Sadhya",
+    "karana": "Balava",
+    "festivals": [
+      "Nag Panchami"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-30": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Shubha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-31": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Shukla",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-04-32": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Brahma",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-01": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Vaidhriti",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "Bhadra Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "2097-05-02": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Vishkumbha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-03": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Priti",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "World Humanitarian Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-05-04": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Ayushman",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-05": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Saubhagya",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-06": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Shobhana",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-07": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Sukarma",
+    "karana": "Kaulava",
+    "festivals": [
+      "Gai Jatra"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-05-08": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Dhriti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-09": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Shoola",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-10": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Ganda",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-11": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Vriddhi",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-12": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Dhruva",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-13": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Vyaghata",
+    "karana": "Balava",
+    "festivals": [
+      "Krishna Janmashtami / Gaura Parva"
+    ],
+    "events": [
+      "International Day Against Nuclear Tests"
+    ],
+    "isHoliday": true
+  },
+  "2097-05-14": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Harsha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-15": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Vajra",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-16": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Siddhi",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-17": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Vyatipata",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-18": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Variyana",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-19": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Parigha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-20": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Shiva",
+    "karana": "Shakuni",
+    "festivals": [],
+    "events": [
+      "International Day of Charity"
+    ],
+    "isHoliday": false
+  },
+  "2097-05-21": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Siddha",
+    "karana": "Chatushpada",
+    "festivals": [
+      "Kushe Aunsi (Fathers' Day)"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-22": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Sadhya",
+    "karana": "Kimstughna",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-23": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Shubha",
+    "karana": "Balava",
+    "festivals": [
+      "Dar Khane Din"
+    ],
+    "events": [
+      "International Literacy Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-05-24": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Shukla",
+    "karana": "Taitila",
+    "festivals": [
+      "Haritalika Teej"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-05-25": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Brahma",
+    "karana": "Vanija",
+    "festivals": [
+      "Ganesh Chaturthi"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-26": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Indra",
+    "karana": "Bava",
+    "festivals": [
+      "Rishi Panchami"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-05-27": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Vaidhriti",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-28": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Vishkumbha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-29": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Priti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-05-30": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Ayushman",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "International Day of Democracy"
+    ],
+    "isHoliday": false
+  },
+  "2097-05-31": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Shobhana",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "World Ozone Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-06-01": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Atiganda",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "Ashwin Sankranti / Bishwakarma Puja"
+    ],
+    "isHoliday": false
+  },
+  "2097-06-02": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Sukarma",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-03": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Dhriti",
+    "karana": "Garaja",
+    "festivals": [
+      "Indra Jatra / Ananta Chaturdashi"
+    ],
+    "events": [
+      "Constitution Day (Sambidhan Diwas)"
+    ],
+    "isHoliday": true
+  },
+  "2097-06-04": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Shoola",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-05": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Ganda",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "International Day of Peace"
+    ],
+    "isHoliday": false
+  },
+  "2097-06-06": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Dhruva",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-07": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Vyaghata",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-08": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Harsha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-09": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Vajra",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-10": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Siddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-11": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Vyatipata",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Tourism Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-06-12": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Variyana",
+    "karana": "Balava",
+    "festivals": [
+      "Jitiya Parva"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-06-13": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Parigha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-14": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Shiva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-15": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Siddha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "International Day of Older Persons"
+    ],
+    "isHoliday": false
+  },
+  "2097-06-16": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Sadhya",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-17": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Shubha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-18": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Shukla",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-19": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Brahma",
+    "karana": "Shakuni",
+    "festivals": [],
+    "events": [
+      "World Teachers Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-06-20": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Indra",
+    "karana": "Naga",
+    "festivals": [
+      "Sohra Shraddha Samapti (Mahalaya)"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-21": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Vaidhriti",
+    "karana": "Bava",
+    "festivals": [
+      "Ghatasthapana"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-06-22": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Vishkumbha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-06-23": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Priti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "World Post Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-06-24": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Ayushman",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Mental Health Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-06-25": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Saubhagya",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "International Day of the Girl Child"
+    ],
+    "isHoliday": false
+  },
+  "2097-06-26": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Shobhana",
+    "karana": "Garaja",
+    "festivals": [
+      "Fulpati"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-06-27": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Atiganda",
+    "karana": "Vishti",
+    "festivals": [
+      "Maha Ashtami"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-06-28": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Dhriti",
+    "karana": "Balava",
+    "festivals": [
+      "Maha Navami"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-06-29": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Shoola",
+    "karana": "Taitila",
+    "festivals": [
+      "Vijaya Dashami"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-06-30": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Ganda",
+    "karana": "Vishti",
+    "festivals": [
+      "Papankusha Ekadashi"
+    ],
+    "events": [
+      "World Food Day"
+    ],
+    "isHoliday": true
+  },
+  "2097-06-31": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Vriddhi",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "Dashain Holiday"
+    ],
+    "isHoliday": true
+  },
+  "2097-07-01": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Dhruva",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "Kartik Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "2097-07-02": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Vyaghata",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-03": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Harsha",
+    "karana": "Bava",
+    "festivals": [
+      "Kojagrat Purnima"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-07-04": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Vajra",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-05": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Siddhi",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-06": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Variyana",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-07": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Parigha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "United Nations Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-07-08": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Shiva",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-09": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Shiva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-10": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Siddha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-11": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Sadhya",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-12": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Shubha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-13": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Shukla",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-14": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Brahma",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "Halloween"
+    ],
+    "isHoliday": false
+  },
+  "2097-07-15": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Indra",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-16": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Vaidhriti",
+    "karana": "Garaja",
+    "festivals": [
+      "Kag Tihar"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-17": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Vishkumbha",
+    "karana": "Vishti",
+    "festivals": [
+      "Kukur Tihar"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-18": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Ayushman",
+    "karana": "Chatushpada",
+    "festivals": [
+      "Laxmi Puja"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-07-19": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Saubhagya",
+    "karana": "Kimstughna",
+    "festivals": [
+      "Govardhan Puja / Mha Puja / Gai Puja"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-07-20": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Shobhana",
+    "karana": "Balava",
+    "festivals": [
+      "Bhai Tika"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-07-21": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Atiganda",
+    "karana": "Taitila",
+    "festivals": [
+      "Tihar Holiday"
+    ],
+    "events": [
+      "Tihar Holiday"
+    ],
+    "isHoliday": true
+  },
+  "2097-07-22": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Sukarma",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-23": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Dhriti",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-24": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Shoola",
+    "karana": "Taitila",
+    "festivals": [
+      "Chhath Puja"
+    ],
+    "events": [
+      "World Science Day for Peace and Development"
+    ],
+    "isHoliday": true
+  },
+  "2097-07-25": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Ganda",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-26": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Dhruva",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-27": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Vyaghata",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-07-28": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Harsha",
+    "karana": "Vanija",
+    "festivals": [
+      "Haribodhini Ekadashi / Tulsi Bibaha"
+    ],
+    "events": [
+      "World Diabetes Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-07-29": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Vajra",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-01": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Siddhi",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "International Day for Tolerance",
+      "Mangsir Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "2097-08-02": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Vyatipata",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-03": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Variyana",
+    "karana": "Vishti",
+    "festivals": [
+      "Udhauli Parva / Yomari Punhi"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-04": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Parigha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "World Toilet Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-08-05": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Shiva",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "Universal Children's Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-08-06": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Siddha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-07": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Sadhya",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-08": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Shubha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-09": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Shukla",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-10": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Brahma",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Day for the Elimination of Violence Against Women"
+    ],
+    "isHoliday": false
+  },
+  "2097-08-11": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Indra",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-12": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Vaidhriti",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-13": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Vishkumbha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-14": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Priti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-15": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Ayushman",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-16": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Saubhagya",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World AIDS Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-08-17": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Shobhana",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-18": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Atiganda",
+    "karana": "Shakuni",
+    "festivals": [
+      "Bala Chaturdashi"
+    ],
+    "events": [
+      "International Day of Persons with Disabilities"
+    ],
+    "isHoliday": false
+  },
+  "2097-08-19": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Sukarma",
+    "karana": "Naga",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-20": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Shoola",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "International Volunteer Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-08-21": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Ganda",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-22": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Vriddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-23": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Dhruva",
+    "karana": "Bava",
+    "festivals": [
+      "Bibaha Panchami"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-24": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Vyaghata",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-25": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Vajra",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "Human Rights Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-08-26": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Siddhi",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-27": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Vyatipata",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-28": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Variyana",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-29": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Parigha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-08-30": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Shiva",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-01": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Siddha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "Poush Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "2097-09-02": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Sadhya",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-03": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Shubha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "International Migrants Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-09-04": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Shukla",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-05": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Brahma",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-06": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Indra",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-07": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Vaidhriti",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-08": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Vishkumbha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-09": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Priti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-10": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Ayushman",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "Christmas Day"
+    ],
+    "isHoliday": true
+  },
+  "2097-09-11": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Saubhagya",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-12": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Shobhana",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-13": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Atiganda",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-14": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Sukarma",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-15": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Dhriti",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "Tamu Lhosar"
+    ],
+    "isHoliday": true
+  },
+  "2097-09-16": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Shoola",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-17": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Ganda",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "New Year's Day",
+      "Global Family Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-09-18": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Vriddhi",
+    "karana": "Chatushpada",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-19": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Vyaghata",
+    "karana": "Kimstughna",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-20": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Harsha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "World Braille Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-09-21": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Vajra",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-22": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Siddhi",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-23": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Vyatipata",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-24": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Parigha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-25": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Shiva",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-26": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Siddha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-27": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Sadhya",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "National Unity Day (Prithvi Jayanti)"
+    ],
+    "isHoliday": true
+  },
+  "2097-09-28": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Shubha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-29": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Shukla",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-09-30": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Brahma",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-01": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Indra",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "Maghe Sankranti / Maghi Parva"
+    ],
+    "isHoliday": true
+  },
+  "2097-10-02": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Vaidhriti",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-03": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Vishkumbha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-04": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Priti",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-05": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Ayushman",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-06": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Saubhagya",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-07": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Shobhana",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-08": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Atiganda",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-09": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Sukarma",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-10": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Dhriti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "International Day of Education"
+    ],
+    "isHoliday": false
+  },
+  "2097-10-11": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Shoola",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-12": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Ganda",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-13": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Vriddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Holocaust Remembrance Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-10-14": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Dhruva",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-15": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Vyaghata",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-16": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Harsha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "Martyrs' Day (Shahid Diwas)"
+    ],
+    "isHoliday": false
+  },
+  "2097-10-17": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Vajra",
+    "karana": "Shakuni",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-18": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Vyatipata",
+    "karana": "Naga",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-19": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Variyana",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "World Wetlands Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-10-20": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Parigha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-21": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Shiva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "World Cancer Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-10-22": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Siddha",
+    "karana": "Bava",
+    "festivals": [
+      "Basanta Panchami / Saraswati Puja"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-10-23": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Sadhya",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-24": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Shukla",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-25": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Brahma",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-26": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Indra",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-27": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Vaidhriti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-10-28": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Vishkumbha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Day of Women and Girls in Science"
+    ],
+    "isHoliday": false
+  },
+  "2097-10-29": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Priti",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-01": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Ayushman",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "World Radio Day",
+      "Falgun Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "2097-11-02": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Saubhagya",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "Valentine's Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-11-03": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Shobhana",
+    "karana": "Vishti",
+    "festivals": [
+      "Holi / Phagu Purnima (Hilly)"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-11-04": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Shobhana",
+    "karana": "Bava",
+    "festivals": [
+      "Holi / Phagu Purnima (Terai)"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-11-05": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Atiganda",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-06": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Sukarma",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-07": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Dhriti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "National Democracy Day (Prajatantra Diwas)"
+    ],
+    "isHoliday": true
+  },
+  "2097-11-08": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Shoola",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "World Day of Social Justice"
+    ],
+    "isHoliday": false
+  },
+  "2097-11-09": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Ganda",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "International Mother Language Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-11-10": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Vriddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-11": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Dhruva",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-12": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Harsha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-13": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Vajra",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-14": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Siddhi",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-15": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Vyatipata",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-16": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Variyana",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-17": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Parigha",
+    "karana": "Vishti",
+    "festivals": [
+      "Maha Shivaratri"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "2097-11-18": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Siddha",
+    "karana": "Chatushpada",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-19": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Sadhya",
+    "karana": "Bava",
+    "festivals": [
+      "Gyalpo Lhosar"
+    ],
+    "events": [
+      "World Wildlife Day"
+    ],
+    "isHoliday": true
+  },
+  "2097-11-20": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Shubha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-21": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Shukla",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-22": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Brahma",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-23": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Indra",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-24": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Vaidhriti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "International Women's Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-11-25": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Vishkumbha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-26": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Priti",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-27": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Ayushman",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-28": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Saubhagya",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-29": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Shobhana",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-11-30": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Atiganda",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-01": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Sukarma",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "Chaitra Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "2097-12-02": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Dhriti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-03": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Shoola",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-04": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Ganda",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-05": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Vriddhi",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-06": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Dhruva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Day of Happiness"
+    ],
+    "isHoliday": false
+  },
+  "2097-12-07": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Vyaghata",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "International Day of Forests"
+    ],
+    "isHoliday": false
+  },
+  "2097-12-08": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Harsha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "World Water Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-12-09": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Vajra",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "World Meteorological Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-12-10": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Siddhi",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Tuberculosis Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-12-11": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Vyatipata",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-12": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Parigha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-13": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Shiva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-14": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Siddha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-15": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Sadhya",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-16": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Shubha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-17": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Shukla",
+    "karana": "Shakuni",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-18": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Indra",
+    "karana": "Kimstughna",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-19": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Vaidhriti",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "World Autism Awareness Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-12-20": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Vishkumbha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-21": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Priti",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-22": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Ayushman",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-23": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Saubhagya",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-24": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Shobhana",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "World Health Day"
+    ],
+    "isHoliday": false
+  },
+  "2097-12-25": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Atiganda",
+    "karana": "Vishti",
+    "festivals": [
+      "Chaite Dashain"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-26": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Sukarma",
+    "karana": "Balava",
+    "festivals": [
+      "Ram Navami"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-27": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Dhriti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-28": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Shoola",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-29": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Ganda",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2097-12-30": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Vriddhi",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  }
+}

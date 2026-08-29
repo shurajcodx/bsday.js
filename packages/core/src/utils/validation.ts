@@ -53,7 +53,7 @@ export function validateBSDateString(
     return { isValid: false, error: 'Date string is required' };
   }
 
-  const match = input.trim().match(/^(\d{4})[\/-](\d{1,2})[\/-](\d{1,2})$/);
+  const match = input.trim().match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})$/);
   if (!match) {
     return { isValid: false, error: 'Invalid date format. Expected YYYY/MM/DD or YYYY-MM-DD' };
   }
@@ -92,4 +92,3 @@ export function validateBSDateString(
 
   return { isValid: true, bs: { year, month, day } };
 }
-

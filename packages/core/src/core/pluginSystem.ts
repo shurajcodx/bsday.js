@@ -16,11 +16,21 @@ export const pluginSystem = {
     formatTokenRegistry[token] = resolver;
   },
 
-  use(plugin: BSDayPlugin, host: BSDayPluginHost, factory?: BSDayFactoryLike, options?: unknown): void {
+  use(
+    plugin: BSDayPlugin,
+    host: BSDayPluginHost,
+    factory?: BSDayFactoryLike,
+    options?: unknown,
+  ): void {
     pluginManager.use(plugin, host, factory, options);
   },
 
-  extend(plugin: BSDayPlugin, host: BSDayPluginHost, factory?: BSDayFactoryLike, options?: unknown): void {
+  extend(
+    plugin: BSDayPlugin,
+    host: BSDayPluginHost,
+    factory?: BSDayFactoryLike,
+    options?: unknown,
+  ): void {
     this.use(plugin, host, factory, options);
   },
 };

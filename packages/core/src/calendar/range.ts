@@ -4,23 +4,37 @@ import type { BSDayInput, LocaleType } from '../types';
 export const MONTH_NAMES = {
   en: {
     long: [
-      'Baisakh', 'Jestha', 'Ashadh', 'Shrawan', 'Bhadra', 'Ashwin',
-      'Kartik', 'Mangsir', 'Poush', 'Magh', 'Falgun', 'Chaitra',
+      'Baisakh',
+      'Jestha',
+      'Ashadh',
+      'Shrawan',
+      'Bhadra',
+      'Ashwin',
+      'Kartik',
+      'Mangsir',
+      'Poush',
+      'Magh',
+      'Falgun',
+      'Chaitra',
     ],
-    short: [
-      'Bai', 'Jes', 'Ash', 'Shr', 'Bha', 'Ashw',
-      'Kar', 'Man', 'Pou', 'Mag', 'Fal', 'Cha',
-    ],
+    short: ['Bai', 'Jes', 'Ash', 'Shr', 'Bha', 'Ashw', 'Kar', 'Man', 'Pou', 'Mag', 'Fal', 'Cha'],
   },
   ne: {
     long: [
-      'वैशाख', 'जेठ', 'असार', 'श्रावण', 'भाद्र', 'असोज',
-      'कार्तिक', 'मंसिर', 'पौष', 'माघ', 'फाल्गुन', 'चैत',
+      'वैशाख',
+      'जेठ',
+      'असार',
+      'श्रावण',
+      'भाद्र',
+      'असोज',
+      'कार्तिक',
+      'मंसिर',
+      'पौष',
+      'माघ',
+      'फाल्गुन',
+      'चैत',
     ],
-    short: [
-      'वै', 'जे', 'अ', 'श्रा', 'भा', 'असो',
-      'का', 'मं', 'पौ', 'मा', 'फा', 'चै',
-    ],
+    short: ['वै', 'जे', 'अ', 'श्रा', 'भा', 'असो', 'का', 'मं', 'पौ', 'मा', 'फा', 'चै'],
   },
 } as const;
 
@@ -37,7 +51,10 @@ export const WEEKDAY_NAMES = {
   },
 } as const;
 
-export function getMonthNames(locale: LocaleType = 'en', format: 'long' | 'short' = 'long'): string[] {
+export function getMonthNames(
+  locale: LocaleType = 'en',
+  format: 'long' | 'short' = 'long',
+): string[] {
   const loc = MONTH_NAMES[locale] ?? MONTH_NAMES.en;
   return [...loc[format]];
 }
@@ -71,7 +88,7 @@ export function toBSDayHelper(input: BSDayInput): BSDay {
   }
   if (typeof input === 'string') {
     const trimmed = input.trim();
-    const match = trimmed.match(/^(\d{4})[\/-](\d{1,2})[\/-](\d{1,2})/);
+    const match = trimmed.match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})/);
     if (match) {
       const year = Number(match[1]);
       if (year >= 1970 && year <= 2100) {
@@ -148,11 +165,14 @@ export function isDateDisabled(dateInput: BSDayInput, options: DateDisabledOptio
     return true;
   }
 
-
   return false;
 }
 
-export function getDateRange(startInput: BSDayInput, endInput: BSDayInput, stepDays: number = 1): BSDay[] {
+export function getDateRange(
+  startInput: BSDayInput,
+  endInput: BSDayInput,
+  stepDays: number = 1,
+): BSDay[] {
   const start = toBSDayHelper(startInput);
   const end = toBSDayHelper(endInput);
 
@@ -163,7 +183,6 @@ export function getDateRange(startInput: BSDayInput, endInput: BSDayInput, stepD
   if (end.isBefore(start, 'date')) {
     return [];
   }
-
 
   const results: BSDay[] = [];
   let current = start.clone();

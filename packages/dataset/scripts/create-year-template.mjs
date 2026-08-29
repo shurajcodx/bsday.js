@@ -25,7 +25,7 @@ const dataset = {};
 
 // Kathmandu coordinates
 const LAT = 27.7172;
-const LON = 85.3240;
+const LON = 85.324;
 const ALT = 1400;
 
 for (let m = 1; m <= 12; m++) {
@@ -52,7 +52,7 @@ for (let m = 1; m <= 12; m++) {
       adDate.getUTCDate(),
       LAT,
       LON,
-      ALT
+      ALT,
     );
 
     const panchang = computePanchang(jdSunrise);
@@ -66,16 +66,13 @@ for (let m = 1; m <= 12; m++) {
     const bsDayKey = String(d).padStart(2, '0');
     const bsKey = `${bsMonthKey}-${bsDayKey}`;
 
-    const mergedEvents = [
-      ...(internationalEvents[adKey] ?? []),
-      ...(bsEvents[bsKey] ?? [])
-    ];
+    const mergedEvents = [...(internationalEvents[adKey] ?? []), ...(bsEvents[bsKey] ?? [])];
 
     let identifiedFestivals = [];
     for (const rule of festivalRules) {
       const cond = rule.condition || rule;
       const type = cond.type || cond.time || 'sunrise';
-      const monthMatch = (cond.month === m);
+      const monthMatch = cond.month === m;
       if (!monthMatch) continue;
 
       const pakshaMatch = !cond.paksha || cond.paksha === panchang.paksha;
@@ -86,14 +83,18 @@ for (let m = 1; m <= 12; m++) {
         }
       } else if (type === 'sunset') {
         const sunsetJD = jdSunrise + 0.4;
-        if ((panchang.tithi === cond.tithi && pakshaMatch) ||
-          (transition?.nextTithi === cond.tithi && transition.transitionJD < sunsetJD)) {
+        if (
+          (panchang.tithi === cond.tithi && pakshaMatch) ||
+          (transition?.nextTithi === cond.tithi && transition.transitionJD < sunsetJD)
+        ) {
           identifiedFestivals.push(rule.name);
         }
       } else if (type === 'night') {
         const nightJD = jdSunrise + 0.75;
-        if ((panchang.tithi === cond.tithi && pakshaMatch) ||
-          (transition?.nextTithi === cond.tithi && transition.transitionJD < nightJD)) {
+        if (
+          (panchang.tithi === cond.tithi && pakshaMatch) ||
+          (transition?.nextTithi === cond.tithi && transition.transitionJD < nightJD)
+        ) {
           identifiedFestivals.push(rule.name);
         }
       }
@@ -103,14 +104,11 @@ for (let m = 1; m <= 12; m++) {
       ...panchang,
       festivals: [...new Set(identifiedFestivals)],
       events: mergedEvents,
-      isHoliday: false
+      isHoliday: false,
     };
   }
 }
 
-await writeFile(
-  path.join(OUT_DIR, `${year}.json`),
-  JSON.stringify(dataset, null, 2)
-);
+await writeFile(path.join(OUT_DIR, `${year}.json`), JSON.stringify(dataset, null, 2));
 
 console.log(`✅ Generated accurate year template for ${year} BS`);

@@ -53,7 +53,6 @@ const unitAliases: Record<string, UnitType> = {
   milliseconds: 'millisecond',
 };
 
-
 export function normalizeUnit(unit: string): UnitType {
   const normalized = unitAliases[unit] || unitAliases[unit.toLowerCase()];
   if (!normalized) {
@@ -61,7 +60,6 @@ export function normalizeUnit(unit: string): UnitType {
   }
   return normalized;
 }
-
 
 export function prettyUnit(unit: UnitType): string {
   return unit.charAt(0).toUpperCase() + unit.slice(1);

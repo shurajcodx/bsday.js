@@ -1,0 +1,3940 @@
+{
+  "1996-01-01": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Sadhya",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "Nepali New Year / Biska Jatra"
+    ],
+    "isHoliday": true
+  },
+  "1996-01-02": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Shubha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-03": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Shukla",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-04": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Brahma",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-05": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Indra",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-06": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Vaidhriti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "International Day for Monuments and Sites"
+    ],
+    "isHoliday": false
+  },
+  "1996-01-07": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Vishkumbha",
+    "karana": "Chatushpada",
+    "festivals": [
+      "Matatirtha Aunsi (Mothers' Day)"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-08": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Priti",
+    "karana": "Kimstughna",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-09": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Ayushman",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-10": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Saubhagya",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "Earth Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-01-11": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Shobhana",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "World Book Day",
+      "Loktantra Diwas"
+    ],
+    "isHoliday": false
+  },
+  "1996-01-12": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Atiganda",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-13": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Sukarma",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World Malaria Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-01-14": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Dhriti",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-15": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Ganda",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-16": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Vriddhi",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-17": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Dhruva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-18": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Vyaghata",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-19": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Harsha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "International Labour Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-01-20": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Vajra",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-21": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Siddhi",
+    "karana": "Vishti",
+    "festivals": [
+      "Buddha Jayanti / Ubhauli Parva"
+    ],
+    "events": [
+      "World Press Freedom Day"
+    ],
+    "isHoliday": true
+  },
+  "1996-01-22": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Vyatipata",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-23": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Variyana",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-24": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Parigha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-25": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Siddha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-26": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Sadhya",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "World Red Cross Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-01-27": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Sadhya",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-28": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Shubha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-29": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Shukla",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-01-30": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Brahma",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "International Nurses Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-01-31": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Indra",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-01": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Vaidhriti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-02": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Vishkumbha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "International Day of Families"
+    ],
+    "isHoliday": false
+  },
+  "1996-02-03": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Priti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-04": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Ayushman",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "World Telecommunication Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-02-05": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Saubhagya",
+    "karana": "Shakuni",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-06": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Atiganda",
+    "karana": "Naga",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-07": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Sukarma",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-08": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Dhriti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World Day for Cultural Diversity"
+    ],
+    "isHoliday": false
+  },
+  "1996-02-09": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Shoola",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-10": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Ganda",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-11": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Vriddhi",
+    "karana": "Kaulava",
+    "festivals": [
+      "Sithi Nakha"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-12": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Dhruva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-13": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Vyaghata",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-14": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Vajra",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-15": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Siddhi",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "Republic Day (Ganatantra Diwas)"
+    ],
+    "isHoliday": true
+  },
+  "1996-02-16": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Vyatipata",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-17": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Variyana",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-18": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Parigha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World No Tobacco Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-02-19": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Shiva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "Global Day of Parents"
+    ],
+    "isHoliday": false
+  },
+  "1996-02-20": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Siddha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-21": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Sadhya",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "World Bicycle Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-02-22": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Shubha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-23": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Shukla",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Environment Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-02-24": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Brahma",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-25": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Indra",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-26": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Vaidhriti",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "World Oceans Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-02-27": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Vishkumbha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-28": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Priti",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-29": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Ayushman",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-30": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Saubhagya",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "World Day Against Child Labour"
+    ],
+    "isHoliday": false
+  },
+  "1996-02-31": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Shobhana",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-02-32": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Atiganda",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "World Blood Donor Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-03-01": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Sukarma",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-02": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Dhriti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-03": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Shoola",
+    "karana": "Chatushpada",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-04": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Ganda",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-05": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Dhruva",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-06": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Vyaghata",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "World Refugee Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-03-07": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Harsha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "International Day of Yoga"
+    ],
+    "isHoliday": false
+  },
+  "1996-03-08": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Vajra",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-09": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Siddhi",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-10": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Vyatipata",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-11": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Parigha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-12": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Shiva",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "International Day Against Drug Abuse"
+    ],
+    "isHoliday": false
+  },
+  "1996-03-13": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Siddha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-14": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Sadhya",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-15": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Shubha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "Rastriya Dhan Diwas"
+    ],
+    "isHoliday": false
+  },
+  "1996-03-16": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Shukla",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-17": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Brahma",
+    "karana": "Vishti",
+    "festivals": [
+      "Guru Purnima"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-18": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Indra",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-19": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Vaidhriti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-20": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Vishkumbha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-21": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Priti",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-22": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Ayushman",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-23": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Saubhagya",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-24": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Shobhana",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-25": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Atiganda",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-26": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Sukarma",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-27": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Dhriti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "World Population Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-03-28": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Shoola",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-29": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Ganda",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-30": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Vriddhi",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-03-31": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Dhruva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-01": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Vyaghata",
+    "karana": "Chatushpada",
+    "festivals": [],
+    "events": [
+      "Shrawan Sankranti / Luto Falne Din"
+    ],
+    "isHoliday": false
+  },
+  "1996-04-02": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Harsha",
+    "karana": "Kimstughna",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-03": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Siddhi",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "Nelson Mandela International Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-04-04": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Vyatipata",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-05": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Variyana",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-06": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Parigha",
+    "karana": "Balava",
+    "festivals": [
+      "Nag Panchami"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-07": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Shiva",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-08": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Siddha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-09": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Sadhya",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-10": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Shubha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-11": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Shukla",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-12": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Brahma",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-13": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Indra",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "World Hepatitis Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-04-14": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Vaidhriti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-15": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Vishkumbha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Day of Friendship",
+      "Kheer Khane Din"
+    ],
+    "isHoliday": false
+  },
+  "1996-04-16": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Priti",
+    "karana": "Bava",
+    "festivals": [
+      "Raksha Bandhan / Janai Purnima / Kwati Khane Din / Rishi Tarpani / Sanskrit Diwas"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-17": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Ayushman",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-18": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Saubhagya",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-19": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Shobhana",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-20": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Atiganda",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-21": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Sukarma",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-22": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Dhriti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-23": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Shoola",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-24": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Ganda",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-25": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Vriddhi",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "International Day of the World's Indigenous Peoples"
+    ],
+    "isHoliday": false
+  },
+  "1996-04-26": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Dhruva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-27": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Vyaghata",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-28": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Vajra",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "International Youth Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-04-29": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Siddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-30": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Vyatipata",
+    "karana": "Shakuni",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-31": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Variyana",
+    "karana": "Naga",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-04-32": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Parigha",
+    "karana": "Balava",
+    "festivals": [
+      "Dar Khane Din"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-01": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Siddha",
+    "karana": "Taitila",
+    "festivals": [
+      "Haritalika Teej"
+    ],
+    "events": [
+      "Bhadra Sankranti"
+    ],
+    "isHoliday": true
+  },
+  "1996-05-02": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Sadhya",
+    "karana": "Vanija",
+    "festivals": [
+      "Ganesh Chaturthi"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-03": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Shubha",
+    "karana": "Balava",
+    "festivals": [
+      "Rishi Panchami"
+    ],
+    "events": [
+      "World Humanitarian Day"
+    ],
+    "isHoliday": true
+  },
+  "1996-05-04": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Shukla",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-05": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Brahma",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-06": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Indra",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-07": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Vaidhriti",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-08": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Vishkumbha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-09": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Priti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-10": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Ayushman",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-11": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Saubhagya",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-12": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Shobhana",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-13": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Atiganda",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "International Day Against Nuclear Tests"
+    ],
+    "isHoliday": false
+  },
+  "1996-05-14": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Sukarma",
+    "karana": "Balava",
+    "festivals": [
+      "Gai Jatra"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-05-15": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Dhriti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-16": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Shoola",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-17": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Ganda",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-18": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Vriddhi",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-19": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Dhruva",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-20": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Vyaghata",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Day of Charity"
+    ],
+    "isHoliday": false
+  },
+  "1996-05-21": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Harsha",
+    "karana": "Bava",
+    "festivals": [
+      "Krishna Janmashtami / Gaura Parva"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-05-22": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Vajra",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-23": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Siddhi",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "International Literacy Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-05-24": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Vyatipata",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-25": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Variyana",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-26": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Shiva",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-27": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Siddha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-28": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Sadhya",
+    "karana": "Naga",
+    "festivals": [
+      "Kushe Aunsi (Fathers' Day)"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-29": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Shubha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-05-30": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Hasta",
+    "yoga": "Shukla",
+    "karana": "Kaulava",
+    "festivals": [
+      "Dar Khane Din"
+    ],
+    "events": [
+      "International Day of Democracy"
+    ],
+    "isHoliday": false
+  },
+  "1996-05-31": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Indra",
+    "karana": "Vanija",
+    "festivals": [
+      "Ganesh Chaturthi"
+    ],
+    "events": [
+      "World Ozone Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-06-01": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Vaidhriti",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "Ashwin Sankranti / Bishwakarma Puja"
+    ],
+    "isHoliday": false
+  },
+  "1996-06-02": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Vishkumbha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-03": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Priti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "Constitution Day (Sambidhan Diwas)"
+    ],
+    "isHoliday": true
+  },
+  "1996-06-04": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Ayushman",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-05": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Saubhagya",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "International Day of Peace"
+    ],
+    "isHoliday": false
+  },
+  "1996-06-06": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Shobhana",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-07": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Atiganda",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-08": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Sukarma",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-09": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Dhriti",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-10": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Shoola",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-11": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Ganda",
+    "karana": "Vanija",
+    "festivals": [
+      "Indra Jatra / Ananta Chaturdashi"
+    ],
+    "events": [
+      "World Tourism Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-06-12": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Vriddhi",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-13": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Dhruva",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-14": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Revati",
+    "yoga": "Vyaghata",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-15": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Ashwini",
+    "yoga": "Harsha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Day of Older Persons"
+    ],
+    "isHoliday": false
+  },
+  "1996-06-16": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Vajra",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-17": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Siddhi",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-18": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Vyatipata",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-19": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Variyana",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Teachers Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-06-20": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Parigha",
+    "karana": "Balava",
+    "festivals": [
+      "Jitiya Parva"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-06-21": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Shiva",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-22": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Siddha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-23": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Sadhya",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "World Post Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-06-24": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Shukla",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World Mental Health Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-06-25": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Brahma",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Day of the Girl Child"
+    ],
+    "isHoliday": false
+  },
+  "1996-06-26": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Indra",
+    "karana": "Chatushpada",
+    "festivals": [
+      "Sohra Shraddha Samapti (Mahalaya)"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-27": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Chitra",
+    "yoga": "Vaidhriti",
+    "karana": "Kimstughna",
+    "festivals": [
+      "Ghatasthapana"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-06-28": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Vishkumbha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-29": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Vishakha",
+    "yoga": "Priti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-06-30": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Ayushman",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Food Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-07-01": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Shobhana",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "Kartik Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "1996-07-02": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Atiganda",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-03": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Sukarma",
+    "karana": "Vanija",
+    "festivals": [
+      "Fulpati"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-07-04": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Dhriti",
+    "karana": "Vishti",
+    "festivals": [
+      "Maha Ashtami"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-07-05": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Shoola",
+    "karana": "Balava",
+    "festivals": [
+      "Maha Navami"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-07-06": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Ganda",
+    "karana": "Taitila",
+    "festivals": [
+      "Vijaya Dashami"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-07-07": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Vriddhi",
+    "karana": "Vanija",
+    "festivals": [
+      "Papankusha Ekadashi"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-07-08": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Vriddhi",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "United Nations Day",
+      "Dashain Holiday"
+    ],
+    "isHoliday": true
+  },
+  "1996-07-09": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Dhruva",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-10": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Vyaghata",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-11": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Harsha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-12": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Vajra",
+    "karana": "Bava",
+    "festivals": [
+      "Kojagrat Purnima"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-07-13": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Bharani",
+    "yoga": "Siddhi",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-14": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Krittika",
+    "yoga": "Variyana",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-15": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Parigha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "Halloween"
+    ],
+    "isHoliday": false
+  },
+  "1996-07-16": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Shiva",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-17": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Siddha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-18": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Sadhya",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-19": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Shubha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-20": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Shukla",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-21": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Brahma",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-22": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Indra",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-23": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Vishkumbha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-24": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Priti",
+    "karana": "Vanija",
+    "festivals": [
+      "Kag Tihar",
+      "Kukur Tihar"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-25": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Ayushman",
+    "karana": "Shakuni",
+    "festivals": [
+      "Laxmi Puja"
+    ],
+    "events": [
+      "World Science Day for Peace and Development"
+    ],
+    "isHoliday": true
+  },
+  "1996-07-26": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Saubhagya",
+    "karana": "Naga",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-07-27": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Anuradha",
+    "yoga": "Shobhana",
+    "karana": "Bava",
+    "festivals": [
+      "Govardhan Puja / Mha Puja / Gai Puja"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-07-28": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Atiganda",
+    "karana": "Kaulava",
+    "festivals": [
+      "Bhai Tika"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-07-29": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Sukarma",
+    "karana": "Garaja",
+    "festivals": [
+      "Tihar Holiday"
+    ],
+    "events": [
+      "World Diabetes Day",
+      "Tihar Holiday"
+    ],
+    "isHoliday": true
+  },
+  "1996-07-30": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Dhriti",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-01": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Shoola",
+    "karana": "Balava",
+    "festivals": [
+      "Bibaha Panchami"
+    ],
+    "events": [
+      "International Day for Tolerance",
+      "Mangsir Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "1996-08-02": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Ganda",
+    "karana": "Taitila",
+    "festivals": [
+      "Chhath Puja"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-08-03": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Vriddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-04": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Dhruva",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "World Toilet Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-08-05": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Vyaghata",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "Universal Children's Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-08-06": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Harsha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-07": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Vajra",
+    "karana": "Vanija",
+    "festivals": [
+      "Haribodhini Ekadashi / Tulsi Bibaha"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-08": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Siddhi",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-09": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Vyatipata",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-10": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Variyana",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "International Day for the Elimination of Violence Against Women"
+    ],
+    "isHoliday": false
+  },
+  "1996-08-11": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Parigha",
+    "karana": "Vishti",
+    "festivals": [
+      "Udhauli Parva / Yomari Punhi"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-12": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Rohini",
+    "yoga": "Shiva",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-13": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Siddha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-14": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Sadhya",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-15": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Shukla",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-16": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Brahma",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "World AIDS Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-08-17": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Indra",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-18": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Vaidhriti",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "International Day of Persons with Disabilities"
+    ],
+    "isHoliday": false
+  },
+  "1996-08-19": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Vishkumbha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-20": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Priti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "International Volunteer Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-08-21": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Ayushman",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-22": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Shobhana",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-23": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Atiganda",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-24": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Sukarma",
+    "karana": "Vishti",
+    "festivals": [
+      "Bala Chaturdashi"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-25": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Dhriti",
+    "karana": "Chatushpada",
+    "festivals": [],
+    "events": [
+      "Human Rights Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-08-26": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Shoola",
+    "karana": "Kimstughna",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-27": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Mula",
+    "yoga": "Ganda",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-28": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Vriddhi",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-29": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Dhruva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-08-30": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Vyaghata",
+    "karana": "Bava",
+    "festivals": [
+      "Bibaha Panchami"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-01": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Harsha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "Poush Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "1996-09-02": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Vajra",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-03": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Siddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Migrants Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-09-04": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Vyatipata",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-05": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Variyana",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-06": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Parigha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-07": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Shiva",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-08": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Siddha",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-09": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Sadhya",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-10": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Shubha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "Christmas Day"
+    ],
+    "isHoliday": true
+  },
+  "1996-09-11": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Shukla",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-12": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Ardra",
+    "yoga": "Brahma",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-13": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Indra",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-14": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Vishkumbha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-15": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Priti",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "Tamu Lhosar"
+    ],
+    "isHoliday": true
+  },
+  "1996-09-16": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Ayushman",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-17": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Saubhagya",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "New Year's Day",
+      "Global Family Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-09-18": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Shobhana",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-19": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Atiganda",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-20": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Sukarma",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "World Braille Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-09-21": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Shoola",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-22": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Ganda",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-23": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Vriddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-24": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Dhruva",
+    "karana": "Shakuni",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-25": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Vyaghata",
+    "karana": "Naga",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-26": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Harsha",
+    "karana": "Kimstughna",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-27": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Shravana",
+    "yoga": "Vajra",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "National Unity Day (Prithvi Jayanti)"
+    ],
+    "isHoliday": true
+  },
+  "1996-09-28": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Siddhi",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-09-29": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Vyatipata",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-01": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Variyana",
+    "karana": "Bava",
+    "festivals": [
+      "Basanta Panchami / Saraswati Puja"
+    ],
+    "events": [
+      "Maghe Sankranti / Maghi Parva"
+    ],
+    "isHoliday": true
+  },
+  "1996-10-02": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Parigha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-03": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Shiva",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-04": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Siddha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-05": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Sadhya",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-06": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Shubha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-07": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Shukla",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-08": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Brahma",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-09": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Indra",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-10": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Vaidhriti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-11": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Vishkumbha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Day of Education"
+    ],
+    "isHoliday": false
+  },
+  "1996-10-12": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Pushya",
+    "yoga": "Priti",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-13": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Ashlesha",
+    "yoga": "Ayushman",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-14": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Magha",
+    "yoga": "Shobhana",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "International Holocaust Remembrance Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-10-15": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Atiganda",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-16": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Sukarma",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "Martyrs' Day (Shahid Diwas)"
+    ],
+    "isHoliday": false
+  },
+  "1996-10-17": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Dhriti",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-18": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Shoola",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-19": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Ganda",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-20": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Vriddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "World Wetlands Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-10-21": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Vyaghata",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-22": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Harsha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "World Cancer Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-10-23": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Vajra",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-24": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Siddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-25": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Vyatipata",
+    "karana": "Shakuni",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-26": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Variyana",
+    "karana": "Naga",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-27": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Parigha",
+    "karana": "Bava",
+    "festivals": [
+      "Sonam Lhosar"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-10-28": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Shiva",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-10-29": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Shiva",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [
+      "International Day of Women and Girls in Science"
+    ],
+    "isHoliday": false
+  },
+  "1996-10-30": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Siddha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-01": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Sadhya",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "World Radio Day",
+      "Falgun Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "1996-11-02": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Shubha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "Valentine's Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-11-03": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Shukla",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-04": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Brahma",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-05": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Indra",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-06": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Vaidhriti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-07": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Priti",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "National Democracy Day (Prajatantra Diwas)"
+    ],
+    "isHoliday": true
+  },
+  "1996-11-08": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Ayushman",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [
+      "World Day of Social Justice"
+    ],
+    "isHoliday": false
+  },
+  "1996-11-09": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Saubhagya",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [
+      "International Mother Language Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-11-10": {
+    "tithi": "Chaturdashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Shobhana",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-11": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Magha",
+    "yoga": "Atiganda",
+    "karana": "Bava",
+    "festivals": [
+      "Holi / Phagu Purnima (Hilly)"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-11-12": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Sukarma",
+    "karana": "Kaulava",
+    "festivals": [
+      "Holi / Phagu Purnima (Terai)"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-11-13": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Shoola",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-14": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Ganda",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-15": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Vriddhi",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-16": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Dhruva",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-17": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Vyaghata",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-18": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Harsha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-19": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Vajra",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-20": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Siddhi",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [
+      "World Wildlife Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-11-21": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Vyatipata",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-22": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Variyana",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-23": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Parigha",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-24": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Shiva",
+    "karana": "Vishti",
+    "festivals": [
+      "Maha Shivaratri"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-11-25": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Siddha",
+    "karana": "Chatushpada",
+    "festivals": [],
+    "events": [
+      "International Women's Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-11-26": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Sadhya",
+    "karana": "Naga",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-27": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Shubha",
+    "karana": "Bava",
+    "festivals": [
+      "Gyalpo Lhosar"
+    ],
+    "events": [],
+    "isHoliday": true
+  },
+  "1996-11-28": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Shukla",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-11-29": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Brahma",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-01": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Indra",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "Chaitra Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "1996-12-02": {
+    "tithi": "Panchami",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Vaidhriti",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-03": {
+    "tithi": "Shashthi",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Vishkumbha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-04": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Priti",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-05": {
+    "tithi": "Ashtami",
+    "paksha": "Shukla",
+    "nakshatra": "Mrigashirsha",
+    "yoga": "Ayushman",
+    "karana": "Vishti",
+    "festivals": [
+      "Chaite Dashain"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-06": {
+    "tithi": "Navami",
+    "paksha": "Shukla",
+    "nakshatra": "Ardra",
+    "yoga": "Saubhagya",
+    "karana": "Balava",
+    "festivals": [
+      "Ram Navami"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-07": {
+    "tithi": "Dashami",
+    "paksha": "Shukla",
+    "nakshatra": "Punarvasu",
+    "yoga": "Shobhana",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-08": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Pushya",
+    "yoga": "Sukarma",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "International Day of Happiness"
+    ],
+    "isHoliday": false
+  },
+  "1996-12-09": {
+    "tithi": "Dwadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Ashlesha",
+    "yoga": "Dhriti",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "International Day of Forests"
+    ],
+    "isHoliday": false
+  },
+  "1996-12-10": {
+    "tithi": "Trayodashi",
+    "paksha": "Shukla",
+    "nakshatra": "Purva Phalguni",
+    "yoga": "Shoola",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [
+      "World Water Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-12-11": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Ganda",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Meteorological Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-12-12": {
+    "tithi": "Pratipada",
+    "paksha": "Krishna",
+    "nakshatra": "Hasta",
+    "yoga": "Vriddhi",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [
+      "World Tuberculosis Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-12-13": {
+    "tithi": "Dvitiya",
+    "paksha": "Krishna",
+    "nakshatra": "Chitra",
+    "yoga": "Vyaghata",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-14": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Harsha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-15": {
+    "tithi": "Chaturthi",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Vajra",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-16": {
+    "tithi": "Panchami",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Siddhi",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-17": {
+    "tithi": "Shashthi",
+    "paksha": "Krishna",
+    "nakshatra": "Jyeshtha",
+    "yoga": "Vyatipata",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-18": {
+    "tithi": "Saptami",
+    "paksha": "Krishna",
+    "nakshatra": "Mula",
+    "yoga": "Variyana",
+    "karana": "Bava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-19": {
+    "tithi": "Ashtami",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Ashadha",
+    "yoga": "Parigha",
+    "karana": "Kaulava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-20": {
+    "tithi": "Navami",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Ashadha",
+    "yoga": "Shiva",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-21": {
+    "tithi": "Dashami",
+    "paksha": "Krishna",
+    "nakshatra": "Shravana",
+    "yoga": "Siddha",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "World Autism Awareness Day"
+    ],
+    "isHoliday": false
+  },
+  "1996-12-22": {
+    "tithi": "Ekadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Dhanishta",
+    "yoga": "Sadhya",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-23": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Shatabhisha",
+    "yoga": "Shubha",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-24": {
+    "tithi": "Trayodashi",
+    "paksha": "Krishna",
+    "nakshatra": "Purva Bhadrapada",
+    "yoga": "Shukla",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-25": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Brahma",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-26": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Indra",
+    "karana": "Chatushpada",
+    "festivals": [
+      "Ghode Jatra"
+    ],
+    "events": [
+      "World Health Day"
+    ],
+    "isHoliday": true
+  },
+  "1996-12-27": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Revati",
+    "yoga": "Vaidhriti",
+    "karana": "Kimstughna",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-28": {
+    "tithi": "Dvitiya",
+    "paksha": "Shukla",
+    "nakshatra": "Ashwini",
+    "yoga": "Vishkumbha",
+    "karana": "Balava",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-29": {
+    "tithi": "Tritiya",
+    "paksha": "Shukla",
+    "nakshatra": "Bharani",
+    "yoga": "Priti",
+    "karana": "Taitila",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-30": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Krittika",
+    "yoga": "Ayushman",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "1996-12-31": {
+    "tithi": "Chaturthi",
+    "paksha": "Shukla",
+    "nakshatra": "Rohini",
+    "yoga": "Saubhagya",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  }
+}

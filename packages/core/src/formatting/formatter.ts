@@ -29,4 +29,3 @@ export function formatDate(
     return resolver({ calendar, locale, ad, bs });
   });
 }
-

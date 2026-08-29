@@ -1,38 +1,59 @@
 {
     "01-01": [
-        "Nepali New Year"
+        "Nepali New Year / Biska Jatra"
     ],
     "01-11": [
-        "Loktantra Day"
+        "Loktantra Diwas"
     ],
     "02-15": [
-        "Republic Day"
+        "Republic Day (Ganatantra Diwas)"
     ],
     "03-15": [
         "Rastriya Dhan Diwas"
     ],
     "04-01": [
-        "Shrawan Sankranti"
+        "Shrawan Sankranti / Luto Falne Din"
+    ],
+    "04-15": [
+        "Kheer Khane Din"
+    ],
+    "05-01": [
+        "Bhadra Sankranti"
+    ],
+    "06-01": [
+        "Ashwin Sankranti / Bishwakarma Puja"
     ],
     "06-03": [
-        "Constitution Day"
+        "Constitution Day (Sambidhan Diwas)"
     ],
     "07-01": [
         "Kartik Sankranti"
+    ],
+    "08-01": [
+        "Mangsir Sankranti"
+    ],
+    "09-01": [
+        "Poush Sankranti"
     ],
     "09-15": [
         "Tamu Lhosar"
     ],
     "09-27": [
-        "National Unity Day"
+        "National Unity Day (Prithvi Jayanti)"
     ],
     "10-01": [
-        "Maghe Sankranti"
+        "Maghe Sankranti / Maghi Parva"
     ],
     "10-16": [
-        "Martyrs' Day"
+        "Martyrs' Day (Shahid Diwas)"
+    ],
+    "11-01": [
+        "Falgun Sankranti"
     ],
     "11-07": [
-        "National Democracy Day"
+        "National Democracy Day (Prajatantra Diwas)"
+    ],
+    "12-01": [
+        "Chaitra Sankranti"
     ]
 }

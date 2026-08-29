@@ -11,25 +11,85 @@ swisseph.swe_set_sid_mode(swisseph.SE_SIDM_LAHIRI, 0, 0);
 const FLAGS = swisseph.SEFLG_SWIEPH | swisseph.SEFLG_SIDEREAL | swisseph.SEFLG_SPEED;
 
 const TITHIS = [
-  'Pratipada', 'Dvitiya', 'Tritiya', 'Chaturthi', 'Panchami', 'Shashthi', 'Saptami',
-  'Ashtami', 'Navami', 'Dashami', 'Ekadashi', 'Dwadashi', 'Trayodashi', 'Chaturdashi', 'Purnima', 'Amavasya'
+  'Pratipada',
+  'Dvitiya',
+  'Tritiya',
+  'Chaturthi',
+  'Panchami',
+  'Shashthi',
+  'Saptami',
+  'Ashtami',
+  'Navami',
+  'Dashami',
+  'Ekadashi',
+  'Dwadashi',
+  'Trayodashi',
+  'Chaturdashi',
+  'Purnima',
+  'Amavasya',
 ];
 
 const NAKSHATRAS = [
-  'Ashwini', 'Bharani', 'Krittika', 'Rohini', 'Mrigashirsha', 'Ardra', 'Punarvasu', 'Pushya', 'Ashlesha',
-  'Magha', 'Purva Phalguni', 'Uttara Phalguni', 'Hasta', 'Chitra', 'Swati', 'Vishakha', 'Anuradha', 'Jyeshtha',
-  'Mula', 'Purva Ashadha', 'Uttara Ashadha', 'Shravana', 'Dhanishta', 'Shatabhisha', 'Purva Bhadrapada', 'Uttara Bhadrapada', 'Revati'
+  'Ashwini',
+  'Bharani',
+  'Krittika',
+  'Rohini',
+  'Mrigashirsha',
+  'Ardra',
+  'Punarvasu',
+  'Pushya',
+  'Ashlesha',
+  'Magha',
+  'Purva Phalguni',
+  'Uttara Phalguni',
+  'Hasta',
+  'Chitra',
+  'Swati',
+  'Vishakha',
+  'Anuradha',
+  'Jyeshtha',
+  'Mula',
+  'Purva Ashadha',
+  'Uttara Ashadha',
+  'Shravana',
+  'Dhanishta',
+  'Shatabhisha',
+  'Purva Bhadrapada',
+  'Uttara Bhadrapada',
+  'Revati',
 ];
 
 const YOGAS = [
-  'Vishkumbha', 'Priti', 'Ayushman', 'Saubhagya', 'Shobhana', 'Atiganda', 'Sukarma', 'Dhriti',
-  'Shoola', 'Ganda', 'Vriddhi', 'Dhruva', 'Vyaghata', 'Harsha', 'Vajra', 'Siddhi', 'Vyatipata',
-  'Variyana', 'Parigha', 'Shiva', 'Siddha', 'Sadhya', 'Shubha', 'Shukla', 'Brahma', 'Indra', 'Vaidhriti'
+  'Vishkumbha',
+  'Priti',
+  'Ayushman',
+  'Saubhagya',
+  'Shobhana',
+  'Atiganda',
+  'Sukarma',
+  'Dhriti',
+  'Shoola',
+  'Ganda',
+  'Vriddhi',
+  'Dhruva',
+  'Vyaghata',
+  'Harsha',
+  'Vajra',
+  'Siddhi',
+  'Vyatipata',
+  'Variyana',
+  'Parigha',
+  'Shiva',
+  'Siddha',
+  'Sadhya',
+  'Shubha',
+  'Shukla',
+  'Brahma',
+  'Indra',
+  'Vaidhriti',
 ];
 
-const KARANAS = [
-  'Bava', 'Balava', 'Kaulava', 'Taitila', 'Garaja', 'Vanija', 'Vishti'
-];
+const KARANAS = ['Bava', 'Balava', 'Kaulava', 'Taitila', 'Garaja', 'Vanija', 'Vishti'];
 
 // Returns panchang for given JD
 export default function computePanchang(jd_ut) {
@@ -38,7 +98,12 @@ export default function computePanchang(jd_ut) {
     sun = swisseph.swe_calc_ut(jd_ut, swisseph.SE_SUN, FLAGS);
     moon = swisseph.swe_calc_ut(jd_ut, swisseph.SE_MOON, FLAGS);
 
-    if (!sun || typeof sun.longitude === 'undefined' || !moon || typeof moon.longitude === 'undefined') {
+    if (
+      !sun ||
+      typeof sun.longitude === 'undefined' ||
+      !moon ||
+      typeof moon.longitude === 'undefined'
+    ) {
       throw new Error('Invalid coordinates returned from Swiss Ephemeris');
     }
   } catch (error) {
@@ -93,16 +158,23 @@ export function findTithiTransition(jd_start) {
   const currentPanchang = computePanchang(jd_start);
 
   const step = 1 / 24; // 1 hour
-  for (let i = 0; i < 30; i++) { // Check up to 30 hours
+  for (let i = 0; i < 30; i++) {
+    // Check up to 30 hours
     currentJD += step;
     const nextPanchang = computePanchang(currentJD);
-    if (nextPanchang.tithi !== currentPanchang.tithi || nextPanchang.paksha !== currentPanchang.paksha) {
+    if (
+      nextPanchang.tithi !== currentPanchang.tithi ||
+      nextPanchang.paksha !== currentPanchang.paksha
+    ) {
       let low = currentJD - step;
       let high = currentJD;
       for (let j = 0; j < 10; j++) {
         let mid = (low + high) / 2;
         const midPanchang = computePanchang(mid);
-        if (midPanchang.tithi === currentPanchang.tithi && midPanchang.paksha === currentPanchang.paksha) {
+        if (
+          midPanchang.tithi === currentPanchang.tithi &&
+          midPanchang.paksha === currentPanchang.paksha
+        ) {
           low = mid;
         } else {
           high = mid;
@@ -110,24 +182,36 @@ export function findTithiTransition(jd_start) {
       }
       return {
         nextTithi: computePanchang(high).tithi,
-        transitionJD: high
+        transitionJD: high,
       };
     }
   }
   return null;
 }
 
-// Ensure sunrise calculations for scripts needing it are exported here or handled correctly.
-export function sunriseJD(year, month, day, lat = 27.7172, lon = 85.3240, alt = 1400) {
+export function sunriseJD(year, month, day, lat = 27.7172, lon = 85.324, alt = 1400) {
   const jdMidnight = swisseph.swe_julday(year, month, day, 0, swisseph.SE_GREG_CAL);
   try {
-    const res = swisseph.swe_rise_trans(jdMidnight, swisseph.SE_SUN, swisseph.SEFLG_SWIEPH, swisseph.SE_CALC_RISE, lat, lon, alt);
-    if (res && res.rise) return res.rise;
+    const res = swisseph.swe_rise_trans(
+      jdMidnight,
+      swisseph.SE_SUN,
+      '',
+      swisseph.SEFLG_SWIEPH,
+      swisseph.SE_CALC_RISE,
+      [lon, lat, alt],
+      1013.25,
+      15,
+    );
+    if (res && typeof res.transitTime === 'number') {
+      return res.transitTime;
+    }
+    if (res && typeof res.rise === 'number') {
+      return res.rise;
+    }
   } catch {
-    // console.warn('Sunrise calculation failed, using fallback');
+    // Fallback if ephemeris rise calculation fails
   }
-  // Fallback to approx 6:30 AM Kathmandu (LT) = 00:45 AM UTC
-  // 0.5 is Noon UTC, 0.0 is Midnight UTC.
-  // 00:45 is 0.75 / 24 = 0.03125
-  return jdMidnight + 0.03125;
+  // Fallback to approx 6:00 AM Kathmandu (LT) = 00:15 AM UTC
+  // 00:15 UTC = 0.25 / 24 = ~0.0104167 days
+  return jdMidnight + 0.0104167;
 }

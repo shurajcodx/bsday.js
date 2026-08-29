@@ -1,17 +1,27 @@
 {
   "2009-01-01": {
+    "tithi": "Tritiya",
+    "paksha": "Krishna",
+    "nakshatra": "Anuradha",
+    "yoga": "Vyatipata",
+    "karana": "Vishti",
+    "festivals": [],
+    "events": [
+      "Nepali New Year / Biska Jatra"
+    ],
+    "isHoliday": true
+  },
+  "2009-01-02": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
     "yoga": "Variyana",
     "karana": "Balava",
     "festivals": [],
-    "events": [
-      "Nepali New Year"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2009-01-02": {
+  "2009-01-03": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -21,7 +31,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-03": {
+  "2009-01-04": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -31,7 +41,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-04": {
+  "2009-01-05": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
@@ -41,7 +51,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-05": {
+  "2009-01-06": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -53,7 +63,7 @@
     ],
     "isHoliday": false
   },
-  "2009-01-06": {
+  "2009-01-07": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
@@ -63,7 +73,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-07": {
+  "2009-01-08": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
@@ -73,17 +83,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-08": {
+  "2009-01-09": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
-    "yoga": "Brahma",
-    "karana": "Kaulava",
+    "yoga": "Indra",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-01-09": {
+  "2009-01-10": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -95,7 +105,7 @@
     ],
     "isHoliday": false
   },
-  "2009-01-10": {
+  "2009-01-11": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Revati",
@@ -103,11 +113,12 @@
     "karana": "Shakuni",
     "festivals": [],
     "events": [
-      "World Book Day"
+      "World Book Day",
+      "Loktantra Diwas"
     ],
     "isHoliday": false
   },
-  "2009-01-11": {
+  "2009-01-12": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
@@ -116,12 +127,10 @@
     "festivals": [
       "Matatirtha Aunsi (Mothers' Day)"
     ],
-    "events": [
-      "Loktantra Day"
-    ],
-    "isHoliday": true
+    "events": [],
+    "isHoliday": false
   },
-  "2009-01-12": {
+  "2009-01-13": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Bharani",
@@ -133,7 +142,7 @@
     ],
     "isHoliday": false
   },
-  "2009-01-13": {
+  "2009-01-14": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Krittika",
@@ -143,7 +152,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-14": {
+  "2009-01-15": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
@@ -153,7 +162,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-15": {
+  "2009-01-16": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
@@ -163,7 +172,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-16": {
+  "2009-01-17": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -173,7 +182,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-17": {
+  "2009-01-18": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
@@ -183,19 +192,19 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-18": {
+  "2009-01-19": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
     "yoga": "Shoola",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [
       "International Labour Day"
     ],
     "isHoliday": false
   },
-  "2009-01-19": {
+  "2009-01-20": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -205,7 +214,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-20": {
+  "2009-01-21": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -217,7 +226,7 @@
     ],
     "isHoliday": false
   },
-  "2009-01-21": {
+  "2009-01-22": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -227,7 +236,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-22": {
+  "2009-01-23": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
@@ -237,7 +246,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-23": {
+  "2009-01-24": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
@@ -247,7 +256,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-24": {
+  "2009-01-25": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
@@ -257,7 +266,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-25": {
+  "2009-01-26": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
@@ -269,19 +278,19 @@
     ],
     "isHoliday": false
   },
-  "2009-01-26": {
+  "2009-01-27": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Swati",
     "yoga": "Vyatipata",
     "karana": "Vishti",
     "festivals": [
-      "Buddha Jayanti"
+      "Buddha Jayanti / Ubhauli Parva"
     ],
     "events": [],
     "isHoliday": true
   },
-  "2009-01-27": {
+  "2009-01-28": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
@@ -291,7 +300,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-28": {
+  "2009-01-29": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
@@ -301,7 +310,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-29": {
+  "2009-01-30": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
@@ -313,7 +322,7 @@
     ],
     "isHoliday": false
   },
-  "2009-01-30": {
+  "2009-01-31": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -323,7 +332,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-01-31": {
+  "2009-02-01": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -333,7 +342,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-01": {
+  "2009-02-02": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -345,7 +354,7 @@
     ],
     "isHoliday": false
   },
-  "2009-02-02": {
+  "2009-02-03": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
@@ -355,19 +364,19 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-03": {
-    "tithi": "Ashtami",
+  "2009-02-04": {
+    "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
     "yoga": "Indra",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [
       "World Telecommunication Day"
     ],
     "isHoliday": false
   },
-  "2009-02-04": {
+  "2009-02-05": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
@@ -377,7 +386,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-05": {
+  "2009-02-06": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -387,7 +396,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-06": {
+  "2009-02-07": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Revati",
@@ -397,11 +406,11 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-07": {
+  "2009-02-08": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
-    "yoga": "Ayushman",
+    "yoga": "Saubhagya",
     "karana": "Garaja",
     "festivals": [],
     "events": [
@@ -409,7 +418,7 @@
     ],
     "isHoliday": false
   },
-  "2009-02-08": {
+  "2009-02-09": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
@@ -419,7 +428,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-09": {
+  "2009-02-10": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
@@ -429,7 +438,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-10": {
+  "2009-02-11": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
@@ -439,7 +448,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-11": {
+  "2009-02-12": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
@@ -449,7 +458,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-12": {
+  "2009-02-13": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -459,7 +468,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-13": {
+  "2009-02-14": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -469,43 +478,45 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-14": {
-    "tithi": "Chaturthi",
+  "2009-02-15": {
+    "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
     "yoga": "Vriddhi",
-    "karana": "Vishti",
+    "karana": "Bava",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "Republic Day (Ganatantra Diwas)"
+    ],
+    "isHoliday": true
   },
-  "2009-02-15": {
+  "2009-02-16": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
     "yoga": "Dhruva",
     "karana": "Balava",
     "festivals": [],
-    "events": [
-      "Republic Day"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2009-02-16": {
+  "2009-02-17": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
     "yoga": "Vyaghata",
     "karana": "Taitila",
-    "festivals": [],
+    "festivals": [
+      "Sithi Nakha"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2009-02-17": {
+  "2009-02-18": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Magha",
-    "yoga": "Vyaghata",
+    "yoga": "Harsha",
     "karana": "Vanija",
     "festivals": [],
     "events": [
@@ -513,7 +524,7 @@
     ],
     "isHoliday": false
   },
-  "2009-02-18": {
+  "2009-02-19": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
@@ -525,7 +536,7 @@
     ],
     "isHoliday": false
   },
-  "2009-02-19": {
+  "2009-02-20": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
@@ -535,7 +546,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-20": {
+  "2009-02-21": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
@@ -547,17 +558,17 @@
     ],
     "isHoliday": false
   },
-  "2009-02-21": {
+  "2009-02-22": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
-    "yoga": "Vyatipata",
-    "karana": "Vanija",
+    "yoga": "Variyana",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-02-22": {
+  "2009-02-23": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -569,7 +580,7 @@
     ],
     "isHoliday": false
   },
-  "2009-02-23": {
+  "2009-02-24": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
@@ -579,7 +590,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-24": {
+  "2009-02-25": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -589,7 +600,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-25": {
+  "2009-02-26": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -601,7 +612,7 @@
     ],
     "isHoliday": false
   },
-  "2009-02-26": {
+  "2009-02-27": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -611,7 +622,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-27": {
+  "2009-02-28": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -621,17 +632,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-28": {
+  "2009-02-29": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
-    "yoga": "Brahma",
+    "yoga": "Indra",
     "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-02-29": {
+  "2009-02-30": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -643,7 +654,7 @@
     ],
     "isHoliday": false
   },
-  "2009-02-30": {
+  "2009-02-31": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
@@ -653,7 +664,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-02-31": {
+  "2009-03-01": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
@@ -665,57 +676,57 @@
     ],
     "isHoliday": false
   },
-  "2009-03-01": {
+  "2009-03-02": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
-    "nakshatra": "Purva Bhadrapada",
+    "nakshatra": "Uttara Bhadrapada",
     "yoga": "Ayushman",
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-03-02": {
+  "2009-03-03": {
     "tithi": "Navami",
     "paksha": "Krishna",
-    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra": "Revati",
     "yoga": "Saubhagya",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-03-03": {
+  "2009-03-04": {
     "tithi": "Dashami",
     "paksha": "Krishna",
-    "nakshatra": "Revati",
+    "nakshatra": "Ashwini",
     "yoga": "Shobhana",
     "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-03-04": {
+  "2009-03-05": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
-    "nakshatra": "Ashwini",
+    "nakshatra": "Bharani",
     "yoga": "Atiganda",
     "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-03-05": {
+  "2009-03-06": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
-    "nakshatra": "Bharani",
+    "nakshatra": "Krittika",
     "yoga": "Sukarma",
     "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-03-06": {
+  "2009-03-07": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
@@ -727,7 +738,7 @@
     ],
     "isHoliday": false
   },
-  "2009-03-07": {
+  "2009-03-08": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
@@ -739,7 +750,7 @@
     ],
     "isHoliday": false
   },
-  "2009-03-08": {
+  "2009-03-09": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
@@ -749,7 +760,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-09": {
+  "2009-03-10": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -759,7 +770,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-10": {
+  "2009-03-11": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
@@ -769,7 +780,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-11": {
+  "2009-03-12": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
@@ -779,7 +790,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-12": {
+  "2009-03-13": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -791,7 +802,7 @@
     ],
     "isHoliday": false
   },
-  "2009-03-13": {
+  "2009-03-14": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -801,22 +812,12 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-14": {
+  "2009-03-15": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
     "yoga": "Siddhi",
     "karana": "Kaulava",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
-  },
-  "2009-03-15": {
-    "tithi": "Saptami",
-    "paksha": "Shukla",
-    "nakshatra": "Uttara Phalguni",
-    "yoga": "Vyatipata",
-    "karana": "Garaja",
     "festivals": [],
     "events": [
       "Rastriya Dhan Diwas"
@@ -824,6 +825,16 @@
     "isHoliday": false
   },
   "2009-03-16": {
+    "tithi": "Saptami",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Phalguni",
+    "yoga": "Vyatipata",
+    "karana": "Garaja",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2009-03-17": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
@@ -833,22 +844,12 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-17": {
-    "tithi": "Ashtami",
-    "paksha": "Shukla",
-    "nakshatra": "Hasta",
-    "yoga": "Parigha",
-    "karana": "Bava",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
-  },
   "2009-03-18": {
     "tithi": "Navami",
     "paksha": "Shukla",
-    "nakshatra": "Chitra",
-    "yoga": "Shiva",
-    "karana": "Kaulava",
+    "nakshatra": "Hasta",
+    "yoga": "Parigha",
+    "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
@@ -856,14 +857,24 @@
   "2009-03-19": {
     "tithi": "Dashami",
     "paksha": "Shukla",
-    "nakshatra": "Swati",
-    "yoga": "Siddha",
-    "karana": "Garaja",
+    "nakshatra": "Chitra",
+    "yoga": "Shiva",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
   "2009-03-20": {
+    "tithi": "Ekadashi",
+    "paksha": "Shukla",
+    "nakshatra": "Swati",
+    "yoga": "Siddha",
+    "karana": "Vanija",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2009-03-21": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
@@ -873,7 +884,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-21": {
+  "2009-03-22": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -883,27 +894,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-22": {
+  "2009-03-23": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
-    "nakshatra": "Jyeshtha",
+    "nakshatra": "Mula",
     "yoga": "Brahma",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-03-23": {
+  "2009-03-24": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
     "yoga": "Indra",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Guru Purnima"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2009-03-24": {
+  "2009-03-25": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
@@ -913,7 +926,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-25": {
+  "2009-03-26": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -923,17 +936,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-26": {
-    "tithi": "Tritiya",
+  "2009-03-27": {
+    "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
     "yoga": "Priti",
-    "karana": "Vishti",
+    "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-03-27": {
+  "2009-03-28": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
@@ -945,7 +958,7 @@
     ],
     "isHoliday": false
   },
-  "2009-03-28": {
+  "2009-03-29": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
@@ -955,7 +968,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-29": {
+  "2009-03-30": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -965,7 +978,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-30": {
+  "2009-03-31": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Revati",
@@ -975,7 +988,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-31": {
+  "2009-03-32": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
@@ -985,29 +998,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-03-32": {
+  "2009-04-01": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
     "yoga": "Shoola",
     "karana": "Vanija",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Shrawan Sankranti / Luto Falne Din"
+    ],
     "isHoliday": false
   },
-  "2009-04-01": {
+  "2009-04-02": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
     "yoga": "Ganda",
     "karana": "Bava",
     "festivals": [],
-    "events": [
-      "Shrawan Sankranti"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2009-04-02": {
+  "2009-04-03": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
@@ -1019,7 +1032,7 @@
     ],
     "isHoliday": false
   },
-  "2009-04-03": {
+  "2009-04-04": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
@@ -1029,7 +1042,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-04": {
+  "2009-04-05": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
@@ -1039,7 +1052,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-05": {
+  "2009-04-06": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
@@ -1049,7 +1062,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-06": {
+  "2009-04-07": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
@@ -1059,7 +1072,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-07": {
+  "2009-04-08": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -1069,7 +1082,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-08": {
+  "2009-04-09": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -1079,7 +1092,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-09": {
+  "2009-04-10": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -1089,7 +1102,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-10": {
+  "2009-04-11": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
@@ -1099,7 +1112,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-11": {
+  "2009-04-12": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
@@ -1109,9 +1122,9 @@
       "Nag Panchami"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2009-04-12": {
+  "2009-04-13": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
@@ -1123,39 +1136,40 @@
     ],
     "isHoliday": false
   },
-  "2009-04-13": {
+  "2009-04-14": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
     "yoga": "Sadhya",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-04-14": {
+  "2009-04-15": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Swati",
     "yoga": "Shubha",
-    "karana": "Vishti",
+    "karana": "Bava",
     "festivals": [],
     "events": [
-      "International Day of Friendship"
+      "International Day of Friendship",
+      "Kheer Khane Din"
     ],
     "isHoliday": false
   },
-  "2009-04-15": {
+  "2009-04-16": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
     "yoga": "Shukla",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-04-16": {
+  "2009-04-17": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -1165,7 +1179,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-17": {
+  "2009-04-18": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -1175,7 +1189,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-18": {
+  "2009-04-19": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Mula",
@@ -1185,7 +1199,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-19": {
+  "2009-04-20": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
@@ -1195,29 +1209,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-20": {
+  "2009-04-21": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
     "yoga": "Ayushman",
     "karana": "Vishti",
     "festivals": [
-      "Janai Purnima / Raksha Bandhan"
+      "Raksha Bandhan / Janai Purnima / Kwati Khane Din / Rishi Tarpani / Sanskrit Diwas"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2009-04-21": {
+  "2009-04-22": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
-    "nakshatra": "Shravana",
+    "nakshatra": "Dhanishta",
     "yoga": "Saubhagya",
     "karana": "Balava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-04-22": {
+  "2009-04-23": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
@@ -1227,7 +1241,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-23": {
+  "2009-04-24": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
@@ -1237,7 +1251,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-24": {
+  "2009-04-25": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Bhadrapada",
@@ -1249,17 +1263,17 @@
     ],
     "isHoliday": false
   },
-  "2009-04-25": {
+  "2009-04-26": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Revati",
-    "yoga": "Dhriti",
+    "yoga": "Shoola",
     "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-04-26": {
+  "2009-04-27": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
@@ -1269,29 +1283,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-27": {
-    "tithi": "Saptami",
+  "2009-04-28": {
+    "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
     "yoga": "Vriddhi",
-    "karana": "Bava",
+    "karana": "Balava",
     "festivals": [],
     "events": [
       "International Youth Day"
     ],
     "isHoliday": false
   },
-  "2009-04-28": {
-    "tithi": "Ashtami",
+  "2009-04-29": {
+    "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
     "yoga": "Dhruva",
-    "karana": "Kaulava",
+    "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-04-29": {
+  "2009-04-30": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
@@ -1301,7 +1315,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-30": {
+  "2009-04-31": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
@@ -1311,17 +1325,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-04-31": {
+  "2009-05-01": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
     "yoga": "Vajra",
     "karana": "Balava",
     "festivals": [],
+    "events": [
+      "Bhadra Sankranti"
+    ],
+    "isHoliday": false
+  },
+  "2009-05-02": {
+    "tithi": "Dwadashi",
+    "paksha": "Krishna",
+    "nakshatra": "Punarvasu",
+    "yoga": "Siddhi",
+    "karana": "Taitila",
+    "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-05-01": {
+  "2009-05-03": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -1331,7 +1357,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-02": {
+  "2009-05-04": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -1343,7 +1369,7 @@
     ],
     "isHoliday": false
   },
-  "2009-05-03": {
+  "2009-05-05": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -1353,9 +1379,9 @@
       "Kushe Aunsi (Fathers' Day)"
     ],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2009-05-04": {
+  "2009-05-06": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -1365,39 +1391,43 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-05": {
+  "2009-05-07": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
-    "yoga": "Shiva",
+    "yoga": "Siddha",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Dar Khane Din"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2009-05-06": {
+  "2009-05-08": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
-    "yoga": "Siddha",
+    "yoga": "Sadhya",
     "karana": "Taitila",
     "festivals": [
-      "Teej"
+      "Haritalika Teej"
     ],
     "events": [],
     "isHoliday": true
   },
-  "2009-05-07": {
+  "2009-05-09": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
     "yoga": "Sadhya",
     "karana": "Vanija",
-    "festivals": [],
+    "festivals": [
+      "Ganesh Chaturthi"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2009-05-08": {
+  "2009-05-10": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
@@ -1409,7 +1439,7 @@
     "events": [],
     "isHoliday": true
   },
-  "2009-05-09": {
+  "2009-05-11": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -1419,17 +1449,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-10": {
+  "2009-05-12": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
-    "yoga": "Brahma",
+    "yoga": "Indra",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-05-11": {
+  "2009-05-13": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -1439,7 +1469,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-12": {
+  "2009-05-14": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -1451,7 +1481,7 @@
     ],
     "isHoliday": false
   },
-  "2009-05-13": {
+  "2009-05-15": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Mula",
@@ -1461,7 +1491,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-14": {
+  "2009-05-16": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
@@ -1471,7 +1501,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-15": {
+  "2009-05-17": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
@@ -1481,7 +1511,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-16": {
+  "2009-05-18": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
@@ -1491,7 +1521,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-17": {
+  "2009-05-19": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
@@ -1501,7 +1531,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-18": {
+  "2009-05-20": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
@@ -1511,7 +1541,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-19": {
+  "2009-05-21": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
@@ -1523,17 +1553,17 @@
     ],
     "isHoliday": false
   },
-  "2009-05-20": {
+  "2009-05-22": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
-    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra": "Revati",
     "yoga": "Ganda",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-05-21": {
+  "2009-05-23": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
@@ -1543,7 +1573,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-22": {
+  "2009-05-24": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
@@ -1555,7 +1585,7 @@
     ],
     "isHoliday": false
   },
-  "2009-05-23": {
+  "2009-05-25": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
@@ -1565,19 +1595,19 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-24": {
+  "2009-05-26": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
     "yoga": "Harsha",
-    "karana": "Vishti",
+    "karana": "Bava",
     "festivals": [
-      "Krishna Janmashtami"
+      "Krishna Janmashtami / Gaura Parva"
     ],
     "events": [],
     "isHoliday": true
   },
-  "2009-05-25": {
+  "2009-05-27": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
@@ -1585,19 +1615,19 @@
     "karana": "Balava",
     "festivals": [],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2009-05-26": {
+  "2009-05-28": {
     "tithi": "Navami",
     "paksha": "Krishna",
-    "nakshatra": "Mrigashirsha",
+    "nakshatra": "Ardra",
     "yoga": "Siddhi",
     "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-05-27": {
+  "2009-05-29": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
@@ -1607,7 +1637,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-28": {
+  "2009-05-30": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
@@ -1617,7 +1647,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-05-29": {
+  "2009-05-31": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -1629,7 +1659,7 @@
     ],
     "isHoliday": false
   },
-  "2009-05-30": {
+  "2009-06-01": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -1637,11 +1667,12 @@
     "karana": "Garaja",
     "festivals": [],
     "events": [
-      "World Ozone Day"
+      "World Ozone Day",
+      "Ashwin Sankranti / Bishwakarma Puja"
     ],
     "isHoliday": false
   },
-  "2009-05-31": {
+  "2009-06-02": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -1651,27 +1682,31 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-01": {
+  "2009-06-03": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
     "yoga": "Sadhya",
     "karana": "Shakuni",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "Constitution Day (Sambidhan Diwas)"
+    ],
+    "isHoliday": true
   },
-  "2009-06-02": {
+  "2009-06-04": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
     "yoga": "Shubha",
     "karana": "Naga",
-    "festivals": [],
+    "festivals": [
+      "Sohra Shraddha Samapti (Mahalaya)"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2009-06-03": {
+  "2009-06-05": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
@@ -1680,12 +1715,10 @@
     "festivals": [
       "Ghatasthapana"
     ],
-    "events": [
-      "Constitution Day"
-    ],
+    "events": [],
     "isHoliday": true
   },
-  "2009-06-04": {
+  "2009-06-06": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
@@ -1697,7 +1730,7 @@
     ],
     "isHoliday": false
   },
-  "2009-06-05": {
+  "2009-06-07": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -1707,17 +1740,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-06": {
+  "2009-06-08": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
-    "nakshatra": "Swati",
+    "nakshatra": "Vishakha",
     "yoga": "Vaidhriti",
     "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-06-07": {
+  "2009-06-09": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
@@ -1727,7 +1760,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-08": {
+  "2009-06-10": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -1737,7 +1770,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-09": {
+  "2009-06-11": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -1749,10 +1782,10 @@
     "events": [],
     "isHoliday": true
   },
-  "2009-06-10": {
+  "2009-06-12": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
-    "nakshatra": "Mula",
+    "nakshatra": "Purva Ashadha",
     "yoga": "Shobhana",
     "karana": "Bava",
     "festivals": [
@@ -1763,7 +1796,7 @@
     ],
     "isHoliday": true
   },
-  "2009-06-11": {
+  "2009-06-13": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
@@ -1775,7 +1808,7 @@
     "events": [],
     "isHoliday": true
   },
-  "2009-06-12": {
+  "2009-06-14": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
@@ -1787,17 +1820,19 @@
     "events": [],
     "isHoliday": true
   },
-  "2009-06-13": {
+  "2009-06-15": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
     "yoga": "Dhriti",
     "karana": "Bava",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "Dashain Holiday"
+    ],
+    "isHoliday": true
   },
-  "2009-06-14": {
+  "2009-06-16": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
@@ -1805,33 +1840,36 @@
     "karana": "Kaulava",
     "festivals": [],
     "events": [
-      "International Day of Older Persons"
+      "International Day of Older Persons",
+      "Dashain Holiday"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2009-06-15": {
+  "2009-06-17": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Ganda",
     "karana": "Garaja",
     "festivals": [
-      "Indra Jatra"
+      "Indra Jatra / Ananta Chaturdashi"
+    ],
+    "events": [],
+    "isHoliday": false
+  },
+  "2009-06-18": {
+    "tithi": "Purnima",
+    "paksha": "Shukla",
+    "nakshatra": "Uttara Bhadrapada",
+    "yoga": "Dhruva",
+    "karana": "Bava",
+    "festivals": [
+      "Kojagrat Purnima"
     ],
     "events": [],
     "isHoliday": true
   },
-  "2009-06-16": {
-    "tithi": "Purnima",
-    "paksha": "Shukla",
-    "nakshatra": "Uttara Bhadrapada",
-    "yoga": "Vriddhi",
-    "karana": "Vishti",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
-  },
-  "2009-06-17": {
+  "2009-06-19": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Revati",
@@ -1841,7 +1879,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-18": {
+  "2009-06-20": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Ashwini",
@@ -1853,7 +1891,7 @@
     ],
     "isHoliday": false
   },
-  "2009-06-19": {
+  "2009-06-21": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
@@ -1863,7 +1901,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-20": {
+  "2009-06-22": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
@@ -1873,7 +1911,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-21": {
+  "2009-06-23": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
@@ -1883,7 +1921,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-22": {
+  "2009-06-24": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
@@ -1895,7 +1933,7 @@
     ],
     "isHoliday": false
   },
-  "2009-06-23": {
+  "2009-06-25": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
@@ -1907,19 +1945,21 @@
     ],
     "isHoliday": false
   },
-  "2009-06-24": {
+  "2009-06-26": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
     "yoga": "Shiva",
     "karana": "Kaulava",
-    "festivals": [],
+    "festivals": [
+      "Jitiya Parva"
+    ],
     "events": [
       "International Day of the Girl Child"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2009-06-25": {
+  "2009-06-27": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -1929,7 +1969,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-26": {
+  "2009-06-28": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -1939,7 +1979,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-27": {
+  "2009-06-29": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -1949,7 +1989,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-28": {
+  "2009-06-30": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
@@ -1959,29 +1999,35 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-06-29": {
+  "2009-06-31": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
-    "nakshatra": "Purva Phalguni",
+    "nakshatra": "Uttara Phalguni",
     "yoga": "Brahma",
     "karana": "Garaja",
-    "festivals": [],
+    "festivals": [
+      "Kag Tihar"
+    ],
     "events": [
       "World Food Day"
     ],
     "isHoliday": false
   },
-  "2009-06-30": {
+  "2009-07-01": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
     "yoga": "Indra",
     "karana": "Vishti",
-    "festivals": [],
-    "events": [],
+    "festivals": [
+      "Kukur Tihar"
+    ],
+    "events": [
+      "Kartik Sankranti"
+    ],
     "isHoliday": false
   },
-  "2009-07-01": {
+  "2009-07-02": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -1990,12 +2036,10 @@
     "festivals": [
       "Laxmi Puja"
     ],
-    "events": [
-      "Kartik Sankranti"
-    ],
+    "events": [],
     "isHoliday": true
   },
-  "2009-07-02": {
+  "2009-07-03": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Chitra",
@@ -2007,7 +2051,7 @@
     "events": [],
     "isHoliday": true
   },
-  "2009-07-03": {
+  "2009-07-04": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Swati",
@@ -2019,17 +2063,21 @@
     "events": [],
     "isHoliday": true
   },
-  "2009-07-04": {
+  "2009-07-05": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Vishakha",
     "yoga": "Ayushman",
     "karana": "Taitila",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "festivals": [
+      "Tihar Holiday"
+    ],
+    "events": [
+      "Tihar Holiday"
+    ],
+    "isHoliday": true
   },
-  "2009-07-05": {
+  "2009-07-06": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -2039,7 +2087,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-06": {
+  "2009-07-07": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -2049,7 +2097,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-07": {
+  "2009-07-08": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Mula",
@@ -2063,7 +2111,7 @@
     ],
     "isHoliday": true
   },
-  "2009-07-08": {
+  "2009-07-09": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
@@ -2073,7 +2121,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-09": {
+  "2009-07-10": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
@@ -2083,7 +2131,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-10": {
+  "2009-07-11": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
@@ -2093,7 +2141,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-11": {
+  "2009-07-12": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
@@ -2103,17 +2151,19 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-12": {
+  "2009-07-13": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Dhruva",
     "karana": "Vishti",
-    "festivals": [],
+    "festivals": [
+      "Haribodhini Ekadashi / Tulsi Bibaha"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2009-07-13": {
+  "2009-07-14": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
@@ -2123,7 +2173,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-14": {
+  "2009-07-15": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Revati",
@@ -2135,17 +2185,17 @@
     ],
     "isHoliday": false
   },
-  "2009-07-15": {
-    "tithi": "Chaturdashi",
+  "2009-07-16": {
+    "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
     "yoga": "Vajra",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-07-16": {
+  "2009-07-17": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Bharani",
@@ -2155,7 +2205,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-17": {
+  "2009-07-18": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Krittika",
@@ -2165,7 +2215,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-18": {
+  "2009-07-19": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Rohini",
@@ -2175,7 +2225,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-19": {
+  "2009-07-20": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
@@ -2185,7 +2235,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-20": {
+  "2009-07-21": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
@@ -2195,7 +2245,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-21": {
+  "2009-07-22": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
@@ -2205,7 +2255,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-22": {
+  "2009-07-23": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -2215,17 +2265,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-23": {
+  "2009-07-24": {
     "tithi": "Saptami",
     "paksha": "Krishna",
-    "nakshatra": "Pushya",
+    "nakshatra": "Ashlesha",
     "yoga": "Shukla",
     "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-07-24": {
+  "2009-07-25": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -2237,7 +2287,7 @@
     ],
     "isHoliday": false
   },
-  "2009-07-25": {
+  "2009-07-26": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -2247,7 +2297,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-26": {
+  "2009-07-27": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
@@ -2257,7 +2307,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-27": {
+  "2009-07-28": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
@@ -2267,7 +2317,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-07-28": {
+  "2009-07-29": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -2279,43 +2329,42 @@
     ],
     "isHoliday": false
   },
-  "2009-07-29": {
+  "2009-07-30": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
     "yoga": "Ayushman",
-    "karana": "Garaja",
-    "festivals": [
-      "Kag Tihar"
-    ],
-    "events": [],
-    "isHoliday": true
-  },
-  "2009-07-30": {
-    "tithi": "Chaturdashi",
-    "paksha": "Krishna",
-    "nakshatra": "Swati",
-    "yoga": "Saubhagya",
-    "karana": "Vishti",
-    "festivals": [
-      "Kukur Tihar"
-    ],
-    "events": [
-      "International Day for Tolerance"
-    ],
-    "isHoliday": true
-  },
-  "2009-08-01": {
-    "tithi": "Amavasya",
-    "paksha": "Krishna",
-    "nakshatra": "Vishakha",
-    "yoga": "Shobhana",
-    "karana": "Chatushpada",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
+  "2009-08-01": {
+    "tithi": "Chaturdashi",
+    "paksha": "Krishna",
+    "nakshatra": "Swati",
+    "yoga": "Saubhagya",
+    "karana": "Shakuni",
+    "festivals": [
+      "Bala Chaturdashi"
+    ],
+    "events": [
+      "International Day for Tolerance",
+      "Mangsir Sankranti"
+    ],
+    "isHoliday": false
+  },
   "2009-08-02": {
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "nakshatra": "Vishakha",
+    "yoga": "Shobhana",
+    "karana": "Naga",
+    "festivals": [],
+    "events": [],
+    "isHoliday": false
+  },
+  "2009-08-03": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Anuradha",
@@ -2325,7 +2374,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-03": {
+  "2009-08-04": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Jyeshtha",
@@ -2337,7 +2386,7 @@
     ],
     "isHoliday": false
   },
-  "2009-08-04": {
+  "2009-08-05": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Mula",
@@ -2349,7 +2398,7 @@
     ],
     "isHoliday": false
   },
-  "2009-08-05": {
+  "2009-08-06": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
@@ -2359,27 +2408,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-06": {
+  "2009-08-07": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
     "yoga": "Ganda",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Bibaha Panchami"
+    ],
     "events": [],
     "isHoliday": false
   },
-  "2009-08-07": {
+  "2009-08-08": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
-    "yoga": "Vriddhi",
+    "yoga": "Dhruva",
     "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-08-08": {
+  "2009-08-09": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
@@ -2389,7 +2440,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-09": {
+  "2009-08-10": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
@@ -2401,7 +2452,7 @@
     ],
     "isHoliday": false
   },
-  "2009-08-10": {
+  "2009-08-11": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
@@ -2411,7 +2462,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-11": {
+  "2009-08-12": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
@@ -2421,7 +2472,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-12": {
+  "2009-08-13": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Revati",
@@ -2431,7 +2482,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-13": {
+  "2009-08-14": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
@@ -2441,61 +2492,63 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-14": {
+  "2009-08-15": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
-    "nakshatra": "Bharani",
+    "nakshatra": "Krittika",
     "yoga": "Parigha",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-08-15": {
+  "2009-08-16": {
     "tithi": "Purnima",
     "paksha": "Shukla",
-    "nakshatra": "Krittika",
+    "nakshatra": "Rohini",
     "yoga": "Shiva",
-    "karana": "Vishti",
-    "festivals": [],
+    "karana": "Bava",
+    "festivals": [
+      "Udhauli Parva / Yomari Punhi"
+    ],
     "events": [
       "World AIDS Day"
     ],
     "isHoliday": false
   },
-  "2009-08-16": {
+  "2009-08-17": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
-    "nakshatra": "Rohini",
+    "nakshatra": "Mrigashirsha",
     "yoga": "Siddha",
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-08-17": {
+  "2009-08-18": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Mrigashirsha",
-    "yoga": "Sadhya",
-    "karana": "Taitila",
+    "yoga": "Shubha",
+    "karana": "Garaja",
     "festivals": [],
     "events": [
       "International Day of Persons with Disabilities"
     ],
     "isHoliday": false
   },
-  "2009-08-18": {
+  "2009-08-19": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Ardra",
     "yoga": "Shukla",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-08-19": {
+  "2009-08-20": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
@@ -2507,27 +2560,27 @@
     ],
     "isHoliday": false
   },
-  "2009-08-20": {
+  "2009-08-21": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
-    "yoga": "Brahma",
+    "yoga": "Indra",
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-08-21": {
+  "2009-08-22": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
-    "yoga": "Indra",
+    "yoga": "Vaidhriti",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-08-22": {
+  "2009-08-23": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -2537,7 +2590,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-23": {
+  "2009-08-24": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
@@ -2547,7 +2600,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-24": {
+  "2009-08-25": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
@@ -2559,7 +2612,7 @@
     ],
     "isHoliday": false
   },
-  "2009-08-25": {
+  "2009-08-26": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -2569,7 +2622,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-26": {
+  "2009-08-27": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
@@ -2579,7 +2632,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-27": {
+  "2009-08-28": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Swati",
@@ -2589,27 +2642,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-08-28": {
+  "2009-08-29": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
-    "nakshatra": "Swati",
+    "nakshatra": "Vishakha",
     "yoga": "Atiganda",
     "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-08-29": {
+  "2009-09-01": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
-    "nakshatra": "Vishakha",
-    "yoga": "Sukarma",
+    "nakshatra": "Anuradha",
+    "yoga": "Dhriti",
     "karana": "Vanija",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Poush Sankranti"
+    ],
     "isHoliday": false
   },
-  "2009-09-01": {
+  "2009-09-02": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
@@ -2619,7 +2674,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-02": {
+  "2009-09-03": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -2629,7 +2684,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-03": {
+  "2009-09-04": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Purva Ashadha",
@@ -2641,7 +2696,7 @@
     ],
     "isHoliday": false
   },
-  "2009-09-04": {
+  "2009-09-05": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
@@ -2651,7 +2706,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-05": {
+  "2009-09-06": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Shravana",
@@ -2661,7 +2716,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-06": {
+  "2009-09-07": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
@@ -2671,7 +2726,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-07": {
+  "2009-09-08": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
@@ -2681,7 +2736,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-08": {
+  "2009-09-09": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
@@ -2691,7 +2746,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-09": {
+  "2009-09-10": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
@@ -2701,7 +2756,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-10": {
+  "2009-09-11": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Revati",
@@ -2711,9 +2766,9 @@
     "events": [
       "Christmas Day"
     ],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2009-09-11": {
+  "2009-09-12": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
@@ -2723,7 +2778,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-12": {
+  "2009-09-13": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Bharani",
@@ -2733,7 +2788,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-13": {
+  "2009-09-14": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Krittika",
@@ -2743,29 +2798,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-14": {
+  "2009-09-15": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
     "yoga": "Shubha",
     "karana": "Taitila",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "Tamu Lhosar"
+    ],
+    "isHoliday": true
   },
-  "2009-09-15": {
+  "2009-09-16": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
     "yoga": "Shukla",
     "karana": "Vanija",
     "festivals": [],
-    "events": [
-      "Tamu Lhosar"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2009-09-16": {
+  "2009-09-17": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -2775,7 +2830,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-17": {
+  "2009-09-18": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Punarvasu",
@@ -2788,7 +2843,7 @@
     ],
     "isHoliday": false
   },
-  "2009-09-18": {
+  "2009-09-19": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Pushya",
@@ -2798,7 +2853,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-19": {
+  "2009-09-20": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -2808,7 +2863,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-20": {
+  "2009-09-21": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -2820,7 +2875,7 @@
     ],
     "isHoliday": false
   },
-  "2009-09-21": {
+  "2009-09-22": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
@@ -2830,7 +2885,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-22": {
+  "2009-09-23": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
@@ -2840,7 +2895,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-23": {
+  "2009-09-24": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
@@ -2850,7 +2905,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-24": {
+  "2009-09-25": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -2860,7 +2915,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-25": {
+  "2009-09-26": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
@@ -2870,29 +2925,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-26": {
+  "2009-09-27": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Swati",
     "yoga": "Dhriti",
     "karana": "Vanija",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "National Unity Day (Prithvi Jayanti)"
+    ],
+    "isHoliday": true
   },
-  "2009-09-27": {
+  "2009-09-28": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
     "yoga": "Shoola",
     "karana": "Bava",
     "festivals": [],
-    "events": [
-      "National Unity Day"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2009-09-28": {
+  "2009-09-29": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
@@ -2902,7 +2957,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-29": {
+  "2009-09-30": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
@@ -2912,39 +2967,41 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-09-30": {
+  "2009-10-01": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Mula",
-    "yoga": "Dhruva",
+    "yoga": "Vyaghata",
     "karana": "Vishti",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "Maghe Sankranti / Maghi Parva"
+    ],
+    "isHoliday": true
   },
-  "2009-10-01": {
+  "2009-10-02": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
     "yoga": "Harsha",
     "karana": "Chatushpada",
     "festivals": [],
-    "events": [
-      "Maghe Sankranti"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2009-10-02": {
+  "2009-10-03": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Uttara Ashadha",
     "yoga": "Vajra",
     "karana": "Bava",
-    "festivals": [],
+    "festivals": [
+      "Sonam Lhosar"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2009-10-03": {
+  "2009-10-04": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Dhanishta",
@@ -2954,7 +3011,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-04": {
+  "2009-10-05": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
@@ -2964,17 +3021,19 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-05": {
-    "tithi": "Chaturthi",
+  "2009-10-06": {
+    "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Variyana",
-    "karana": "Vishti",
-    "festivals": [],
+    "karana": "Bava",
+    "festivals": [
+      "Basanta Panchami / Saraswati Puja"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2009-10-06": {
+  "2009-10-07": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
@@ -2984,7 +3043,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-07": {
+  "2009-10-08": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Revati",
@@ -2994,7 +3053,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-08": {
+  "2009-10-09": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
@@ -3004,7 +3063,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-09": {
+  "2009-10-10": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Bharani",
@@ -3014,7 +3073,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-10": {
+  "2009-10-11": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Krittika",
@@ -3026,7 +3085,7 @@
     ],
     "isHoliday": false
   },
-  "2009-10-11": {
+  "2009-10-12": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
@@ -3036,7 +3095,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-12": {
+  "2009-10-13": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
@@ -3046,7 +3105,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-13": {
+  "2009-10-14": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -3058,7 +3117,7 @@
     ],
     "isHoliday": false
   },
-  "2009-10-14": {
+  "2009-10-15": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
@@ -3068,29 +3127,29 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-15": {
+  "2009-10-16": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
     "yoga": "Priti",
     "karana": "Vishti",
     "festivals": [],
-    "events": [],
+    "events": [
+      "Martyrs' Day (Shahid Diwas)"
+    ],
     "isHoliday": false
   },
-  "2009-10-16": {
+  "2009-10-17": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
     "yoga": "Ayushman",
     "karana": "Balava",
     "festivals": [],
-    "events": [
-      "Martyrs' Day"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2009-10-17": {
+  "2009-10-18": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Ashlesha",
@@ -3100,7 +3159,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-18": {
+  "2009-10-19": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Magha",
@@ -3110,7 +3169,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-19": {
+  "2009-10-20": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
@@ -3122,7 +3181,7 @@
     ],
     "isHoliday": false
   },
-  "2009-10-20": {
+  "2009-10-21": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
@@ -3132,7 +3191,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-21": {
+  "2009-10-22": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -3144,17 +3203,17 @@
     ],
     "isHoliday": false
   },
-  "2009-10-22": {
+  "2009-10-23": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
     "yoga": "Shoola",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-10-23": {
+  "2009-10-24": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Swati",
@@ -3164,7 +3223,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-24": {
+  "2009-10-25": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
@@ -3174,7 +3233,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-25": {
+  "2009-10-26": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
@@ -3184,7 +3243,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-26": {
+  "2009-10-27": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
@@ -3194,7 +3253,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-27": {
+  "2009-10-28": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -3204,7 +3263,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-10-28": {
+  "2009-10-29": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -3216,17 +3275,21 @@
     ],
     "isHoliday": false
   },
-  "2009-10-29": {
+  "2009-11-01": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
     "yoga": "Siddhi",
     "karana": "Vanija",
-    "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "festivals": [
+      "Maha Shivaratri"
+    ],
+    "events": [
+      "Falgun Sankranti"
+    ],
+    "isHoliday": true
   },
-  "2009-11-01": {
+  "2009-11-02": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
@@ -3236,21 +3299,23 @@
     "events": [
       "World Radio Day"
     ],
-    "isHoliday": true
-  },
-  "2009-11-02": {
-    "tithi": "Amavasya",
-    "paksha": "Krishna",
-    "nakshatra": "Dhanishta",
-    "yoga": "Parigha",
-    "karana": "Naga",
-    "festivals": [],
-    "events": [
-      "Valentine's Day"
-    ],
     "isHoliday": false
   },
   "2009-11-03": {
+    "tithi": "Pratipada",
+    "paksha": "Shukla",
+    "nakshatra": "Dhanishta",
+    "yoga": "Parigha",
+    "karana": "Kimstughna",
+    "festivals": [
+      "Gyalpo Lhosar"
+    ],
+    "events": [
+      "Valentine's Day"
+    ],
+    "isHoliday": true
+  },
+  "2009-11-04": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Shatabhisha",
@@ -3260,7 +3325,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-04": {
+  "2009-11-05": {
     "tithi": "Tritiya",
     "paksha": "Shukla",
     "nakshatra": "Purva Bhadrapada",
@@ -3270,39 +3335,39 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-05": {
+  "2009-11-06": {
     "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Revati",
     "yoga": "Sadhya",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-11-06": {
+  "2009-11-07": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
     "yoga": "Shukla",
     "karana": "Balava",
     "festivals": [],
-    "events": [],
-    "isHoliday": false
+    "events": [
+      "National Democracy Day (Prajatantra Diwas)"
+    ],
+    "isHoliday": true
   },
-  "2009-11-07": {
+  "2009-11-08": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Bharani",
     "yoga": "Brahma",
     "karana": "Taitila",
     "festivals": [],
-    "events": [
-      "National Democracy Day"
-    ],
+    "events": [],
     "isHoliday": false
   },
-  "2009-11-08": {
+  "2009-11-09": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Krittika",
@@ -3314,7 +3379,7 @@
     ],
     "isHoliday": false
   },
-  "2009-11-09": {
+  "2009-11-10": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
@@ -3326,7 +3391,7 @@
     ],
     "isHoliday": false
   },
-  "2009-11-10": {
+  "2009-11-11": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
@@ -3336,7 +3401,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-11": {
+  "2009-11-12": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
@@ -3346,7 +3411,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-12": {
+  "2009-11-13": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
@@ -3356,7 +3421,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-13": {
+  "2009-11-14": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
@@ -3366,7 +3431,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-14": {
+  "2009-11-15": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
@@ -3374,9 +3439,9 @@
     "karana": "Taitila",
     "festivals": [],
     "events": [],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2009-11-15": {
+  "2009-11-16": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -3386,29 +3451,31 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-16": {
+  "2009-11-17": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Magha",
     "yoga": "Sukarma",
     "karana": "Vishti",
     "festivals": [
-      "Holi / Phagu Purnima"
+      "Holi / Phagu Purnima (Hilly)"
     ],
     "events": [],
     "isHoliday": true
   },
-  "2009-11-17": {
+  "2009-11-18": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Purva Phalguni",
     "yoga": "Dhriti",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Holi / Phagu Purnima (Terai)"
+    ],
     "events": [],
-    "isHoliday": false
+    "isHoliday": true
   },
-  "2009-11-18": {
+  "2009-11-19": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Uttara Phalguni",
@@ -3418,7 +3485,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-19": {
+  "2009-11-20": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
@@ -3430,7 +3497,7 @@
     ],
     "isHoliday": false
   },
-  "2009-11-20": {
+  "2009-11-21": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
@@ -3440,7 +3507,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-21": {
+  "2009-11-22": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Swati",
@@ -3450,17 +3517,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-22": {
+  "2009-11-23": {
     "tithi": "Panchami",
     "paksha": "Krishna",
-    "nakshatra": "Swati",
+    "nakshatra": "Vishakha",
     "yoga": "Vyaghata",
     "karana": "Taitila",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-11-23": {
+  "2009-11-24": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
@@ -3470,7 +3537,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-24": {
+  "2009-11-25": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
@@ -3482,7 +3549,7 @@
     ],
     "isHoliday": false
   },
-  "2009-11-25": {
+  "2009-11-26": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
@@ -3492,7 +3559,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-26": {
+  "2009-11-27": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -3502,7 +3569,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-27": {
+  "2009-11-28": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -3512,17 +3579,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-11-28": {
-    "tithi": "Ekadashi",
+  "2009-11-29": {
+    "tithi": "Dwadashi",
     "paksha": "Krishna",
-    "nakshatra": "Uttara Ashadha",
+    "nakshatra": "Shravana",
     "yoga": "Parigha",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-11-29": {
+  "2009-11-30": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
@@ -3534,29 +3601,31 @@
     "events": [],
     "isHoliday": true
   },
-  "2009-11-30": {
+  "2009-12-01": {
     "tithi": "Chaturdashi",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
-    "yoga": "Siddha",
+    "yoga": "Sadhya",
     "karana": "Vishti",
     "festivals": [],
-    "events": [],
-    "isHoliday": true
+    "events": [
+      "Chaitra Sankranti"
+    ],
+    "isHoliday": false
   },
-  "2009-12-01": {
+  "2009-12-02": {
     "tithi": "Amavasya",
     "paksha": "Krishna",
     "nakshatra": "Purva Bhadrapada",
     "yoga": "Shubha",
-    "karana": "Chatushpada",
+    "karana": "Naga",
     "festivals": [
       "Ghode Jatra"
     ],
     "events": [],
     "isHoliday": true
   },
-  "2009-12-02": {
+  "2009-12-03": {
     "tithi": "Pratipada",
     "paksha": "Shukla",
     "nakshatra": "Uttara Bhadrapada",
@@ -3566,7 +3635,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-03": {
+  "2009-12-04": {
     "tithi": "Dvitiya",
     "paksha": "Shukla",
     "nakshatra": "Revati",
@@ -3576,17 +3645,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-04": {
-    "tithi": "Tritiya",
+  "2009-12-05": {
+    "tithi": "Chaturthi",
     "paksha": "Shukla",
     "nakshatra": "Ashwini",
     "yoga": "Indra",
-    "karana": "Garaja",
+    "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-12-05": {
+  "2009-12-06": {
     "tithi": "Panchami",
     "paksha": "Shukla",
     "nakshatra": "Bharani",
@@ -3596,7 +3665,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-06": {
+  "2009-12-07": {
     "tithi": "Shashthi",
     "paksha": "Shukla",
     "nakshatra": "Krittika",
@@ -3608,7 +3677,7 @@
     ],
     "isHoliday": false
   },
-  "2009-12-07": {
+  "2009-12-08": {
     "tithi": "Saptami",
     "paksha": "Shukla",
     "nakshatra": "Rohini",
@@ -3620,7 +3689,7 @@
     ],
     "isHoliday": false
   },
-  "2009-12-08": {
+  "2009-12-09": {
     "tithi": "Ashtami",
     "paksha": "Shukla",
     "nakshatra": "Mrigashirsha",
@@ -3632,21 +3701,23 @@
     "events": [
       "World Water Day"
     ],
-    "isHoliday": true
+    "isHoliday": false
   },
-  "2009-12-09": {
+  "2009-12-10": {
     "tithi": "Navami",
     "paksha": "Shukla",
     "nakshatra": "Ardra",
     "yoga": "Shobhana",
     "karana": "Balava",
-    "festivals": [],
+    "festivals": [
+      "Ram Navami"
+    ],
     "events": [
       "World Meteorological Day"
     ],
     "isHoliday": false
   },
-  "2009-12-10": {
+  "2009-12-11": {
     "tithi": "Dashami",
     "paksha": "Shukla",
     "nakshatra": "Punarvasu",
@@ -3658,7 +3729,7 @@
     ],
     "isHoliday": false
   },
-  "2009-12-11": {
+  "2009-12-12": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Pushya",
@@ -3668,7 +3739,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-12": {
+  "2009-12-13": {
     "tithi": "Ekadashi",
     "paksha": "Shukla",
     "nakshatra": "Ashlesha",
@@ -3678,7 +3749,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-13": {
+  "2009-12-14": {
     "tithi": "Dwadashi",
     "paksha": "Shukla",
     "nakshatra": "Magha",
@@ -3688,7 +3759,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-14": {
+  "2009-12-15": {
     "tithi": "Trayodashi",
     "paksha": "Shukla",
     "nakshatra": "Purva Phalguni",
@@ -3698,37 +3769,37 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-15": {
+  "2009-12-16": {
     "tithi": "Chaturdashi",
     "paksha": "Shukla",
     "nakshatra": "Uttara Phalguni",
-    "yoga": "Ganda",
+    "yoga": "Vriddhi",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-12-16": {
+  "2009-12-17": {
     "tithi": "Purnima",
     "paksha": "Shukla",
     "nakshatra": "Hasta",
-    "yoga": "Vriddhi",
+    "yoga": "Dhruva",
     "karana": "Bava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-12-17": {
+  "2009-12-18": {
     "tithi": "Pratipada",
     "paksha": "Krishna",
     "nakshatra": "Hasta",
     "yoga": "Dhruva",
-    "karana": "Balava",
+    "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-12-18": {
+  "2009-12-19": {
     "tithi": "Dvitiya",
     "paksha": "Krishna",
     "nakshatra": "Chitra",
@@ -3738,7 +3809,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-19": {
+  "2009-12-20": {
     "tithi": "Tritiya",
     "paksha": "Krishna",
     "nakshatra": "Swati",
@@ -3750,7 +3821,7 @@
     ],
     "isHoliday": false
   },
-  "2009-12-20": {
+  "2009-12-21": {
     "tithi": "Chaturthi",
     "paksha": "Krishna",
     "nakshatra": "Vishakha",
@@ -3760,27 +3831,27 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-21": {
+  "2009-12-22": {
     "tithi": "Panchami",
     "paksha": "Krishna",
     "nakshatra": "Anuradha",
-    "yoga": "Siddhi",
+    "yoga": "Vyatipata",
     "karana": "Kaulava",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-12-22": {
+  "2009-12-23": {
     "tithi": "Shashthi",
     "paksha": "Krishna",
     "nakshatra": "Jyeshtha",
-    "yoga": "Vyatipata",
+    "yoga": "Variyana",
     "karana": "Garaja",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-12-23": {
+  "2009-12-24": {
     "tithi": "Saptami",
     "paksha": "Krishna",
     "nakshatra": "Mula",
@@ -3790,7 +3861,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-24": {
+  "2009-12-25": {
     "tithi": "Ashtami",
     "paksha": "Krishna",
     "nakshatra": "Purva Ashadha",
@@ -3802,7 +3873,7 @@
     ],
     "isHoliday": false
   },
-  "2009-12-25": {
+  "2009-12-26": {
     "tithi": "Navami",
     "paksha": "Krishna",
     "nakshatra": "Uttara Ashadha",
@@ -3812,17 +3883,17 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-26": {
+  "2009-12-27": {
     "tithi": "Dashami",
     "paksha": "Krishna",
     "nakshatra": "Shravana",
     "yoga": "Sadhya",
-    "karana": "Vanija",
+    "karana": "Vishti",
     "festivals": [],
     "events": [],
     "isHoliday": false
   },
-  "2009-12-27": {
+  "2009-12-28": {
     "tithi": "Ekadashi",
     "paksha": "Krishna",
     "nakshatra": "Dhanishta",
@@ -3832,7 +3903,7 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-28": {
+  "2009-12-29": {
     "tithi": "Dwadashi",
     "paksha": "Krishna",
     "nakshatra": "Shatabhisha",
@@ -3842,26 +3913,14 @@
     "events": [],
     "isHoliday": false
   },
-  "2009-12-29": {
+  "2009-12-30": {
     "tithi": "Trayodashi",
     "paksha": "Krishna",
-    "nakshatra": "Purva Bhadrapada",
+    "nakshatra": "Uttara Bhadrapada",
     "yoga": "Brahma",
     "karana": "Vanija",
     "festivals": [],
     "events": [],
     "isHoliday": false
-  },
-  "2009-12-30": {
-    "tithi": "Amavasya",
-    "paksha": "Krishna",
-    "nakshatra": "Revati",
-    "yoga": "Vaidhriti",
-    "karana": "Chatushpada",
-    "festivals": [
-      "Ghode Jatra"
-    ],
-    "events": [],
-    "isHoliday": true
   }
 }

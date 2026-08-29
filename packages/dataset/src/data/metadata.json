@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-28T05:17:18.039Z",
+  "generatedAt": "2026-08-29T11:45:27.079Z",
   "source": "manual year files",
   "sourceEndpoint": "",
   "coverage": {
-    "startYear": 2000,
-    "endYear": 2090,
-    "keys": 33072
+    "startYear": 1990,
+    "endYear": 2100,
+    "keys": 40543
   },
   "quality": {
     "unknownTithiCount": 0,

@@ -20,7 +20,6 @@ export const datasetManager = {
     datasetStore = { ...datasetStore, ...dataset };
   },
 
-
   lookupEntry(bs: BSDate): BSDayData | null {
     const strictKey = buildBsKey(bs);
     const strict = datasetStore[strictKey];
