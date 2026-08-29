@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import bundledDataset from '../../dataset/src/data/dataset.json';
 
-import { BSDay } from '../src';
+import { BSDay, bsday, datasetManager } from '../src';
 import type { BSDayPluginHost } from '../src';
 
 beforeAll(() => {
@@ -260,5 +260,12 @@ describe('BSDay Core Features', () => {
       seconds: 15,
       milliseconds: 100,
     });
+  });
+
+  it('exposes setDataset and datasetManager on bsday factory', () => {
+    expect(typeof bsday.setDataset).toBe('function');
+    expect(bsday.datasetManager).toBeDefined();
+    expect(datasetManager).toBe(bsday.datasetManager);
+    expect(typeof bsday.datasetManager.getDataset).toBe('function');
   });
 });

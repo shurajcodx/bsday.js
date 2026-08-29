@@ -1,15 +1,10 @@
 import swisseph from 'swisseph-v2';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
 // Set accurate path and Lahiri Ayanamsa
-const isESM = typeof import.meta !== 'undefined' && import.meta.url;
-const _dirname = isESM ? path.dirname(fileURLToPath(import.meta.url)) : __dirname;
-
-// In the build, __dirname will be 'dist'. In 'src', it's 'src'.
-// The 'ephe' folder is at 'packages/dataset/ephe'.
-// If _dirname is 'dist' or 'src', then '../ephe' is 'packages/dataset/ephe'.
-const ephePath = path.resolve(_dirname, '../ephe');
+// In tsup builds with --shims, __dirname is available in both ESM and CJS.
+const _dirname = typeof __dirname !== 'undefined' ? __dirname : path.resolve(process.cwd());
+const ephePath = process.env.BSDAY_EPHE_PATH || path.resolve(_dirname, '../ephe');
 
 swisseph.swe_set_ephe_path(ephePath);
 swisseph.swe_set_sid_mode(swisseph.SE_SIDM_LAHIRI, 0, 0);
@@ -106,19 +101,35 @@ export interface PanchangData {
   karana: string;
 }
 
+interface SweCalcResult {
+  longitude?: number;
+  latitude?: number;
+  distance?: number;
+  longitudeSpeed?: number;
+  latitudeSpeed?: number;
+  distanceSpeed?: number;
+  rflag?: number;
+}
+
+interface SweRiseTransResult {
+  transitTime?: number;
+  rise?: number;
+  set?: number;
+}
+
 // Returns panchang for given JD
 export function computePanchang(jd_ut: number): PanchangData {
-  let sun: unknown, moon: unknown;
+  let sun: SweCalcResult | null = null;
+  let moon: SweCalcResult | null = null;
   try {
-    sun = swisseph.swe_calc_ut(jd_ut, swisseph.SE_SUN, FLAGS);
-    moon = swisseph.swe_calc_ut(jd_ut, swisseph.SE_MOON, FLAGS);
+    sun = swisseph.swe_calc_ut(jd_ut, swisseph.SE_SUN, FLAGS) as SweCalcResult;
+    moon = swisseph.swe_calc_ut(jd_ut, swisseph.SE_MOON, FLAGS) as SweCalcResult;
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (
       !sun ||
-      typeof (sun as any).longitude === 'undefined' ||
+      typeof sun.longitude === 'undefined' ||
       !moon ||
-      typeof (moon as any).longitude === 'undefined'
+      typeof moon.longitude === 'undefined'
     ) {
       throw new Error('Invalid coordinates returned from Swiss Ephemeris');
     }
@@ -134,10 +145,8 @@ export function computePanchang(jd_ut: number): PanchangData {
     };
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const sunLon = (sun as any).longitude as number;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const moonLon = (moon as any).longitude as number;
+  const sunLon = sun.longitude;
+  const moonLon = moon.longitude;
 
   // Tithi: 360 degrees divided into 30 parts of 12 degrees each
   const diff = (moonLon - sunLon + 360) % 360;
@@ -230,8 +239,19 @@ export function sunriseJD(
 ): number {
   const jdMidnight = swisseph.swe_julday(year, month, day, 0, swisseph.SE_GREG_CAL);
   try {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const res = (swisseph as any).swe_rise_trans(
+    const sweModule = swisseph as unknown as {
+      swe_rise_trans: (
+        tjd: number,
+        ipl: number,
+        starname: string,
+        epheflag: number,
+        rsmi: number,
+        geopos: number[],
+        atpress: number,
+        attemp: number,
+      ) => SweRiseTransResult;
+    };
+    const res = sweModule.swe_rise_trans(
       jdMidnight,
       swisseph.SE_SUN,
       '',
@@ -241,11 +261,10 @@ export function sunriseJD(
       1013.25,
       15,
     );
-    const transitRes = res as { transitTime?: number; rise?: number } | undefined;
-    if (transitRes && typeof transitRes.transitTime === 'number') return transitRes.transitTime;
-    if (transitRes && typeof transitRes.rise === 'number') return transitRes.rise;
+    if (res && typeof res.transitTime === 'number') return res.transitTime;
+    if (res && typeof res.rise === 'number') return res.rise;
   } catch {
-    // console.warn('Sunrise calculation failed, using fallback');
+    // Fallback on error
   }
   // Fallback to approx 6:00 AM Kathmandu (LT) = 00:15 AM UTC
   // 00:15 UTC = 0.25 / 24 = ~0.0104167 days

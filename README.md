@@ -19,9 +19,9 @@
 
 ## 📦 Packages
 
-| Package | Version | Description |
-| :--- | :---: | :--- |
-| **[@bsday.js/core](./packages/core)** | `1.1.0` | Ultra-fast (< 5KB), zero-dependency dual calendar SDK with Day.js syntax parity. |
+| Package                                     | Version | Description                                                                            |
+| :------------------------------------------ | :-----: | :------------------------------------------------------------------------------------- |
+| **[@bsday.js/core](./packages/core)**       | `1.1.0` | Ultra-fast (< 5KB), zero-dependency dual calendar SDK with Day.js syntax parity.       |
 | **[@bsday.js/dataset](./packages/dataset)** | `1.1.0` | 111-Year (1990–2100 BS / 40,543 days) astronomical Panchang & Nepali festival dataset. |
 
 ---
@@ -30,14 +30,14 @@
 
 Tested on Node.js v24 (macOS ARM64, 200,000 operations each):
 
-| Benchmark Operation | Throughput (ops/sec) | Avg Latency |
-|---|---|---|
-| **BS ➔ AD Date Conversion** | **~483,000 ops/sec** | `2.0 μs` |
-| **AD ➔ BS Date Conversion** | **~281,000 ops/sec** | `3.5 μs` |
-| **Fiscal Year (आर्थिक वर्ष) Engine** | **~207,000 ops/sec** | `4.8 μs` |
-| **KYC Chronological Age Calculation** | **~157,000 ops/sec** | `6.3 μs` |
-| **Full Date Formatting (`format`)** | **~125,000 ops/sec** | `8.0 μs` |
-| **Headless Calendar Matrix (42 cells/grid)** | **~1,200 grids/sec** | `0.8 ms` |
+| Benchmark Operation                          | Throughput (ops/sec) | Avg Latency |
+| -------------------------------------------- | -------------------- | ----------- |
+| **BS ➔ AD Date Conversion**                  | **~483,000 ops/sec** | `2.0 μs`    |
+| **AD ➔ BS Date Conversion**                  | **~281,000 ops/sec** | `3.5 μs`    |
+| **Fiscal Year (आर्थिक वर्ष) Engine**         | **~207,000 ops/sec** | `4.8 μs`    |
+| **KYC Chronological Age Calculation**        | **~157,000 ops/sec** | `6.3 μs`    |
+| **Full Date Formatting (`format`)**          | **~125,000 ops/sec** | `8.0 μs`    |
+| **Headless Calendar Matrix (42 cells/grid)** | **~1,200 grids/sec** | `0.8 ms`    |
 
 ---
 
@@ -52,7 +52,8 @@ pnpm add @bsday.js/core
 yarn add @bsday.js/core
 ```
 
-*(Optional)* For Vedic Panchang, Tithi, Nakshatra, and Nepali public holidays across 111 years (1990–2100 BS):
+_(Optional)_ For Vedic Panchang, Tithi, Nakshatra, and Nepali public holidays across 111 years (1990–2100 BS):
+
 ```bash
 npm install @bsday.js/dataset
 ```
@@ -62,6 +63,7 @@ npm install @bsday.js/dataset
 ## 🚀 Quickstart & Common Use Cases
 
 ### 1. Basic Date Creation & Formatting
+
 ```typescript
 import { bsday, BSDay } from '@bsday.js/core';
 
@@ -84,6 +86,7 @@ console.log(bs.format('YYYY [साल] MMMM [महिना] DD [गते]'))
 ---
 
 ### 2. BS ↔ AD Dual-Calendar Conversion
+
 ```typescript
 // BS to AD
 const bs = bsday.bs('2081/06/27');
@@ -98,6 +101,7 @@ console.log(fromGregorian.format('YYYY/MM/DD')); // "2081/06/27"
 ---
 
 ### 3. Date Arithmetic & Manipulation (Day.js Parity)
+
 ```typescript
 const date = bsday.bs(2081, 5, 15);
 
@@ -107,10 +111,10 @@ const prevWeek = date.subtract(7, 'day');
 
 // Start / End of Units
 const startOfMonth = date.startOf('month'); // 2081/05/01 00:00:00.000
-const endOfMonth = date.endOf('month');     // 2081/05/31 23:59:59.999
+const endOfMonth = date.endOf('month'); // 2081/05/31 23:59:59.999
 
 // Comparison
-date.isBefore(nextMonth);         // true
+date.isBefore(nextMonth); // true
 date.isSameOrAfter(date, 'date'); // true
 date.diff(bsday.bs(2080, 5, 15), 'year'); // 1
 ```
@@ -118,13 +122,14 @@ date.diff(bsday.bs(2080, 5, 15), 'year'); // 1
 ---
 
 ### 4. Nepali Fiscal Year (आर्थिक वर्ष) Engine
+
 Nepali Fiscal Year runs from **Shrawan 1 (Month 4)** to **Ashadh end (Month 3 next year)**:
 
 ```typescript
 const invoiceDate = bsday.bs(2081, 5, 10);
 
-console.log(invoiceDate.fiscalYear('short'));    // "2081/82"
-console.log(invoiceDate.fiscalYear('full'));     // "2081/2082"
+console.log(invoiceDate.fiscalYear('short')); // "2081/82"
+console.log(invoiceDate.fiscalYear('full')); // "2081/2082"
 console.log(invoiceDate.fiscalYear('extended')); // "FY 2081/82"
 
 // Localized in Nepali
@@ -136,12 +141,13 @@ console.log(invoiceDate.fiscalQuarter()); // 1
 
 // Start & End of Fiscal Year
 const fyStart = invoiceDate.startOf('fiscalYear'); // 2081/04/01 00:00:00.000
-const fyEnd = invoiceDate.endOf('fiscalYear');     // 2082/03/31 23:59:59.999
+const fyEnd = invoiceDate.endOf('fiscalYear'); // 2082/03/31 23:59:59.999
 ```
 
 ---
 
 ### 5. KYC & Chronological Age Calculation
+
 Accurately accounts for irregular Bikram Sambat month lengths without day drift:
 
 ```typescript
@@ -163,6 +169,7 @@ console.log(birthDate.isAdult(18)); // true
 ---
 
 ### 6. Headless Calendar Grid Generator (For UI / DatePickers)
+
 Build custom React, Vue, or Vanilla JS Nepali DatePickers with one line:
 
 ```typescript
@@ -179,17 +186,21 @@ const matrix = getCalendarMatrix(2083, 7, {
 ---
 
 ### 7. Form & Schema Validation (Zod & React Hook Form)
+
 ```typescript
 import { validateBSDateString } from '@bsday.js/core';
 import { z } from 'zod';
 
 const formSchema = z.object({
-  dobBS: z.string().refine((val) => {
-    const res = validateBSDateString(val, { minYear: 1990, maxYear: 2100 });
-    return res.isValid;
-  }, {
-    message: 'Invalid Nepali BS Date (Expected: YYYY/MM/DD)',
-  }),
+  dobBS: z.string().refine(
+    (val) => {
+      const res = validateBSDateString(val, { minYear: 1990, maxYear: 2100 });
+      return res.isValid;
+    },
+    {
+      message: 'Invalid Nepali BS Date (Expected: YYYY/MM/DD)',
+    },
+  ),
 });
 ```
 
@@ -197,12 +208,12 @@ const formSchema = z.object({
 
 ## 📚 Guides & Framework Recipes
 
-* 🔄 [Migrating from `nepali-date-converter`, `bikram-sambat-js`, & `nepali-datetime`](./docs/migration-guide.md)
-* ⚡ [Next.js (App Router & SSR) Integration Recipe](./docs/recipes/nextjs-app-router.md)
-* 📋 [React Hook Form + Zod BS Date Validation Recipe](./docs/recipes/react-hook-form-zod.md)
-* 🎨 [Accessible React + Tailwind CSS Headless DatePicker Component](./docs/recipes/headless-react-datepicker.md)
-* 🗄️ [Database & Prisma PostgreSQL UTC/BS Integration Recipe](./docs/recipes/prisma-postgres.md)
-* 📖 [Full API Specification & Architecture](./docs/api-design.md)
+- 🔄 [Migrating from `nepali-date-converter`, `bikram-sambat-js`, & `nepali-datetime`](./docs/migration-guide.md)
+- ⚡ [Next.js (App Router & SSR) Integration Recipe](./docs/recipes/nextjs-app-router.md)
+- 📋 [React Hook Form + Zod BS Date Validation Recipe](./docs/recipes/react-hook-form-zod.md)
+- 🎨 [Accessible React + Tailwind CSS Headless DatePicker Component](./docs/recipes/headless-react-datepicker.md)
+- 🗄️ [Database & Prisma PostgreSQL UTC/BS Integration Recipe](./docs/recipes/prisma-postgres.md)
+- 📖 [Full API Specification & Architecture](./docs/api-design.md)
 
 ---
 

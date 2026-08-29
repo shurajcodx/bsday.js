@@ -16,24 +16,57 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     },
     "./all": {
-      "types": "./dist/all.d.ts",
-      "import": "./dist/all.js",
-      "require": "./dist/all.cjs"
+      "import": {
+        "types": "./dist/all.d.ts",
+        "default": "./dist/all.js"
+      },
+      "require": {
+        "types": "./dist/all.d.cts",
+        "default": "./dist/all.cjs"
+      }
     },
     "./month-data": {
-      "types": "./dist/monthData.d.ts",
-      "import": "./dist/monthData.js",
-      "require": "./dist/monthData.cjs"
+      "import": {
+        "types": "./dist/monthData.d.ts",
+        "default": "./dist/monthData.js"
+      },
+      "require": {
+        "types": "./dist/monthData.d.cts",
+        "default": "./dist/monthData.cjs"
+      }
     },
     "./panchang-engine": {
-      "types": "./dist/panchang-engine.d.ts",
-      "import": "./dist/panchang-engine.js",
-      "require": "./dist/panchang-engine.cjs"
+      "import": {
+        "types": "./dist/panchang-engine.d.ts",
+        "default": "./dist/panchang-engine.js"
+      },
+      "require": {
+        "types": "./dist/panchang-engine.d.cts",
+        "default": "./dist/panchang-engine.cjs"
+      }
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "all": [
+        "./dist/all.d.ts"
+      ],
+      "month-data": [
+        "./dist/monthData.d.ts"
+      ],
+      "panchang-engine": [
+        "./dist/panchang-engine.d.ts"
+      ]
     }
   },
   "files": [
@@ -41,7 +74,7 @@
     "ephe"
   ],
   "scripts": {
-    "build": "npm run generate:month-data && tsup src/index.ts src/all.ts src/monthData.ts src/panchang-engine.ts --format esm,cjs --dts --shims",
+    "build": "node scripts/generate-month-data.mjs && tsup src/index.ts src/all.ts src/monthData.ts src/panchang-engine.ts --format esm,cjs --dts --shims",
     "generate:month-data": "node scripts/generate-month-data.mjs",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
@@ -50,7 +83,7 @@
     "build:aggregate": "node scripts/build-aggregate-from-years.mjs",
     "recompute:all": "node scripts/recompute-all-dataset.mjs",
     "create:year": "node scripts/create-year-template.mjs",
-    "prepublishOnly": "npm run build:aggregate && npm run build"
+    "prepublishOnly": "node scripts/build-aggregate-from-years.mjs && pnpm run build"
   },
   "dependencies": {},
   "devDependencies": {

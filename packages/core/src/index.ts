@@ -3,6 +3,7 @@ import { relativeTimePlugin } from './plugins/relativeTime';
 import { fiscalYearPlugin } from './plugins/fiscalYear';
 import { getCalendarMatrix } from './calendar/calendarGrid';
 import { pluginSystem } from './core/pluginSystem';
+import { datasetManager } from './core/datasetManager';
 import type { BSDayInput, BSDate, BSDayFactoryLike, BSDayPlugin } from './types';
 
 export { BSDay };
@@ -12,6 +13,8 @@ export interface BSDayFactory extends BSDayFactoryLike {
   relativeTimePlugin: typeof relativeTimePlugin;
   fiscalYearPlugin: typeof fiscalYearPlugin;
   getCalendarMatrix: typeof getCalendarMatrix;
+  setDataset: typeof BSDay.setDataset;
+  datasetManager: typeof datasetManager;
 }
 
 const bsdayFactory = ((input?: BSDayInput) => new BSDay(input)) as BSDayFactory;
@@ -32,6 +35,8 @@ bsdayFactory.ad = (ad: Date) => BSDay.fromAD(ad);
 bsdayFactory.now = () => BSDay.now();
 bsdayFactory.extend = (plugin: BSDayPlugin, options?: unknown) =>
   pluginSystem.extend(plugin, BSDay, bsdayFactory, options);
+bsdayFactory.setDataset = (dataset) => BSDay.setDataset(dataset);
+bsdayFactory.datasetManager = datasetManager;
 bsdayFactory.BSDay = BSDay;
 bsdayFactory.bsday = bsdayFactory;
 bsdayFactory.relativeTimePlugin = relativeTimePlugin;
@@ -42,7 +47,7 @@ export const bsday = bsdayFactory;
 
 export default bsday;
 
-export { relativeTimePlugin, fiscalYearPlugin };
+export { relativeTimePlugin, fiscalYearPlugin, datasetManager };
 export {
   isValidBSDate,
   isValidADDate,

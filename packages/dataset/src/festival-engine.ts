@@ -6,7 +6,7 @@ import {
   SunsetRule,
   NightRule,
   RelativeRule,
-} from './types/festival.js';
+} from './types/festival';
 
 export class FestivalEngine {
   /**

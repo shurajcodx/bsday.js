@@ -34,6 +34,10 @@ files.forEach((file) => {
   table[year] = monthCounts;
 });
 
+const formattedEntries = Object.entries(table)
+  .map(([year, counts]) => `  '${year}': [${counts.join(', ')}],`)
+  .join('\n');
+
 const content = `export type BsMonthTable = Record<number, readonly number[]>;
 
 /**
@@ -41,7 +45,9 @@ const content = `export type BsMonthTable = Record<number, readonly number[]>;
  * Accurate historical BS month-length table.
  * Generated from yearly JSON files in src/data/years.
  */
-export const ACCURATE_BS_MONTH_TABLE: BsMonthTable = ${JSON.stringify(table, null, 2)};
+export const ACCURATE_BS_MONTH_TABLE: BsMonthTable = {
+${formattedEntries}
+};
 `;
 
 fs.writeFileSync(outputFile, content);
