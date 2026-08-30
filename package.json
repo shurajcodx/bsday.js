@@ -17,18 +17,28 @@
     "prepublish:check": "pnpm run build && pnpm run check:dist && pnpm run check:exports && pnpm test"
   },
   "devDependencies": {
+    "@angular/compiler": "^22.1.4",
+    "@angular/core": "^22.1.4",
+    "@angular/forms": "^22.1.4",
     "@arethetypeswrong/cli": "^0.18.5",
     "@eslint/js": "^9.39.1",
     "@types/node": "^22.13.9",
+    "@types/react-dom": "^19.2.5",
     "@vitest/coverage-v8": "^3.0.8",
     "eslint": "^9.22.0",
     "globals": "^16.4.0",
+    "happy-dom": "^20.12.0",
     "prettier": "^3.5.3",
     "publint": "^0.3.24",
+    "react-dom": "^19.2.8",
+    "rxjs": "^7.8.2",
+    "svelte": "^5.57.0",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.46.3",
-    "vitest": "^3.0.8"
+    "vitest": "^3.0.8",
+    "vue": "^3.5.42",
+    "zone.js": "^0.16.2"
   },
   "engines": {
     "node": ">=20"

@@ -121,6 +121,7 @@ export {
   getDateRange,
   getMonthNames,
   getWeekdayNames,
+  toBSDayHelper,
   MONTH_NAMES,
   WEEKDAY_NAMES,
   type DateDisabledOptions,
