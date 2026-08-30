@@ -1,4 +1,5 @@
 import { BSDay } from '../core/BSDay';
+import { normalizeNepaliDigits } from '../utils/helpers';
 import type { BSDayInput, LocaleType } from '../types';
 
 export const MONTH_NAMES = {
@@ -87,8 +88,8 @@ export function toBSDayHelper(input: BSDayInput): BSDay {
     return input;
   }
   if (typeof input === 'string') {
-    const trimmed = input.trim();
-    const match = trimmed.match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})/);
+    const normalized = normalizeNepaliDigits(input.trim());
+    const match = normalized.match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})/);
     if (match) {
       const year = Number(match[1]);
       if (year >= 1970 && year <= 2100) {

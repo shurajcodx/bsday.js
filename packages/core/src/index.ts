@@ -4,7 +4,7 @@ import { fiscalYearPlugin } from './plugins/fiscalYear';
 import { getCalendarMatrix } from './calendar/calendarGrid';
 import { pluginSystem } from './core/pluginSystem';
 import { datasetManager } from './core/datasetManager';
-import type { BSDayInput, BSDate, BSDayFactoryLike, BSDayPlugin } from './types';
+import type { BSDayInput, BSDate, BSDayFactoryLike, BSDayPlugin, WorkdayOptions } from './types';
 
 export { BSDay };
 
@@ -23,6 +23,10 @@ export interface BSDayFactory extends BSDayFactoryLike {
   now(): number;
   /** Extend BSDay with a custom plugin */
   extend(plugin: BSDayPlugin, options?: unknown): void;
+  /** Check if a date is a business day */
+  isBusinessDay(date: BSDayInput, options?: WorkdayOptions): boolean;
+  /** Add business days skipping weekends and public holidays */
+  addBusinessDays(date: BSDayInput, days: number, options?: WorkdayOptions): BSDay;
   /** Hydrate external Panchang and festival dataset */
   setDataset: typeof BSDay.setDataset;
   /** Dataset manager instance */
@@ -57,6 +61,10 @@ bsdayFactory.ad = (ad: Date) => BSDay.fromAD(ad);
 bsdayFactory.now = () => BSDay.now();
 bsdayFactory.extend = (plugin: BSDayPlugin, options?: unknown) =>
   pluginSystem.extend(plugin, BSDay, bsdayFactory, options);
+bsdayFactory.isBusinessDay = (date: BSDayInput, options?: WorkdayOptions) =>
+  BSDay.isBusinessDay(date, options);
+bsdayFactory.addBusinessDays = (date: BSDayInput, days: number, options?: WorkdayOptions) =>
+  BSDay.addBusinessDays(date, days, options);
 bsdayFactory.setDataset = (dataset) => BSDay.setDataset(dataset);
 bsdayFactory.datasetManager = datasetManager;
 bsdayFactory.BSDay = BSDay;
@@ -97,6 +105,8 @@ export {
   type BSDateValidationResult,
 } from './utils/validation';
 
+export { normalizeNepaliDigits, toDevanagariDigits, localizeNumber, pad } from './utils/helpers';
+
 export {
   getCalendarMatrix,
   type CalendarCell,
@@ -126,9 +136,11 @@ export type {
   BSDayObject,
   BSDayPlugin,
   BSDayPluginHost,
+  BSDuration,
   CalendarType,
   DateUnit,
   FiscalYearFormat,
   FormatTokenResolver,
   LocaleType,
+  WorkdayOptions,
 } from './types';

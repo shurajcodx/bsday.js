@@ -14,13 +14,15 @@ import type {
   BSDayObject,
   BSDayPlugin,
   BSDayPluginHost,
+  BSDuration,
   CalendarType,
   DateUnit,
   FiscalYearFormat,
   FormatTokenResolver,
   LocaleType,
+  WorkdayOptions,
 } from '../types';
-export type { BSAge, DateUnit, FiscalYearFormat, LocaleType };
+export type { BSAge, BSDuration, DateUnit, FiscalYearFormat, LocaleType, WorkdayOptions };
 
 import {
   DEFAULT_CALENDAR,
@@ -36,6 +38,7 @@ import {
   localizeNumber,
   mod,
   nepalStartOfDay,
+  normalizeNepaliDigits,
   pad,
   updateNepalDateTime,
 } from '../utils/helpers';
@@ -97,9 +100,31 @@ function parseAdLikeString(input: string): Date | null {
   return Number.isNaN(parsed.getTime()) ? null : parsed;
 }
 
+export function toBSDayInstance(input: BSDayInput): BSDay {
+  if (input instanceof BSDay) {
+    return input;
+  }
+  if (typeof input === 'string') {
+    const normalized = normalizeNepaliDigits(input.trim());
+    if (/^\d{4}[/-]\d{1,2}[/-]\d{1,2}$/.test(normalized)) {
+      try {
+        return BSDay.bs(input);
+      } catch {
+        return new BSDay(NaN);
+      }
+    }
+  }
+  if (input && typeof input === 'object' && 'year' in input && 'month' in input && 'day' in input) {
+    const bsObj = input as { year: number; month: number; day: number };
+    return BSDay.bs(bsObj.year, bsObj.month, bsObj.day);
+  }
+  return new BSDay(input);
+}
+
 function parseBsString(input: string): BSDate {
-  const slashMatch = input.match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})$/);
-  const dashMatch = input.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+  const normalized = normalizeNepaliDigits(input.trim());
+  const slashMatch = normalized.match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})$/);
+  const dashMatch = normalized.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
   const match = slashMatch ?? dashMatch;
 
   if (!match) {
@@ -151,7 +176,7 @@ export class BSDay {
     }
 
     if (typeof input === 'string') {
-      const parsed = parseAdLikeString(input);
+      const parsed = parseAdLikeString(normalizeNepaliDigits(input));
       if (parsed) {
         this.adDate = parsed;
         return;
@@ -302,6 +327,14 @@ export class BSDay {
     return getCalendarMatrix(year, month, options);
   }
 
+  static isBusinessDay(date: BSDayInput, options?: WorkdayOptions): boolean {
+    return toBSDayInstance(date).isBusinessDay(options);
+  }
+
+  static addBusinessDays(date: BSDayInput, days: number, options?: WorkdayOptions): BSDay {
+    return toBSDayInstance(date).addBusinessDays(days, options);
+  }
+
   static isValid(input: string, pattern?: string, calendar?: CalendarType): boolean;
   static isValid(input: Date | BSDayInputBS | BSDate): boolean;
   static isValid(year: number, month: number, day: number, calendar?: CalendarType): boolean;
@@ -448,10 +481,9 @@ export class BSDay {
     return getBsMonthDays(bs.year, bs.month);
   }
 
-  isWeekend(): boolean {
-    const day = this.dayOfWeek();
-    // 0 = Sunday, 6 = Saturday
-    return day === 0 || day === 6;
+  isWeekend(weekendDays: number[] = [6]): boolean {
+    if (!this.isValid()) return false;
+    return weekendDays.includes(this.dayOfWeek());
   }
 
   toAD(): Date {
@@ -905,6 +937,141 @@ export class BSDay {
 
   get isHoliday(): boolean {
     return this.lookupDatasetEntry()?.isHoliday ?? false;
+  }
+
+  get isSaturday(): boolean {
+    return this.day() === 6;
+  }
+
+  get isSunday(): boolean {
+    return this.day() === 0;
+  }
+
+  isBusinessDay(options: WorkdayOptions = {}): boolean {
+    if (!this.isValid()) return false;
+    const includeSundays = options.includeSundays ?? true;
+    const skipPublicHolidays = options.skipPublicHolidays ?? true;
+    const weekendDays = options.weekendDays ?? (includeSundays ? [6] : [0, 6]);
+
+    if (weekendDays.includes(this.day())) {
+      return false;
+    }
+
+    if (skipPublicHolidays && this.isHoliday) {
+      return false;
+    }
+
+    return true;
+  }
+
+  addBusinessDays(days: number, options: WorkdayOptions = {}): BSDay {
+    if (!this.isValid() || days === 0) return this.clone();
+    let current = this.clone();
+    let count = 0;
+    const direction = days >= 0 ? 1 : -1;
+    const target = Math.abs(days);
+
+    while (count < target) {
+      current = current.add(direction, 'day');
+      if (current.isBusinessDay(options)) {
+        count++;
+      }
+    }
+
+    return current;
+  }
+
+  subtractBusinessDays(days: number, options: WorkdayOptions = {}): BSDay {
+    return this.addBusinessDays(-days, options);
+  }
+
+  businessDaysBetween(other: BSDayInput, options: WorkdayOptions = {}): number {
+    const end = toBSDayInstance(other);
+    if (!this.isValid() || !end.isValid()) return NaN;
+
+    if (this.isSame(end, 'date')) return 0;
+
+    const isForward = end.isAfter(this, 'date');
+    const startInstance = isForward ? this : end;
+    const endInstance = isForward ? end : this;
+
+    let count = 0;
+    let current = startInstance.clone().add(1, 'day');
+
+    while (current.isSameOrBefore(endInstance, 'date')) {
+      if (current.isBusinessDay(options)) {
+        count++;
+      }
+      current = current.add(1, 'day');
+    }
+
+    return isForward ? count : -count;
+  }
+
+  diffDuration(other: BSDayInput): BSDuration {
+    const target = toBSDayInstance(other);
+    if (!this.isValid() || !target.isValid()) {
+      return { years: 0, months: 0, days: 0, hours: 0, minutes: 0, seconds: 0, milliseconds: 0 };
+    }
+
+    const start = this.isBefore(target) ? this : target;
+    const end = this.isBefore(target) ? target : this;
+
+    const startBS = start.toBS();
+    const endBS = end.toBS();
+    const startParts = getNepalDateTimeParts(start.adDate);
+    const endParts = getNepalDateTimeParts(end.adDate);
+
+    let years = endBS.year - startBS.year;
+    let months = endBS.month - startBS.month;
+    let days = endBS.day - startBS.day;
+
+    let hours = endParts.hour - startParts.hour;
+    let minutes = endParts.minute - startParts.minute;
+    let seconds = endParts.second - startParts.second;
+    let milliseconds = endParts.millisecond - startParts.millisecond;
+
+    if (milliseconds < 0) {
+      milliseconds += 1000;
+      seconds -= 1;
+    }
+
+    if (seconds < 0) {
+      seconds += 60;
+      minutes -= 1;
+    }
+
+    if (minutes < 0) {
+      minutes += 60;
+      hours -= 1;
+    }
+
+    if (hours < 0) {
+      hours += 24;
+      days -= 1;
+    }
+
+    if (days < 0) {
+      months -= 1;
+      const prevMonth = endBS.month === 1 ? 12 : endBS.month - 1;
+      const prevYear = endBS.month === 1 ? endBS.year - 1 : endBS.year;
+      days += getBsMonthDays(prevYear, prevMonth);
+    }
+
+    if (months < 0) {
+      years -= 1;
+      months += 12;
+    }
+
+    return {
+      years: Math.max(0, years),
+      months: Math.max(0, months),
+      days: Math.max(0, days),
+      hours: Math.max(0, hours),
+      minutes: Math.max(0, minutes),
+      seconds: Math.max(0, seconds),
+      milliseconds: Math.max(0, milliseconds),
+    };
   }
 
   get panchang(): Omit<BSDayData, 'tithi' | 'festivals' | 'isHoliday' | 'events'> | null {
