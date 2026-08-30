@@ -49,6 +49,25 @@ export interface BSAge {
   days: number;
 }
 
+export interface BSDuration {
+  years: number;
+  months: number;
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+  milliseconds: number;
+}
+
+export interface WorkdayOptions {
+  /** Include Sundays as working days (default: true for standard Nepali 6-day workweek) */
+  includeSundays?: boolean;
+  /** Skip public holidays hydrated via dataset (default: true) */
+  skipPublicHolidays?: boolean;
+  /** Custom weekend days array (0 = Sunday, 6 = Saturday; default: [6]) */
+  weekendDays?: number[];
+}
+
 export interface BSDayData {
   tithi: string;
   paksha: string;

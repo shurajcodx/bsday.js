@@ -1,6 +1,7 @@
 import type { CalendarType } from '../types';
 import { getBsMonthDays, isBsLeapYear } from '../converters/monthData';
 import { MAX_YEAR, MIN_YEAR } from './constants';
+import { normalizeNepaliDigits } from './helpers';
 
 export function isLeapYear(year: number, calendar: CalendarType = 'ad'): boolean {
   if (calendar === 'bs') {
@@ -53,7 +54,8 @@ export function validateBSDateString(
     return { isValid: false, error: 'Date string is required' };
   }
 
-  const match = input.trim().match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})$/);
+  const normalizedInput = normalizeNepaliDigits(input.trim());
+  const match = normalizedInput.match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})$/);
   if (!match) {
     return { isValid: false, error: 'Invalid date format. Expected YYYY/MM/DD or YYYY-MM-DD' };
   }
@@ -77,14 +79,14 @@ export function validateBSDateString(
   const normalized = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
   if (options.minDate) {
-    const minNorm = options.minDate.replace(/\//g, '-');
+    const minNorm = normalizeNepaliDigits(options.minDate).replace(/\//g, '-');
     if (normalized < minNorm) {
       return { isValid: false, error: `Date must be on or after ${options.minDate}` };
     }
   }
 
   if (options.maxDate) {
-    const maxNorm = options.maxDate.replace(/\//g, '-');
+    const maxNorm = normalizeNepaliDigits(options.maxDate).replace(/\//g, '-');
     if (normalized > maxNorm) {
       return { isValid: false, error: `Date must be on or before ${options.maxDate}` };
     }
