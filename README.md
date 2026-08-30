@@ -18,10 +18,14 @@
 
 ## 📦 Packages
 
-| Package                                     | Version | Description                                                                              |
-| :------------------------------------------ | :-----: | :--------------------------------------------------------------------------------------- |
-| **[@bsday.js/core](./packages/core)**       | `1.1.0` | Ultra-fast (~12KB gzipped), zero-dependency dual calendar SDK with Day.js syntax parity. |
-| **[@bsday.js/dataset](./packages/dataset)** | `1.1.0` | 111-Year (1990–2100 BS / 40,543 days) astronomical Panchang & Nepali festival dataset.   |
+| Package                                     | Description                                                                                    |
+| :------------------------------------------ | :--------------------------------------------------------------------------------------------- |
+| **[@bsday.js/core](./packages/core)**       | Ultra-fast (~12KB gzipped), zero-dependency dual calendar SDK with Day.js syntax parity.       |
+| **[@bsday.js/dataset](./packages/dataset)** | 111-Year (1990–2100 BS / 40,543 days) astronomical Panchang & Nepali festival dataset.         |
+| **[@bsday.js/react](./packages/react)**     | Headless React hooks (`useNepaliCalendarGrid`, `useNepaliDatePicker`, `useNepaliRangePicker`). |
+| **[@bsday.js/vue](./packages/vue)**         | Headless Vue 3 Composition API composables with `v-model` binding support.                     |
+| **[@bsday.js/angular](./packages/angular)** | Headless Angular Signals, services, and Reactive Form ControlValueAccessor Directives.         |
+| **[@bsday.js/svelte](./packages/svelte)**   | Headless Svelte 4/5 reactive stores & runes calendar and datepicker primitives.                |
 
 ---
 
@@ -103,7 +107,7 @@ bsday.js/
 │       ├── scripts/           # Data generation, validation, and aggregation scripts
 │       └── tests/             # Panchang accuracy & structure tests
 ├── docs/                      # Developer documentation & framework integration recipes
-├── benchmarks/                # Performance benchmark scripts
+├── scripts/                   # Distribution verification & performance benchmark scripts
 ├── Makefile                   # Development & release automation shortcuts
 └── .github/                   # CI/CD workflows and issue templates
 ```

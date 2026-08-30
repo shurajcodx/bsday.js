@@ -37,6 +37,10 @@ logStep('Package.json files and dist exports existence');
 const packages = [
   { name: '@bsday.js/core', dir: path.resolve(rootDir, 'packages/core') },
   { name: '@bsday.js/dataset', dir: path.resolve(rootDir, 'packages/dataset') },
+  { name: '@bsday.js/react', dir: path.resolve(rootDir, 'packages/react') },
+  { name: '@bsday.js/vue', dir: path.resolve(rootDir, 'packages/vue') },
+  { name: '@bsday.js/angular', dir: path.resolve(rootDir, 'packages/angular') },
+  { name: '@bsday.js/svelte', dir: path.resolve(rootDir, 'packages/svelte') },
 ];
 
 for (const pkg of packages) {
