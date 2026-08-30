@@ -11,7 +11,7 @@ This guide explains how to migrate from legacy Nepali date libraries (`nepali-da
 | **API Design** | Custom legacy API | Custom class API | Python-style format | **Day.js Parity & Fluent API** |
 | **Dual Calendar (BS & AD)** | Separate classes | Basic | Basic | **Unified Dual-Calendar Engine** |
 | **TypeScript Support** | Basic `.d.ts` | Partial | Basic | **100% Native TypeScript** |
-| **Tree-Shaking & Zero-Bloat** | ❌ No | ❌ No | ❌ No | **✅ `< 5KB` & `sideEffects: false`** |
+| **Tree-Shaking & Zero-Bloat** | ❌ No | ❌ No | ❌ No | **✅ `~12KB (gzipped)` & `sideEffects: false`** |
 | **Fiscal Year (आर्थिक वर्ष)** | ❌ No | ❌ No | ❌ No | **✅ Built-in (`.fiscalYear()`, Quarters)** |
 | **KYC Age Calculator** | ❌ No | ❌ No | ❌ No | **✅ Exact Chronological BS Age** |
 | **Headless Calendar Grid** | ❌ No | ❌ No | ❌ No | **✅ `getCalendarMatrix()` for UI** |

@@ -1,0 +1,79 @@
+{
+  "name": "@bsday.js/svelte",
+  "version": "1.2.0",
+  "description": "Headless Svelte 4/5 stores and runes primitives for Bikram Sambat (BS) Nepali calendar, datepicker, and range picker.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "peerDependencies": {
+    "@bsday.js/core": "workspace:*",
+    "svelte": ">=4.0.0 || >=5.0.0"
+  },
+  "devDependencies": {
+    "@bsday.js/core": "workspace:*",
+    "svelte": "^5.57.0"
+  },
+  "author": "shurajcodx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shurajcodx/bsday.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shurajcodx/bsday.js/issues"
+  },
+  "homepage": "https://bsdayjs.vercel.app",
+  "keywords": [
+    "svelte-nepali-calendar",
+    "svelte-nepali-datepicker",
+    "nepali-datepicker",
+    "nepali-calendar-svelte",
+    "nepali-calendar",
+    "bikram-sambat-svelte",
+    "bikram-sambat",
+    "nepali-date",
+    "createBSCalendar",
+    "createBSDatePicker",
+    "createBSRangePicker",
+    "svelte",
+    "svelte5",
+    "stores",
+    "runes",
+    "date-range-picker",
+    "nepali-patro-svelte",
+    "bsday",
+    "bsdayjs",
+    "headless-ui",
+    "typescript"
+  ]
+}

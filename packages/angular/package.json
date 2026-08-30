@@ -1,0 +1,85 @@
+{
+  "name": "@bsday.js/angular",
+  "version": "1.2.0",
+  "description": "Headless Angular Signals service and ControlValueAccessor Form directives for Bikram Sambat (BS) Nepali calendar, datepicker, and range picker.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=16.0.0",
+    "@angular/forms": ">=16.0.0",
+    "@bsday.js/core": "workspace:*",
+    "rxjs": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@angular/core": "^22.1.4",
+    "@angular/forms": "^22.1.4",
+    "@bsday.js/core": "workspace:*",
+    "rxjs": "^7.8.2"
+  },
+  "author": "shurajcodx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shurajcodx/bsday.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shurajcodx/bsday.js/issues"
+  },
+  "homepage": "https://bsdayjs.vercel.app",
+  "keywords": [
+    "angular-nepali-calendar",
+    "angular-nepali-datepicker",
+    "nepali-datepicker",
+    "nepali-calendar-angular",
+    "nepali-calendar",
+    "bikram-sambat-angular",
+    "bikram-sambat",
+    "nepali-date",
+    "bsdayDatePicker",
+    "createBSDatePicker",
+    "createBSCalendar",
+    "createBSRangePicker",
+    "angular",
+    "signals",
+    "directives",
+    "control-value-accessor",
+    "reactive-forms",
+    "date-range-picker",
+    "nepali-patro-angular",
+    "bsday",
+    "bsdayjs",
+    "headless-ui",
+    "typescript"
+  ]
+}

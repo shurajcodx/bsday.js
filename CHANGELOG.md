@@ -1,5 +1,52 @@
 # Changelog
 
+## [1.2.0] - 2026-08-30
+
+### 🚀 Highlights & New Features
+
+#### 🇳🇵 @bsday.js/core
+
+- **Direct Devanagari Numeral String Parsing**:
+  - Direct instantiation and parsing of Devanagari BS date strings (`bsday.bs('२०८१/०५/१५')`, `bsday.bs('२०८१-०५-१५')`, `BSDay.bs('२०८१/०५/१५')`, `BSDay.parse('२०८१/०५/१५', 'YYYY/MM/DD', 'bs')`) without requiring manual string transliteration.
+- **Digit Normalization & Conversion Helpers**:
+  - Exported `normalizeNepaliDigits(value)`: Converts Devanagari numerals (`०-९`) to standard ASCII digits (`0-9`).
+  - Exported `toDevanagariDigits(value)`: Converts English ASCII numbers/strings (`0-9`) to Devanagari numerals (`०-९`).
+- **Built-in Business Day / Workday Calculation Engine**:
+  - Added `.isBusinessDay(options?)`, `.isSaturday`, `.isSunday`, `.isWeekend(weekendDays?)`.
+  - Added `.addBusinessDays(n, options?)`, `.subtractBusinessDays(n, options?)`, and `.businessDaysBetween(other, options?)`.
+  - Added static methods `BSDay.isBusinessDay(date, options?)` and `BSDay.addBusinessDays(date, days, options?)`.
+  - Added `WorkdayOptions` TypeScript interface for configurable workweeks (e.g. including/excluding Sundays or custom holiday lists).
+- **Exact Duration Breakdown**:
+  - Added `.diffDuration(other)` returning exact `{ years, months, days, hours, minutes, seconds, milliseconds }`.
+  - Exported `BSDuration` interface.
+
+#### 🎨 Headless UI Framework Packages
+
+- **`@bsday.js/react`**:
+  - Headless hooks: `useBSCalendarGrid` (alias: `useNepaliCalendarGrid`), `useBSDatePicker` (alias: `useNepaliDatePicker`), and `useBSRangePicker` (alias: `useNepaliRangePicker`).
+  - Full WAI-ARIA compliance (`role="grid"`, `role="gridcell"`, `aria-selected`, `aria-disabled`).
+  - Comprehensive keyboard navigation (`ArrowUp/Down/Left/Right`, `PageUp/Down`, `Home/End`, `Enter/Space`).
+- **`@bsday.js/vue`**:
+  - Vue 3 Composition API composables (`useBSCalendarGrid`, `useBSDatePicker`, `useBSRangePicker`) with `shallowRef`, `computed`, and `v-model` binding helpers.
+- **`@bsday.js/angular`**:
+  - Signal-based `BSCalendarService` / `createBSCalendar()`, `createBSDatePicker()`, `createBSRangePicker()`.
+  - `BSDatePickerDirective` (`[bsdayDatePicker]`, `[bsdayBSDatePicker]`) with `ControlValueAccessor` integration for Angular Reactive and Template Forms.
+- **`@bsday.js/svelte`**:
+  - Svelte 4/5 reactive store & runes helpers (`createBSCalendar`, `createBSDatePicker`, `createBSRangePicker`).
+
+#### 📚 Documentation & Integration Recipes
+
+- **5 Production Recipes (`docs/recipes/`)**:
+  - Date Range Picker & Booking Calendar (`docs/recipes/date-range-picker.md`)
+  - Banking, Financial Workdays & SLA Deadlines (`docs/recipes/banking-workdays.md`)
+  - Backend API Validation & Storage for Express, Fastify, and Hono (`docs/recipes/backend-validation.md`)
+  - Devanagari Numerals & Nepali Localization Guide (`docs/recipes/devanagari-localization.md`)
+  - High-Performance Bulk Data Migration & CSV Processing (`docs/recipes/bulk-data-migration.md`)
+- **Updated Guides**:
+  - Updated Plugin Development Guide (`docs/plugin-development.md`) and Complete API Reference (`docs/api-design.md`).
+
+---
+
 ## [1.1.1] - 2026-08-30
 
 ### 🐛 Bug Fixes & Packaging Improvements
@@ -40,7 +87,7 @@
 - **Plugin System & Relative Time**:
   - Added plugin architecture with built-in `relativeTimePlugin` and `fiscalYearPlugin`.
 - **Modern Packaging**:
-  - Zero runtime dependencies with bundle size < 5KB.
+  - Zero runtime dependencies with compact bundle size (~12KB gzipped).
   - Complete dual CommonJS (`.cjs` + `.d.cts`) and ESM (`.js` + `.d.ts`) exports with 100% `publint` and `attw` compatibility.
 
 ### 🕉️ @bsday.js/dataset

@@ -6,6 +6,34 @@ export const NEPAL_OFFSET_MINUTES = 5 * 60 + 45;
 export const NEPAL_OFFSET_MS = NEPAL_OFFSET_MINUTES * 60 * 1000;
 const NEPALI_NUMBERS = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
 
+const NEPALI_TO_ASCII_MAP: Record<string, string> = {
+  '०': '0',
+  '१': '1',
+  '२': '2',
+  '३': '3',
+  '४': '4',
+  '५': '5',
+  '६': '6',
+  '७': '7',
+  '८': '8',
+  '९': '9',
+};
+
+/**
+ * Normalizes any Devanagari numerals ([०-९]) in a string to standard ASCII digits ([0-9]).
+ */
+export function normalizeNepaliDigits(value: string): string {
+  if (!value) return '';
+  return value.replace(/[०-९]/g, (char) => NEPALI_TO_ASCII_MAP[char] ?? char);
+}
+
+/**
+ * Converts English ASCII digits (0-9) to Devanagari numerals (०-९).
+ */
+export function toDevanagariDigits(value: string | number): string {
+  return String(value).replace(/[0-9]/g, (digit) => NEPALI_NUMBERS[Number(digit)]!);
+}
+
 export function localizeNumber(value: string | number, locale: string = 'en'): string {
   const str = String(value);
   if (locale === 'en') return str;

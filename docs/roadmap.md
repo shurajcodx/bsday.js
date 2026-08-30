@@ -1,55 +1,56 @@
 # 🗺️ bsday.js — Public Roadmap
 
-**Project:** bsday.js  
+**Project:** `bsday.js`  
 **Purpose:** Ultra-fast, zero-dependency Day.js-compatible dual-calendar SDK (Bikram Sambat ↔ Gregorian AD) and Vedic Panchang ecosystem for JavaScript & TypeScript.
 
 ---
 
 ## 🚀 Shipped Milestones
 
-### ✅ v1.0.0 — Initial Foundation
-- **Dual-Calendar Conversion**: High-performance BS ↔ AD conversion engine.
+### ✅ v1.0.0 — Foundation & Dual Engine
+- **Dual-Calendar Conversion**: High-performance, zero-drift BS ↔ AD conversion engine (1970–2100 BS).
 - **Core Day.js API Parity**: `BSDay` class with standard getters, setters, arithmetic (`add`, `subtract`), and comparisons (`isBefore`, `isSameOrAfter`, `isBetween`, `diff`).
-- **Formatting & Parsing Engine**: Formatting tokens (`YYYY`, `MMMM`, `DD`, `dddd`, etc.) with dual-calendar and locale support.
-- **Plugin Architecture**: Extensible plugin manager via `bsday.extend(plugin)`.
+- **Formatting Engine**: Tokens (`YYYY`, `MMMM`, `DD`, `dddd`, `HH`, `mm`, `ss`, etc.) with dual-calendar and locale support.
+- **Plugin Architecture**: Extensible plugin system via `bsday.extend(plugin, options)` supporting functional and object plugins.
 
-### ✅ v1.1.0 — Enterprise & Fintech Capabilities (Current)
+### ✅ v1.1.0 — Enterprise & Fintech Capabilities
 - **Nepali Fiscal Year (आर्थिक वर्ष) Engine**:
   - `short` (`2081/82`), `full` (`2081/2082`), and `extended` (`FY 2081/82` / `आ.व. २०८१/८२`) formats.
   - Tax quarter calculation (`fiscalQuarter()`) and unit bounds (`startOf('fiscalYear')`, `endOf('fiscalYear')`).
 - **KYC & Chronological Age Calculation**:
   - `age()`, `formatAge()`, and `isAdult(threshold)` taking into account irregular Bikram Sambat month lengths without day drift.
-- **Headless Calendar Matrix**:
+- **Headless Calendar Matrix & Range Helpers**:
   - `getCalendarMatrix()` producing 42-cell 6×7 grids with previous/next month padding and holiday tagging.
+  - `isDateInRange()`, `isDateDisabled()`, and `getDateRange()`.
 - **Form & Schema Validation**:
   - `isValidBSDate()`, `isValidADDate()`, `isBsLeapYear()`, and `validateBSDateString()` for direct Zod / React Hook Form integration.
 - **111-Year Astronomical Dataset (`@bsday.js/dataset`)**:
   - 40,543 daily records (1990–2100 BS) with Hamro Patro & Panchang Nirnayak Samiti parity.
   - Sidereal Lahiri calculation for _Tithi_, _Paksha_, _Nakshatra_, _Yoga_, and _Karana_ with zero unknown fields.
-  - Continuous multi-day public holiday blocks (Dashain 6 days, Tihar 4 days).
-- **Dual-Language Localization**:
-  - Seamless English and Devanagari (`locale('ne')` / `datasetNepali`) output.
+  - Multi-day continuous public holiday blocks (Dashain, Tihar, Chhath).
+- **Relative Time Plugin (`relativeTimePlugin`)**:
+  - Humanized relative time formatting (`.fromNow()`, `.toNow()`, `.from()`, `.to()`) in English and Devanagari.
+
+### ✅ v1.2.0 — Devanagari Parsing, Business Workdays & Headless UI Frameworks
+- **Direct Devanagari Numeral String Parsing**: Direct parsing of strings containing Devanagari digits (`bsday.bs('२०८१/०५/१५')`, `BSDay.parse('२०८१/०५/१५', 'YYYY/MM/DD', 'bs')`) and normalization helpers (`normalizeNepaliDigits`, `toDevanagariDigits`).
+- **Advanced Business Day & Workday Engine**: `.isBusinessDay()`, `.isSaturday`, `.isSunday`, `.isWeekend()`, `.addBusinessDays(n)`, `.subtractBusinessDays(n)`, `.businessDaysBetween(other)`.
+- **Duration / Time Interval Helper**: `.diffDuration(other)` for precise breakdown `{ years, months, days, hours, minutes, seconds, milliseconds }`.
+- **Headless UI Framework Packages**:
+  - `@bsday.js/react` (`useBSCalendarGrid`, `useBSDatePicker`, `useBSRangePicker`)
+  - `@bsday.js/vue` (`useBSCalendarGrid`, `useBSDatePicker`, `useBSRangePicker`)
+  - `@bsday.js/angular` (`BSCalendarService`, `BSDatePickerDirective`)
+  - `@bsday.js/svelte` (`createBSCalendar`, `createBSDatePicker`, `createBSRangePicker`)
 
 ---
 
-## 🌟 Future Roadmap (v1.2.0+)
+## 🌟 Current & Upcoming Development (v1.3.0+)
 
-### 1. 🎨 UI & Framework Components (`@bsday.js/react` / `@bsday.js/vue`)
-- Fully styled and headless accessible Nepali DatePicker components.
-- Range picker for date ranges and booking applications.
-- Month and Year selector popups with Nepali holiday indicators.
+### 1. 🧰 Official CLI Utilities (`npx bsday`)
+- `npx bsday today` — Print today's BS date, Tithi, and Panchang directly in the terminal.
+- `npx bsday convert 2081-05-15` — Instant command-line conversion.
 
-### 2. 🌍 Timezone & Internationalization Enhancements
-- First-class timezone plugin (`@bsday.js/plugin-timezone`) with full `Asia/Kathmandu` offset handling.
-- Additional ethnic Nepali language locales (Newari / Nepal Bhasa, Maithili, Bhojpuri).
-
-### 3. ⏱️ Advanced Business Day & Workday Calculations
-- `addBusinessDays(n)` and `isBusinessDay()` taking into account government public holidays and Saturdays.
-- Custom working week configurations (e.g. 5-day vs 6-day work weeks).
-
-### 4. 🧰 CLI Utilities
-- `npx bsday today` - Print today's BS date, Tithi, and festival directly in the terminal.
-- `npx bsday convert 2081-05-15` - Quick terminal conversion tool.
+### 2. 🧩 Pre-Styled UI Drop-in Components (`<BSDatePicker />`, `<BSCalendar />`)
+- Ready-to-use, unstyled + styled variants for React, Vue, Angular, and Svelte.
 
 ---
 
@@ -62,8 +63,10 @@
 | **KYC Chronological Age Calculation** | ✅ Shipped | `v1.1.0` |
 | **Headless Calendar Matrix Grid** | ✅ Shipped | `v1.1.0` |
 | **111-Year Panchang & Festival Dataset** | ✅ Shipped | `v1.1.0` |
+| **Relative Time Plugin (`relativeTimePlugin`)** | ✅ Shipped | `v1.1.0` |
 | **Zod & Form Validation Utilities** | ✅ Shipped | `v1.1.0` |
-| **React / Headless DatePicker Package** | ⚡ In Planning | `v1.2.0` |
-| **Business Days & Workday Engine** | ⚡ In Planning | `v1.2.0` |
+| **Devanagari Numeral String Parsing** | ✅ Shipped | `v1.2.0` |
+| **Business Days & Workday Engine** | ✅ Shipped | `v1.2.0` |
+| **UI Framework Headless Adapters (`react`, `vue`, `angular`, `svelte`)** | ✅ Shipped | `v1.2.0` |
 | **Official CLI Tool (`npx bsday`)** | ⚡ In Planning | `v1.3.0` |
-
+| **Pre-styled UI Components (`<BSCalendar />`)** | ⚡ In Planning | `v1.3.0` |

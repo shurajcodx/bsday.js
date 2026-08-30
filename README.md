@@ -5,7 +5,7 @@
 [![Website](https://img.shields.io/badge/website-bsdayjs.vercel.app-blue.svg?style=flat-square&logo=vercel)](https://bsdayjs.vercel.app)
 [![npm (core)](https://img.shields.io/npm/v/@bsday.js/core.svg?style=flat-square&label=@bsday.js/core&color=indigo)](https://www.npmjs.com/package/@bsday.js/core)
 [![npm (dataset)](https://img.shields.io/npm/v/@bsday.js/dataset.svg?style=flat-square&label=@bsday.js/dataset&color=purple)](https://www.npmjs.com/package/@bsday.js/dataset)
-[![bundle size](https://img.shields.io/badge/bundle%20size-<5KB-emerald.svg?style=flat-square)](https://bundlephobia.com/package/@bsday.js/core)
+[![bundle size](<https://img.shields.io/badge/bundle%20size-~12KB%20(gzipped)-emerald.svg?style=flat-square>)](https://bundlephobia.com/package/@bsday.js/core)
 [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg?style=flat-square)](https://www.typescriptlang.org)
 [![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
 [![tests](https://img.shields.io/badge/tests-81%2F81%20passing-brightgreen.svg?style=flat-square)](https://vitest.dev)
@@ -18,10 +18,14 @@
 
 ## 📦 Packages
 
-| Package                                     | Version | Description                                                                            |
-| :------------------------------------------ | :-----: | :------------------------------------------------------------------------------------- |
-| **[@bsday.js/core](./packages/core)**       | `1.1.0` | Ultra-fast (< 5KB), zero-dependency dual calendar SDK with Day.js syntax parity.       |
-| **[@bsday.js/dataset](./packages/dataset)** | `1.1.0` | 111-Year (1990–2100 BS / 40,543 days) astronomical Panchang & Nepali festival dataset. |
+| Package                                     | Description                                                                                    |
+| :------------------------------------------ | :--------------------------------------------------------------------------------------------- |
+| **[@bsday.js/core](./packages/core)**       | Ultra-fast (~12KB gzipped), zero-dependency dual calendar SDK with Day.js syntax parity.       |
+| **[@bsday.js/dataset](./packages/dataset)** | 111-Year (1990–2100 BS / 40,543 days) astronomical Panchang & Nepali festival dataset.         |
+| **[@bsday.js/react](./packages/react)**     | Headless React hooks (`useNepaliCalendarGrid`, `useNepaliDatePicker`, `useNepaliRangePicker`). |
+| **[@bsday.js/vue](./packages/vue)**         | Headless Vue 3 Composition API composables with `v-model` binding support.                     |
+| **[@bsday.js/angular](./packages/angular)** | Headless Angular Signals, services, and Reactive Form ControlValueAccessor Directives.         |
+| **[@bsday.js/svelte](./packages/svelte)**   | Headless Svelte 4/5 reactive stores & runes calendar and datepicker primitives.                |
 
 ---
 
@@ -94,7 +98,7 @@ You can run commands directly using `pnpm` or via the provided [`Makefile`](./Ma
 ```text
 bsday.js/
 ├── packages/
-│   ├── core/                  # @bsday.js/core (< 5KB dual calendar engine)
+│   ├── core/                  # @bsday.js/core (~12KB gzipped dual calendar engine)
 │   │   ├── src/               # BSDay class, converters, fiscal year, KYC age, calendar grid
 │   │   └── tests/             # Unit tests
 │   └── dataset/               # @bsday.js/dataset (111-Year Panchang & festival data)
@@ -103,7 +107,7 @@ bsday.js/
 │       ├── scripts/           # Data generation, validation, and aggregation scripts
 │       └── tests/             # Panchang accuracy & structure tests
 ├── docs/                      # Developer documentation & framework integration recipes
-├── benchmarks/                # Performance benchmark scripts
+├── scripts/                   # Distribution verification & performance benchmark scripts
 ├── Makefile                   # Development & release automation shortcuts
 └── .github/                   # CI/CD workflows and issue templates
 ```
