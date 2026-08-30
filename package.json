@@ -12,7 +12,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test:coverage": "vitest run --coverage",
-    "benchmark": "node benchmarks/benchmark.mjs",
+    "benchmark": "node scripts/benchmark.mjs",
     "check:dist": "node scripts/check-dist.mjs",
     "check:exports": "publint packages/core && publint packages/dataset && attw --pack packages/core && attw --pack packages/dataset",
     "prepublish:check": "pnpm run build && pnpm run check:dist && pnpm run check:exports && pnpm test"

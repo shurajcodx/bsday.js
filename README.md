@@ -107,7 +107,7 @@ bsday.js/
 │       ├── scripts/           # Data generation, validation, and aggregation scripts
 │       └── tests/             # Panchang accuracy & structure tests
 ├── docs/                      # Developer documentation & framework integration recipes
-├── benchmarks/                # Performance benchmark scripts
+├── scripts/                   # Distribution verification & performance benchmark scripts
 ├── Makefile                   # Development & release automation shortcuts
 └── .github/                   # CI/CD workflows and issue templates
 ```
