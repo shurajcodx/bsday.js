@@ -1,7 +1,7 @@
 {
   "name": "@bsday.js/react",
-  "version": "1.1.1",
-  "description": "Headless React hooks and components for Bikram Sambat (BS) Nepali calendar & datepicker",
+  "version": "1.2.0",
+  "description": "Headless React hooks and components for Bikram Sambat (BS) Nepali calendar, datepicker, and range picker with full WAI-ARIA accessibility and keyboard navigation.",
   "publishConfig": {
     "access": "public"
   },
@@ -55,12 +55,28 @@
   },
   "homepage": "https://bsdayjs.vercel.app",
   "keywords": [
+    "react-nepali-calendar",
+    "react-nepali-datepicker",
+    "nepali-datepicker",
+    "nepali-calendar-react",
+    "nepali-calendar",
+    "bikram-sambat-react",
+    "bikram-sambat",
+    "nepali-date",
+    "useNepaliDatePicker",
+    "useBSDatePicker",
+    "useBSCalendarGrid",
+    "useBSRangePicker",
+    "react-datepicker",
+    "date-range-picker",
+    "nepali-patro-react",
+    "bsday",
+    "bsdayjs",
     "react",
     "hooks",
-    "nepali-datepicker",
-    "bikram-sambat",
-    "nepali-calendar",
-    "bsday",
-    "headless-ui"
+    "headless-ui",
+    "wai-aria",
+    "tailwind-datepicker",
+    "typescript"
   ]
 }

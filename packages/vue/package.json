@@ -1,7 +1,7 @@
 {
   "name": "@bsday.js/vue",
-  "version": "1.1.1",
-  "description": "Headless Vue 3 composables for Bikram Sambat (BS) Nepali calendar & datepicker",
+  "version": "1.2.0",
+  "description": "Headless Vue 3 composables for Bikram Sambat (BS) Nepali calendar, datepicker, and range picker with reactive state management and v-model bindings.",
   "publishConfig": {
     "access": "public"
   },
@@ -54,13 +54,26 @@
   },
   "homepage": "https://bsdayjs.vercel.app",
   "keywords": [
-    "vue",
-    "composables",
-    "vue3",
+    "vue-nepali-calendar",
+    "vue-nepali-datepicker",
     "nepali-datepicker",
-    "bikram-sambat",
+    "nepali-calendar-vue",
     "nepali-calendar",
+    "bikram-sambat-vue",
+    "bikram-sambat",
+    "nepali-date",
+    "useNepaliDatePicker",
+    "useBSDatePicker",
+    "useBSCalendarGrid",
+    "useBSRangePicker",
+    "vue3",
+    "composables",
+    "date-range-picker",
+    "nepali-patro-vue",
     "bsday",
-    "headless-ui"
+    "bsdayjs",
+    "vue",
+    "headless-ui",
+    "typescript"
   ]
 }

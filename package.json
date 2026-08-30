@@ -1,7 +1,7 @@
 {
   "name": "bsday.js",
   "private": true,
-  "version": "1.1.1",
+  "version": "1.2.0",
   "packageManager": "pnpm@10.31.0",
   "scripts": {
     "build": "pnpm -r build",
@@ -14,7 +14,7 @@
     "test:coverage": "vitest run --coverage",
     "benchmark": "node scripts/benchmark.mjs",
     "check:dist": "node scripts/check-dist.mjs",
-    "check:exports": "publint packages/core && publint packages/dataset && attw --pack packages/core && attw --pack packages/dataset",
+    "check:exports": "publint packages/core && publint packages/dataset && publint packages/react && publint packages/vue && publint packages/angular && publint packages/svelte && attw --pack packages/core && attw --pack packages/dataset && attw --pack packages/react && attw --pack packages/vue && attw --pack packages/angular && attw --pack packages/svelte",
     "prepublish:check": "pnpm run build && pnpm run check:dist && pnpm run check:exports && pnpm test"
   },
   "devDependencies": {
@@ -44,7 +44,7 @@
   "engines": {
     "node": ">=20"
   },
-  "description": "A comprehensive dual-calendar BS/AD date library for JavaScript/TypeScript with panchang data",
+  "description": "Ultra-fast, zero-dependency Day.js-compatible dual-calendar (Bikram Sambat BS ↔ Gregorian AD) SDK with headless React, Vue, Angular, Svelte UI adapters and 111-year Vedic Panchang dataset.",
   "author": "shurajcodx",
   "repository": {
     "type": "git",
@@ -55,15 +55,33 @@
   },
   "homepage": "https://github.com/shurajcodx/bsday.js#readme",
   "keywords": [
-    "nepali",
-    "calendar",
-    "bs",
-    "ad",
-    "bikram",
-    "sambat",
-    "date",
+    "nepali-calendar",
+    "bikram-sambat",
     "nepali-date",
+    "bsday",
+    "bsdayjs",
+    "nepali-date-converter",
+    "nepali-datepicker",
+    "bs-to-ad",
+    "ad-to-bs",
+    "dayjs-nepali",
+    "moment-nepali",
+    "date-fns-nepali",
+    "react-nepali-datepicker",
+    "vue-nepali-datepicker",
+    "angular-nepali-datepicker",
+    "svelte-nepali-datepicker",
+    "nepali-fiscal-year",
     "panchang",
+    "tithi",
+    "nepali-patro",
+    "hamro-patro",
+    "devanagari",
+    "nepal",
+    "date-converter",
+    "headless-ui",
+    "datepicker",
+    "date-range-picker",
     "typescript",
     "javascript"
   ]

@@ -1,7 +1,7 @@
 {
   "name": "@bsday.js/svelte",
-  "version": "1.1.1",
-  "description": "Headless Svelte stores and primitives for Bikram Sambat (BS) Nepali calendar & datepicker",
+  "version": "1.2.0",
+  "description": "Headless Svelte 4/5 stores and runes primitives for Bikram Sambat (BS) Nepali calendar, datepicker, and range picker.",
   "publishConfig": {
     "access": "public"
   },
@@ -54,13 +54,26 @@
   },
   "homepage": "https://bsdayjs.vercel.app",
   "keywords": [
+    "svelte-nepali-calendar",
+    "svelte-nepali-datepicker",
+    "nepali-datepicker",
+    "nepali-calendar-svelte",
+    "nepali-calendar",
+    "bikram-sambat-svelte",
+    "bikram-sambat",
+    "nepali-date",
+    "createBSCalendar",
+    "createBSDatePicker",
+    "createBSRangePicker",
     "svelte",
+    "svelte5",
     "stores",
     "runes",
-    "nepali-datepicker",
-    "bikram-sambat",
-    "nepali-calendar",
+    "date-range-picker",
+    "nepali-patro-svelte",
     "bsday",
-    "headless-ui"
+    "bsdayjs",
+    "headless-ui",
+    "typescript"
   ]
 }

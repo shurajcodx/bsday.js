@@ -31,24 +31,26 @@
 - **Relative Time Plugin (`relativeTimePlugin`)**:
   - Humanized relative time formatting (`.fromNow()`, `.toNow()`, `.from()`, `.to()`) in English and Devanagari.
 
+### ✅ v1.2.0 — Devanagari Parsing, Business Workdays & Headless UI Frameworks
+- **Direct Devanagari Numeral String Parsing**: Direct parsing of strings containing Devanagari digits (`bsday.bs('२०८१/०५/१५')`, `BSDay.parse('२०८१/०५/१५', 'YYYY/MM/DD', 'bs')`) and normalization helpers (`normalizeNepaliDigits`, `toDevanagariDigits`).
+- **Advanced Business Day & Workday Engine**: `.isBusinessDay()`, `.isSaturday`, `.isSunday`, `.isWeekend()`, `.addBusinessDays(n)`, `.subtractBusinessDays(n)`, `.businessDaysBetween(other)`.
+- **Duration / Time Interval Helper**: `.diffDuration(other)` for precise breakdown `{ years, months, days, hours, minutes, seconds, milliseconds }`.
+- **Headless UI Framework Packages**:
+  - `@bsday.js/react` (`useBSCalendarGrid`, `useBSDatePicker`, `useBSRangePicker`)
+  - `@bsday.js/vue` (`useBSCalendarGrid`, `useBSDatePicker`, `useBSRangePicker`)
+  - `@bsday.js/angular` (`BSCalendarService`, `BSDatePickerDirective`)
+  - `@bsday.js/svelte` (`createBSCalendar`, `createBSDatePicker`, `createBSRangePicker`)
+
 ---
 
-## 🌟 Current & Upcoming Development (v1.2.0+)
+## 🌟 Current & Upcoming Development (v1.3.0+)
 
-### 1. 🧮 Devanagari Numeral String Parsing
-- Direct parsing of strings containing Devanagari digits (e.g. `bsday.bs('२०८१/०५/१५')` or `BSDay.parse('२०८१/०५/१५', 'YYYY/MM/DD')`) without requiring manual transliteration.
-
-### 2. ⏱️ Advanced Business Day & Workday Engine
-- `.isBusinessDay()`, `.isSaturday()`, `.isHoliday()`, and `.addBusinessDays(n)`.
-- Banking settlement calculations skipping government holidays and Saturdays.
-
-### 3. 🎨 UI Framework Headless Adapters (`@bsday.js/react`)
-- Headless accessible hooks: `useNepaliDatePicker` and `useNepaliCalendarGrid`.
-- Keyboard navigation (`ArrowLeft`, `ArrowRight`, `PageUp`, `PageDown`) and ARIA accessibility compliance.
-
-### 4. 🧰 Official CLI Utilities (`npx bsday`)
+### 1. 🧰 Official CLI Utilities (`npx bsday`)
 - `npx bsday today` — Print today's BS date, Tithi, and Panchang directly in the terminal.
 - `npx bsday convert 2081-05-15` — Instant command-line conversion.
+
+### 2. 🧩 Pre-Styled UI Drop-in Components (`<BSDatePicker />`, `<BSCalendar />`)
+- Ready-to-use, unstyled + styled variants for React, Vue, Angular, and Svelte.
 
 ---
 
@@ -63,7 +65,8 @@
 | **111-Year Panchang & Festival Dataset** | ✅ Shipped | `v1.1.0` |
 | **Relative Time Plugin (`relativeTimePlugin`)** | ✅ Shipped | `v1.1.0` |
 | **Zod & Form Validation Utilities** | ✅ Shipped | `v1.1.0` |
-| **Devanagari Numeral String Parsing** | ⚡ In Progress | `v1.2.0` |
-| **Business Days & Workday Engine** | ⚡ In Progress | `v1.2.0` |
-| **React Headless Hooks (`@bsday.js/react`)** | ⚡ In Planning | `v1.2.0` |
+| **Devanagari Numeral String Parsing** | ✅ Shipped | `v1.2.0` |
+| **Business Days & Workday Engine** | ✅ Shipped | `v1.2.0` |
+| **UI Framework Headless Adapters (`react`, `vue`, `angular`, `svelte`)** | ✅ Shipped | `v1.2.0` |
 | **Official CLI Tool (`npx bsday`)** | ⚡ In Planning | `v1.3.0` |
+| **Pre-styled UI Components (`<BSCalendar />`)** | ⚡ In Planning | `v1.3.0` |

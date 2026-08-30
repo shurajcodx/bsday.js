@@ -1,7 +1,7 @@
 {
   "name": "@bsday.js/angular",
-  "version": "1.1.1",
-  "description": "Headless Angular Signals and Form Directives for Bikram Sambat (BS) Nepali calendar & datepicker",
+  "version": "1.2.0",
+  "description": "Headless Angular Signals service and ControlValueAccessor Form directives for Bikram Sambat (BS) Nepali calendar, datepicker, and range picker.",
   "publishConfig": {
     "access": "public"
   },
@@ -58,13 +58,28 @@
   },
   "homepage": "https://bsdayjs.vercel.app",
   "keywords": [
+    "angular-nepali-calendar",
+    "angular-nepali-datepicker",
+    "nepali-datepicker",
+    "nepali-calendar-angular",
+    "nepali-calendar",
+    "bikram-sambat-angular",
+    "bikram-sambat",
+    "nepali-date",
+    "bsdayDatePicker",
+    "createBSDatePicker",
+    "createBSCalendar",
+    "createBSRangePicker",
     "angular",
     "signals",
     "directives",
-    "nepali-datepicker",
-    "bikram-sambat",
-    "nepali-calendar",
+    "control-value-accessor",
+    "reactive-forms",
+    "date-range-picker",
+    "nepali-patro-angular",
     "bsday",
-    "headless-ui"
+    "bsdayjs",
+    "headless-ui",
+    "typescript"
   ]
 }
