@@ -40,7 +40,7 @@
 - **Plugin System & Relative Time**:
   - Added plugin architecture with built-in `relativeTimePlugin` and `fiscalYearPlugin`.
 - **Modern Packaging**:
-  - Zero runtime dependencies with bundle size < 5KB.
+  - Zero runtime dependencies with compact bundle size (~12KB gzipped).
   - Complete dual CommonJS (`.cjs` + `.d.cts`) and ESM (`.js` + `.d.ts`) exports with 100% `publint` and `attw` compatibility.
 
 ### 🕉️ @bsday.js/dataset

@@ -6,7 +6,7 @@ This recipe demonstrates how to use `bsday.js` in Next.js 14 and 15 (App Router,
 
 ## 1. Server Components vs Client Components
 
-Because `bsday.js` is pure TypeScript and zero-bloat (< 5KB), it runs identically on Node.js server runtimes, Edge runtimes, and the browser.
+Because `bsday.js` is pure TypeScript and lightweight (~12KB gzipped), it runs identically on Node.js server runtimes, Edge runtimes, and the browser.
 
 ### Preventing Hydration Mismatch for "Today"
 When rendering `bsday()` (which reads the current system clock) on SSR, the server time (e.g. UTC server in AWS / Vercel) and the client time (Nepal Standard Time UTC+05:45) might differ across midnight.

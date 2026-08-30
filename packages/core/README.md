@@ -1,10 +1,10 @@
 # 🇳🇵 @bsday.js/core
 
-> **Ultra-fast, zero-dependency (< 5KB), Day.js-compatible dual calendar (Bikram Sambat ↔ Gregorian) SDK for JavaScript and TypeScript.**
+> **Ultra-fast, zero-dependency (~12KB gzipped), Day.js-compatible dual calendar (Bikram Sambat ↔ Gregorian) SDK for JavaScript and TypeScript.**
 
 [![Website](https://img.shields.io/badge/website-bsdayjs.vercel.app-blue.svg?style=flat-square&logo=vercel)](https://bsdayjs.vercel.app)
 [![npm version](https://img.shields.io/npm/v/@bsday.js/core.svg?style=flat-square&color=indigo)](https://www.npmjs.com/package/@bsday.js/core)
-[![bundle size](https://img.shields.io/badge/bundle%20size-<5KB-emerald.svg?style=flat-square)](https://bundlephobia.com/package/@bsday.js/core)
+[![bundle size](https://img.shields.io/badge/bundle%20size-~12KB%20(gzipped)-emerald.svg?style=flat-square)](https://bundlephobia.com/package/@bsday.js/core)
 [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg?style=flat-square)](https://www.typescriptlang.org)
 [![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/shurajcodx/bsday.js/blob/main/LICENSE)
 [![tests](https://img.shields.io/badge/tests-77%2F77%20passing-brightgreen.svg?style=flat-square)](https://vitest.dev)
