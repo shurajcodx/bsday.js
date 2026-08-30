@@ -1,6 +1,6 @@
 {
   "name": "@bsday.js/dataset",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "BSDay optional festival and panchang dataset",
   "publishConfig": {
     "access": "public"
@@ -74,7 +74,7 @@
     "ephe"
   ],
   "scripts": {
-    "build": "node scripts/generate-month-data.mjs && tsup src/index.ts src/all.ts src/monthData.ts src/panchang-engine.ts --format esm,cjs --dts --shims",
+    "build": "node scripts/generate-month-data.mjs && tsup",
     "generate:month-data": "node scripts/generate-month-data.mjs",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",

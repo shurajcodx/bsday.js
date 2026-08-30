@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.1.1] - 2026-08-30
+
+### 🐛 Bug Fixes & Packaging Improvements
+
+#### @bsday.js/dataset
+
+- **Fix Browser `fileURLToPath` Runtime Error**: Removed `--shims` and multi-entry chunk-splitting in `tsup`, completely eliminating `import { fileURLToPath } from 'url'` from all browser-facing bundles (`@bsday.js/dataset`, `@bsday.js/dataset/all`, `@bsday.js/dataset/month-data`).
+- **Clean Standalone Bundles**: Bundled each subpath entry into isolated, self-contained files (`dist/index.js`, `dist/all.js`, `dist/monthData.js`, `dist/panchang-engine.js`) without intermediate runtime chunks.
+- **Node Addon Isolation**: Externalized `swisseph-v2` and Node built-in modules (`path`, `fs`, `url`) to prevent native loader inlining.
+
+#### @bsday.js/core
+
+- **Fix CommonJS Named Exports**: Fixed CJS export footer with `Object.assign(module.exports.default, module.exports)`, enabling both callable default usage (`const bsday = require('@bsday.js/core')`) and destructured named exports (`const { isValidBSDate, BSDay, getBsMonthDays } = require('@bsday.js/core')`).
+- **Clean Zero-Shim Build**: Removed unnecessary `--shims` flag for pure zero-dependency calendar math.
+
+#### CI & Tooling
+
+- **Pre-Publish Multi-Format Dist Verification**: Added `scripts/check-dist.mjs` and `pnpm run check:dist` to automatically validate all CJS, ESM, and browser sandbox imports before publishing.
+- **Package Integrity & TypeScript Export Verification**: Integrated `publint` and `@arethetypeswrong/cli` (`attw`) into automated CI/Publish workflows (`pnpm run check:exports`).
+
+---
+
 ## [1.1.0] - 2026-08-29
 
 ### 🚀 @bsday.js/core

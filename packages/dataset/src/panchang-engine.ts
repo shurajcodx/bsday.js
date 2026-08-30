@@ -2,12 +2,28 @@ import swisseph from 'swisseph-v2';
 import path from 'path';
 
 // Set accurate path and Lahiri Ayanamsa
-// In tsup builds with --shims, __dirname is available in both ESM and CJS.
-const _dirname = typeof __dirname !== 'undefined' ? __dirname : path.resolve(process.cwd());
-const ephePath = process.env.BSDAY_EPHE_PATH || path.resolve(_dirname, '../ephe');
+const ephePath =
+  (typeof process !== 'undefined' && process.env?.BSDAY_EPHE_PATH) ||
+  (typeof __dirname !== 'undefined'
+    ? path.resolve(__dirname, '../ephe')
+    : typeof process !== 'undefined' && typeof process.cwd === 'function'
+      ? path.resolve(process.cwd(), 'ephe')
+      : '');
 
-swisseph.swe_set_ephe_path(ephePath);
-swisseph.swe_set_sid_mode(swisseph.SE_SIDM_LAHIRI, 0, 0);
+if (ephePath && swisseph && typeof swisseph.swe_set_ephe_path === 'function') {
+  try {
+    swisseph.swe_set_ephe_path(ephePath);
+  } catch {
+    // fallback if ephemeris files cannot be configured directly
+  }
+}
+if (swisseph && typeof swisseph.swe_set_sid_mode === 'function') {
+  try {
+    swisseph.swe_set_sid_mode(swisseph.SE_SIDM_LAHIRI, 0, 0);
+  } catch {
+    // fallback
+  }
+}
 
 // Use Sidereal flags
 const FLAGS = swisseph.SEFLG_SWIEPH | swisseph.SEFLG_SIDEREAL | swisseph.SEFLG_SPEED;

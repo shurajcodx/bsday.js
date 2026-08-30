@@ -38,3 +38,8 @@ jobs:
 
       - name: Build
         run: pnpm run build
+
+      - name: Verify Dist Bundles & Exports
+        run: |
+          pnpm run check:dist
+          pnpm run check:exports
