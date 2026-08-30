@@ -1,5 +1,12 @@
 import type { Ref, ComputedRef } from 'vue';
-import type { BSDay, BSDate, CalendarCell, CalendarMatrixOptions, LocaleType, BSDayInput } from '@bsday.js/core';
+import type {
+  BSDay,
+  BSDate,
+  CalendarCell,
+  CalendarMatrixOptions,
+  LocaleType,
+  BSDayInput,
+} from '@bsday.js/core';
 
 export interface UseBSCalendarGridOptions extends CalendarMatrixOptions {
   initialYear?: number | Ref<number>;
@@ -26,7 +33,10 @@ export interface UseBSCalendarGridReturn {
   goToToday: () => void;
   handleKeyDown: (event: KeyboardEvent) => void;
   getGridProps: () => Record<string, unknown>;
-  getCellProps: (cell: CalendarCell, options?: { onSelect?: (cell: CalendarCell) => void }) => Record<string, unknown>;
+  getCellProps: (
+    cell: CalendarCell,
+    options?: { onSelect?: (cell: CalendarCell) => void },
+  ) => Record<string, unknown>;
 }
 
 export interface UseBSDatePickerOptions extends CalendarMatrixOptions {

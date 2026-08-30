@@ -4,7 +4,7 @@
 
 [![Website](https://img.shields.io/badge/website-bsdayjs.vercel.app-blue.svg?style=flat-square&logo=vercel)](https://bsdayjs.vercel.app)
 [![npm version](https://img.shields.io/npm/v/@bsday.js/svelte.svg?style=flat-square&color=orange)](https://www.npmjs.com/package/@bsday.js/svelte)
-[![bundle size](https://img.shields.io/badge/bundle%20size-~3KB%20(gzipped)-emerald.svg?style=flat-square)](https://bundlephobia.com/package/@bsday.js/svelte)
+[![bundle size](<https://img.shields.io/badge/bundle%20size-~3KB%20(gzipped)-emerald.svg?style=flat-square>)](https://bundlephobia.com/package/@bsday.js/svelte)
 [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg?style=flat-square)](https://www.typescriptlang.org)
 [![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/shurajcodx/bsday.js/blob/main/LICENSE)
 
@@ -136,13 +136,13 @@ yarn add @bsday.js/core @bsday.js/svelte
 
 ## 📖 API Reference
 
-| Store Primitive | Description | Return Stores / Methods |
-| :--- | :--- | :--- |
-| **`createBSCalendar(options)`** | Svelte stores for calendar matrix, navigation & ARIA handlers | `$year`, `$month`, `$matrix`, `$currentMonthName`, `goToNextMonth()`, `getGridProps()`, `getCellProps()` |
-| **`createBSDatePicker(options)`** | Svelte stores for single date selection with popover state | `$selectedDate`, `$formattedValue`, `$isOpen`, `open()`, `close()`, `selectDate()`, `getInputProps()` |
-| **`createBSRangePicker(options)`** | Svelte stores for date range selection and hover preview | `$startDate`, `$endDate`, `$hoverDate`, `selectDate()`, `isDateInRange()`, `clear()` |
+| Store Primitive                    | Description                                                   | Return Stores / Methods                                                                                  |
+| :--------------------------------- | :------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------- |
+| **`createBSCalendar(options)`**    | Svelte stores for calendar matrix, navigation & ARIA handlers | `$year`, `$month`, `$matrix`, `$currentMonthName`, `goToNextMonth()`, `getGridProps()`, `getCellProps()` |
+| **`createBSDatePicker(options)`**  | Svelte stores for single date selection with popover state    | `$selectedDate`, `$formattedValue`, `$isOpen`, `open()`, `close()`, `selectDate()`, `getInputProps()`    |
+| **`createBSRangePicker(options)`** | Svelte stores for date range selection and hover preview      | `$startDate`, `$endDate`, `$hoverDate`, `selectDate()`, `isDateInRange()`, `clear()`                     |
 
-*(Note: `createNepaliCalendar`, `createNepaliDatePicker`, and `createNepaliRangePicker` are exported as backward-compatible aliases).*
+_(Note: `createNepaliCalendar`, `createNepaliDatePicker`, and `createNepaliRangePicker` are exported as backward-compatible aliases)._
 
 ---
 

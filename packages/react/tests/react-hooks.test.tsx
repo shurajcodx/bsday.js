@@ -195,9 +195,7 @@ describe('@bsday.js/react Hooks', () => {
     });
 
     it('generates input and trigger props', () => {
-      const { result } = renderHook(() =>
-        useNepaliDatePicker({ defaultValue: '2081/05/15' }),
-      );
+      const { result } = renderHook(() => useNepaliDatePicker({ defaultValue: '2081/05/15' }));
 
       const inputProps = result.current.getInputProps();
       expect(inputProps.readOnly).toBe(true);

@@ -1,5 +1,12 @@
 import { signal, computed, Injectable } from '@angular/core';
-import { bsday, toBSDayHelper, isDateInRange as isDateBetween, type BSDay, type BSDayInput, type CalendarCell } from '@bsday.js/core';
+import {
+  bsday,
+  toBSDayHelper,
+  isDateInRange as isDateBetween,
+  type BSDay,
+  type BSDayInput,
+  type CalendarCell,
+} from '@bsday.js/core';
 import { createBSCalendar } from './calendar.service';
 import type {
   BSDatePickerOptions,
@@ -9,9 +16,7 @@ import type {
   DateRange,
 } from './types';
 
-export function createBSDatePicker(
-  options: BSDatePickerOptions = {},
-): BSDatePickerSignalState {
+export function createBSDatePicker(options: BSDatePickerOptions = {}): BSDatePickerSignalState {
   const {
     value,
     defaultValue,
@@ -120,9 +125,7 @@ export function createBSDatePicker(
 
 export const createNepaliDatePicker = createBSDatePicker;
 
-export function createBSRangePicker(
-  options: BSRangePickerOptions = {},
-): BSRangePickerSignalState {
+export function createBSRangePicker(options: BSRangePickerOptions = {}): BSRangePickerSignalState {
   const {
     value,
     defaultValue = { startDate: null, endDate: null },
@@ -172,7 +175,10 @@ export function createBSRangePicker(
     const currentRange = range();
     let nextRange: DateRange;
 
-    if ((currentRange.startDate && currentRange.endDate) || (!currentRange.startDate && !currentRange.endDate)) {
+    if (
+      (currentRange.startDate && currentRange.endDate) ||
+      (!currentRange.startDate && !currentRange.endDate)
+    ) {
       nextRange = { startDate: clicked, endDate: null };
     } else if (currentRange.startDate && !currentRange.endDate) {
       const start = toBSDayHelper(currentRange.startDate);

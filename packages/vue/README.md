@@ -4,7 +4,7 @@
 
 [![Website](https://img.shields.io/badge/website-bsdayjs.vercel.app-blue.svg?style=flat-square&logo=vercel)](https://bsdayjs.vercel.app)
 [![npm version](https://img.shields.io/npm/v/@bsday.js/vue.svg?style=flat-square&color=emerald)](https://www.npmjs.com/package/@bsday.js/vue)
-[![bundle size](https://img.shields.io/badge/bundle%20size-~3KB%20(gzipped)-emerald.svg?style=flat-square)](https://bundlephobia.com/package/@bsday.js/vue)
+[![bundle size](<https://img.shields.io/badge/bundle%20size-~3KB%20(gzipped)-emerald.svg?style=flat-square>)](https://bundlephobia.com/package/@bsday.js/vue)
 [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg?style=flat-square)](https://www.typescriptlang.org)
 [![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/shurajcodx/bsday.js/blob/main/LICENSE)
 
@@ -72,11 +72,7 @@ const {
 
     <!-- Weekday Header -->
     <div class="grid grid-cols-7 gap-1 text-center text-xs font-semibold text-gray-500">
-      <div
-        v-for="(day, idx) in weekdayNames"
-        :key="idx"
-        :class="{ 'text-red-500': idx === 6 }"
-      >
+      <div v-for="(day, idx) in weekdayNames" :key="idx" :class="{ 'text-red-500': idx === 6 }">
         {{ day }}
       </div>
     </div>
@@ -114,18 +110,12 @@ import { useNepaliDatePicker } from '@bsday.js/vue';
 
 const selectedDate = ref('2081/05/15');
 
-const {
-  formattedValue,
-  isOpen,
-  selectDate,
-  calendar,
-  getInputProps,
-  getTriggerProps,
-} = useNepaliDatePicker({
-  modelValue: selectedDate,
-  locale: 'ne',
-  format: 'YYYY/MM/DD',
-});
+const { formattedValue, isOpen, selectDate, calendar, getInputProps, getTriggerProps } =
+  useNepaliDatePicker({
+    modelValue: selectedDate,
+    locale: 'ne',
+    format: 'YYYY/MM/DD',
+  });
 </script>
 
 <template>
@@ -137,7 +127,10 @@ const {
       </button>
     </div>
 
-    <div v-if="isOpen" class="absolute top-12 left-0 z-50 bg-white border p-4 rounded-xl shadow-2xl">
+    <div
+      v-if="isOpen"
+      class="absolute top-12 left-0 z-50 bg-white border p-4 rounded-xl shadow-2xl"
+    >
       <div class="flex justify-between pb-2">
         <button @click="calendar.goToPrevMonth">&larr;</button>
         <span class="font-bold">{{ calendar.currentMonthName }} {{ calendar.year }}</span>
@@ -162,13 +155,13 @@ const {
 
 ## 📖 API Reference
 
-| Composable | Description | Return Values |
-| :--- | :--- | :--- |
-| **`useBSCalendarGrid(options)`** | Full reactive calendar matrix state and ARIA keyboard handlers | `year`, `month`, `matrix`, `monthNames`, `weekdayNames`, `goToNextMonth()`, `getGridProps()`, `getCellProps()` |
-| **`useBSDatePicker(options)`** | Single date picker state with popover toggle and `v-model` support | `selectedDate`, `formattedValue`, `isOpen`, `open()`, `close()`, `selectDate()`, `getInputProps()` |
-| **`useBSRangePicker(options)`** | Date range selection composable with real-time hover preview | `startDate`, `endDate`, `hoverDate`, `selectDate()`, `isDateInRange()`, `clear()` |
+| Composable                       | Description                                                        | Return Values                                                                                                  |
+| :------------------------------- | :----------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
+| **`useBSCalendarGrid(options)`** | Full reactive calendar matrix state and ARIA keyboard handlers     | `year`, `month`, `matrix`, `monthNames`, `weekdayNames`, `goToNextMonth()`, `getGridProps()`, `getCellProps()` |
+| **`useBSDatePicker(options)`**   | Single date picker state with popover toggle and `v-model` support | `selectedDate`, `formattedValue`, `isOpen`, `open()`, `close()`, `selectDate()`, `getInputProps()`             |
+| **`useBSRangePicker(options)`**  | Date range selection composable with real-time hover preview       | `startDate`, `endDate`, `hoverDate`, `selectDate()`, `isDateInRange()`, `clear()`                              |
 
-*(Note: `useNepaliCalendarGrid`, `useNepaliDatePicker`, and `useNepaliRangePicker` are exported as backward-compatible aliases).*
+_(Note: `useNepaliCalendarGrid`, `useNepaliDatePicker`, and `useNepaliRangePicker` are exported as backward-compatible aliases)._
 
 ---
 

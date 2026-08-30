@@ -1,5 +1,17 @@
-import type { HTMLAttributes, ButtonHTMLAttributes, InputHTMLAttributes, KeyboardEvent } from 'react';
-import type { BSDay, BSDate, CalendarCell, CalendarMatrixOptions, LocaleType, BSDayInput } from '@bsday.js/core';
+import type {
+  HTMLAttributes,
+  ButtonHTMLAttributes,
+  InputHTMLAttributes,
+  KeyboardEvent,
+} from 'react';
+import type {
+  BSDay,
+  BSDate,
+  CalendarCell,
+  CalendarMatrixOptions,
+  LocaleType,
+  BSDayInput,
+} from '@bsday.js/core';
 
 export interface UseBSCalendarGridOptions extends CalendarMatrixOptions {
   /** Initial Bikram Sambat year (defaults to current year) */
@@ -30,7 +42,10 @@ export interface UseBSCalendarGridReturn {
   goToToday: () => void;
   handleKeyDown: (event: KeyboardEvent<HTMLElement>) => void;
   getGridProps: () => HTMLAttributes<HTMLElement>;
-  getCellProps: (cell: CalendarCell, options?: { onSelect?: (cell: CalendarCell) => void }) => ButtonHTMLAttributes<HTMLButtonElement>;
+  getCellProps: (
+    cell: CalendarCell,
+    options?: { onSelect?: (cell: CalendarCell) => void },
+  ) => ButtonHTMLAttributes<HTMLButtonElement>;
 }
 
 export interface UseBSDatePickerOptions extends CalendarMatrixOptions {

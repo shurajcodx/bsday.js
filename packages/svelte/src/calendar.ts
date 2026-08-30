@@ -11,9 +11,7 @@ import {
 } from '@bsday.js/core';
 import type { BSCalendarStoreOptions, BSCalendarStoreState } from './types';
 
-export function createBSCalendar(
-  options: BSCalendarStoreOptions = {},
-): BSCalendarStoreState {
+export function createBSCalendar(options: BSCalendarStoreOptions = {}): BSCalendarStoreState {
   const {
     initialYear,
     initialMonth,

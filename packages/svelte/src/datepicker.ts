@@ -3,9 +3,7 @@ import { bsday, toBSDayHelper, type BSDay, type BSDayInput } from '@bsday.js/cor
 import { createBSCalendar } from './calendar';
 import type { BSDatePickerStoreOptions, BSDatePickerStoreState } from './types';
 
-export function createBSDatePicker(
-  options: BSDatePickerStoreOptions = {},
-): BSDatePickerStoreState {
+export function createBSDatePicker(options: BSDatePickerStoreOptions = {}): BSDatePickerStoreState {
   const {
     value,
     defaultValue,

@@ -4,7 +4,7 @@
 
 [![Website](https://img.shields.io/badge/website-bsdayjs.vercel.app-blue.svg?style=flat-square&logo=vercel)](https://bsdayjs.vercel.app)
 [![npm version](https://img.shields.io/npm/v/@bsday.js/react.svg?style=flat-square&color=indigo)](https://www.npmjs.com/package/@bsday.js/react)
-[![bundle size](https://img.shields.io/badge/bundle%20size-~3KB%20(gzipped)-emerald.svg?style=flat-square)](https://bundlephobia.com/package/@bsday.js/react)
+[![bundle size](<https://img.shields.io/badge/bundle%20size-~3KB%20(gzipped)-emerald.svg?style=flat-square>)](https://bundlephobia.com/package/@bsday.js/react)
 [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg?style=flat-square)](https://www.typescriptlang.org)
 [![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/shurajcodx/bsday.js/blob/main/LICENSE)
 
@@ -65,15 +65,23 @@ export function BSCalendar() {
     <div className="w-80 rounded-2xl border p-4 shadow-xl">
       {/* Month Header Navigation */}
       <div className="flex items-center justify-between pb-3">
-        <button onClick={goToPrevMonth} aria-label="Previous Month">&larr;</button>
-        <span className="font-bold">{currentMonthName} {year}</span>
-        <button onClick={goToNextMonth} aria-label="Next Month">&rarr;</button>
+        <button onClick={goToPrevMonth} aria-label="Previous Month">
+          &larr;
+        </button>
+        <span className="font-bold">
+          {currentMonthName} {year}
+        </span>
+        <button onClick={goToNextMonth} aria-label="Next Month">
+          &rarr;
+        </button>
       </div>
 
       {/* Weekday Header */}
       <div className="grid grid-cols-7 gap-1 text-center text-xs font-semibold text-gray-500">
         {weekdayNames.map((day, idx) => (
-          <div key={idx} className={idx === 6 ? 'text-red-500' : ''}>{day}</div>
+          <div key={idx} className={idx === 6 ? 'text-red-500' : ''}>
+            {day}
+          </div>
         ))}
       </div>
 
@@ -91,8 +99,8 @@ export function BSCalendar() {
                   !cell.isCurrentMonth
                     ? 'text-gray-300'
                     : cell.isSaturday
-                    ? 'text-red-600 font-semibold'
-                    : 'text-gray-800'
+                      ? 'text-red-600 font-semibold'
+                      : 'text-gray-800'
                 } hover:bg-indigo-50`}
               >
                 {cell.dayText}
@@ -115,18 +123,12 @@ import React from 'react';
 import { useBSDatePicker } from '@bsday.js/react';
 
 export function BSDatePickerField() {
-  const {
-    formattedValue,
-    isOpen,
-    selectDate,
-    calendar,
-    getInputProps,
-    getTriggerProps,
-  } = useBSDatePicker({
-    defaultValue: '2081/05/15',
-    locale: 'ne',
-    format: 'YYYY/MM/DD',
-  });
+  const { formattedValue, isOpen, selectDate, calendar, getInputProps, getTriggerProps } =
+    useBSDatePicker({
+      defaultValue: '2081/05/15',
+      locale: 'ne',
+      format: 'YYYY/MM/DD',
+    });
 
   return (
     <div className="relative">
@@ -141,7 +143,9 @@ export function BSDatePickerField() {
         <div className="absolute top-12 left-0 z-50 bg-white border p-4 rounded-xl shadow-2xl">
           <div className="flex justify-between pb-2">
             <button onClick={calendar.goToPrevMonth}>&larr;</button>
-            <span className="font-bold">{calendar.currentMonthName} {calendar.year}</span>
+            <span className="font-bold">
+              {calendar.currentMonthName} {calendar.year}
+            </span>
             <button onClick={calendar.goToNextMonth}>&rarr;</button>
           </div>
           <div className="grid grid-cols-7 gap-1">
@@ -210,8 +214,8 @@ export function HotelBookingRangePicker() {
                 isStart || isEnd
                   ? 'bg-indigo-600 text-white rounded'
                   : inRange
-                  ? 'bg-indigo-100 text-indigo-900'
-                  : 'hover:bg-gray-100 rounded'
+                    ? 'bg-indigo-100 text-indigo-900'
+                    : 'hover:bg-gray-100 rounded'
               }`}
             >
               {cell.dayText}
@@ -228,13 +232,13 @@ export function HotelBookingRangePicker() {
 
 ## 📖 API Reference
 
-| Hook | Description | Return Value |
-| :--- | :--- | :--- |
+| Hook                             | Description                                                | Return Value                                                                                                   |
+| :------------------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
 | **`useBSCalendarGrid(options)`** | Full calendar matrix state, ARIA props & keyboard handlers | `year`, `month`, `matrix`, `monthNames`, `weekdayNames`, `goToNextMonth()`, `getGridProps()`, `getCellProps()` |
-| **`useBSDatePicker(options)`** | Single date picker state with popover toggle | `selectedDate`, `formattedValue`, `isOpen`, `open()`, `close()`, `selectDate()`, `getInputProps()` |
-| **`useBSRangePicker(options)`** | Date range selection with real-time hover preview | `startDate`, `endDate`, `hoverDate`, `selectDate()`, `isDateInRange()`, `clear()` |
+| **`useBSDatePicker(options)`**   | Single date picker state with popover toggle               | `selectedDate`, `formattedValue`, `isOpen`, `open()`, `close()`, `selectDate()`, `getInputProps()`             |
+| **`useBSRangePicker(options)`**  | Date range selection with real-time hover preview          | `startDate`, `endDate`, `hoverDate`, `selectDate()`, `isDateInRange()`, `clear()`                              |
 
-*(Note: `useNepaliCalendarGrid`, `useNepaliDatePicker`, and `useNepaliRangePicker` are exported as backward-compatible aliases).*
+_(Note: `useNepaliCalendarGrid`, `useNepaliDatePicker`, and `useNepaliRangePicker` are exported as backward-compatible aliases)._
 
 ---
 

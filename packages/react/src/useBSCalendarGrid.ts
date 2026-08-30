@@ -12,9 +12,7 @@ import {
 } from '@bsday.js/core';
 import type { UseBSCalendarGridOptions, UseBSCalendarGridReturn } from './types';
 
-export function useBSCalendarGrid(
-  options: UseBSCalendarGridOptions = {},
-): UseBSCalendarGridReturn {
+export function useBSCalendarGrid(options: UseBSCalendarGridOptions = {}): UseBSCalendarGridReturn {
   const {
     initialYear,
     initialMonth,
@@ -129,7 +127,9 @@ export function useBSCalendarGrid(
 
   const handleKeyDown = useCallback(
     (event: KeyboardEvent<HTMLElement>) => {
-      const current = focusedDate ? BSDay.bs(focusedDate.year, focusedDate.month, focusedDate.day) : BSDay.bs(year, month, 1);
+      const current = focusedDate
+        ? BSDay.bs(focusedDate.year, focusedDate.month, focusedDate.day)
+        : BSDay.bs(year, month, 1);
       let target: BSDay | null = null;
 
       switch (event.key) {

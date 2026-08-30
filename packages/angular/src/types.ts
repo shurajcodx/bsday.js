@@ -1,5 +1,12 @@
 import type { Signal, WritableSignal } from '@angular/core';
-import type { BSDay, BSDate, CalendarCell, CalendarMatrixOptions, LocaleType, BSDayInput } from '@bsday.js/core';
+import type {
+  BSDay,
+  BSDate,
+  CalendarCell,
+  CalendarMatrixOptions,
+  LocaleType,
+  BSDayInput,
+} from '@bsday.js/core';
 
 export interface BSCalendarOptions extends CalendarMatrixOptions {
   initialYear?: number;
@@ -26,7 +33,10 @@ export interface BSCalendarSignalState {
   goToToday: () => void;
   handleKeyDown: (event: KeyboardEvent) => void;
   getGridProps: () => Record<string, unknown>;
-  getCellProps: (cell: CalendarCell, options?: { onSelect?: (cell: CalendarCell) => void }) => Record<string, unknown>;
+  getCellProps: (
+    cell: CalendarCell,
+    options?: { onSelect?: (cell: CalendarCell) => void },
+  ) => Record<string, unknown>;
 }
 
 export interface BSDatePickerOptions extends CalendarMatrixOptions {

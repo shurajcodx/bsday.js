@@ -4,7 +4,7 @@
 
 [![Website](https://img.shields.io/badge/website-bsdayjs.vercel.app-blue.svg?style=flat-square&logo=vercel)](https://bsdayjs.vercel.app)
 [![npm version](https://img.shields.io/npm/v/@bsday.js/angular.svg?style=flat-square&color=red)](https://www.npmjs.com/package/@bsday.js/angular)
-[![bundle size](https://img.shields.io/badge/bundle%20size-~3KB%20(gzipped)-emerald.svg?style=flat-square)](https://bundlephobia.com/package/@bsday.js/angular)
+[![bundle size](<https://img.shields.io/badge/bundle%20size-~3KB%20(gzipped)-emerald.svg?style=flat-square>)](https://bundlephobia.com/package/@bsday.js/angular)
 [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg?style=flat-square)](https://www.typescriptlang.org)
 [![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/shurajcodx/bsday.js/blob/main/LICENSE)
 
@@ -130,14 +130,14 @@ export class BookingFormComponent {
 
 ## 📖 API Reference
 
-| Service / Directive | Description | Usage |
-| :--- | :--- | :--- |
-| **`createBSCalendar(options)`** | Signal-based calendar matrix state engine | `cal.year()`, `cal.month()`, `cal.matrix()`, `cal.goToNextMonth()` |
-| **`createBSDatePicker(options)`** | Signal-based single datepicker state engine | `picker.selectedDate()`, `picker.formattedValue()`, `picker.open()` |
-| **`createBSRangePicker(options)`** | Signal-based date range picker state engine | `range.startDate()`, `range.endDate()`, `range.selectDate()` |
-| **`BSDatePickerDirective`** | Standalone `ControlValueAccessor` form directive | `<input bsdayDatePicker [formControl]="ctrl" />` |
+| Service / Directive                | Description                                      | Usage                                                               |
+| :--------------------------------- | :----------------------------------------------- | :------------------------------------------------------------------ |
+| **`createBSCalendar(options)`**    | Signal-based calendar matrix state engine        | `cal.year()`, `cal.month()`, `cal.matrix()`, `cal.goToNextMonth()`  |
+| **`createBSDatePicker(options)`**  | Signal-based single datepicker state engine      | `picker.selectedDate()`, `picker.formattedValue()`, `picker.open()` |
+| **`createBSRangePicker(options)`** | Signal-based date range picker state engine      | `range.startDate()`, `range.endDate()`, `range.selectDate()`        |
+| **`BSDatePickerDirective`**        | Standalone `ControlValueAccessor` form directive | `<input bsdayDatePicker [formControl]="ctrl" />`                    |
 
-*(Note: `NepaliCalendarService`, `NepaliDatePickerService`, and `NepaliDatePickerDirective` are exported as backward-compatible aliases).*
+_(Note: `NepaliCalendarService`, `NepaliDatePickerService`, and `NepaliDatePickerDirective` are exported as backward-compatible aliases)._
 
 ---
 

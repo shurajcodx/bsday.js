@@ -3,9 +3,7 @@ import { bsday, toBSDayHelper, type BSDay, type BSDayInput } from '@bsday.js/cor
 import { useBSCalendarGrid } from './useBSCalendarGrid';
 import type { UseBSDatePickerOptions, UseBSDatePickerReturn } from './types';
 
-export function useBSDatePicker(
-  options: UseBSDatePickerOptions = {},
-): UseBSDatePickerReturn {
+export function useBSDatePicker(options: UseBSDatePickerOptions = {}): UseBSDatePickerReturn {
   const {
     modelValue,
     defaultValue,

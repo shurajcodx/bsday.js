@@ -1,11 +1,14 @@
 import { ref, computed, unref } from 'vue';
-import { bsday, isDateInRange as isDateBetween, toBSDayHelper, type CalendarCell } from '@bsday.js/core';
+import {
+  bsday,
+  isDateInRange as isDateBetween,
+  toBSDayHelper,
+  type CalendarCell,
+} from '@bsday.js/core';
 import { useBSCalendarGrid } from './useBSCalendarGrid';
 import type { UseBSRangePickerOptions, UseBSRangePickerReturn, DateRange } from './types';
 
-export function useBSRangePicker(
-  options: UseBSRangePickerOptions = {},
-): UseBSRangePickerReturn {
+export function useBSRangePicker(options: UseBSRangePickerOptions = {}): UseBSRangePickerReturn {
   const {
     modelValue,
     defaultValue = { startDate: null, endDate: null },
@@ -64,7 +67,10 @@ export function useBSRangePicker(
 
     let nextRange: DateRange;
 
-    if ((range.value.startDate && range.value.endDate) || (!range.value.startDate && !range.value.endDate)) {
+    if (
+      (range.value.startDate && range.value.endDate) ||
+      (!range.value.startDate && !range.value.endDate)
+    ) {
       nextRange = { startDate: clicked, endDate: null };
     } else if (range.value.startDate && !range.value.endDate) {
       const start = toBSDayHelper(range.value.startDate);

@@ -1,11 +1,14 @@
 import { useState, useCallback, useMemo } from 'react';
-import { bsday, isDateInRange as isDateBetween, toBSDayHelper, type CalendarCell } from '@bsday.js/core';
+import {
+  bsday,
+  isDateInRange as isDateBetween,
+  toBSDayHelper,
+  type CalendarCell,
+} from '@bsday.js/core';
 import { useBSCalendarGrid } from './useBSCalendarGrid';
 import type { UseBSRangePickerOptions, UseBSRangePickerReturn, DateRange } from './types';
 
-export function useBSRangePicker(
-  options: UseBSRangePickerOptions = {},
-): UseBSRangePickerReturn {
+export function useBSRangePicker(options: UseBSRangePickerOptions = {}): UseBSRangePickerReturn {
   const {
     value,
     defaultValue = { startDate: null, endDate: null },

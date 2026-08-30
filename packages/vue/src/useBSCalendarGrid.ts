@@ -11,9 +11,7 @@ import {
 } from '@bsday.js/core';
 import type { UseBSCalendarGridOptions, UseBSCalendarGridReturn } from './types';
 
-export function useBSCalendarGrid(
-  options: UseBSCalendarGridOptions = {},
-): UseBSCalendarGridReturn {
+export function useBSCalendarGrid(options: UseBSCalendarGridOptions = {}): UseBSCalendarGridReturn {
   const {
     initialYear,
     initialMonth,

@@ -1,5 +1,10 @@
 import { writable, derived, get } from 'svelte/store';
-import { bsday, isDateInRange as isDateBetween, toBSDayHelper, type CalendarCell } from '@bsday.js/core';
+import {
+  bsday,
+  isDateInRange as isDateBetween,
+  toBSDayHelper,
+  type CalendarCell,
+} from '@bsday.js/core';
 import { createBSCalendar } from './calendar';
 import type { BSRangePickerStoreOptions, BSRangePickerStoreState, DateRange } from './types';
 
@@ -34,7 +39,9 @@ export function createBSRangePicker(
   const currentRange = get(range);
   const calendarStore = createBSCalendar({
     initialYear: currentRange.startDate ? toBSDayHelper(currentRange.startDate).year() : undefined,
-    initialMonth: currentRange.startDate ? toBSDayHelper(currentRange.startDate).month() : undefined,
+    initialMonth: currentRange.startDate
+      ? toBSDayHelper(currentRange.startDate).month()
+      : undefined,
     locale,
     startOfWeek,
     fixedWeeks,
