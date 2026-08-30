@@ -4,15 +4,16 @@ export default defineConfig({
   entry: ['src/index.ts'],
   format: ['esm', 'cjs'],
   dts: true,
-  shims: true,
+  shims: false,
   clean: true,
   splitting: false,
-  // This ensures that the CJS build sets module.exports = defaultExport
-  // enabling: const bsday = require('@bsday.js/core')
+  target: 'es2020',
+  // In CJS, attach all named exports onto default export function and assign to module.exports
+  // enabling both `const bsday = require('@bsday.js/core')` and `const { isValidBSDate, BSDay } = require('@bsday.js/core')`
   footer: {
     js: `
 if (typeof module !== 'undefined' && module.exports && typeof module.exports.default !== 'undefined') {
-  module.exports = module.exports.default;
+  module.exports = Object.assign(module.exports.default, module.exports);
 }
 `,
   },
