@@ -1,6 +1,6 @@
 {
   "name": "@bsday.js/dataset",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "BSDay optional festival and panchang dataset",
   "publishConfig": {
     "access": "public"
