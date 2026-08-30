@@ -5,7 +5,7 @@
 [![Website](https://img.shields.io/badge/website-bsdayjs.vercel.app-blue.svg?style=flat-square&logo=vercel)](https://bsdayjs.vercel.app)
 [![npm (core)](https://img.shields.io/npm/v/@bsday.js/core.svg?style=flat-square&label=@bsday.js/core&color=indigo)](https://www.npmjs.com/package/@bsday.js/core)
 [![npm (dataset)](https://img.shields.io/npm/v/@bsday.js/dataset.svg?style=flat-square&label=@bsday.js/dataset&color=purple)](https://www.npmjs.com/package/@bsday.js/dataset)
-[![bundle size](https://img.shields.io/badge/bundle%20size-~12KB%20(gzipped)-emerald.svg?style=flat-square)](https://bundlephobia.com/package/@bsday.js/core)
+[![bundle size](<https://img.shields.io/badge/bundle%20size-~12KB%20(gzipped)-emerald.svg?style=flat-square>)](https://bundlephobia.com/package/@bsday.js/core)
 [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg?style=flat-square)](https://www.typescriptlang.org)
 [![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
 [![tests](https://img.shields.io/badge/tests-81%2F81%20passing-brightgreen.svg?style=flat-square)](https://vitest.dev)
@@ -18,10 +18,10 @@
 
 ## 📦 Packages
 
-| Package                                     | Version | Description                                                                            |
-| :------------------------------------------ | :-----: | :------------------------------------------------------------------------------------- |
+| Package                                     | Version | Description                                                                              |
+| :------------------------------------------ | :-----: | :--------------------------------------------------------------------------------------- |
 | **[@bsday.js/core](./packages/core)**       | `1.1.0` | Ultra-fast (~12KB gzipped), zero-dependency dual calendar SDK with Day.js syntax parity. |
-| **[@bsday.js/dataset](./packages/dataset)** | `1.1.0` | 111-Year (1990–2100 BS / 40,543 days) astronomical Panchang & Nepali festival dataset. |
+| **[@bsday.js/dataset](./packages/dataset)** | `1.1.0` | 111-Year (1990–2100 BS / 40,543 days) astronomical Panchang & Nepali festival dataset.   |
 
 ---
 

@@ -1,139 +1,239 @@
-# BSDay.js Plugin Development Guide
+# 🔌 BSDay.js Plugin Development Guide
 
-**Library:** bsday.js
-**Purpose:** Provide developers a clear guideline to **create, register, and extend BSDay.js functionality** via plugins.
+**Library:** `bsday.js`  
+**Purpose:** Provide developers a clear, modern guide to **create, register, and type-safe extend BSDay.js functionality** via plugins.
 
 ---
 
 ## 1. Introduction
 
-BSDay.js has a **plugin architecture** allowing developers to extend the core library without modifying its source code. Plugins can:
+`bsday.js` features a modular, Day.js-compatible **plugin architecture** allowing developers to extend the core library without modifying source code. Plugins can:
 
-* Add **custom formatting tokens** (e.g., Nepali numerals)
-* Add **holiday or lunar calendar calculations**
-* Provide **utility functions** (e.g., fiscal year, workdays)
+* Add **custom formatting tokens** (e.g., Devanagari ordinals, astrological tokens)
+* Add **new prototype methods** on `BSDay` instances (e.g., relative time, calendar conversions)
+* Add **static helpers** on `bsday` / `BSDay` (e.g., fiscal year generators, date range builders)
+* Hook into formatting and lifecycle pipelines
 
-**Goal:** Keep core library **lightweight** while allowing rich, optional extensions.
+**Goal:** Keep `@bsday.js/core` ultra-lightweight (~12KB gzipped) while allowing rich, opt-in ecosystem extensions.
 
 ---
 
-## 2. Plugin Interface
+## 2. Plugin Interfaces
 
-All plugins must implement the following interface:
+`bsday.js` supports two plugin formats: **Functional Plugins** (recommended, Day.js style) and **Object Plugins**.
 
-```ts
-export interface BSDayPlugin {
-  name: string
-  initialize(bsday: typeof BSDay): void
-}
+### A. Functional Plugin (Recommended)
+
+A function receiving `(options, BSDay, bsdayFactory)`:
+
+```typescript
+import type { BSDayPluginFunction, BSDayPluginHost, BSDayFactoryLike } from '@bsday.js/core';
+
+export const myPlugin: BSDayPluginFunction = (options, BSDay, bsdayFactory) => {
+  // 1. Extend prototype
+  (BSDay.prototype as any).myMethod = function () {
+    return `BS Year: ${this.year()}`;
+  };
+
+  // 2. Register custom format token
+  BSDay.registerFormatToken('XX', ({ bs, locale }) => {
+    return `BS-${bs.year}`;
+  });
+};
 ```
 
-* `name`: Unique plugin name
-* `initialize(bsday)`: Function called when the plugin is registered. Can extend BSDay prototype, static methods, or formatting tokens.
+### B. Object Plugin
 
----
+An object implementing `{ name, initialize(host, options) }`:
 
-## 3. Registering a Plugin
+```typescript
+import type { BSDayPlugin, BSDayPluginHost } from '@bsday.js/core';
 
-Use `BSDay.use()` to register any plugin:
-
-```ts
-import { BSDay } from '@bsday.js/core';
-import { MyPlugin } from './myPlugin';
-
-BSDay.use(new MyPlugin());
-```
-
-**Notes:**
-
-* Multiple plugins can be registered in sequence.
-* Plugins should **not overwrite core methods** unless intentional.
-
----
-
-## 4. Plugin Development Steps
-
-1. **Create plugin class**
-
-```ts
-export class NepaliNumberPlugin implements BSDayPlugin {
-  name = 'nepali-number';
-
-  initialize(BSDay) {
-    BSDay.prototype.formatNepali = function () {
-      const bs = this.toBS();
-      return `${convertToNepali(bs.year)}-${convertToNepali(bs.month)}-${convertToNepali(bs.day)}`;
+export const myObjectPlugin: BSDayPlugin = {
+  name: 'myObjectPlugin',
+  initialize(host: BSDayPluginHost, options?: unknown) {
+    (host.prototype as any).customGreeting = function () {
+      return `नमस्ते! Today is ${this.format('YYYY/MM/DD')}`;
     };
+
+    host.registerFormatToken('ZE', ({ locale }) => (locale === 'ne' ? 'ने.सं.' : 'N.S.'));
+  },
+};
+```
+
+---
+
+## 3. Registering Plugins
+
+Use `bsday.extend()` or `BSDay.extend()` to register any plugin:
+
+```typescript
+import bsday, { BSDay } from '@bsday.js/core';
+import { relativeTimePlugin } from '@bsday.js/core'; // built-in plugin example
+import { myPlugin } from './myPlugin';
+
+// Register via factory
+bsday.extend(myPlugin, { customOption: true });
+
+// Or register via BSDay class directly
+BSDay.extend(relativeTimePlugin);
+```
+
+> 💡 **Plugin Idempotency:** Registering the same plugin multiple times is safely deduplicated.
+
+---
+
+## 4. TypeScript Typing & Module Augmentation
+
+To provide seamless TypeScript autocompletion and type checking for your plugin methods, use **TypeScript Module Augmentation**:
+
+```typescript
+// plugins/workdayPlugin.ts
+import { BSDay, type BSDayPluginFunction } from '@bsday.js/core';
+
+// 1. Declare interface additions
+declare module '@bsday.js/core' {
+  interface BSDay {
+    /** Returns true if the day is a standard working day (Sunday–Friday and not a holiday) */
+    isWorkday(): boolean;
+    /** Adds `n` working days skipping Saturdays */
+    addWorkdays(days: number): BSDay;
   }
 }
-```
 
-2. **Add helper functions if needed**
-
-```ts
-function convertToNepali(num: number): string {
-  const nepaliNums = ['०','१','२','३','४','५','६','७','८','९'];
-  return num.toString().split('').map(d => nepaliNums[+d]).join('');
+// 2. Implement plugin logic
+export interface WorkdayPluginOptions {
+  saturdayOnlyWeekend?: boolean;
 }
+
+export const workdayPlugin: BSDayPluginFunction = (options, BSDayHost) => {
+  const proto = BSDayHost.prototype as any;
+
+  proto.isWorkday = function (this: BSDay): boolean {
+    const isSaturday = this.day() === 6;
+    return !isSaturday && !this.isHoliday;
+  };
+
+  proto.addWorkdays = function (this: BSDay, days: number): BSDay {
+    let current = this.clone();
+    let added = 0;
+    const direction = days >= 0 ? 1 : -1;
+    const target = Math.abs(days);
+
+    while (added < target) {
+      current = current.add(direction, 'day');
+      if (current.isWorkday()) {
+        added++;
+      }
+    }
+
+    return current;
+  };
+};
 ```
 
-3. **Register the plugin**
+---
 
-```ts
-BSDay.use(new NepaliNumberPlugin());
-const date = new BSDay({ bs: [2082, 2, 1] });
-console.log(date.formatNepali()); // Output: २०८२-०२-०१
+## 5. Complete Plugin Examples
+
+### Example 1: Custom Format Token Plugin (Nepal Sambat Year Token `NNNN`)
+
+```typescript
+// plugins/nepalSambatPlugin.ts
+import type { BSDayPluginFunction } from '@bsday.js/core';
+import { localizeNumber } from '@bsday.js/core'; // or internal helper
+
+export const nepalSambatPlugin: BSDayPluginFunction = (_opts, BSDayHost) => {
+  // Nepal Sambat is approximately BS year - 937 (starting Kartik Shukla Pratipada)
+  BSDayHost.registerFormatToken('NNNN', ({ bs, locale }) => {
+    const nsYear = bs.year - 937;
+    return localizeNumber(nsYear, locale);
+  });
+};
+```
+
+**Usage:**
+```typescript
+import bsday from '@bsday.js/core';
+import { nepalSambatPlugin } from './nepalSambatPlugin';
+
+bsday.extend(nepalSambatPlugin);
+
+const date = bsday.bs(2081, 5, 15);
+console.log(date.format('YYYY [BS] / NNNN [NS]')); // "2081 BS / 1144 NS"
+console.log(date.locale('ne').format('YYYY [वि.सं.] / NNNN [ने.सं.]')); // "२०८१ वि.सं. / ११४४ ने.सं."
 ```
 
 ---
 
-## 5. Types of Plugins
+### Example 2: Buddhist Era (BE) Year Plugin
 
-| Type                 | Description                                                                |
-| -------------------- | -------------------------------------------------------------------------- |
-| **Formatting Token** | Add new format tokens like Nepali numerals                                 |
-| **Holiday / Lunar**  | Add methods for lunar calculations, holidays not included in core          |
-| **Calendar**         | Introduce a new calendar system, e.g., Lunar calendar                      |
-| **Utility**          | Custom helper methods, e.g., fiscal year calculations, workdays, or events |
+```typescript
+// plugins/buddhistEraPlugin.ts
+import type { BSDayPluginFunction } from '@bsday.js/core';
+
+declare module '@bsday.js/core' {
+  interface BSDay {
+    buddhistYear(): number;
+  }
+}
+
+export const buddhistEraPlugin: BSDayPluginFunction = (_opts, BSDayHost) => {
+  const proto = BSDayHost.prototype as any;
+
+  proto.buddhistYear = function (): number {
+    // AD Year + 543
+    return this.toAD().getFullYear() + 543;
+  };
+
+  BSDayHost.registerFormatToken('BBBB', ({ ad, locale }) => {
+    const beYear = ad.getFullYear() + 543;
+    return String(beYear);
+  });
+};
+```
 
 ---
 
-## 6. Best Practices
+## 6. Testing Plugins with Vitest
 
-* **Unique names**: Avoid conflicts with other plugins
-* **Immutable methods**: Prefer returning new instances rather than mutating
-* **Minimal dependencies**: Keep plugins lightweight
-* **Validation**: Always validate inputs before adding methods
-* **Documentation**: Provide clear usage instructions for plugin users
-* **Unit Tests**: Test for cross-calendar compatibility
+Write unit tests for your plugins to guarantee immutability, timezone stability, and format token accuracy:
 
----
+```typescript
+// plugins/__tests__/workdayPlugin.test.ts
+import { describe, it, expect, beforeAll } from 'vitest';
+import bsday, { BSDay } from '@bsday.js/core';
+import { workdayPlugin } from '../workdayPlugin';
 
-## 7. Testing Plugins
+describe('workdayPlugin', () => {
+  beforeAll(() => {
+    bsday.extend(workdayPlugin);
+  });
 
-* Use **Vitest or Jest** for unit tests
-* Test **prototype extensions**, **static methods**, and **dataset integration**
-* Example:
+  it('correctly identifies working days and Saturdays', () => {
+    const friday = bsday.bs(2081, 5, 14); // Friday
+    const saturday = bsday.bs(2081, 5, 15); // Saturday
+    const sunday = bsday.bs(2081, 5, 16); // Sunday
 
-```ts
-import { describe, it, expect } from 'vitest';
-import { BSDay } from '@bsday.js/core';
-import { NepaliNumberPlugin } from './NepaliNumberPlugin';
+    expect(friday.isWorkday()).toBe(true);
+    expect(saturday.isWorkday()).toBe(false);
+    expect(sunday.isWorkday()).toBe(true);
+  });
 
-BSDay.use(new NepaliNumberPlugin());
+  it('skips Saturdays when adding workdays', () => {
+    const friday = bsday.bs(2081, 5, 14);
+    const nextWorkday = friday.addWorkdays(1);
 
-describe('NepaliNumberPlugin', () => {
-  it('formats date in Nepali numerals', () => {
-    const date = new BSDay({ bs: [2082, 2, 1] });
-    expect(date.formatNepali()).toBe('२०८२-०२-०१');
+    expect(nextWorkday.format('YYYY/MM/DD')).toBe('2081/05/16'); // Skips Saturday (15) to Sunday (16)
   });
 });
 ```
 
 ---
 
-## 8. Notes
+## 7. Best Practices Checklist
 
-* Plugins are **optional**; core library works independently.
-* Avoid **heavy operations** inside the plugin’s `initialize` method.
-* Plugins can also extend **static helpers** via `BSDay.<method>()`.
+- [x] **Preserve Immutability**: Methods adding/subtracting dates should always return a new `BSDay` instance (via `this.clone()` or `this.add()`), never mutating `this`.
+- [x] **Avoid Global State**: Use `options` passed to `extend(plugin, options)` instead of global variables.
+- [x] **Handle Dual-Calendar**: If your plugin interacts with calendar units, consider both BS and Gregorian AD contexts.
+- [x] **Provide TypeScript Types**: Always ship ambient `declare module '@bsday.js/core'` declarations with your plugin package.
